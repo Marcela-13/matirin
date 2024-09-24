@@ -64,3 +64,40 @@ footer {
     bottom: 0;
 }
 
+form {
+    background-color: #ffffff;
+    padding: 70px;
+    height: 275px;
+    border-radius: 8px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    width: 27%;
+    margin: 0 auto;
+   
+}
+.sidebar {
+    background-color: #ffffff;
+    display: flex;
+    padding: 70px;
+    height: 275px;
+    border-radius: 8px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    width: 25%;
+    margin: 0 auto;
+  
+}
+.titulo {
+    padding: 2px;
+    height: 100px;
+    width: 30%;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+}
+
+input[type="text"]
+{
+    padding: 1009px;
+    height: 100px;
+    width: 70%;
+    border: 1px solid #ff0000;
+    border-radius: 4px;
+}
