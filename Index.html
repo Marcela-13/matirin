@@ -7,48 +7,137 @@
     <title>Projeto Matirin</title>
     <link rel="stylesheet" href="css/style.css" />
 </head>
+
 <body>
     <header>
         <div class="logo">
             <img src="img/image.png">
         </div>
-    </header>
-    <!--Navegação-->
-    <div class="nav">
-            <ul>
-                <li link="pages/tradutor.html"><a>Tradução interativa</a></li>
-                <li link="pages/rede.html"><a>Rede</a></li>
-                <li link="pages/sobre.html"><a>Sobre nós</a></li>
-                <li link="pages/inforação.html"><a>Informações</a></li>
-            </ul>
+        <div id="Busca">
+            <input type="text" id="txtBusca" placeholder="Buscar..." />
+            <img src="" id="btnBusca" alt="Buscar" />
         </div>
-        <img src="img/teste1.webp" class="imagem1">
-        <p class="texto1">kkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkk</p>
-        <img src="img/teste1.webp" class="imagem2">
-        <p class="testo2">kkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkk</p>
-        <img src="img/teste1.webp" class="imagem3">
-        <p class="texto3">kkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkk</p>
-        <img src="img/teste1.webp" class="imagem4">
-        <p class="texto4">kkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkk</p>
+    </header>
 
-        <!--Carroceu de imagens-->
-        <section id="carrosel">
-            <div class="card">
-                <img src="img/teste1.webp">
-            </div>
-            <div class="card">
-                <img>
-            </div>
-            <div class="card">
-                <img src="img/teste1.webp">
-            </div>
-            <div class="card">
-                <img src="img/teste1.webp">
-            </div>
-        </section>
-       
+   <!--Navegação-->
+    <div class="nav">
+        <ul>
+            <li link="pages/tradutor.html"><a>Tradução interativa</a></li>
+            <li link="pages/rede.html"><a>Rede</a></li>
+            <li link="pages/sobre.html"><a>Sobre nós</a></li>
+            <li link="pages/inforação.html"><a>Informações</a></li>
+        </ul>
+    </div>
+    
+    <!--teste de video de fundo-->
+    <video class="background-video" autoplay loop muted>
+        <source src="img/pato.gif" type="video/mp4"> 
+    </video>
+    <div class="content">
 
-    <footer>&copy; 2024 Matirin. Todos os direitos reservados. </footer>
+    <!--imagens centrais-->
+    <!--imgtxt11-->
+    <section class="imgtxt1">
+        <div class="texto1">
+            <p>"Lorem ipsum dolor sit amet, consectetur adipiscing elit, <br>
+                sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. <br>
+                Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris <br>
+                nisi ut aliquip ex ea commodo consequat. <br>
+                Duis aute irure dolor in reprehenderit in voluptate velit esse cillum <br>
+                dolore eu fugiat nulla pariatur.<br>
+                Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia <br>
+                deserunt mollit anim id est
+                laborum."</p>
+        </div>
+        <div>
+            <img src="img/teste1.webp" class="imagem1">
+        </div>
+    </section>
+
+    <!--imgtxt2-->
+    <section class="imgtxt2">
+        <div>
+            <img src="img/teste1.webp" class="imagem2">
+        </div>
+        <div class="texto2">
+            <p>"Lorem ipsum dolor sit amet, consectetur adipiscing elit, <br>
+                sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. <br>
+                Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris <br>
+                nisi ut aliquip ex ea commodo consequat. <br>
+                Duis aute irure dolor in reprehenderit in voluptate velit esse cillum <br>
+                dolore eu fugiat nulla pariatur.<br>
+                Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia <br>
+                deserunt mollit anim id est
+                laborum."</p>
+        </div>
+    </section>
+
+    <!--imgtxt3-->
+    <section class="imgtxt3">
+        <div>
+            <p class="texto3">"Lorem ipsum dolor sit amet, consectetur adipiscing elit, <br>
+                sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. <br>
+                Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris <br>
+                nisi ut aliquip ex ea commodo consequat. <br>
+                Duis aute irure dolor in reprehenderit in voluptate velit esse cillum <br>
+                dolore eu fugiat nulla pariatur.<br>
+                Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia <br>
+                deserunt mollit anim id est
+                laborum."</p>
+        </div>
+        <div>
+            <img src="img/teste1.webp" class="imagem3">
+        </div>
+    </section>
+
+    <!--imgtxt4-->
+    <section class="imgtxt4">
+        </div>
+        <div>
+            <img src="img/teste1.webp" class="imagem4">
+        </div>
+        <div>
+            <p class="texto4">"Lorem ipsum dolor sit amet, consectetur adipiscing elit, <br>
+                sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. <br>
+                Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris <br>
+                nisi ut aliquip ex ea commodo consequat. <br>
+                Duis aute irure dolor in reprehenderit in voluptate velit esse cillum <br>
+                dolore eu fugiat nulla pariatur.<br>
+                Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia <br>
+                deserunt mollit anim id est
+                laborum."</p>
+
+    </section>
+
+
+    <!--Carrocel de imagens-->
+    <h2>Algumas Novidades </h2>
+
+    <div class="scroll-container" id="scrollContainer">
+        <img src="img/teste1.webp" alt="Imagem 1">
+        <img src="img/teste1.webp" alt="Imagem 2">
+        <img src="img/teste1.webp" alt="Imagem 3">
+        <img src="img/teste1.webp" alt="Imagem 4">
+        <img src="img/teste1.webp" alt="Imagem 5">
+        <img src="img/teste1.webp" alt="Imagem 6">
+        <img src="img/teste1.webp" alt="Imagem 7">
+        <img src="img/teste1.webp" alt="Imagem 8">
+    </div>
+    <br>
+    <br>
+
+
+    <script src="script.js"></script>
+
+
+    <footer> &copy; 2024 Matirin. Todos os direitos reservados.
+        <div>
+            <div class="icons">
+            </div>
+        </div>
+    
+    </footer>
+    </div>
 </body>
 
 </html>
