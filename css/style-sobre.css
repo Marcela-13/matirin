@@ -57,13 +57,13 @@ footer {
     padding: 10px 0;
     text-align: center;
     width: 100%;
-    position: absolute;
+    position: relative;
     bottom: 0;
 }
 
-.flex-direction {
+main {
+    display: flex;
     justify-content: space-around;
-    flex-direction: column;
 
 }
 
@@ -74,7 +74,6 @@ footer {
     display: flex;
     flex-direction: column;
     align-items: center;
-    justify-content: flex-start;
     text-align: center;
     border: 1px solid black;
     border-radius: 5px;
@@ -87,7 +86,6 @@ footer {
     display: flex;
     flex-direction: column;
     align-items: center;
-    justify-content: center;
     text-align: center;
     border: 1px solid black;
     border-radius: 5px;
@@ -101,23 +99,64 @@ footer {
     display: flex;
     flex-direction: column;
     align-items: center;
-    justify-content: center;
     text-align: center;
     border: 1px solid black;
     border-radius: 5px;
 }
 
+/*Estilização à arrumar para torná-lo esteticamente agradável*/
 .sobre {
     display: flex;
     flex-direction: column;
     align-items: center;
-    justify-content: center;
     text-align: center;
     border: 1px solid black;
     border-radius: 5px;
-    position: fixed;
+    justify-content: space-around;
     width: 320px;
     height: 225px;
-    right: 5px;
-    top: 225px;
+    
 }
+
+.fotos {
+    display: flex;
+    justify-content: space-around;
+    width: auto;
+    height: 110px;
+}
+
+#foto1 {
+    border: 1px solid black;
+    border-radius: 5px;
+}
+
+#foto2 {
+    border: 1px solid black;
+    border-radius: 5px;
+}
+
+#foto3 {
+    border: 1px solid black;
+    border-radius: 5px;
+}
+
+#foto4 {
+    border: 1px solid black;
+    border-radius: 5px;
+}
+
+#foto5 {
+    border: 1px solid black;
+    border-radius: 5px;
+}
+
+#foto1:hover,
+#foto2:hover,
+#foto3:hover,
+#foto4:hover,
+#foto5:hover {
+
+    opacity: 0.5;
+    transition: 1S;
+}
+
