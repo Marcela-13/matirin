@@ -22,7 +22,7 @@ header{
 }
 
 .nav ul li {
-   background-color: #7ee6d8;
+   background-color: #86beda;
     margin: 0 50px;
     padding: 5px;
     height: 14px;
@@ -62,7 +62,8 @@ footer {
     display: flex;
     justify-content: space-around;
     align-items: center;
-    background-color: #5a5a5a;
+    width: 100%;
+    background-color: #86beda;
     padding: 10px 0;
     text-align: center;
     width: 100%;
