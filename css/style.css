@@ -13,7 +13,18 @@ header {
     height: 100px;
     width: 100%;
     gap: 10%;
+    align-items: center;
 }
+
+/*nome*/
+
+header .nome {
+    width: 50%;
+    text-align: center;
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+}
+
+
 
 /*barra de pesquisa*/
 #Busca {
@@ -76,15 +87,23 @@ header {
 
 }
 
-/*teste video*/
+/*teste video
 .background-video {
-    position: absolute;
-    transform: translate(-50%, -50%)
+        position: absolute;
+        top: 50%;
+        left: 50%;
+        min-width: 100%;
+        min-height: 100%;
+        width: auto;
+        height: auto;
+        z-index: -1; /* Coloca o vídeo atrás do conteúdo 
+        transform: translate(-50%, -50%);
+        object-fit: cover; /* Cobre toda a área 
 }
-
 .content {
     z-index: -1;
-}
+}*/
+
 
 
 /*imagens centrais*/
@@ -98,6 +117,7 @@ header {
 .imagem1 {
     border-radius: 70px;
     height: 390px;
+    
 }
 
 .texto1 p {
@@ -115,6 +135,7 @@ header {
 .imagem2 {
     border-radius: 70px;
     height: 390px;
+   
 }
 
 .texto2 p {
@@ -190,4 +211,9 @@ footer {
     width: 100%;
     position: relative;
     bottom: 0;
+}
+
+/*Icones*/
+#div .icons {
+    height: 10px;
 }
