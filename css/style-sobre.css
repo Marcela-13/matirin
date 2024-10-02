@@ -61,92 +61,115 @@ footer {
     bottom: 0;
 }
 
+body {
+    background-color: #d2e8f3;
+    font-family: Georgia, 'Times New Roman', Times, serif;
+    font-size: medium;
+}
+
+h1,
+h2,
+h3,
+h4 {
+    text-align: center;
+    font-size: larger;
+}
+
+h4 {
+    margin: 5px;
+}
+
+p {
+    text-align: center;
+    font-size: 100%;
+}
+
 main {
     display: flex;
     justify-content: space-around;
 
 }
 
-.missao {
+.missao,
+.valores {
+    background-color: #7ee6d8;
+    color: black;
     padding: 20px;
     margin: 20px;
     width: 300px;
     display: flex;
     flex-direction: column;
-    align-items: center;
-    text-align: center;
-    border: 1px solid black;
+    border: 1px solid rgba(0, 0, 0, 0);
     border-radius: 5px;
 }
 
 .visao {
+    background-color: #86beda;
+    color: black;
     padding: 20px;
     margin: 20px;
     width: 300px;
     display: flex;
     flex-direction: column;
-    align-items: center;
-    text-align: center;
-    border: 1px solid black;
+    border: 1px solid rgba(0, 0, 0, 0);
     border-radius: 5px;
 
 }
-
-.valores {
-    padding: 20px;
+.visão img{
     margin: 20px;
-    width: 300px;
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    text-align: center;
-    border: 1px solid black;
-    border-radius: 5px;
 }
-
-/*Estilização à arrumar para torná-lo esteticamente agradável*/
 .sobre {
+  
     display: flex;
-    flex-direction: column;
-    align-items: center;
-    text-align: center;
-    border: 1px solid black;
+    flex-direction: column ;
+    border: 1px solid rgba(0, 0, 0, 0);
     border-radius: 5px;
     justify-content: space-around;
-    width: 320px;
-    height: 225px;
+    align-items: center;
+   
     
 }
-
+.sobre h1{
+    font-size:50px ;
+}
+.sobre-text{
+    background-color: #b9e0f3;
+    border: 1px solid rgba(0, 0, 0, 0);
+    border-radius: 5px;
+    width: 60%;
+    height: 60%;
+    padding: 5%;
+   
+}
+.sobre-text p{
+    text-align: justify;
+}
 .fotos {
     display: flex;
     justify-content: space-around;
-    width: auto;
-    height: 110px;
 }
 
-#foto1 {
-    border: 1px solid black;
-    border-radius: 5px;
+.card-foto {
+    width: 20%;
+    height: auto;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
 }
 
-#foto2 {
-    border: 1px solid black;
-    border-radius: 5px;
+.card-foto img {
+    width: 70%;
+    margin-bottom: 5%;
+
 }
 
-#foto3 {
-    border: 1px solid black;
-    border-radius: 5px;
-}
-
-#foto4 {
-    border: 1px solid black;
-    border-radius: 5px;
-}
-
+#foto1,
+#foto2,
+#foto3,
+#foto4,
 #foto5 {
-    border: 1px solid black;
+    border: 1px solid rgba(0, 0, 0, 0);
     border-radius: 5px;
 }
 
@@ -155,8 +178,22 @@ main {
 #foto3:hover,
 #foto4:hover,
 #foto5:hover {
+    box-shadow: 2px 2px 2px #889399;
+    border-bottom: #889399;
 
-    opacity: 0.5;
-    transition: 1S;
 }
 
+.foto,
+p {
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+}
+
+
+
+.valores:hover,
+.missao:hover {
+    background-color: #108172c7;
+    color: white;
+}
