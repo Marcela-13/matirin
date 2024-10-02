@@ -1,76 +1,21 @@
-*{
-    margin: 0;
-    padding: 0;
-}
-header{
-     background-color: #86beda;
-     display: flex;
-    grid-template-columns: 30fr 10fr; 
-    color: rgb(0, 0, 0);
-    height: 90px;
-    width: 100%;
-}
 
-.nav ul {
-    display: flex;
-    list-style: none;
-    margin-top: 20; 
-    background-color: #aeeec3;
-    height: 35px;
-    display: flex;
-    justify-content: center;
-}
-
-.nav ul li {
-   background-color: #7ee6d8;
-    margin: 0 50px;
-    padding: 5px;
-    height: 14px;
-    margin-top: 5px;
-    border-radius: 9px;
-}
-
-.nav ul li a {
-    text-decoration: none;
-    color: #333;
-    font-weight: bold;
-}
-.nav ul li a:hover {
-    background-color: #8af1f1;
-    transition: 2s;
-    margin-top: 5px;
-    border-radius: 9px;
-    margin: 0 50px;
-    padding: 5px;
-    height: 14px;
-}
-.logo {
-    font-size: 1.5em;
-    font-weight: bold;
-    display: flex;
-    align-items: center;
-    justify-content: left;
-}
-.logo img {
-    width: 10%;
-    height: auto;
-    margin-right: 50px;
-}
 aside{
-    background-color: rgb(248, 252, 255);
+    background-color: rgb(238, 241, 243);
     position:fixed; 
-    width:10%;
-    height:65%;
+    width:12%;
+    height:50%;
     margin-top:5%;
-    border-radius:10% ;
-    margin-left: 20px;
+    border-radius:5% ;
+    padding: 5%;
+   
+    
 }
 aside ul li { 
 list-style-type: none;
 }
 main{
     
-    background-color: rgb(243, 242, 242);
+    background-color: rgb(255, 249, 249);
     display: flex;
     flex-direction: column;
     justify-content: center;
@@ -79,9 +24,10 @@ main{
 }
 
 .tela{
-    background-color: rgb(220, 231, 231);
+    background-color: rgb(227, 243, 243);
     width: 20%;
     height: 45%;
+    border-radius: 5%;
 }
 
 form{
@@ -93,23 +39,22 @@ form{
 textarea{
     width: 100%;
     height: 100%;
-    border: 2px solid rgb(191, 218, 243); /* Borda de 2 pixels, sólida e azul */
+    border: 2px solid rgb(184, 205, 224); /* Borda de 2 pixels, sólida e azul */
     border-radius: 10px;     /* Bordas arredondadas */
-    padding: 10px;          /* Espaçamento interno */
-    width: 300px;           /* Largura do campo */
     margin: 10px 0;        /* Margem superior e inferior */
 }
-
 .btn-tradutor{
- width: 20%;  
- height: 30%; 
+ width: 30%;  
+
+ text-align: center;
+ cursor: pointer;
  border: 4px solid rgb(191, 218, 243); /* Borda de 4 pixels, sólida e azul */
  border-radius: 10px;     /* Bordas arredondadas */
- padding: 15px;          /* Espaçamento interno */
- width: 300px;           /* Largura do campo */
- margin: 10px 0;        /* Margem superior e inferior */
+ color: rgb(6, 31, 54)
 }
-
+.btn-tradutor:hover{ 
+    background-color: #c1fcc9;
+}
 
 
 
@@ -123,4 +68,4 @@ footer {
     width: 100%;
     position: relative;
     bottom: 0;
-}
+} 
