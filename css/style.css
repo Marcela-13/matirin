@@ -1,3 +1,4 @@
+
 * {
     margin: 0;
     padding: 0;
@@ -23,9 +24,6 @@ header .nome {
     text-align: center;
     font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
 }
-
-
-
 /*barra de pesquisa*/
 #Busca {
     margin-top: 40px;
@@ -62,7 +60,6 @@ header .nome {
     color: #333;
     font-weight: bold;
 }
-
 .nav ul li a:hover {
     background-color: #8af1f1;
     transition: 2s;
@@ -72,7 +69,6 @@ header .nome {
     padding: 5px;
     height: 14px;
 }
-
 /*logo*/
 .logo {
     width: 5%;
@@ -206,13 +202,13 @@ footer {
     justify-content: space-around;
     align-items: center;
     background-color: #5a5a5a;
+    width: 100%;
     padding: 10px 0;
     text-align: center;
     width: 100%;
     position: relative;
     bottom: 0;
 }
-
 /*Icones*/
 #div .icons {
     height: 10px;
