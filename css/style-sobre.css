@@ -69,15 +69,11 @@ body {
 
 h1,
 h2,
-h3,
-h4 {
+h3 {
     text-align: center;
     font-size: larger;
 }
 
-h4 {
-    margin: 5px;
-}
 
 p {
     text-align: center;
@@ -94,9 +90,10 @@ main {
 .valores {
     background-color: #7ee6d8;
     color: black;
-    padding: 20px;
-    margin: 20px;
-    width: 300px;
+    padding: 5%;
+    margin: 10%;
+    ;
+    width: 100%;
     display: flex;
     flex-direction: column;
     border: 1px solid rgba(0, 0, 0, 0);
@@ -106,44 +103,79 @@ main {
 .visao {
     background-color: #86beda;
     color: black;
-    padding: 20px;
-    margin: 20px;
-    width: 300px;
+    padding: 5%;
+    margin: 10%;
+    width: 100%;
     display: flex;
     flex-direction: column;
     border: 1px solid rgba(0, 0, 0, 0);
     border-radius: 5px;
 
 }
-.visão img{
-    margin: 20px;
+
+
+.valores:hover,
+.missao:hover {
+    background-color: #108172c7;
+    color: white;
+
 }
+
+.visao:hover {
+    background-color: #1680b6ab;
+    color: white;
+}
+
+#coracao {
+    width: 25%;
+    height: auto;
+}
+
+#foguete {
+    width: 25%;
+    height: auto;
+}
+
+#olho {
+    width: 12%;
+    height: 12%;
+}
+
 .sobre {
-  
+
     display: flex;
-    flex-direction: column ;
+    flex-direction: column;
     border: 1px solid rgba(0, 0, 0, 0);
     border-radius: 5px;
     justify-content: space-around;
     align-items: center;
-   
-    
+
+
 }
-.sobre h1{
-    font-size:50px ;
+
+.sobre h1 {
+    font-size: 50px;
 }
-.sobre-text{
+
+.sobre-text {
     background-color: #b9e0f3;
     border: 1px solid rgba(0, 0, 0, 0);
     border-radius: 5px;
     width: 60%;
     height: 60%;
     padding: 5%;
-   
+
 }
-.sobre-text p{
+
+.sobre-text p {
     text-align: justify;
 }
+
+.sobre-text:hover {
+    background-color: #86beda;
+    color: rgba(255, 255, 255, 0.712);
+}
+
 .fotos {
     display: flex;
     justify-content: space-around;
@@ -188,12 +220,4 @@ p {
     display: flex;
     justify-content: center;
     flex-direction: column;
-}
-
-
-
-.valores:hover,
-.missao:hover {
-    background-color: #108172c7;
-    color: white;
 }
