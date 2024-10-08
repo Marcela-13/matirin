@@ -22,7 +22,7 @@ header {
 header .nome {
     width: 50%;
     text-align: center;
-    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+    font-family: sans-serif;
 }
 /*barra de pesquisa*/
 #Busca {
@@ -71,7 +71,7 @@ header .nome {
 }
 /*logo*/
 .logo {
-    width: 5%;
+    width: 8%;
     display: flex;
     justify-content: center;
     align-items: center;
@@ -83,7 +83,11 @@ header .nome {
 
 }
 
-/*teste video
+body {
+    background-image: url("../img/teste\ v.gif");
+}
+
+/*teste video*/
 .background-video {
         position: absolute;
         top: 50%;
@@ -92,13 +96,14 @@ header .nome {
         min-height: 100%;
         width: auto;
         height: auto;
-        z-index: -1; /* Coloca o vídeo atrás do conteúdo 
+        z-index: -1; /* Coloca o vídeo atrás do conteúdo */
         transform: translate(-50%, -50%);
-        object-fit: cover; /* Cobre toda a área 
+        object-fit: cover; /* Cobre toda a área */
 }
 .content {
     z-index: -1;
-}*/
+}
+
 
 
 
@@ -210,6 +215,15 @@ footer {
     bottom: 0;
 }
 /*Icones*/
-#div .icons {
-    height: 10px;
+.icons img {
+    width: 20px; /* Define a largura do ícone */
+    height: 20px; /* Mantém a proporção */
+    margin: 0 10px; /* Espaçamento entre os ícones */
+}
+.icons img:hover {
+    transform: scale(1.2); /* Aumenta o ícone ao passar o mouse */
+}
+
+@media (max-widht: 600px){
+   
 }
