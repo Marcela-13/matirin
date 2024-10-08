@@ -61,6 +61,7 @@ footer {
     bottom: 0;
 }
 
+/* Estilização dos elementos*/
 body {
     background-color: #d2e8f3;
     font-family: Georgia, 'Times New Roman', Times, serif;
@@ -86,13 +87,13 @@ main {
 
 }
 
+/*Estilização dos cards*/
 .missao,
 .valores {
     background-color: #7ee6d8;
     color: black;
     padding: 5%;
     margin: 10%;
-    ;
     width: 100%;
     display: flex;
     flex-direction: column;
@@ -126,37 +127,40 @@ main {
     color: white;
 }
 
-#coracao {
-    width: 25%;
+.missao img {
+    width: 20%;
     height: auto;
 }
 
-#foguete {
-    width: 25%;
+.visao img {
+    width: 20%;
     height: auto;
 }
 
-#olho {
-    width: 12%;
-    height: 12%;
+
+.valores img {
+    width: 20%;
+    height: auto;
 }
+
+/* Estilização da Seção sobre*/
 
 .sobre {
-
     display: flex;
     flex-direction: column;
     border: 1px solid rgba(0, 0, 0, 0);
     border-radius: 5px;
     justify-content: space-around;
     align-items: center;
-
-
 }
+
+/* Estilizando a seção sobre por completo */
 
 .sobre h1 {
     font-size: 50px;
 }
 
+/* Estlizando a classe específica do quadro sobre */
 .sobre-text {
     background-color: #b9e0f3;
     border: 1px solid rgba(0, 0, 0, 0);
@@ -164,18 +168,20 @@ main {
     width: 60%;
     height: 60%;
     padding: 5%;
-
 }
 
 .sobre-text p {
     text-align: justify;
+    /* Justificando o texto */
 }
 
 .sobre-text:hover {
     background-color: #86beda;
     color: rgba(255, 255, 255, 0.712);
+    /* Hover no quadro Sobre */
 }
 
+/* Estilização das fotos e texto das integrantes*/
 .fotos {
     display: flex;
     justify-content: space-around;
@@ -196,23 +202,14 @@ main {
 
 }
 
-#foto1,
-#foto2,
-#foto3,
-#foto4,
-#foto5 {
+.fotos img {
     border: 1px solid rgba(0, 0, 0, 0);
     border-radius: 5px;
 }
 
-#foto1:hover,
-#foto2:hover,
-#foto3:hover,
-#foto4:hover,
-#foto5:hover {
+.fotos img:hover {
     box-shadow: 2px 2px 2px #889399;
     border-bottom: #889399;
-
 }
 
 .foto,
@@ -220,4 +217,43 @@ p {
     display: flex;
     justify-content: center;
     flex-direction: column;
+}
+
+/* Responsividade para telas menores (celular) */
+@media (max-width:780px) {
+
+    .missao,
+    .visao,
+    .valores {
+        width: 200%;
+        height: auto;
+    }
+
+    .sobre-text {
+        background-color: #b9e0f3;
+        border: 1px solid rgba(0, 0, 0, 0);
+        border-radius: 5px;
+        width: 80%;
+        height: 70%;
+        padding: 5%;
+    }
+
+    .sobre {
+        display: flex;
+        flex-direction: row;
+        padding: 2%;
+    }
+
+    .sobre h1 {
+        
+        font-size: 30px;
+
+    }
+
+    .fotos {
+        width: 200%;
+        height: auto;
+        display: flex;
+        flex-direction: column;
+    }
 }
