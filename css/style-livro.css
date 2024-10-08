@@ -95,7 +95,7 @@ footer {
     padding: 10px 0;
     text-align: center;
     width: 100%;
-    position: absolute;
+    position: relative;
     bottom: 0;
     
 }
@@ -106,13 +106,13 @@ footer {
     overflow: hidden;
     text-align: center;
     padding: 10px;
-    height: 20vh;
+    height: 10vh;
 }
 
 .grid-item img {
     background-color: #000000;
-    width: 50%;
-    height: 80%;
+    width: 20%;
+    height: 20%;
     border-radius: 50%;
 }
 
@@ -121,31 +121,77 @@ footer {
     color: rgb(0, 0, 0);
 }
 
-.grid-galeria {
+.grid-livraria {
     display: grid;
-    grid-template-columns: repeat(3, 1fr); /* 3 colunas com largura igual */
+    grid-template-columns: repeat(4, 1fr); /* 4 colunas com largura igual */
     grid-template-rows: auto; /* Altura automática para as linhas */
-    gap: 20px; /* Espaçamento entre os itens do grid */
-    padding: 20px;
+    gap: 50px; /* Espaçamento entre os itens do grid */
+    padding: 50px;
 }
-.grid-galeria .grid-item {
-    border-radius: 8px;
-    overflow: hidden;
+.grid-livraria .grid-item {
+    border-radius: 3px;
     text-align: center;
-    padding: 10px;
+    padding: 5px;
     height: 30vh;
 }
 
-.grid-galeria img {
-    width: 100%;
-    height: 100%;
-    object-fit: cover;
-    border-radius: 8px;
+.grid-livraria img {
+    width: 70%;
+    height: 70%;
+    border-radius: 9px;
     border-bottom: none;
+    /*teste do texto que aparece na imagem*/
+    opacity: 1;
+  display: block;
+  transition: .5s ease;
+  backface-visibility: hidden;
+    
 }
 
-.grid-galeria .grid-item:hover{
+.grid-livraria .grid-item:hover{
     transform: scale(1.1);
     transition: 0.5s;
 }
 
+/*texto que aparece na imagem*/
+.container {
+    position: relative;
+    width: 50%;
+  }
+  
+.middle {
+    transition: .5s ease;
+    opacity: 0;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    -ms-transform: translate(-50%, -50%);
+    text-align: center;
+  }
+  
+  .container:hover .image {
+    opacity: 0.3;
+  }
+  
+  .container:hover .middle {
+    opacity: 1;
+  }
+  
+  .text {
+    background-color: #04AA6D;
+    color: white;
+    font-size: 16px;
+    padding: 16px 32px;
+    display: flex;
+  }
+/*texto que some*/
+
+  .hide {
+    display: none;
+  }
+  
+  .myDIV:hover + .hide {
+    display: block;
+    color: rgb(0, 0, 0);
+  }
