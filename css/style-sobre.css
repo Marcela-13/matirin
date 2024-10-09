@@ -99,6 +99,7 @@ main {
     flex-direction: column;
     border: 1px solid rgba(0, 0, 0, 0);
     border-radius: 5px;
+
 }
 
 .visao {
@@ -158,6 +159,7 @@ main {
 
 .sobre h1 {
     font-size: 50px;
+
 }
 
 /* Estlizando a classe específica do quadro sobre */
@@ -220,40 +222,42 @@ p {
 }
 
 /* Responsividade para telas menores (celular) */
-@media (max-width:780px) {
-
+@media (max-width: 480px) {
+    main{
+        flex-direction: column-reverse;
+      
+    }
     .missao,
     .visao,
     .valores {
-        width: 200%;
+        justify-content: center;
+        margin: auto;
+        width: 90%;
         height: auto;
+        margin-top: 2%;
     }
 
     .sobre-text {
         background-color: #b9e0f3;
         border: 1px solid rgba(0, 0, 0, 0);
         border-radius: 5px;
-        width: 80%;
-        height: 70%;
-        padding: 5%;
+        width: 100%;
+        height: auto;
     }
 
     .sobre {
-        display: flex;
-        flex-direction: row;
         padding: 2%;
     }
 
     .sobre h1 {
-        
         font-size: 30px;
-
+        margin-bottom: 5%;
     }
 
-    .fotos {
+    .fotos  {
         width: 200%;
         height: auto;
-        display: flex;
         flex-direction: column;
+      
     }
 }
