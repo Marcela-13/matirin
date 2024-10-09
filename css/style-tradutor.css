@@ -19,20 +19,20 @@ aside ul li {
 }
 
 main {
-
     background-color: rgb(255, 249, 249);
     display: flex;
     flex-direction: column;
     justify-content: center;
     align-items: center;
     height: 90vh;
+    width: 100%;
 }
 
 .tela {
     background-color: rgb(227, 243, 243);
-    width: 20%;
-    height: 45%;
     border-radius: 5%;
+    width: 30%;
+    height: 50%;
 }
 
 form {
@@ -40,11 +40,16 @@ form {
     height: 12%;
 }
 
+#label-tradução {
+    scroll-margin-top: 30px;
+ font-size: 15px; 
+color: #645b62;
+}
 
 textarea {
     width: 100%;
     height: 100%;
-    border: 2px solid rgb(184, 205, 224);
+    border : 2px solid rgb(184, 205, 224);
     /* Borda de 2 pixels, sólida e azul */
     border-radius: 10px;
     /* Bordas arredondadas */
@@ -58,6 +63,7 @@ textarea {
     text-align: center;
     cursor: pointer;
     border: 4px solid rgb(191, 218, 243);
+    border-bottom: rgb(191, 218, 243);
     /* Borda de 4 pixels, sólida e azul */
     border-radius: 10px;
     /* Bordas arredondadas */
@@ -145,13 +151,20 @@ footer {
 
     .btn-tradutor {
         width: 100%;
-
+        border-bottom: #86beda;
     }
 
-    textarea {
+    .tela {
+        padding: 50px;
+        width: 50%;
+    }
+
+    label {
+        margin-top: 200px;
+    }
+
+    form {
         width: 200px;
-        height: 100px ;
-        justify-content: center;
 
     }
 }
