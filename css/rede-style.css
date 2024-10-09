@@ -1,75 +1,120 @@
-
-
-form {
-    background-color: #ffffff;
-    padding: 70px;
-    height: 275px;
-    border-radius: 8px;
-    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
-    width: 27%;
-    margin: 0 auto;
-   
+/*Corpo da página*/
+body{
+    background-color: #bbeaff;
 }
-#containner .sidebar{
+.main {
     display: flex;
-    position: fixed;
+    justify-content: space-around;
+    margin-top: 5%;
+background-color: #bbeaff;
+}
 
-}
-.sidebar {
-    background-color: #ffffff;
-    display: flex;
-    padding: 100px;
- 
-    height: 300px;
-    border-radius: 8px;
-    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
-    width: 9%;
-    margin: 0 auto;
-    position: fixed;
-}
-.titulo{
-    padding: 20px;
-    height: 100px;
+/*Área de criar Fórum*/
+.content{
     width: 30%;
-    border: 1px solid #ccc;
-    border-radius: 4px;
+
 }
-
-
-.button1{
-    background: #00aeff;
+.form {
+    background-color: #ffffff;
+    width: 50%;
+    height: 60%;
+    padding: 5%;
+    display: flex;
+    flex-direction: column;
     border-radius: 8px;
-   
-    border: none
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    margin: 6%;
 
 }
-button{
-    background: #15ff00;
+.div-btn{
+margin: 3%;
+}
+.button1 {
+    background: #00a3ee;
+    padding: 4px 8px;
+   
     border-radius: 8px;
     cursor: pointer;
-    padding: 4px 8px;
     border: none
+   
 }
+#phone{
+    margin: 15%;
+    height: 7%;
+    width: 98%;
+    position: relative;
+    right: 15%;
+}
+.button2 {
+    background: #13e200;
+    padding: 4px 8px;
+    border-radius: 8px;
+    margin: 2%;
+    cursor: pointer;
+    border: none
+
+}
+.material-symbols-outlined{
+    position: relative;
+    position: relative;
+    left: 56%;
+}
+.material-symbols-outlined{
+    position: relative;
+    left: 3%;
+    color: #ffffff;
+}
+
+/*Área de comentários*/
+.feed{
+    width: 52%;
+
+}
+#w3review{
+    height: 90%;
+}
+/*Comentários*/
 .comment {
     background-color: white;
     border-radius: 8px;
     box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
-    padding:15px ;
-    margin: 10px 0;
+    padding: 15px;
+    margin: 20px;
+    
+    height: 150px;
+    width: 100%;
+    
+
 }
 
 .comment-header {
     display: flex;
     justify-content: space-between;
-    margin-bottom: 10px;
+    width: 600px;
+    height: 50px;
+   
 }
-
+/*Data*/
 .comment-date {
     font-size: 0.9em;
     color: #666;
+    position: relative;
+    left: 40%;
 }
 
 .comment-body {
     font-size: 1em;
     line-height: 1.5;
+    margin: 1%;
+
+}
+.material-icons{
+    color: #666;
+    position: relative;
+    left: 90%;
+ 
+}
+/*Rodapé*/
+footer{
+    position: fixed;
 }
