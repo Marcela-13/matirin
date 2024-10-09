@@ -17,22 +17,50 @@ header {
     align-items: center;
 }
 
-/*nome*/
+/*body*/
 
+body{
+    background-color: rgb(197,241,214);
+    background: linear-gradient(0deg, rgba(197,241,214,1) 0%, rgba(208,229,241,1) 100%);
+}
+
+/*nome*/
 header .nome {
     width: 50%;
     text-align: center;
     font-family: sans-serif;
+    font-size: 2em;
+    color: #0f4966
 }
+
 /*barra de pesquisa*/
 #Busca {
     margin-top: 40px;
+    display: flex;
+    align-items: center;
 }
-
 #Busca input {
     border-radius: 10px;
     border: none;
     padding: 8px;
+    margin-right: 0px;
+}
+#btnBusca{
+    height: 30px;
+    margin-right: 5px;
+}
+button{
+    border: none;
+    border-radius: 10px;
+    width: 70px;
+    height: 20px;
+    background-color: #aeeec3;
+    opacity: 50%; 
+    transition: 0.3s;
+    cursor: pointer;
+}
+button:hover{
+  background-color: #0f4966;
 }
 
 /*Navegação*/
@@ -83,12 +111,18 @@ header .nome {
 
 }
 
-body {
-    background-image: url("../img/teste\ v.gif");
-}
-
 /*teste video*/
-.background-video {
+.container { 
+    background-image: url("../img/teste\ v.gif");
+    background-repeat: no-repeat;
+    background-size: cover;
+    display: grid;
+    grid-template-columns: repeat(1, 1fr); /* 3 colunas de tamanho igual */
+    gap: 100%; /* Espaçamento entre colunas */
+    background-color: aquamarine;
+    height: 600px;
+}
+.video-background {
         position: absolute;
         top: 50%;
         left: 50%;
@@ -103,27 +137,30 @@ body {
 .content {
     z-index: -1;
 }
-
-
-
+.nome-video{
+ text-align: center;
+ font-size: 1.5em;
+ color:white;
+margin-top:570px;
+}
 
 /*imagens centrais*/
+
 .imgtxt1 {
     margin-top: 5%;
     display: flex;
     justify-content: space-around;
     align-items: center;
 }
-
 .imagem1 {
     border-radius: 70px;
     height: 390px;
-    
-}
 
+}
 .texto1 p {
     text-align: left;
     margin-left: 15%;
+    max-width: 1000px;
 }
 
 .imgtxt2 {
@@ -132,16 +169,14 @@ body {
     justify-content: space-around;
     align-items: center;
 }
-
 .imagem2 {
     border-radius: 70px;
     height: 390px;
-   
 }
-
 .texto2 p {
     text-align: right;
-    margin-left: 15%;
+    margin-right: 15%;
+    max-width: 1000px;
 }
 
 .imgtxt3 {
@@ -150,15 +185,14 @@ body {
     justify-content: space-around;
     align-items: center;
 }
-
 .imagem3 {
     border-radius: 70px;
     height: 390px;
 }
-
 .texto3 {
     text-align: left;
     margin-left: 15%;
+    max-width: 1000px;
 }
 
 .imgtxt4 {
@@ -167,15 +201,14 @@ body {
     justify-content: space-around;
     align-items: center;
 }
-
 .imagem4 {
     border-radius: 70px;
     height: 390px;
 }
-
 .texto4 {
     text-align: right;
     margin-right: 15%;
+    max-width: 1000px;
 }
 
 /*Carrocel de imagens*/
