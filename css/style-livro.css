@@ -56,6 +56,7 @@ header {
 
 h1 {
   position: sticky;
+  
 }
 
 body {
@@ -90,20 +91,8 @@ body {
 }
 
 
-footer {
-  display: flex;
-  justify-content: space-around;
-  align-items: center;
-  background-color: #86beda;
-  padding: 10px 0;
-  text-align: center;
-  width: 100%;
-  position: relative;
-  bottom: 0;
 
-}
 
-///
 .grid-item {
   border-radius: 8px;
   overflow: hidden;
@@ -164,20 +153,25 @@ footer {
 .container {
   position: relative;
   width: 50%;
- 
+
 }
 
+.container img{
+  height: 300px;
+}
 .middle {
   display: flex;
   justify-content: right;
   position: absolute;
   top: 0;
   z-index: -1;
-  background-color: #0afabe;
+  background: linear-gradient(#71dbd2,  #ade4b5, #d0eaa3);
   width: 100%;
   height: 100%; 
   transition: width 2s;
   padding: 5%;
+  border: 1px solid black;
+  height: 300px;
 }
 
 .middle p{
@@ -199,7 +193,7 @@ footer {
 }
 
 .text {
-  background-color: #68f597;
+  background-color: #00ff55;
   color: white;
   font-size: 18px;
   padding: 10px 20px;
@@ -209,3 +203,33 @@ footer {
   width: 100px;
 }
 
+footer {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  background-color: #86beda;
+  padding: 10px 0;
+  text-align: center;
+  width: 100%;
+  position: relative;
+  bottom: 0;
+
+}
+
+@media (max-width: 480px){
+ .texto-informaçao {
+  height: 70%;
+  width: 90%;
+  transition: 0.5s;
+  overflow: hidden;
+  border-style: solid;
+  border-color: #0ed5f8;
+
+  
+  
+  
+ 
+   
+  }
+
+ }
