@@ -6,7 +6,7 @@ body{
     display: flex;
     justify-content: space-around;
     margin-top: 5%;
-background-color: #bbeaff;
+background:linear-gradient( #bbeaff,#7ecf8f)  ;
 }
 
 /*Área de criar Fórum*/
@@ -99,7 +99,7 @@ margin: 3%;
     font-size: 0.9em;
     color: #666;
     position: relative;
-    left: 40%;
+    left: 60%;
 }
 
 .comment-body {
@@ -112,9 +112,52 @@ margin: 3%;
     color: #666;
     position: relative;
     left: 90%;
- 
+    padding: 4px;
 }
 /*Rodapé*/
 footer{
     position: fixed;
+}
+/*sugestão*/
+.Suggestion{
+    background-color: white;
+    border-radius: 8px;
+    box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+    padding: 15px;
+    display: flex;
+    justify-content: space-around;
+    margin-top: 5%;
+    height: 150px;
+    width: 100%;
+
+}
+
+.suggestions{
+  height: 60%;
+  margin: 6px;
+}
+.button3{
+    background: #13e200;
+    padding: 0px 0px;
+    border-radius: 8px;
+    margin: 2%;
+    cursor: pointer;
+    border: none
+
+}
+/*Responsividade do site*/
+@media(max-width: 480px){
+
+    
+    .comment {
+   
+ 
+        padding: 15px;
+        margin: 20px;
+        
+        height: 150px;
+        width: 200%;
+   flex-direction: column;
+    
+    }
 }
