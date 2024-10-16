@@ -115,7 +115,6 @@ main {
 
 }
 
-
 .valores:hover,
 .missao:hover {
     background-color: #108172c7;
@@ -183,13 +182,14 @@ main {
     /* Hover no quadro Sobre */
 }
 
-/* Estilização das fotos e texto das integrantes*/
+/*Estilizando os cards com as fotos e texto das integrantes */
 .fotos {
     display: flex;
     justify-content: space-around;
 }
 
 .card-foto {
+    position: relative;
     width: 20%;
     height: auto;
     display: flex;
@@ -199,9 +199,10 @@ main {
 }
 
 .card-foto img {
-    width: 70%;
     margin-bottom: 5%;
-
+    display: block;
+    width: 80%;
+    height: auto;
 }
 
 .fotos img {
@@ -209,10 +210,7 @@ main {
     border-radius: 5px;
 }
 
-.fotos img:hover {
-    box-shadow: 2px 2px 2px #889399;
-    border-bottom: #889399;
-}
+
 
 .foto,
 p {
@@ -223,10 +221,10 @@ p {
 
 /* Responsividade para telas menores (celular) */
 @media (max-width: 480px) {
-    main{
+    main {
         flex-direction: column-reverse;
-      
     }
+
     .missao,
     .visao,
     .valores {
@@ -254,10 +252,45 @@ p {
         margin-bottom: 5%;
     }
 
-    .fotos  {
+    .fotos {
         width: 200%;
         height: auto;
         flex-direction: column;
-      
+
     }
+
+}
+
+
+/*teste*/
+
+.overlay {
+    position: absolute;
+    bottom: 70%;
+    left: 0;
+    right: 0;
+    background-color: #c4eaf7;
+    overflow: hidden;
+    width: 100%;
+    height: 0%;
+    transition: .5s ease;
+}
+
+.card-foto:hover .overlay {
+    bottom: 0;
+    height: 100%;
+    width: 100%;
+}
+
+.texto {
+    color: black;
+    font-size: 80%;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    -webkit-transform: translate(-50%, -50%);
+    -ms-transform: translate(-50%, -50%);
+    transform: translate(-50%, -50%);
+    white-space: nowrap;
+    text-align: justify;
 }
