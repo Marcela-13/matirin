@@ -1,9 +1,14 @@
-
 * {
     margin: 0;
     padding: 0;
     box-sizing: border-box;
     font-family: 'Lucida Sans';
+}
+
+/*body*/
+body {
+    background-color: rgb(197, 241, 214);
+    background: linear-gradient(0deg, rgba(197, 241, 214, 1) 0%, rgba(208, 229, 241, 1) 100%);
 }
 
 /*Header*/
@@ -17,13 +22,6 @@ header {
     align-items: center;
 }
 
-/*body*/
-
-body{
-    background-color: rgb(197,241,214);
-    background: linear-gradient(0deg, rgba(197,241,214,1) 0%, rgba(208,229,241,1) 100%);
-}
-
 /*nome*/
 header .nome {
     width: 50%;
@@ -33,34 +31,57 @@ header .nome {
     color: #0f4966
 }
 
+/*Cadastro*/
+header .cadastro {
+    width: 10%;
+    height: auto;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.cadastro img {
+    height: 60px;
+    background-color: #e3faea;
+    border-radius: 100px;
+}
+
+.cadastro img:hover {
+    transform: scale(1.2);
+}
+
 /*barra de pesquisa*/
 #Busca {
     margin-top: 40px;
     display: flex;
     align-items: center;
 }
+
 #Busca input {
     border-radius: 10px;
     border: none;
     padding: 8px;
     margin-right: 0px;
 }
-#btnBusca{
+
+#btnBusca {
     height: 30px;
     margin-right: 5px;
 }
-button{
+
+button {
     border: none;
     border-radius: 10px;
     width: 70px;
     height: 20px;
     background-color: #aeeec3;
-    opacity: 50%; 
+    opacity: 50%;
     transition: 0.3s;
     cursor: pointer;
 }
-button:hover{
-  background-color: #0f4966;
+
+button:hover {
+    background-color: #0f4966;
 }
 
 /*Navegação*/
@@ -88,6 +109,7 @@ button:hover{
     color: #333;
     font-weight: bold;
 }
+
 .nav ul li a:hover {
     background-color: #8af1f1;
     transition: 2s;
@@ -97,9 +119,10 @@ button:hover{
     padding: 5px;
     height: 14px;
 }
+
 /*logo*/
 .logo {
-    width: 8%;
+    width: 10%;
     display: flex;
     justify-content: center;
     align-items: center;
@@ -108,55 +131,53 @@ button:hover{
 .logo img {
     width: 80%;
     height: auto;
-
 }
 
+
 /*teste video*/
-.container { 
+.container {
+    position: relative;
+    background-color: #86beda;
+    height: 600px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.video-background {
+    position: absolute;
     background-image: url("../img/teste\ v.gif");
     background-repeat: no-repeat;
     background-size: cover;
-    display: grid;
-    grid-template-columns: repeat(1, 1fr); /* 3 colunas de tamanho igual */
-    gap: 100%; /* Espaçamento entre colunas */
-    background-color: aquamarine;
-    height: 600px;
+    height: 100%;
+    width: 100%;
+    /* Cobre toda a área */
 }
-.video-background {
-        position: absolute;
-        top: 50%;
-        left: 50%;
-        min-width: 100%;
-        min-height: 100%;
-        width: auto;
-        height: auto;
-        z-index: -1; /* Coloca o vídeo atrás do conteúdo */
-        transform: translate(-50%, -50%);
-        object-fit: cover; /* Cobre toda a área */
-}
+
 .content {
     z-index: -1;
 }
-.nome-video{
- text-align: center;
- font-size: 1.5em;
- color:white;
-margin-top:570px;
+
+.nome-video {
+    text-align: center;
+    font-size: 1.5em;
+    color: white;
+    margin-top: 570px;
 }
 
 /*imagens centrais*/
-
 .imgtxt1 {
     margin-top: 5%;
     display: flex;
     justify-content: space-around;
     align-items: center;
 }
+
 .imagem1 {
     border-radius: 70px;
     height: 390px;
-
 }
+
 .texto1 p {
     text-align: left;
     margin-left: 15%;
@@ -169,10 +190,12 @@ margin-top:570px;
     justify-content: space-around;
     align-items: center;
 }
+
 .imagem2 {
     border-radius: 70px;
     height: 390px;
 }
+
 .texto2 p {
     text-align: right;
     margin-right: 15%;
@@ -185,10 +208,12 @@ margin-top:570px;
     justify-content: space-around;
     align-items: center;
 }
+
 .imagem3 {
     border-radius: 70px;
     height: 390px;
 }
+
 .texto3 {
     text-align: left;
     margin-left: 15%;
@@ -201,10 +226,12 @@ margin-top:570px;
     justify-content: space-around;
     align-items: center;
 }
+
 .imagem4 {
     border-radius: 70px;
     height: 390px;
 }
+
 .texto4 {
     text-align: right;
     margin-right: 15%;
@@ -247,16 +274,74 @@ footer {
     position: relative;
     bottom: 0;
 }
+
 /*Icones*/
 .icons img {
-    width: 20px; /* Define a largura do ícone */
-    height: 20px; /* Mantém a proporção */
-    margin: 0 10px; /* Espaçamento entre os ícones */
-}
-.icons img:hover {
-    transform: scale(1.2); /* Aumenta o ícone ao passar o mouse */
+    width: 20px;
+    height: 20px;
+    margin: 0 10px;
 }
 
-@media (max-widht: 600px){
-   
+.icons img:hover {
+    transform: scale(1.2);
+    /* Aumenta o ícone ao passar o mouse */
+}
+
+.icons .Github {
+    width: 40px;
+    height: 20px;
+}
+
+.icons .zapzap {
+    width: 25px;
+    height: 22px;
+}
+
+@media (max-width: 480px) {
+
+    
+    header {/* header*/
+        background-color: #2a0592;
+    }
+
+    header .logo { /*logo ao lado direito/right do nome*/
+        margin-right: 10px;
+        gap: 10%;
+    }
+
+    header .cadastro{ /*tem que sumir!*/
+        display: none;
+    }
+
+    header .nome {   /*nome ao lado esquerdo/left da logo*/
+        margin-left: 20px;
+        font-size: 10px;
+    }
+
+    .nav { /*navegação do header(Menu hamburguer ao lado do nome)*/
+        margin-top: 10px;
+        display: none;
+        flex-direction: column;
+        position: absolute;
+        background: #333;
+        top: 60px;
+        right: 0;
+        width: 200px;
+    }
+    .nav .active {
+        display: flex;
+    }
+    .menu-toggle {
+        display: flex;
+    }
+
+    #Busca{ /*abaixo da logo, do nome e domenu hamburguer*/
+        width: 50%;
+    }
+
+    /*video*/
+    .video-background{
+        width: 80%;
+        height: 40%;
+    }
 }
