@@ -56,11 +56,11 @@ header {
 
 h1 {
   position: sticky;
-  
+
 }
 
 body {
-  background-color: #a8ffff;
+  background-color: hsl(180, 96%, 82%);
 }
 
 .flex-content {
@@ -73,6 +73,7 @@ body {
   height: 50vh;
 
 }
+
 
 .texto-informaçao {
   display: flex;
@@ -134,7 +135,7 @@ body {
 .grid-livraria img {
   width: 100%;
   height: 100%;
-  border-radius: 9px;
+  border-radius: 0px;
   border-bottom: none;
   /*teste do texto que aparece na imagem*/
   opacity: 1;
@@ -156,28 +157,29 @@ body {
 
 }
 
-.container img{
+.container img {
   height: 300px;
 }
+
 .middle {
   display: flex;
   justify-content: right;
   position: absolute;
   top: 0;
   z-index: -1;
-  background: linear-gradient(#71dbd2,  #ade4b5, #d0eaa3);
-  width: 100%;
-  height: 100%; 
+  background-color: #b5f0f0;
+  width: 50%;
+  height: 80%;
   transition: width 2s;
   padding: 5%;
   border: 1px solid black;
   height: 300px;
 }
 
-.middle p{
-    text-align: center;
-    width: 50%;
-    display: none;
+.middle p {
+  text-align: center;
+  width: 50%;
+  display: none;
 }
 
 .container:hover .image {
@@ -185,10 +187,10 @@ body {
 }
 
 .container:hover .middle {
-  width: 200%;
+  width: 194%;
 }
 
-.container:hover .middle p{
+.container:hover .middle p {
   display: block;
 }
 
@@ -216,20 +218,40 @@ footer {
 
 }
 
-@media (max-width: 480px){
- .texto-informaçao {
-  height: 70%;
-  width: 90%;
-  transition: 0.5s;
-  overflow: hidden;
-  border-style: solid;
-  border-color: #0ed5f8;
+@media (max-width: 480px) {
+  .texto-informaçao {
+    height: 70%;
+    width: 90%;
+    transition: 0.5s;
+    overflow: hidden;
+    border-style: solid;
+    border-color: #020202;
+    font-size: 123%;
+    
 
+
+
+  }
+  .grid-livraria {
+    grid-template-columns: 1fr ;
+  }
   
-  
-  
- 
-   
+  .grid-livraria .grid-item {
+    transform: scale(1.1);
+    transition: 0.5s;
   }
 
- }
+  .container .middle {
+    width: 194%;
+  }
+
+  .container .middle p {
+    display: block;
+  }
+
+   p{
+    font-size: 79%;
+  }
+
+
+}
