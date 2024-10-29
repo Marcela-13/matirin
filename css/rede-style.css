@@ -1,13 +1,13 @@
 /*Corpo da página*/
 body{
-    background-color: #bbeaff;
-
+   
+    background-color:linear-gradient( #bbeaff,#7ecf8f)  ;
 }
 .main {
     display: flex;
     justify-content: space-around;
     margin-top: 5%;
-background:linear-gradient( #bbeaff,#7ecf8f)  ;
+    background:linear-gradient( #bbeaff,#7ecf8f)  ; ;
 }
 
 /*Área de criar Fórum*/
@@ -26,6 +26,11 @@ background:linear-gradient( #bbeaff,#7ecf8f)  ;
     box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
     margin: 6%;
 
+}
+
+h1{
+    position: relative;
+    left: 30%;
 }
 .div-btn{
 margin: 3%;
@@ -181,10 +186,11 @@ footer{
  }
  #phone{
 
-    margin: 7%;
+    margin: 5%;
     height: 7%;
   width: 89%;
     position: relative;
+    left: 0px;
     right: 4.0%;
  }
 
@@ -201,9 +207,11 @@ footer{
     left: 100%;
 }
 #w3review1{
-   height: 95px;
+   height: 97px;
    width: 90%;
    margin: 3%;
+   position: relative;
+   left: 6.5px;
 }
 .div-btn{
     margin: 1%;
