@@ -2,18 +2,14 @@
     margin: 0;
     padding: 0;
     box-sizing: border-box;
-    font-family: 'Lucida Sans';
+ 
 }
 
-/*body*/
-body {
-    background-color: rgb(197, 241, 214);
-    background: linear-gradient(0deg, rgba(197, 241, 214, 1) 0%, rgba(208, 229, 241, 1) 100%);
-}
+
 
 /*Header*/
 header {
-    background-color: #86beda;
+    background-color: #2499c7; 
     display: flex;
     color: rgb(0, 0, 0);
     height: 100px;
@@ -26,9 +22,10 @@ header {
 header .nome {
     width: 50%;
     text-align: center;
-    font-family: sans-serif;
+    font-family: 'times';
     font-size: 2em;
-    color: #0f4966
+    color: #c8edff   
+
 }
 
 /*Cadastro*/
@@ -74,34 +71,35 @@ button {
     border-radius: 10px;
     width: 70px;
     height: 20px;
-    background-color: #aeeec3;
-    opacity: 50%;
+    background-color: #a2f1e4;
     transition: 0.3s;
     cursor: pointer;
 }
 
 button:hover {
     background-color: #0f4966;
+    color: aliceblue;
 }
 
 /*Navegação*/
 .nav ul {
+    font-family: 'monospace';
     display: flex;
     list-style: none;
     margin-top: 20;
-    background-color: #aeeec3;
-    height: 35px;
+    background-color: #63d4c5;
+    height: 36px;
     display: flex;
     justify-content: center;
 }
 
 .nav ul li {
-    background-color: #7ee6d8;
+    background-color: #b1f8e3;
     margin: 0 50px;
     padding: 5px;
     height: 25px;
     margin-top: 6px;
-    border-radius: 9px;
+    border-radius: 7px;
 }
 
 .nav ul li a {
@@ -111,18 +109,15 @@ button:hover {
 }
 
 .nav ul li a:hover {
-    background-color: #8af1f1;
     transition: 2s;
     margin-top: 5px;
-    border-radius: 9px;
+    border-radius: 7px;
     margin: 0 50px;
-    padding: 5px;
-    height: 14px;
 }
 
 /*logo*/
 .logo {
-    width: 10%;
+    width: 200px;
     display: flex;
     justify-content: center;
     align-items: center;
@@ -133,11 +128,15 @@ button:hover {
     height: auto;
 }
 
+/*body*/
+body {
+    background: rgb(220,255,233);
+background: linear-gradient(0deg, rgba(220,255,233,1) 24%, rgba(206,247,255,1) 66%);
+}
 
 /*teste video*/
 .container {
     position: relative;
-    background-color: #86beda;
     height: 600px;
     display: flex;
     justify-content: center;
@@ -245,7 +244,7 @@ h2 {
 }
 
 div.scroll-container {
-    background-color: #86beda;
+    background-color: #52bba9;
     overflow: hidden;
     white-space: nowrap;
     padding: 10px;
@@ -266,7 +265,7 @@ footer {
     display: flex;
     justify-content: space-around;
     align-items: center;
-    background-color: #5a5a5a;
+    background-color: #47a598;
     width: 100%;
     padding: 10px 0;
     text-align: center;
@@ -299,12 +298,14 @@ footer {
 
 @media (max-width: 480px) {
 
-    
+    body{
+   
+    }
     header {/* header*/
-        background-color: #2a0592;
+        background-color: #86beda;
     }
 
-    header .logo { /*logo ao lado direito/right do nome*/
+    header .logo { 
         margin-right: 10px;
         gap: 10%;
     }
@@ -313,12 +314,12 @@ footer {
         display: none;
     }
 
-    header .nome {   /*nome ao lado esquerdo/left da logo*/
+    header .nome {   
         margin-left: 20px;
         font-size: 10px;
     }
 
-    .nav { /*navegação do header(Menu hamburguer ao lado do nome)*/
+    .nav { 
         margin-top: 10px;
         display: none;
         flex-direction: column;
@@ -335,7 +336,7 @@ footer {
         display: flex;
     }
 
-    #Busca{ /*abaixo da logo, do nome e domenu hamburguer*/
+    #Busca{ 
         width: 50%;
     }
 
