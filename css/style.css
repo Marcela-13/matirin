@@ -1,65 +1,190 @@
-*{
+* {
     margin: 0;
     padding: 0;
-
-}
-header{
-     background-color: #86beda;
-     display: flex;
-    grid-template-columns: 30fr 10fr; 
-    color: rgb(0, 0, 0);
-    height: 90px;
-    width: 100%;
+    box-sizing: border-box;
 }
 
-.nav ul {
-    display: flex;
-    list-style: none;
-    margin-top: 20; 
-    background-color: #aeeec3;
-    height: 35px;
+/*body*/
+body {
+    background: rgb(220,255,233);
+background: linear-gradient(0deg, rgba(220,255,233,1) 24%, rgba(206,247,255,1) 66%);
+}
+
+/*teste video*/
+.container {
+    position: relative;
+    height: 880px;
     display: flex;
     justify-content: center;
+    align-items: center;
 }
 
-.nav ul li {
-   background-color: #86beda;
-    margin: 0 50px;
-    padding: 5px;
-    height: 14px;
-    margin-top: 5px;
-    border-radius: 9px;
+.video-background {
+    position: absolute;
+    background-image: url("../img/bom\ dia.gif");
+    background-repeat: no-repeat;
+    background-size: cover;
+    height: 100%;
+    width: 100%;
+    /* Cobre toda a área */
 }
 
-.nav ul li a {
-    text-decoration: none;
-    color: #333;
-    font-weight: bold;
-}
-.nav ul li a:hover {
-    background-color: #8af1f1;
-    transition: 2s;
-    margin-top: 5px;
-    border-radius: 9px;
-    margin: 0 50px;
-    padding: 5px;
-    height: 14px;
-}
-.grid-informaçao{
-margin: 5%;
-width: 50%;
-height: 1px;
+.content {
+    z-index: -1;
 }
 
+.nome-video {
+    text-align: center;
+    font-size: 1.5em;
+    color: white;
+    margin-top: 850px;
+}
 
-footer {
+/*imagens centrais*/
+.imgtxt1 {
+    margin-top: 5%;
     display: flex;
     justify-content: space-around;
     align-items: center;
-    background-color: #86beda;
-    padding: 10px 0;
+}
+
+.imagem1 {
+    border-radius: 70px;
+    height: 390px;
+}
+
+.texto1 p {
+    font-family: 'copperplate';
+    font-size: 140%;
+    text-align: left;
+    margin-left: 15%;
+    max-width: 1000px;
+}
+
+.imgtxt2 {
+    margin-top: 5%;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+}
+.imagem2 {
+    border-radius: 70px;
+    height: 390px;
+}
+.texto2 p {
+    font-family: 'copperplate';
+    font-size: 140%;
+    text-align: right;
+    margin-right: 15%;
+    max-width: 1000px;
+}
+
+.imgtxt3 {
+    margin-top: 5%;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+}
+.imagem3 {
+    border-radius: 70px;
+    height: 390px;
+}
+.texto3 {
+    font-family: 'copperplate';
+    font-size: 140%;
+    text-align: left;
+    margin-left: 15%;
+    max-width: 1000px;
+}
+
+.imgtxt4 {
+    margin-top: 5%;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+}
+.imagem4 {
+    border-radius: 70px;
+    height: 390px;
+}
+.texto4 {
+    font-family: 'copperplate';
+    font-size: 140%;
+    text-align: right;
+    margin-right: 15%;
+    max-width: 1000px;
+}
+
+/*Carrocel de imagens*/
+h2 {
+    margin-top: 300px;
     text-align: center;
-    width: 100%;
-    position: absolute;
-    bottom: 0;
+}
+
+div.scroll-container {
+    background-color: #52bba9;
+    overflow: hidden;
+    white-space: nowrap;
+    padding: 10px;
+    display: flex;
+    align-items: center;
+    margin-top: 30px;
+}
+
+div.scroll-container img {
+    padding: 10px;
+    display: inline-block;
+    width: 300px;
+    height: 200px;
+}
+
+@media (max-width: 480px) {
+
+    body{
+   
+    }
+    header {/* header*/
+        background-color: #86beda;
+    }
+
+    header .logo { 
+        margin-right: 10px;
+        gap: 10%;
+    }
+
+    header .cadastro{ /*tem que sumir!*/
+        display: none;
+    }
+
+    header .nome {   
+        margin-left: 20px;
+        font-size: 10px;
+    }
+
+    .nav { 
+        margin-top: 10px;
+        display: none;
+        flex-direction: column;
+        position: absolute;
+        background: #333;
+        top: 60px;
+        right: 0;
+        width: 200px;
+    }
+    .nav .active {
+        display: flex;
+    }
+    .menu-toggle {
+        display: flex;
+    }
+
+    #Busca{ 
+        width: 50%;
+    }
+
+    /*video*/
+    .video-background{
+        width: 80%;
+        height: 40%;
+    }
 }
