@@ -1,3 +1,10 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+
 /*Corpo da página*/
 body{
    
@@ -30,7 +37,7 @@ body{
 
 h1{
     position: relative;
-    left: 23%;
+    left: 13%;
 }
 .div-btn{
 margin: 3%;
@@ -47,7 +54,7 @@ margin: 3%;
 #phone{
     margin: 15%;
     height: 7%;
-    width: 98%;
+    width: 99%;
     position: relative;
     right: 15%;
 }
@@ -81,7 +88,7 @@ margin: 3%;
 }
 #w3review{
     height: 90%;
-   
+   width: 100%;
 }
 
 /*Comentários*/
@@ -92,7 +99,7 @@ margin: 3%;
     padding: 15px;
     margin: 20px;
     
-    height: 150px;
+    height: 166px;
     width: 100%;
     
 
@@ -110,7 +117,7 @@ margin: 3%;
     font-size: 0.9em;
     color: #666;
     position: relative;
-    left: 60%;
+    left: 56%;
 }
 
 .comment-body {
