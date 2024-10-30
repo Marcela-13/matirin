@@ -71,14 +71,14 @@ h2,
 h3 {
     text-align: center;
     font-size: 200%;
-    font-family: 'garamond';
+    font-family: 'monospace';
 }
 
 
 p {
     text-align: center;
     font-size: 100%;
-    font-family: 'Courier';
+    font-family: 'Copperlate';
 }
 
 main {
@@ -168,13 +168,14 @@ main {
 }
 
 .sobre-text:hover {
-    background-color: #86beda;
+    background-color:#1680b6ab;
     color: hsl(0, 0%, 97%);
     /* Hover no quadro Sobre */
 }
 
 .grupo{
-    padding: 5%;
+    margin: 5%;
+    padding: 10%;
     width: 90%;
     height: auto;
     display: flex;
