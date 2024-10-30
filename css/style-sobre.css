@@ -70,14 +70,15 @@ h1,
 h2,
 h3 {
     text-align: center;
-    font-size: larger;
+    font-size: 200%;
+    font-family: 'garamond';
 }
 
 
 p {
     text-align: center;
     font-size: 100%;
-    font-family: Georgia, 'Times New Roman', Times, serif;
+    font-family: 'Courier';
 }
 
 main {
@@ -86,7 +87,7 @@ main {
 
 }
 
-/*Estilização dos cards*/
+/*Estilização dos cards (missão, visão, valores)*/
 .missao,
 .valores {
     background-color: #7ee6d8;
@@ -98,6 +99,8 @@ main {
     flex-direction: column;
     border: 1px solid rgba(0, 0, 0, 0);
     border-radius: 5px;
+    text-align: justify;
+
 
 }
 
@@ -111,7 +114,7 @@ main {
     flex-direction: column;
     border: 1px solid rgba(0, 0, 0, 0);
     border-radius: 5px;
-
+    text-align: justify;
 }
 
 .valores:hover,
@@ -126,24 +129,15 @@ main {
     color: white;
 }
 
-.missao img {
-    width: 20%;
-    height: auto;
-}
-
-.visao img {
-    width: 20%;
-    height: auto;
-}
-
-
+.missao img,
+.visao img,
 .valores img {
     width: 20%;
     height: auto;
 }
 
 /* Estilização da Seção sobre*/
-
+/* Estilizando a seção sobre por completo */
 .sobre {
     display: flex;
     flex-direction: column;
@@ -152,8 +146,6 @@ main {
     justify-content: space-around;
     align-items: center;
 }
-
-/* Estilizando a seção sobre por completo */
 
 .sobre h1 {
     font-size: 50px;
@@ -181,7 +173,15 @@ main {
     /* Hover no quadro Sobre */
 }
 
-/*Estilizando os cards com as fotos e texto das integrantes */
+.grupo{
+    padding: 5%;
+    width: 90%;
+    height: auto;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+/*Estilizando os cards com as fotos e texto-fala das integrantes */
 .fotos {
     display: flex;
     justify-content: space-around;
@@ -218,6 +218,7 @@ p {
     height: auto;
 }
 
+/* Card do texto-fala das integrantes*/
 .overlay {
     position: absolute;
     bottom: 90%;
@@ -238,6 +239,7 @@ p {
 
 }
 
+/*texto-fala das integrantes*/
 .texto {
     color: black;
     position: absolute;
@@ -249,8 +251,7 @@ p {
     -ms-transform: translate(-50%, -50%);
     /*(-webkit- e -ms-): Esses prefixos são usados para garantir compatibilidade com navegadores mais antigos (como versões antigas do Safari e do Internet Explorer)*/
     transform: translate(-50%, -50%);
-    font-size: 80%;
-    ;
+    font-size: 100%;
     width: 100%;
     height: auto;
     text-align: center;
