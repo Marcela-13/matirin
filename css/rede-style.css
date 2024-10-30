@@ -1,0 +1,263 @@
+/*Corpo da página*/
+body{
+   
+    background-color:linear-gradient( #bbeaff,#7ecf8f)  ;
+}
+.main {
+    display: flex;
+    justify-content: space-around;
+    margin-top: 5%;
+    background:linear-gradient( #bbeaff,#7ecf8f)  ; ;
+}
+
+/*Área de criar Fórum*/
+.content{
+    width: 30%;
+
+}
+.form1 {
+    background-color: #ffffff;
+    width: 55%;
+    height: 50%;
+    padding: 5%;
+    display: flex;
+    flex-direction: column;
+    border-radius: 8px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    margin: 6%;
+
+}
+
+h1{
+    position: relative;
+    left: 23%;
+}
+.div-btn{
+margin: 3%;
+}
+.button1 {
+    background: #00a3ee;
+    padding: 4px 8px;
+    border-radius: 8px;
+    position: relative;
+    cursor: pointer;
+    border: none
+}
+
+#phone{
+    margin: 15%;
+    height: 7%;
+    width: 98%;
+    position: relative;
+    right: 15%;
+}
+.button2 {
+    background: #13e200;
+    padding: 4px 8px;
+    border-radius: 8px;
+    margin: 2%;
+    position: relative;
+    left: 16%;
+    cursor: pointer;
+    border: none;
+
+}
+
+.material-symbols-outlined{
+    position: relative;
+    position: relative;
+    left: 56%;
+}
+.material-symbols-outlined{
+    position: relative;
+    left: 3%;
+    color: #ffffff;
+}
+
+/*Área de comentários*/
+.feed{
+    width: 52%;
+
+}
+#w3review{
+    height: 90%;
+   
+}
+
+/*Comentários*/
+.comment {
+    background-color: white;
+    border-radius: 8px;
+    box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+    padding: 15px;
+    margin: 20px;
+    
+    height: 150px;
+    width: 100%;
+    
+
+}
+
+.comment-header {
+    display: flex;
+    justify-content: space-between;
+    width: 600px;
+    height: 50px;
+   
+}
+/*Data*/
+.comment-date {
+    font-size: 0.9em;
+    color: #666;
+    position: relative;
+    left: 60%;
+}
+
+.comment-body {
+    font-size: 1em;
+    line-height: 1.5;
+    margin: 1%;
+
+}
+.material-icons{
+    color: #666;
+    position: relative;
+    left: 90%;
+    padding: 4px;
+}
+/*Rodapé*/
+footer{
+    position: fixed;
+}
+/*sugestão*/
+.form2{
+    background-color: white;
+    border-radius: 8px;
+    box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+    padding: 15px;
+    display: flex;
+    justify-content: space-around;
+    margin-top: 5%;
+    height: 150px;
+    width: 100%;
+   
+}
+
+.suggestions{
+  height: 60%;
+  margin: 6px;
+}
+.fa fa-mail-reply{
+    background: #00ff00;
+    padding: 9px 0px;
+    border-radius: 8px;
+    margin: 2%;
+    position: relative;
+    left: -7%;
+    cursor: pointer;
+
+
+}
+/*Responsividade do site*/
+@media(max-width: 480px){
+
+
+ 
+    .main{
+        flex-direction: column;
+    }
+    
+    .comment {
+   
+        padding: 15px;
+        margin: 20px;
+        
+        height: 140px;
+        width: 275%;
+   flex-direction: column;
+    
+    }
+ .form1{
+    height: 280px;
+    width: 466%;
+  
+    padding: 20%;
+    display: flex;
+    flex-direction: column;
+    border-radius: 8px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    margin: 12%;
+ }
+ #phone{
+
+    margin: 5%;
+    height: 7%;
+  width: 89%;
+    position: relative;
+    left: 0px;
+    right: 4.0%;
+ }
+
+.material-icons{
+    color: #666;
+    position: relative;
+    left: 80%;
+    padding: 4px;
+}
+.comment-date {
+    font-size: 0.9em;
+    color: #666;
+    position: relative;
+    left: 100%;
+}
+#w3review1{
+   height: 97px;
+   width: 90%;
+   margin: 3%;
+   position: relative;
+   left: 6.5px;
+}
+.div-btn{
+    margin: 1%;
+    position: relative;
+    left: 20%;
+    }
+    .button1 {
+       margin: 1%;
+        padding: 3px 5px;
+        border-radius: 8px;
+        position: relative;
+        left: -7%;
+        cursor: pointer;
+        border: none
+    }
+    .button2 {
+        position: relative;
+        left: 15%;
+        padding: 3px 9px;
+        border-radius: 8px;
+        margin: 1%;
+        cursor: pointer;
+        border: none
+    
+    }
+    .form2{
+  
+        border-radius: 8px;
+        padding: 14px;
+        display: flex;
+        justify-content: space-around;
+        margin-top: 5%;
+        height: 150px;
+        width: 100%;
+        position: relative;
+        left: -3%;
+    }
+    #w3review{
+        height: 95px;
+        width: 90%;
+        margin: 1%;
+        position: relative;
+        left: 3%;
+     }
+}
