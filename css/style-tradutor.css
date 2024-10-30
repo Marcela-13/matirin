@@ -6,6 +6,8 @@ aside {
     margin-top: 5%;
     border-radius: 5%;
     padding: 5%;
+    font-family:monospace;
+    font-size: 30px;
 
 
 }
@@ -22,7 +24,7 @@ main {
     background-color: rgb(255, 249, 249);
     display: flex;
     flex-direction: column;
-    justify-content: center;
+    justify-content: space-around;
     align-items: center;
     height: 90vh;
     width: 100%;
@@ -38,6 +40,8 @@ main {
 form {
     width: 30%;
     height: 12%;
+    margin-bottom: 10%;
+
 }
 
 #label-tradução {
@@ -59,13 +63,13 @@ textarea {
 
 .btn-tradutor {
     width: 30%;
+    height: 35%;
+    justify-content: center;
     text-align: center;
     cursor: pointer;
     border: 4px solid rgb(191, 218, 243);
-    border-bottom: auto;
-    rgb(191, 218, 243);
-    /* Borda de 4 pixels, sólida e azul */
-    border-radius: 10px; /* Bordas arredondadas */
+    border-radius: 10px;
+    /* Bordas arredondadas */
 }
 
 .btn-tradutor:hover {
@@ -87,6 +91,11 @@ footer {
 }
 
 @media (max-width: 480px) {
+    #conteiner {
+        position: relative;
+    }
+    
+
 
     aside {
         display: none;
@@ -97,7 +106,7 @@ footer {
         display: flex;
         width: 100%;
         justify-content: center;
-        align-items: center;
+    
     }
 
     .dropbtn {
@@ -110,7 +119,6 @@ footer {
         width: 200px;
         height: 20px;
         margin: 5%;
-        border-bottom: auto;
         border: 2px solid rgb(191, 218, 243);
         border-radius: 10px;
         /* Bordas arredondadas */
@@ -160,8 +168,7 @@ footer {
         text-align: center;
         cursor: pointer;
         border: 4px solid rgb(191, 218, 243);
-        border-bottom: auto;
-        rgb (191, 218, 243);
+        border-bottom: auto rgb (191, 218, 243);
         /* Borda de 4 pixels, sólida e azul */
         border-radius: 10px;
         /* Bordas arredondadas */
@@ -169,7 +176,7 @@ footer {
     }
 
     .tela {
-        padding: 50px;
+        padding: 5px;
         width: 50%;
     }
 
@@ -178,7 +185,7 @@ footer {
     }
 
     form {
+        margin-bottom: 10%;
         width: 200px;
-
     }
 }
