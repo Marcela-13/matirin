@@ -30,7 +30,7 @@ body{
 
 h1{
     position: relative;
-    left: 30%;
+    left: 23%;
 }
 .div-btn{
 margin: 3%;
@@ -47,7 +47,7 @@ margin: 3%;
 #phone{
     margin: 15%;
     height: 7%;
-  
+    width: 98%;
     position: relative;
     right: 15%;
 }
@@ -56,8 +56,10 @@ margin: 3%;
     padding: 4px 8px;
     border-radius: 8px;
     margin: 2%;
+    position: relative;
+    left: 16%;
     cursor: pointer;
-    border: none
+    border: none;
 
 }
 
@@ -145,13 +147,15 @@ footer{
   height: 60%;
   margin: 6px;
 }
-.button3{
-    background: #13e200;
-    padding: 0px 0px;
+.fa fa-mail-reply{
+    background: #00ff00;
+    padding: 9px 0px;
     border-radius: 8px;
     margin: 2%;
+    position: relative;
+    left: -7%;
     cursor: pointer;
-    border: none
+
 
 }
 /*Responsividade do site*/
