@@ -2,130 +2,6 @@
     margin: 0;
     padding: 0;
     box-sizing: border-box;
- 
-}
-
-
-
-/*Header*/
-header {
-    background-color: #2499c7; 
-    display: flex;
-    color: rgb(0, 0, 0);
-    height: 100px;
-    width: 100%;
-    gap: 10%;
-    align-items: center;
-}
-
-/*nome*/
-header .nome {
-    width: 50%;
-    text-align: center;
-    font-family: 'times';
-    font-size: 2em;
-    color: #c8edff   
-
-}
-
-/*Cadastro*/
-header .cadastro {
-    width: 10%;
-    height: auto;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-}
-
-.cadastro img {
-    height: 60px;
-    background-color: #e3faea;
-    border-radius: 100px;
-}
-
-.cadastro img:hover {
-    transform: scale(1.2);
-}
-
-/*barra de pesquisa*/
-#Busca {
-    margin-top: 40px;
-    display: flex;
-    align-items: center;
-}
-
-#Busca input {
-    border-radius: 10px;
-    border: none;
-    padding: 8px;
-    margin-right: 0px;
-}
-
-#btnBusca {
-    height: 30px;
-    margin-right: 5px;
-}
-
-button {
-    border: none;
-    border-radius: 10px;
-    width: 70px;
-    height: 20px;
-    background-color: #a2f1e4;
-    transition: 0.3s;
-    cursor: pointer;
-}
-
-button:hover {
-    background-color: #0f4966;
-    color: aliceblue;
-}
-
-/*Navegação*/
-.nav ul {
-    font-family: 'monospace';
-    display: flex;
-    list-style: none;
-    margin-top: 20;
-    background-color: #63d4c5;
-    height: 36px;
-    display: flex;
-    justify-content: center;
-}
-
-.nav ul li {
-    background-color: #b1f8e3;
-    margin: 0 50px;
-    padding: 5px;
-    height: 25px;
-    margin-top: 6px;
-    border-radius: 7px;
-}
-
-.nav ul li a {
-    text-decoration: none;
-    color: #333;
-    font-weight: bold;
-}
-
-.nav ul li a:hover {
-    transition: 2s;
-    margin-top: 5px;
-    border-radius: 7px;
-    margin: 0 50px;
-}
-
-/*logo*/
-.logo {
-    width: 200px;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-}
-
-.logo img {
-    width: 80%;
-    height: auto;
 }
 
 /*body*/
@@ -137,7 +13,7 @@ background: linear-gradient(0deg, rgba(220,255,233,1) 24%, rgba(206,247,255,1) 6
 /*teste video*/
 .container {
     position: relative;
-    height: 600px;
+    height: 880px;
     display: flex;
     justify-content: center;
     align-items: center;
@@ -145,7 +21,7 @@ background: linear-gradient(0deg, rgba(220,255,233,1) 24%, rgba(206,247,255,1) 6
 
 .video-background {
     position: absolute;
-    background-image: url("../img/teste\ v.gif");
+    background-image: url("../img/bom\ dia.gif");
     background-repeat: no-repeat;
     background-size: cover;
     height: 100%;
@@ -161,7 +37,7 @@ background: linear-gradient(0deg, rgba(220,255,233,1) 24%, rgba(206,247,255,1) 6
     text-align: center;
     font-size: 1.5em;
     color: white;
-    margin-top: 570px;
+    margin-top: 850px;
 }
 
 /*imagens centrais*/
@@ -178,6 +54,8 @@ background: linear-gradient(0deg, rgba(220,255,233,1) 24%, rgba(206,247,255,1) 6
 }
 
 .texto1 p {
+    font-family: 'copperplate';
+    font-size: 140%;
     text-align: left;
     margin-left: 15%;
     max-width: 1000px;
@@ -189,13 +67,13 @@ background: linear-gradient(0deg, rgba(220,255,233,1) 24%, rgba(206,247,255,1) 6
     justify-content: space-around;
     align-items: center;
 }
-
 .imagem2 {
     border-radius: 70px;
     height: 390px;
 }
-
 .texto2 p {
+    font-family: 'copperplate';
+    font-size: 140%;
     text-align: right;
     margin-right: 15%;
     max-width: 1000px;
@@ -207,13 +85,13 @@ background: linear-gradient(0deg, rgba(220,255,233,1) 24%, rgba(206,247,255,1) 6
     justify-content: space-around;
     align-items: center;
 }
-
 .imagem3 {
     border-radius: 70px;
     height: 390px;
 }
-
 .texto3 {
+    font-family: 'copperplate';
+    font-size: 140%;
     text-align: left;
     margin-left: 15%;
     max-width: 1000px;
@@ -225,13 +103,13 @@ background: linear-gradient(0deg, rgba(220,255,233,1) 24%, rgba(206,247,255,1) 6
     justify-content: space-around;
     align-items: center;
 }
-
 .imagem4 {
     border-radius: 70px;
     height: 390px;
 }
-
 .texto4 {
+    font-family: 'copperplate';
+    font-size: 140%;
     text-align: right;
     margin-right: 15%;
     max-width: 1000px;
@@ -260,41 +138,7 @@ div.scroll-container img {
     height: 200px;
 }
 
-/*footer*/
-footer {
-    display: flex;
-    justify-content: space-around;
-    align-items: center;
-    background-color: #47a598;
-    width: 100%;
-    padding: 10px 0;
-    text-align: center;
-    width: 100%;
-    position: relative;
-    bottom: 0;
-}
 
-/*Icones*/
-.icons img {
-    width: 20px;
-    height: 20px;
-    margin: 0 10px;
-}
-
-.icons img:hover {
-    transform: scale(1.2);
-    /* Aumenta o ícone ao passar o mouse */
-}
-
-.icons .Github {
-    width: 40px;
-    height: 20px;
-}
-
-.icons .zapzap {
-    width: 25px;
-    height: 22px;
-}
 
 @media (max-width: 480px) {
 
