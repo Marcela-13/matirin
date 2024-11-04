@@ -1,0 +1,311 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+header {
+    background-color: #86beda;
+    display: flex;
+    grid-template-columns: 30fr 10fr;
+    color: rgb(0, 0, 0);
+    height: 90px;
+    width: 100%;
+}
+
+.nav ul {
+    display: flex;
+    list-style: none;
+    margin-top: 20;
+    background-color: #aeeec3;
+    height: 35px;
+    display: flex;
+    justify-content: center;
+}
+
+.nav ul li {
+    background-color: #7ee6d8;
+    margin: 0 50px;
+    padding: 5px;
+    height: 14px;
+    margin-top: 5px;
+    border-radius: 9px;
+}
+
+.nav ul li a {
+    text-decoration: none;
+    color: #333;
+    font-weight: bold;
+}
+
+.nav ul li a:hover {
+    background-color: #8af1f1;
+    transition: 2s;
+    margin-top: 5px;
+    border-radius: 9px;
+    margin: 0 50px;
+    padding: 5px;
+    height: 14px;
+}
+
+
+footer {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    background-color: #5a5a5a;
+    padding: 10px 0;
+    text-align: center;
+    width: 100%;
+    position: relative;
+    bottom: 0;
+}
+
+/* Estilização dos elementos*/
+body {
+    background-color: #d2e8f3;
+}
+
+h1,
+h2,
+h3 {
+    text-align: center;
+    font-size: 200%;
+    font-family: 'garamond';
+}
+
+
+p {
+    text-align: center;
+    font-size: 100%;
+    font-family: 'Courier';
+}
+
+main {
+    display: flex;
+    justify-content: space-around;
+
+}
+
+/*Estilização dos cards (missão, visão, valores)*/
+.missao,
+.valores {
+    background-color: #7ee6d8;
+    color: black;
+    padding: 5%;
+    margin: 10%;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    border: 1px solid rgba(0, 0, 0, 0);
+    border-radius: 5px;
+    text-align: justify;
+
+
+}
+
+.visao {
+    background-color: #86beda;
+    color: black;
+    padding: 5%;
+    margin: 10%;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    border: 1px solid rgba(0, 0, 0, 0);
+    border-radius: 5px;
+    text-align: justify;
+}
+
+.valores:hover,
+.missao:hover {
+    background-color: #108172c7;
+    color: white;
+
+}
+
+.visao:hover {
+    background-color: #1680b6ab;
+    color: white;
+}
+
+.missao img,
+.visao img,
+.valores img {
+    width: 20%;
+    height: auto;
+}
+
+/* Estilização da Seção sobre*/
+/* Estilizando a seção sobre por completo */
+.sobre {
+    display: flex;
+    flex-direction: column;
+    border: 1px solid rgba(0, 0, 0, 0);
+    border-radius: 5px;
+    justify-content: space-around;
+    align-items: center;
+}
+
+.sobre h1 {
+    font-size: 50px;
+
+}
+
+/* Estlizando a classe específica do quadro sobre */
+.sobre-text {
+    background-color: #b9e0f3;
+    border: 1px solid rgba(0, 0, 0, 0);
+    border-radius: 5px;
+    width: 60%;
+    height: 60%;
+    padding: 5%;
+}
+
+.sobre-text p {
+    text-align: justify;
+    /* Justificando o texto */
+}
+
+.sobre-text:hover {
+    background-color: #86beda;
+    color: hsl(0, 0%, 97%);
+    /* Hover no quadro Sobre */
+}
+
+.grupo{
+    padding: 5%;
+    width: 90%;
+    height: auto;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+/*Estilizando os cards com as fotos e texto-fala das integrantes */
+.fotos {
+    display: flex;
+    justify-content: space-around;
+}
+
+.card-foto {
+    position: relative;
+    width: 20%;
+    height: auto;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+
+.fotos img {
+    border: 1px solid rgba(0, 0, 0, 0);
+    border-radius: 5px;
+}
+
+.foto,
+p {
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+}
+
+/* Transição de texto*/
+.card-foto img {
+    margin-bottom: 5%;
+    display: block;
+    width: 80%;
+    height: auto;
+}
+
+/* Card do texto-fala das integrantes*/
+.overlay {
+    position: absolute;
+    bottom: 90%;
+    background-color: rgb(172, 200, 211);
+    overflow: hidden;
+    transition: .3s ease;
+    border-radius: 5px;
+    width: 30%;
+    height: auto;
+
+}
+
+.card-foto:hover .overlay {
+    margin-bottom: 5%;
+    bottom: 0;
+    height: 95%;
+    width: 80%;
+
+}
+
+/*texto-fala das integrantes*/
+.texto {
+    color: black;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    -webkit-transform: translate(-50%, -50%);
+    /*transform: Essa propriedade permite aplicar transformações a um elemento, como translações, rotações e escalonamentos.
+    translate(-50%, -50%): Essa função de transformação move o elemento*/
+    -ms-transform: translate(-50%, -50%);
+    /*(-webkit- e -ms-): Esses prefixos são usados para garantir compatibilidade com navegadores mais antigos (como versões antigas do Safari e do Internet Explorer)*/
+    transform: translate(-50%, -50%);
+    font-size: 100%;
+    width: 100%;
+    height: auto;
+    text-align: center;
+    padding: 2%;
+
+}
+
+/* Responsividade para telas menores (celular) */
+@media (max-width: 480px) {
+    main {
+        flex-direction: column-reverse;
+    }
+
+    /*Cards de texto*/
+    .missao,
+    .visao,
+    .valores {
+        justify-content: center;
+        margin: auto;
+        width: 90%;
+        height: auto;
+        margin-top: 2%;
+    }
+
+    .sobre-text {
+        background-color: #b9e0f3;
+        border: 1px solid rgba(0, 0, 0, 0);
+        border-radius: 5px;
+        width: 100%;
+        height: auto;
+    }
+
+    .sobre {
+        padding: 2%;
+    }
+
+    .sobre h1 {
+        font-size: 30px;
+        margin-bottom: 5%;
+    }
+
+    /*Cards de fotos e texto*/
+    .fotos {
+        width: 200%;
+        height: auto;
+        flex-direction: column;
+    }
+
+
+    .texto {
+        width: 100%;
+        height: auto;
+        text-align: center;
+        font-size: 90%;
+
+    }
+}
