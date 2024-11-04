@@ -93,7 +93,7 @@ main {
 .missao,
 .valores,
 .visao {
-    background-color: #92dbdb;
+    background-color: #63d4c5;
     color: black;
     padding: 5%;
     margin: 10%;
@@ -108,7 +108,7 @@ main {
 .missao:hover,
 .visao:hover,
 .valores:hover {
-    background-color: #96e7f5;
+    background-color: #a2f1e4;
 }
 
 .missao img,
@@ -137,7 +137,7 @@ main {
 
 /* Estlizando a classe específica do quadro sobre */
 .sobre-text {
-    background-color: #92dbdb;
+    background-color: #63d4c5;
     border: 1px solid rgba(0, 0, 0, 0);
     border-radius: 5px;
     width: 60%;
@@ -151,10 +151,11 @@ main {
 }
 
 .sobre-text:hover {
-    background-color: #96e7f5;
-
-    /* Hover no quadro Sobre */
+    background-color: #a2f1e4;
 }
+
+/* Hover no quadro Sobre */
+
 
 .grupo {
     margin: 5%;
@@ -187,12 +188,14 @@ main {
 .fotos img {
     border: 1px solid rgba(0, 0, 0, 0);
     border-radius: 5px;
+    width: 70%;
+    height: 75%;
 }
 
 .foto,
 p {
     display: flex;
-    justify-content: center; 
+    justify-content: center;
     flex-direction: column;
 }
 
@@ -200,19 +203,18 @@ p {
 .card-foto img {
     margin-bottom: 5%;
     display: block;
-    width: 80%;
-    height: 80%;
+
 }
 
 /* Card do texto-fala das integrantes*/
 .overlay {
     position: absolute;
     bottom: 90%;
-    background-color: rgb(159, 230, 226);
+    background-color: #a2f1e4;
     overflow: hidden;
     transition: .3s ease;
     border-radius: 5px;
-    width: 30%;
+    width: 100%;
     height: auto;
 
 }
@@ -220,7 +222,7 @@ p {
 .card-foto:hover .overlay {
     margin-bottom: 5%;
     bottom: 0;
-    height: 95%;
+    height: 90%;
     width: 80%;
 
 }
@@ -263,7 +265,6 @@ p {
     }
 
     .sobre-text {
-        background-color: #b9e0f3;
         border: 1px solid rgba(0, 0, 0, 0);
         border-radius: 5px;
         width: 100%;
@@ -286,6 +287,16 @@ p {
         flex-direction: column;
     }
 
+    .card-foto img {
+        padding: 5%;
+        width: 90%;
+        height: auto;
+    }
+
+    .card-foto:hover .overlay {
+        height: 100%;
+        width: 90%;
+    }
 
     .texto {
         width: 100%;
