@@ -3,23 +3,28 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="styles-formulario.css">
-    <title>Formulário Exemplo</title>
+    <link rel="stylesheet" href="css/stylesform.css">
+    <title>Formulário Centralizado</title>
 </head>
 <body>
     <div class="container">
-        <h1>Formulário de Contato</h1>
-        <form>
-            <label for="name">Nome:</label>
-            <input type="text" id="name" name="name" required>
+        <form class="formulario">
+            <h2>Formulário</h2>
+            <label for="nome">Nome:</label>
+            <input type="text" id="nome" name="nome" placeholder="Ex: Matirin">
+            
+            <label for="email">Email:</label>
+            <input type="email" id="email" name="email" required placeholder="Ex: Matirin@gmail.com">
 
-            <label for="email">E-mail:</label>
-            <input type="email" id="email" name="email" required>
+            <label for="telefone">Telefone:</label>
+            <input type="number" id="telefone" name="telefone" placeholder=" Ex: (11) xxxxx-xxxx">
 
-            <label for="message">Mensagem:</label>
-            <textarea id="message" name="message" rows="4" required></textarea>
+            
+            <label for="cpf" class="CPF">CPF</label>
+            <input type="number" id="cpf" name="cpf" required placeholder=" Ex: xxx.xxx.xxx.-xx">
 
             <button type="submit">Enviar</button>
+            <button type="submit" class="return" no-required="">voltar para home</button>
         </form>
     </div>
 </body>
