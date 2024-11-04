@@ -27,6 +27,7 @@ body {
 
 
 
+
 .texto-informaçao {
   display: flex;
   flex-direction: column;
@@ -40,6 +41,7 @@ body {
   border-color: #0ed5f8;
   height: 55%;
   padding: 5%;
+  
 
 }
 
@@ -145,7 +147,8 @@ body {
 .container:hover .middle p {
   display: block;
 }
-
+ 
+/*oxi*/
 .text {
   background-color: #00ff55;
   color: white;
@@ -156,6 +159,7 @@ body {
   justify-content: flex-end;
   width: 100px;
 }
+/*oxi*/
 
 footer {
   display: flex;
@@ -169,6 +173,9 @@ footer {
   bottom: 0;
 
 }
+
+/*teste*/
+
 
 
 @media (max-width: 480px) {
