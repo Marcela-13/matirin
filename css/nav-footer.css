@@ -92,6 +92,9 @@ button:hover {
     color: #333;
     font-weight: bold;
 }
+.ativo{
+    text-decoration: underline !important;
+}
 .nav ul li a:hover {
     transition: 2s;
     margin-top: 5px;
