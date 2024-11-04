@@ -13,12 +13,11 @@ background: linear-gradient(0deg, rgba(220,255,233,1) 24%, rgba(206,247,255,1) 6
 /*teste video*/
 .container {
     position: relative;
-    height: 880px;
+    height: 820px;
     display: flex;
     justify-content: center;
     align-items: center;
 }
-
 .video-background {
     position: absolute;
     background-image: url("../img/bom\ dia.gif");
@@ -28,16 +27,14 @@ background: linear-gradient(0deg, rgba(220,255,233,1) 24%, rgba(206,247,255,1) 6
     width: 100%;
     /* Cobre toda a área */
 }
-
 .content {
     z-index: -1;
 }
-
 .nome-video {
     text-align: center;
     font-size: 1.5em;
     color: white;
-    margin-top: 850px;
+    margin-top: 790px;
 }
 
 /*imagens centrais*/
@@ -47,12 +44,10 @@ background: linear-gradient(0deg, rgba(220,255,233,1) 24%, rgba(206,247,255,1) 6
     justify-content: space-around;
     align-items: center;
 }
-
 .imagem1 {
     border-radius: 70px;
     height: 390px;
 }
-
 .texto1 p {
     font-family: 'copperplate';
     font-size: 140%;
