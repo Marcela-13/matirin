@@ -24,9 +24,9 @@ body{
 }
 .form1 {
     background-color: #ffffff;
-    width: 55%;
-    height: 50%;
-    padding: 5%;
+    width: 67%;
+    height: 70%;
+    padding: 8%;
     display: flex;
     flex-direction: column;
     border-radius: 8px;
@@ -40,13 +40,21 @@ h1{
     left: 13%;
 }
 .div-btn{
-margin: 3%;
+    width: 100%;
+margin: 1%;
+display: flex;
+justify-content: center;
+align-items: center;
 }
 .button1 {
     background: #00a3ee;
-    padding: 4px 8px;
+    padding: 1%;
+    height: 82%;
+    width: 50%;
+    margin: 2%;
     border-radius: 8px;
     position: relative;
+    left: -3%;
     cursor: pointer;
     border: none
 }
@@ -60,11 +68,13 @@ margin: 3%;
 }
 .button2 {
     background: #13e200;
-    padding: 4px 8px;
+    padding: 1px;
+    height: 78%;
+    width: 41%;
+    margin: 1%;
     border-radius: 8px;
     margin: 2%;
     position: relative;
-    left: 16%;
     cursor: pointer;
     border: none;
 
@@ -86,9 +96,16 @@ margin: 3%;
     width: 52%;
 
 }
-#w3review{
+
+#w3revie{
+    width: 5px;
+}
+
+#w3review1{
     height: 90%;
-   width: 100%;
+   width: 105%;
+   position: relative;
+   left: -3%;
 }
 
 /*Comentários*/
@@ -117,7 +134,7 @@ margin: 3%;
     font-size: 0.9em;
     color: #666;
     position: relative;
-    left: 56%;
+    left: 36%;
 }
 
 .comment-body {
