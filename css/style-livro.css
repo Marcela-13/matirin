@@ -33,12 +33,12 @@ body {
   justify-content: center;
   border-radius: 10px;
   background-color: rgb(87, 204, 240);
-  width: 20%;
+  width: 30%;
   transition: 0.5s;
   overflow: hidden;
   border-style: solid;
   border-color: #0ed5f8;
-  height: 15%;
+  height: 55%;
   padding: 5%;
 
 }
@@ -123,7 +123,7 @@ body {
   width: 50%;
   height: 80%;
   transition: width 2s;
-  padding: 5%;
+  padding: 7%;
   border: 1px solid black;
   height: 300px;
 }
@@ -139,7 +139,7 @@ body {
 }
 
 .container:hover .middle {
-  width: 194%;
+  width: 199%;
 }
 
 .container:hover .middle p {
@@ -170,6 +170,7 @@ footer {
 
 }
 
+
 @media (max-width: 480px) {
   .texto-informaçao {
     height: 70%;
@@ -178,7 +179,7 @@ footer {
     overflow: hidden;
     border-style: solid;
     border-color: #020202;
-    font-size: 123%;
+    font-size: 104%;
     
 
 
@@ -202,7 +203,7 @@ footer {
   }
 
    p{
-    font-size: 79%;
+    font-size: 70%;
   }
 
 
