@@ -63,22 +63,24 @@ footer {
 
 /* Estilização dos elementos*/
 body {
-    background-color: #d2e8f3;
+    background: rgb(220, 255, 233);
+    background: linear-gradient(0deg, rgba(220, 255, 233, 1) 24%, rgba(206, 247, 255, 1) 66%);
 }
+
 
 h1,
 h2,
 h3 {
     text-align: center;
     font-size: 200%;
-    font-family: 'garamond';
+    font-family: 'monospace';
 }
 
 
 p {
     text-align: center;
-    font-size: 100%;
-    font-family: 'Courier';
+    font-size: 120%;
+    font-family: 'copperplate';
 }
 
 main {
@@ -89,23 +91,9 @@ main {
 
 /*Estilização dos cards (missão, visão, valores)*/
 .missao,
-.valores {
-    background-color: #7ee6d8;
-    color: black;
-    padding: 5%;
-    margin: 10%;
-    width: 100%;
-    display: flex;
-    flex-direction: column;
-    border: 1px solid rgba(0, 0, 0, 0);
-    border-radius: 5px;
-    text-align: justify;
-
-
-}
-
+.valores,
 .visao {
-    background-color: #86beda;
+    background-color: #92dbdb;
     color: black;
     padding: 5%;
     margin: 10%;
@@ -117,16 +105,10 @@ main {
     text-align: justify;
 }
 
-.valores:hover,
-.missao:hover {
-    background-color: #108172c7;
-    color: white;
-
-}
-
-.visao:hover {
-    background-color: #1680b6ab;
-    color: white;
+.missao:hover,
+.visao:hover,
+.valores:hover {
+    background-color: #96e7f5;
 }
 
 .missao img,
@@ -145,6 +127,7 @@ main {
     border-radius: 5px;
     justify-content: space-around;
     align-items: center;
+
 }
 
 .sobre h1 {
@@ -154,7 +137,7 @@ main {
 
 /* Estlizando a classe específica do quadro sobre */
 .sobre-text {
-    background-color: #b9e0f3;
+    background-color: #92dbdb;
     border: 1px solid rgba(0, 0, 0, 0);
     border-radius: 5px;
     width: 60%;
@@ -168,23 +151,26 @@ main {
 }
 
 .sobre-text:hover {
-    background-color: #86beda;
-    color: hsl(0, 0%, 97%);
+    background-color: #96e7f5;
+
     /* Hover no quadro Sobre */
 }
 
-.grupo{
-    padding: 5%;
+.grupo {
+    margin: 5%;
+    padding: 10%;
     width: 90%;
     height: auto;
     display: flex;
     justify-content: center;
     align-items: center;
 }
+
 /*Estilizando os cards com as fotos e texto-fala das integrantes */
 .fotos {
     display: flex;
     justify-content: space-around;
+
 }
 
 .card-foto {
@@ -206,7 +192,7 @@ main {
 .foto,
 p {
     display: flex;
-    justify-content: center;
+    justify-content: center; 
     flex-direction: column;
 }
 
@@ -215,14 +201,14 @@ p {
     margin-bottom: 5%;
     display: block;
     width: 80%;
-    height: auto;
+    height: 80%;
 }
 
 /* Card do texto-fala das integrantes*/
 .overlay {
     position: absolute;
     bottom: 90%;
-    background-color: rgb(172, 200, 211);
+    background-color: rgb(159, 230, 226);
     overflow: hidden;
     transition: .3s ease;
     border-radius: 5px;
