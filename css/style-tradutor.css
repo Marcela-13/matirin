@@ -5,7 +5,7 @@
 }
 
 aside {
-    background-color: rgb(238, 241, 243);
+    background-color: #47a598;
     position: fixed;
     width: 20%;
     height: 60%;
@@ -16,7 +16,7 @@ aside {
 
 h3 {
     font-family: monospace;
-    font-size: 20px;
+    font-size: 20px; 
 }
 
 
@@ -29,7 +29,8 @@ aside ul li {
 }
 
 main {
-    background-color: rgb(255, 249, 249);
+    background-color:rgb(220,255,233);
+    background: linear-gradient(0deg, rgba(220,255,233,1) 24%, rgba(206,247,255,1) 66%);
     display: flex;
     flex-direction: column;
     justify-content: space-around;
@@ -39,10 +40,14 @@ main {
 }
 
 .tela {
-    background-color: rgb(227, 243, 243);
+    background-image: url("../img/bom\ dia.gif");
+    background-repeat: no-repeat; 
+    background-size: 100% 100%;
+    background-color: #000000;
     border-radius: 5%;
     width: 30%;
     height: 50%;
+
 }
 
 form {
@@ -61,7 +66,7 @@ form {
 textarea {
     width: 100%;
     height: 100%;
-    border: 2px solid rgb(184, 205, 224);
+    border: 2px solid #0f4966;
     /* Borda de 2 pixels, sólida e azul */
     border-radius: 10px;
     /* Bordas arredondadas */
@@ -76,12 +81,14 @@ textarea {
     text-align: center;
     cursor: pointer;
     border: 4px solid rgb(191, 218, 243);
+    color: #000000;
+    background-color: #47a598;
     border-radius: 10px;
     /* Bordas arredondadas */
 }
 
 .btn-tradutor:hover {
-    background-color: #c1fcc9;
+    background-color: #1b6e97;
 }
 
 
