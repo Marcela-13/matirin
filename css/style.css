@@ -6,8 +6,8 @@
 
 /*body*/
 body {
-    background: rgb(220,255,233);
-background: linear-gradient(0deg, rgba(220,255,233,1) 24%, rgba(206,247,255,1) 66%);
+    background: rgb(220, 255, 233);
+    background: linear-gradient(0deg, rgba(220, 255, 233, 1) 24%, rgba(206, 247, 255, 1) 66%);
 }
 
 /*teste video*/
@@ -25,7 +25,6 @@ background: linear-gradient(0deg, rgba(220,255,233,1) 24%, rgba(206,247,255,1) 6
     background-size: cover;
     height: 100%;
     width: 100%;
-    /* Cobre toda a área */
 }
 .content {
     z-index: -1;
@@ -125,7 +124,6 @@ div.scroll-container {
     align-items: center;
     margin-top: 30px;
 }
-
 div.scroll-container img {
     padding: 10px;
     display: inline-block;
@@ -135,51 +133,97 @@ div.scroll-container img {
 
 @media (max-width: 480px) {
 
-    body{
-   
+    /*itens video*/
+
+    .container {
+        position: relative;
+        height: 600px;
     }
-    header {/* header*/
-        background-color: #86beda;
+    .video-background {
+        /*video*/
+        width: 90%;
+        height: 60%;
+    }
+    .nome-video {
+        /*texto do video*/
+        margin-top: 330px;
+        font-size: 20px;
     }
 
-    header .logo { 
-        margin-right: 10px;
-        gap: 10%;
+
+    /*itens do body*/
+
+    .imgtxt1 {
+        /*imagem e texto 1*/
+        margin-top: 20px;
+    }
+    .imagem1 {
+        /*imagem 1*/
+        height: 200px;
+    }
+    .texto1 p {
+        /*texto 1*/
+        font-size: 100%;
+        margin-left: 2%;
+        max-width: 260px;
     }
 
-    header .cadastro{ /*tem que sumir!*/
-        display: none;
+    .imgtxt2 {
+        /*imagem e texto 2*/
+        margin-top: 20%;
+    }
+    .imagem2 {
+        /*imagem 2*/
+        height: 200px;
+    }
+    .texto2 p {
+        /*texto 2*/
+        font-size: 100%;
+        margin-right: 2%;
+        max-width: 260px;
     }
 
-    header .nome {   
-        margin-left: 20px;
-        font-size: 10px;
+    .imgtxt3 {
+        /*imagem e texto 3*/
+        margin-top: 20%;
+    }
+    .imagem3 {
+        /*imagem 3*/
+        height: 200px;
+    }
+    .texto3 {
+        /*texto 3*/
+        font-size: 100%;
+        margin-left: 2%;
+        max-width: 260px;
     }
 
-    .nav { 
-        margin-top: 10px;
-        display: none;
-        flex-direction: column;
-        position: absolute;
-        background: #333;
-        top: 60px;
-        right: 0;
-        width: 200px;
+    .imgtxt4 {
+        margin-top: 20%;
     }
-    .nav .active {
-        display: flex;
+    .imagem4 {
+        height: 200px;
     }
-    .menu-toggle {
-        display: flex;
+    .texto4 {
+        font-size: 100%;
+        margin-right: 2%;
+        max-width: 260px;
     }
 
-    #Busca{ 
-        width: 50%;
+    /*carroceu de imagens*/
+
+    h2 {
+        margin-top: 200px;
+        font-size: 20px;
+    }
+    div.scroll-container{
+        padding: 2px;
+        margin-top: 20px;
+    }
+    div.scroll-container img {
+        padding: 6px;
+        width: 300px;
+        height: 150px;
     }
 
-    /*video*/
-    .video-background{
-        width: 80%;
-        height: 40%;
-    }
 }

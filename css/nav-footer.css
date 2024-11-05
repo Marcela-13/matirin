@@ -1,6 +1,6 @@
 /*Header*/
 header {
-    background-color: #2499c7; 
+    background-color: #2499c7;
     display: flex;
     color: rgb(0, 0, 0);
     height: 100px;
@@ -15,8 +15,7 @@ header .nome {
     text-align: center;
     font-family: 'times';
     font-size: 2em;
-    color: #c8edff   
-
+    color: #c8edff
 }
 
 /*Cadastro*/
@@ -27,11 +26,13 @@ header .cadastro {
     justify-content: center;
     align-items: center;
 }
+
 .cadastro img {
     height: 60px;
     width: 70px;
     border-radius: 100px;
 }
+
 .cadastro img:hover {
     transform: scale(1.2);
 }
@@ -42,16 +43,23 @@ header .cadastro {
     display: flex;
     align-items: center;
 }
-#Busca input {
+#Busca input, #Busca2 input {
     border-radius: 10px;
     border: none;
     padding: 8px;
     margin-right: 0px;
 }
-#btnBusca { /*botão de busca */
+#btnBusca {/*imagem de busca */
     height: 30px;
     margin-right: 5px;
 }
+
+#Busca2{ /*busca 2, só aparece quando vai para a adaptação em celular*/
+    margin-top: 40px;
+    display: none;
+    align-items: center;
+}
+
 button {
     font-family: 'monospace';
     font-size: 16px;
@@ -63,6 +71,7 @@ button {
     transition: 0.3s;
     cursor: pointer;
 }
+
 button:hover {
     background-color: #0f4966;
     color: aliceblue;
@@ -79,6 +88,7 @@ button:hover {
     display: flex;
     justify-content: center;
 }
+
 .nav ul li {
     background-color: #b1f8e3;
     margin: 0 50px;
@@ -87,14 +97,17 @@ button:hover {
     margin-top: 6px;
     border-radius: 7px;
 }
+
 .nav ul li a {
     text-decoration: none;
     color: #333;
     font-weight: bold;
 }
-.ativo{
+
+.ativo {
     text-decoration: underline !important;
 }
+
 .nav ul li a:hover {
     transition: 2s;
     margin-top: 5px;
@@ -111,7 +124,7 @@ button:hover {
 }
 
 .logo img {
-    width: 80%;
+    width: 110px;
     height: auto;
 }
 
@@ -152,28 +165,36 @@ footer {
     height: 22px;
 }
 
-/*
+
 @media (max-width: 480px) {
 
-header {
-        background-color: #86beda;
+    /*itens do header*/
+
+    header {
+        gap: 5%;
     }
 
-    header .logo { 
+    header .logo {
+        /*logo do site*/
         margin-right: 10px;
-        gap: 10%;
+        height: 10px;
+        width: 120px;
     }
 
-    header .cadastro{ 
+    header .cadastro {
+        /*icone de cadastro. vai para o menu hmburguer*/
         display: none;
     }
 
-    header .nome {   
-        margin-left: 20px;
-        font-size: 10px;
+    header .nome {
+        /*nome do site*/
+        justify-content: center;
+        align-items: center;
+        font-size: 20px;
     }
 
-    .nav { 
+    .nav {
+        /*navegação em menu hamburguer*/
         margin-top: 10px;
         display: none;
         flex-direction: column;
@@ -190,13 +211,18 @@ header {
         display: flex;
     }
 
-    #Busca{ 
-        width: 50%;
-    }
+    /*coisas fora do header*/
 
-
-    .video-background{
-        width: 80%;
-        height: 40%;
+    #Busca {
+        display: none;
     }
-}*/
+    #Busca2{
+        display: flex;
+        align-items: center;
+        justify-content: center;
+    }
+    #btnBusca{
+        
+    }
+   
+}
