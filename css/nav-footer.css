@@ -171,7 +171,7 @@ footer {
     /*itens do header*/
 
     header {
-        gap: 5%;
+        gap: 1%;
     }
 
     header .logo {
@@ -221,8 +221,10 @@ footer {
         align-items: center;
         justify-content: center;
     }
-    #btnBusca{
-        
+    #Busca input, #Busca2 input {
+     width: 60%;
     }
-   
+    #btnBusca {/*imagem de busca */
+        height: 40px;
+    }
 }

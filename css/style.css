@@ -137,16 +137,16 @@ div.scroll-container img {
 
     .container {
         position: relative;
-        height: 600px;
+        height: 400px;
     }
     .video-background {
         /*video*/
         width: 90%;
-        height: 60%;
+        height: 80%;
     }
     .nome-video {
         /*texto do video*/
-        margin-top: 330px;
+        margin-top: 295px;
         font-size: 20px;
     }
 
@@ -155,7 +155,7 @@ div.scroll-container img {
 
     .imgtxt1 {
         /*imagem e texto 1*/
-        margin-top: 20px;
+        margin-top: 90px;
     }
     .imagem1 {
         /*imagem 1*/
