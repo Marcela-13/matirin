@@ -165,10 +165,12 @@ footer {
     .dropdown-content {
         display: none;
         position: absolute;
-        background-color: #f9f9f9;
-        min-width: 160px;
+        background-color: #47a598;
+        min-width: 200px;
         box-shadow: 0px 8px 16px 0px rgba(0, 0, 0, 0.2);
         z-index: 1;
+        margin-top: -90%;
+        border-radius: 10px;
     }
 
     /* Links inside the dropdown */
@@ -177,6 +179,7 @@ footer {
         padding: 12px 16px;
         text-decoration: none;
         display: block;
+       
     }
 
     /* Change color of dropdown links on hover */
@@ -216,7 +219,6 @@ footer {
     }
 
     form {
-        margin-bottom: 50%;
         width: 200px;
 
     }
