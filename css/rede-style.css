@@ -2,19 +2,31 @@
     margin: 0;
     padding: 0;
     box-sizing: border-box;
+    
 }
-
-
-/*Corpo da página*/
 body{
-   
-    background-color:linear-gradient( #bbeaff,#7ecf8f)  ;
+    background-image: url("../img/4.gif");
+    background-repeat: no-repeat;
+    height: 2000px;
 }
+.gif{
+    height: 470px;
+    width: 1897px;
+    line-height: 200px; 
+    text-align: center; 
+  
+}
+
+html{
+    background:linear-gradient( #bbeaff,#7ecf8f)  
+}
+/*Corpo da página*/
+
 .main {
     display: flex;
     justify-content: space-around;
-    margin-top: 5%;
-    background:linear-gradient( #bbeaff,#7ecf8f)  ; ;
+    margin-top: 1%;
+
 }
 
 /*Área de criar Fórum*/
@@ -25,7 +37,7 @@ body{
 .form1 {
     background-color: #ffffff;
     width: 67%;
-    height: 62%;
+    height: 72%;
     padding: 8%;
     display: flex;
     flex-direction: column;
@@ -83,6 +95,7 @@ left: 4%;
 
 }
 
+
 .material-symbols-outlined{
     position: relative;
     position: relative;
@@ -101,7 +114,7 @@ left: 4%;
 }
 
 #w3revie{
-    width: 5px;
+    width: 10%;
 }
 
 #w3review1{
@@ -165,8 +178,10 @@ footer{
     display: flex;
     justify-content: space-around;
     margin-top: 5%;
-    height: 150px;
-    width: 100%;
+    height: 190px;
+    width: 103%;
+    position: relative;
+    left: -2%;
    
 }
 
@@ -174,17 +189,7 @@ footer{
   height: 60%;
   margin: 6px;
 }
-.fa fa-mail-reply{
-    background: #00ff00;
-    padding: 9px 0px;
-    border-radius: 8px;
-    margin: 2%;
-    position: relative;
-    left: -7%;
-    cursor: pointer;
 
-
-}
 /*Responsividade do site*/
 @media(max-width: 480px){
 
@@ -199,7 +204,7 @@ footer{
         padding: 15px;
         margin: 20px;
         
-        height: 140px;
+        height: 172px;
         width: 275%;
    flex-direction: column;
     
@@ -235,7 +240,7 @@ footer{
     font-size: 0.9em;
     color: #666;
     position: relative;
-    left: 50%;
+    left: -30%;
 }
 #w3review1{
    height: 95px;
@@ -275,10 +280,10 @@ footer{
         display: flex;
         justify-content: space-around;
         margin-top: 5%;
-        height: 150px;
-        width: 100%;
+        height: 157px;
+        width: 108%;
         position: relative;
-        left: -2%;
+        left: -3%;
     }
     #w3review{
         height: 95px;
@@ -289,6 +294,6 @@ footer{
      }
 
      .fa.fa-mail-reply{
-        width: 60px;
+        width: 0%;
      }
 }
