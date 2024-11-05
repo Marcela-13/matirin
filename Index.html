@@ -23,19 +23,29 @@
             <h1 class="nomedosite">Matirin</h1>
         </div>
         <div class="cadastro"> <!--Cadastro-->
-            <img src="img/image.png" href="pages/formulario.html">
+            <a href="pages/formulario.html"><img src="img/cadastrod.png"></a>
         </div>
     </header>
+    
+    <div id="Busca2"> <!--Barra de pesquisa-->
+        <input type="text" id="txtBusca" placeholder="Buscar..." />
+       <a><img src="img/pesquisa2semfundo.png" id="btnBusca" alt="Buscar" onclick="alerta()"/></a>
+    </div>
+
+    <script>
+        function alerta(){
+            alert("teste")
+        }
+    </script>
 
     <!--Navegação-->
     <div class="nav">
         <ul>
-             <li><a href="pages/index.html">Home</a></li>   
-             <li><a href="pages/sobre.html">Sobre nós</a></li>
-             <li><a href="pages/tradutor.html">Tradução interativa</a></li>
-          
-            <li><a href="pages/informacao.html">livros</a></li>
-            <li><a href="pages/rede.html">Rede</a></li>
+             <li><a class="ativo" href="index.htmlS">Home</a></li>   
+             <li><a href="/pages/sobre.html">Sobre nós</a></li>
+             <li><a href="/pages/tradutor.html">Tradução interativa</a></li>
+            <li><a href="/pages/informacao.html">livros</a></li>
+            <li><a href="/pages/rede.html">Rede</a></li>
         </ul>
     </div>
 
