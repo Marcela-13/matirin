@@ -93,7 +93,7 @@ main {
 .missao,
 .valores,
 .visao {
-    background-color: #63d4c5;
+    background-color: #a2f1e4;
     color: black;
     padding: 5%;
     margin: 10%;
@@ -108,7 +108,7 @@ main {
 .missao:hover,
 .visao:hover,
 .valores:hover {
-    background-color: #a2f1e4;
+    background-color: #63d4c5;
 }
 
 .missao img,
@@ -137,7 +137,7 @@ main {
 
 /* Estlizando a classe específica do quadro sobre */
 .sobre-text {
-    background-color: #63d4c5;
+    background-color: #a2f1e4;
     border: 1px solid rgba(0, 0, 0, 0);
     border-radius: 5px;
     width: 60%;
@@ -151,7 +151,7 @@ main {
 }
 
 .sobre-text:hover {
-    background-color: #a2f1e4;
+    background-color: #63d4c5;
 }
 
 /* Hover no quadro Sobre */
@@ -205,7 +205,9 @@ p {
     display: block;
 
 }
-
+.botao{
+    display: none;
+}
 /* Card do texto-fala das integrantes*/
 .overlay {
     position: absolute;
@@ -286,23 +288,43 @@ p {
         height: auto;
         flex-direction: column;
     }
+     .botao{
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        flex-direction: row;
+        width: 70%;
+        height: 70%;
+     }
 
     .card-foto img {
         padding: 5%;
         width: 90%;
         height: auto;
+        border-radius: 10%;
+    }
+    .card-foto:hover .overlay {
+        display: none;
+        transform: translateX(180px);
+        border-radius: 50%;
+        background: #a2f1e4;
+        border-radius: 0 30px 30px 0;
+        width: 300px;
+        height: 100px;
+        position: relative;
     }
 
-    .card-foto:hover .overlay {
-        height: 100%;
-        width: 90%;
+    .card-foto:active .overlay {
+        transform: scale(1.04);
+        box-shadow: 0 6px 10px rgba(0, 0, 0, 0.15);
     }
 
     .texto {
+        display: none;
         width: 100%;
         height: auto;
         text-align: center;
-        font-size: 90%;
-
+        font-size: 95%;
     }
+    
 }
