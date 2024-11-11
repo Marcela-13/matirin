@@ -205,9 +205,11 @@ p {
     display: block;
 
 }
-.botao{
+
+.botao {
     display: none;
 }
+
 /* Card do texto-fala das integrantes*/
 .overlay {
     position: absolute;
@@ -284,47 +286,74 @@ p {
 
     /*Cards de fotos e texto*/
     .fotos {
-        width: 200%;
         height: auto;
         flex-direction: column;
     }
-     .botao{
+
+    .botao {
         display: flex;
         justify-content: center;
         align-items: center;
         flex-direction: row;
         width: 70%;
         height: 70%;
-     }
+    }
+
+    .card-foto {
+        width: 100%;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: start;
+    }
 
     .card-foto img {
         padding: 5%;
-        width: 90%;
+        width: 50%;
         height: auto;
         border-radius: 10%;
     }
-    .card-foto:hover .overlay {
-        display: none;
-        transform: translateX(180px);
-        border-radius: 50%;
-        background: #a2f1e4;
-        border-radius: 0 30px 30px 0;
-        width: 300px;
-        height: 100px;
-        position: relative;
-    }
 
-    .card-foto:active .overlay {
-        transform: scale(1.04);
-        box-shadow: 0 6px 10px rgba(0, 0, 0, 0.15);
-    }
 
-    .texto {
+    .texto1,
+    .texto2,
+    .texto3,
+    .texto4,
+    .texto5 {
+        color: black;
+        font-size: 100%;
+        height: auto;
+        text-align: center;
+        padding: 2%;
         display: none;
         width: 100%;
         height: auto;
         text-align: center;
-        font-size: 95%;
     }
+
+    .card-foto:hover .overlay {
+        display: none;
     
+    }
+
+    .overlay {
+        position: absolute;
+        right: 0;
+        width: 50%;
+
+    }
+
+    /* Estilo para o efeito ativado ao clicar */
+    .card-foto.ativo .overlay {
+        margin-bottom: 5%;
+        bottom: 0;
+        height: 90%;
+        width: 50%;
+    }
+
+    .texto1.ativo, .texto2.ativo, .texto3.ativo, .texto4.ativo, .texto5.ativo {
+        display: block;
+        /* Quando o card estiver "ativo", os textos ficam visíveis */
+    }
+
 }
