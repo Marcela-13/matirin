@@ -5,13 +5,15 @@
     
 }
 body{
-    background-image: url("../img/4.gif");
+    background-image: url("../img/2.gif");
     background-repeat: no-repeat;
-    height: 2000px;
+    height: 1590px;
+    width: 1895px;
+    background-size: cover;
 }
 .gif{
     height: 470px;
-    width: 1897px;
+    width: 1895px;
     line-height: 200px; 
     text-align: center; 
   
@@ -50,6 +52,25 @@ html{
 h1{
     position: relative;
     left: 13%;
+    margin: 7%;
+
+}
+
+
+h2{
+    padding: auto;
+    margin: 3%;
+    size: 1%;
+    color: #3a3a3a;
+    position: relative;
+    left: -5%;
+}
+
+h3 {
+color: #3a3a3a;
+margin: 3%;
+position: relative;
+left: -5%;
 }
 .div-btn{
     width: 90%;
@@ -58,7 +79,7 @@ display: flex;
 justify-content: center;
 align-items: center;
 position: relative;
-left: 4%;
+left: 6%;
 }
 .button1 {
     background: #00a3ee;
@@ -74,11 +95,11 @@ left: 4%;
 }
 
 #phone{
-    margin: 13%;
+    margin: 1%;
     height: -3%;
     width: 105%;
     position: relative;
-    left: -16%;
+    left: -4%;
     right: 15%;
 }
 .button2 {
@@ -138,6 +159,10 @@ left: 4%;
 
 }
 
+.name{
+    position: relative;
+    left: -28%;
+}
 .comment-header {
     display: flex;
     justify-content: space-between;
@@ -153,6 +178,10 @@ left: 4%;
     left: 55%;
 }
 
+.i.fa.fa-heart::before {
+    position: relative;
+    left: -800px;
+}
 .comment-body {
     font-size: 1em;
     line-height: 1.5;
@@ -193,26 +222,39 @@ footer{
 /*Responsividade do site*/
 @media(max-width: 480px){
 
+body{
+   height: 2700px
+}
+  header{
+    width: 333%;
+  }
 
- 
+  ul{
+    width: 333%;
+  }
     .main{
         flex-direction: column;
+
     }
+    
     
     .comment {
    
         padding: 15px;
         margin: 20px;
-        
+        position: relative;
+        left: 21%;
         height: 172px;
-        width: 275%;
+        width: 567%;
+        height: 230px;
    flex-direction: column;
     
     }
  .form1{
-    height: 285px;
-    width: 468%;
-
+    height:701px;
+    width: 980%;
+    position: relative;
+    left: 50%;
     padding: 20%;
     display: flex;
     flex-direction: column;
@@ -222,11 +264,11 @@ footer{
  }
  #phone{
 
-    margin: 5%;
-    height: 7%;
-  width: 89%;
+    margin: 2%;
+    height: 6%;
+  width: 79%;
     position: relative;
-    left: 0px;
+    left: 6%;
     right: 4.0%;
  }
 
@@ -236,23 +278,36 @@ footer{
     left: 80%;
     padding: 4px;
 }
+.name{
+    position: relative;
+    left: -34%;
+}
+p{
+    padding: 18px;
+}
+.comment-header{
+    padding: 20px
+
+}
 .comment-date {
     font-size: 0.9em;
     color: #666;
     position: relative;
-    left: -30%;
+    left: 50%;
 }
 #w3review1{
-   height: 95px;
-   width: 90%;
+   height: px;
+   width: 79%;
    margin: 2%;
    position: relative;
-   left: 3%;
+   left: 6%;
 }
+
+
 .div-btn{
     margin: 1%;
     position: relative;
-    left: 20%;
+    left: -1%;
     }
     .button1 {
        margin: 1%;
@@ -266,7 +321,8 @@ footer{
     .button2 {
         position: relative;
         left: 15%;
-        padding: 3px 9px;
+        padding: 3px 5px;
+        width: 20%;
         border-radius: 8px;
         margin: 1%;
         cursor: pointer;
@@ -280,20 +336,31 @@ footer{
         display: flex;
         justify-content: space-around;
         margin-top: 5%;
-        height: 157px;
-        width: 108%;
+        height: 220px;
+        width: 104%;
         position: relative;
-        left: -3%;
+        left: -2%;
     }
     #w3review{
-        height: 95px;
+        height: 110px;
         width: 90%;
         margin: 1%;
         position: relative;
-        left: 3%;
+        left: 4%;
      }
+    
+    h2{
+        position: relative;
+        left: 5%;
+    }
 
+     h3{
+     position: relative;
+     left: 5%;
+}
      .fa.fa-mail-reply{
         width: 0%;
+        position: relative;
+      left: 3%;
      }
 }
