@@ -156,58 +156,85 @@ div.scroll-container img {
     .imgtxt1 {
         /*imagem e texto 1*/
         margin-top: 90px;
+        flex-direction: column-reverse;
+        justify-content: center;
+        align-items: center;
     }
     .imagem1 {
         /*imagem 1*/
-        height: 200px;
+        height: 230px;
+        margin-bottom: 9px;
     }
     .texto1 p {
         /*texto 1*/
         font-size: 100%;
-        margin-left: 2%;
-        max-width: 260px;
+      text-align: center;
+      margin-left: 0;
+      margin-left: 5px;
+      margin-right: 5px;
     }
 
     .imgtxt2 {
         /*imagem e texto 2*/
         margin-top: 20%;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
     }
     .imagem2 {
         /*imagem 2*/
-        height: 200px;
+        height: 230px;
+        margin-bottom: 9px;
     }
     .texto2 p {
         /*texto 2*/
         font-size: 100%;
-        margin-right: 2%;
-        max-width: 260px;
+        text-align: center;
+        margin-right: 0;
+        margin-left: 5px;
+        margin-right: 5px;
     }
 
     .imgtxt3 {
         /*imagem e texto 3*/
         margin-top: 20%;
+        flex-direction: column-reverse;
+        justify-content: center;
+        align-items: center;
     }
     .imagem3 {
         /*imagem 3*/
-        height: 200px;
+        height: 230px;
+        margin-bottom: 9px;
     }
     .texto3 {
         /*texto 3*/
         font-size: 100%;
-        margin-left: 2%;
-        max-width: 260px;
+        text-align: center;
+        margin-left: 0;
+        margin-left: 5px;
+        margin-right: 5px;
     }
 
     .imgtxt4 {
+        /*imagem e texto 4*/
         margin-top: 20%;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
     }
     .imagem4 {
-        height: 200px;
+        /*imagem 4*/
+        height: 230px;
+        margin-bottom: 9px;
     }
     .texto4 {
+        /*texto 4*/
         font-size: 100%;
-        margin-right: 2%;
-        max-width: 260px;
+        text-align: center;
+        margin-right: 0;
+        margin-left: 5px;
+        margin-right: 5px;
     }
 
     /*carroceu de imagens*/
