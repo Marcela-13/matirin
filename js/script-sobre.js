@@ -18,7 +18,7 @@ function ativarEfeito1() {
     cards[0].classList.add('ativo');
     txt1.classList.add('ativo');
   }
-}
+};
 
 // Função para alternar a classe 'ativo' no card
 function ativarEfeito2() {
@@ -32,7 +32,7 @@ function ativarEfeito2() {
     cards[1].classList.add('ativo');
     txt2.classList.add('ativo');
   }
-}
+};
 // Função para alternar a classe 'ativo' no card
 function ativarEfeito3() {
   // Verifica se o card 0 já tem a classe 'ativo'
@@ -45,7 +45,7 @@ function ativarEfeito3() {
     cards[2].classList.add('ativo');
     txt3.classList.add('ativo');
   }
-}
+};
 // Função para alternar a classe 'ativo' no card
 function ativarEfeito4() {
   // Verifica se o card 0 já tem a classe 'ativo'
@@ -58,7 +58,7 @@ function ativarEfeito4() {
     cards[3].classList.add('ativo');
     txt4.classList.add('ativo');
   }
-}
+};
 // Função para alternar a classe 'ativo' no card
 function ativarEfeito5() {
   // Verifica se o card 0 já tem a classe 'ativo'

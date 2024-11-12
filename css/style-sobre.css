@@ -97,7 +97,7 @@ main {
     color: black;
     padding: 5%;
     margin: 10%;
-    width: 100%;
+    width: 90%;
     display: flex;
     flex-direction: column;
     border: 1px solid rgba(0, 0, 0, 0);
@@ -232,7 +232,11 @@ p {
 }
 
 /*texto-fala das integrantes*/
-.texto1, .texto2, .texto3, .texto4, .texto5 {
+.texto1,
+.texto2,
+.texto3,
+.texto4,
+.texto5 {
     color: black;
     position: absolute;
     top: 50%;
@@ -267,15 +271,16 @@ p {
         height: auto;
         margin-top: 2%;
     }
-
+    
     .sobre-text {
         border: 1px solid rgba(0, 0, 0, 0);
         border-radius: 5px;
-        width: 100%;
+        width: 95%;
         height: auto;
     }
-
+  
     .sobre {
+      
         padding: 2%;
     }
 
@@ -291,12 +296,13 @@ p {
     }
 
     .botao {
+        margin-left: 10%;
         display: flex;
         justify-content: center;
         align-items: center;
         flex-direction: row;
-        width: 70%;
-        height: 70%;
+        width: 30%;
+        height: 30%;
     }
 
     .card-foto {
@@ -312,6 +318,7 @@ p {
         width: 50%;
         height: auto;
         border-radius: 10%;
+
     }
 
 
@@ -326,14 +333,16 @@ p {
         text-align: center;
         padding: 2%;
         display: none;
-        width: 100%;
+        width: 90%;
         height: auto;
         text-align: center;
+
+
     }
 
     .card-foto:hover .overlay {
         display: none;
-    
+
     }
 
     .overlay {
@@ -349,9 +358,14 @@ p {
         bottom: 0;
         height: 90%;
         width: 50%;
+
     }
 
-    .texto1.ativo, .texto2.ativo, .texto3.ativo, .texto4.ativo, .texto5.ativo {
+    .texto1.ativo,
+    .texto2.ativo,
+    .texto3.ativo,
+    .texto4.ativo,
+    .texto5.ativo {
         display: block;
         /* Quando o card estiver "ativo", os textos ficam visíveis */
     }
