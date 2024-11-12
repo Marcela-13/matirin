@@ -1,16 +1,12 @@
-document.getElementById("translateButton").addEventListener("click", function() {
-    const wordInput = document.getElementById("wordInput").value;
+
+// Função que será acionada quando o botão for clicado
+document.getElementById('botao').onclick = function() {
+    var palavra = document.getElementById('inputTexto').value.toLowerCase(); // Pega o texto digitado
+    var video = document.getElementById('video'); // Seleciona o vídeo
     
-    if (wordInput.trim() !== "") {
-        // Aqui você pode adicionar a lógica de tradução se necessário.
-        // Por exemplo, simular a tradução:
-        alert(`Palavra '${wordInput}' traduzida com sucesso!`);
-        
-        // Mostrar o vídeo e iniciar a reprodução
-        document.getElementById("video-container").style.display = "block";
-        const videoElement = document.getElementById("video");
-        videoElement.play();
+    if (palavra === "Bom Dia ") {  // Substitua "rodar" pela palavra desejada
+        video.play(); // Reproduz o vídeo
     } else {
-        alert("Por favor, insira uma palavra.");
+        alert("Palavra incorreta! Tente novamente.");
     }
-});
+} 
