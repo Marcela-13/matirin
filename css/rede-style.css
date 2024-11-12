@@ -2,26 +2,25 @@
     margin: 0;
     padding: 0;
     box-sizing: border-box;
-    
-}
-body{
-    background-image: url("../img/2.gif");
-    background-repeat: no-repeat;
-    height: 1590px;
-    width: 1895px;
-    background-size: cover;
-}
-.gif{
-    height: 470px;
-    width: 1895px;
-    line-height: 200px; 
-    text-align: center; 
-  
+
 }
 
-html{
-    background:linear-gradient( #bbeaff,#7ecf8f)  
+body {
+    width: 100%;
+    background: rgb(206, 247, 255);
+    background: linear-gradient(0deg, rgba(206, 247, 255, 1) 0%, rgba(220, 255, 233, 1) 100%);
+    background-repeat: no-repeat;
+    background-size: cover;
 }
+
+.gif {
+    height: 470px;
+    width: 1895px;
+    line-height: 200px;
+    text-align: center;
+
+}
+
 /*Corpo da página*/
 
 .main {
@@ -32,14 +31,15 @@ html{
 }
 
 /*Área de criar Fórum*/
-.content{
+.content {
     width: 30%;
 
 }
+
 .form1 {
     background-color: #ffffff;
     width: 67%;
-    height: 72%;
+    height: 50%;
     padding: 8%;
     display: flex;
     flex-direction: column;
@@ -48,39 +48,36 @@ html{
     margin: 6%;
 
 }
+/*input do form1*/
+#phone {
 
-h1{
-    position: relative;
-    left: 13%;
-    margin: 7%;
+}
+/*textearea do form1*/
+#w3review {
+width: 100%;
+}
+
+h1 {
+text-align: center;
+margin-bottom: 10px;
 
 }
 
 
-h2{
-    padding: auto;
-    margin: 3%;
-    size: 1%;
-    color: #3a3a3a;
-    position: relative;
-    left: -5%;
+h2 {
 }
 
-h3 {
-color: #3a3a3a;
-margin: 3%;
-position: relative;
-left: -5%;
-}
-.div-btn{
+
+.div-btn {
     width: 90%;
-margin: 3%;
-display: flex;
-justify-content: center;
-align-items: center;
-position: relative;
-left: 6%;
+    margin: 3%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: relative;
+    left: 6%;
 }
+
 .button1 {
     background: #00a3ee;
     padding: 1%;
@@ -94,14 +91,7 @@ left: 6%;
     border: none
 }
 
-#phone{
-    margin: 1%;
-    height: -3%;
-    width: 105%;
-    position: relative;
-    left: -4%;
-    right: 15%;
-}
+
 .button2 {
     background: #13e200;
     padding: 1px;
@@ -117,33 +107,26 @@ left: 6%;
 }
 
 
-.material-symbols-outlined{
+.material-symbols-outlined {
     position: relative;
     position: relative;
     left: 56%;
 }
-.material-symbols-outlined{
+
+.material-symbols-outlined {
     position: relative;
     left: 3%;
     color: #ffffff;
 }
 
 /*Área de comentários*/
-.feed{
+.feed {
     width: 52%;
 
 }
 
-#w3revie{
-    width: 10%;
-}
 
-#w3review1{
-    height: 90%;
-   width: 105%;
-   position: relative;
-   left: -3%;
-}
+
 
 /*Comentários*/
 .comment {
@@ -152,54 +135,60 @@ left: 6%;
     box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
     padding: 15px;
     margin: 20px;
-    
+
     height: 166px;
     width: 100%;
-    
+
 
 }
 
-.name{
+.name {
     position: relative;
     left: -28%;
 }
+
 .comment-header {
     display: flex;
     justify-content: space-between;
     width: 600px;
     height: 50px;
-   
+
 }
+
 /*Data*/
 .comment-date {
     font-size: 0.9em;
     color: #666;
     position: relative;
-    left: 55%;
+    left: 42%;
 }
 
 .i.fa.fa-heart::before {
     position: relative;
     left: -800px;
 }
+
 .comment-body {
     font-size: 1em;
     line-height: 1.5;
     margin: 1%;
 
 }
-.material-icons{
+
+.material-icons {
     color: #666;
     position: relative;
     left: 90%;
     padding: 4px;
 }
+
 /*Rodapé*/
-footer{
+footer {
     position: fixed;
 }
+
 /*sugestão*/
-.form2{
+.form2 {
     background-color: white;
     border-radius: 8px;
     box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
@@ -208,109 +197,144 @@ footer{
     justify-content: space-around;
     margin-top: 5%;
     height: 190px;
-    width: 103%;
+    width: 100%;
     position: relative;
-    left: -2%;
-   
+    left: 2%;
+
 }
 
-.suggestions{
-  height: 60%;
-  margin: 6px;
+.suggestions {
+    height: 60%;
+    margin: 6px;
 }
 
 /*Responsividade do site*/
-@media(max-width: 480px){
+@media(max-width: 480px) {
 
-body{
-   height: 2700px
-}
-  header{
-    width: 333%;
-  }
 
-  ul{
-    width: 333%;
-  }
-    .main{
+    .main {
         flex-direction: column;
+        width: 100%;
+        justify-content: center;
+        align-items: center;
 
     }
+    .content {
+        width: 100%;
+        display: flex;
+        justify-content: center;
     
+    }   
+     .form1 {
+        width: 100%;
+ 
+    }
+ 
+    h2 {
+        position: relative;
+        left: 5%;
+    }
+
+    h3 {
+        position: relative;
+        left: 5%;
+    }
+
     
+    #phone {
+
+        margin: 2%;
+        height: 6%;
+        width: 79%;
+        position: relative;
+        left: 6%;
+        right: 4.0%;
+    }
+    #w3review1 {
+        height: 100%;
+        width: 90%;
+        margin: 1%;
+        position: relative;
+        left: 4%;
+    }
+.feed{
+    position: relative;
+    left: -12%;
+}
     .comment {
-   
+
         padding: 15px;
         margin: 20px;
         position: relative;
-        left: 21%;
+        left: -21%;
         height: 172px;
-        width: 567%;
+        justify-content: center;
+        width: 170%;
         height: 230px;
-   flex-direction: column;
+        flex-direction: column;
+       
+    }
+
+
+
+
+    .material-icons {
+        color: #666;
+        position: relative;
+        left: 75%;
+        padding: 4px;
+    }
+
+    img{
+        margin-top: -2%;
+    }
+
+    strong{
+     display: flex;
+     justify-content: center;
+
+    }
+    .name {
+        position: relative;
+        left: -28%;
+    }
+
+    p {
+        padding: 18px;
+    }
+
+    .comment-header {
+      position: relative;
+      left: -8%;
+        padding: 20px
     
     }
- .form1{
-    height:701px;
-    width: 980%;
-    position: relative;
-    left: 50%;
-    padding: 20%;
-    display: flex;
-    flex-direction: column;
-    border-radius: 8px;
-    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
-    margin: 12%;
- }
- #phone{
 
-    margin: 2%;
-    height: 6%;
-  width: 79%;
-    position: relative;
-    left: 6%;
-    right: 4.0%;
- }
-
-.material-icons{
-    color: #666;
-    position: relative;
-    left: 80%;
-    padding: 4px;
-}
-.name{
-    position: relative;
-    left: -34%;
-}
-p{
-    padding: 18px;
-}
-.comment-header{
-    padding: 20px
-
-}
-.comment-date {
-    font-size: 0.9em;
-    color: #666;
-    position: relative;
-    left: 50%;
-}
-#w3review1{
-   height: px;
-   width: 79%;
-   margin: 2%;
-   position: relative;
-   left: 6%;
-}
-
-
-.div-btn{
-    margin: 1%;
-    position: relative;
-    left: -1%;
+    .comment-date {
+        font-size: 0.9em;
+        color: #666;
+        position: relative;
+        left: -47%;
     }
+
+    #w3review1 {
+        height: px;
+        width: 79%;
+        margin: 2%;
+        position: relative;
+        left: 6%;
+    }
+
+
+    .div-btn {
+        margin: 1%;
+        position: relative;
+        left: -1%;
+       
+    }
+
     .button1 {
-       margin: 1%;
+        margin: 1%;
         padding: 3px 5px;
         border-radius: 8px;
         position: relative;
@@ -318,49 +342,39 @@ p{
         cursor: pointer;
         border: none
     }
+
     .button2 {
         position: relative;
         left: 15%;
         padding: 3px 5px;
-        width: 20%;
+     
         border-radius: 8px;
         margin: 1%;
         cursor: pointer;
         border: none
-    
     }
-    .form2{
-  
+
+   
+
+
+    .fa.fa-mail-reply {
+     
+        width: 100%;
+        position: relative;
+        left: 3%;
+    }
+    .form2 {
+
         border-radius: 8px;
         padding: 14px;
         display: flex;
+        justify-content: center;
         justify-content: space-around;
         margin-top: 5%;
-        height: 220px;
-        width: 104%;
+        height: 100%;
+        width: 170%;
         position: relative;
-        left: -2%;
+        left: -12%;
+        flex-direction: column;
     }
-    #w3review{
-        height: 110px;
-        width: 90%;
-        margin: 1%;
-        position: relative;
-        left: 4%;
-     }
-    
-    h2{
-        position: relative;
-        left: 5%;
-    }
-
-     h3{
-     position: relative;
-     left: 5%;
-}
-     .fa.fa-mail-reply{
-        width: 0%;
-        position: relative;
-      left: 3%;
-     }
 }
