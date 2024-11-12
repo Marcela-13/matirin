@@ -52,6 +52,7 @@ header .cadastro {
 #btnBusca {/*imagem de busca */
     height: 30px;
     margin-right: 5px;
+    display: none;
 }
 
 #Busca2{ /*busca 2, só aparece quando vai para a adaptação em celular*/
@@ -65,11 +66,12 @@ button {
     font-size: 16px;
     border: none;
     border-radius: 10px;
-    width: 70px;
+    width: 60px;
     height: 20px;
     background-color: #a2f1e4;
     transition: 0.3s;
     cursor: pointer;
+    margin-left: 4px;
 }
 
 button:hover {
@@ -150,11 +152,6 @@ footer {
     margin: 0 10px;
 }
 
-.icons img:hover {
-    transform: scale(1.2);
-    /* Aumenta o ícone ao passar o mouse */
-}
-
 .icons .Github {
     width: 40px;
     height: 20px;
@@ -163,6 +160,11 @@ footer {
 .icons .zapzap {
     width: 25px;
     height: 22px;
+}
+
+.icons img:hover {
+    transform: scale(1.2);
+    /* Aumenta o ícone ao passar o mouse */
 }
 
 
@@ -226,6 +228,7 @@ footer {
      width: 60%;
     }
     #btnBusca {/*imagem de busca */
-        height: 40px;
+        height: 40px;  
+        display: flex;
     }
 }

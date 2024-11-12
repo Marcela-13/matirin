@@ -13,26 +13,33 @@
 <body>
     <header>
         <div class="logo">
-            <img src="img/logo.png">
+            <img src="img/home/logo.png">
         </div>
         <div id="Busca"> <!--Barra de pesquisa-->
             <input type="text" id="txtBusca" placeholder="Buscar..." />
-            <img src="img/pesquisa2semfundo.png" id="btnBusca" alt="Buscar" />
-            <button>buscar</button>
+            <img src="img/home/pesquisa2semfundo.png" id="btnBusca" alt="Buscar"/>
+            <button onclick="alerta()">buscar</button>
         </div>
+        <!--mostar a função de busca-->
+        <script> 
+            function alerta(){
+                alert("teste")
+            }
+        </script>
+
         <div class="nome"> <!--Nome do site-->
             <h1 class="nomedosite">Matirin</h1>
         </div>
         <div class="cadastro"> <!--Cadastro-->
-            <a href="pages/formulario.html"><img src="img/cadastrod.png"></a>
+            <a href="pages/formulario.html"><img src="img/home/cadastrod.png"></a>
         </div>
     </header>
     
-    <div id="Busca2"> <!--Barra de pesquisa-->
+    <div id="Busca2"> <!--Barra de pesquisa2/ @media-->
         <input type="text" id="txtBusca" placeholder="Buscar..." />
-       <a><img src="img/pesquisa2semfundo.png" id="btnBusca" alt="Buscar" onclick="alerta()"/></a>
+       <a><img src="img/home/pesquisa2semfundo.png" id="btnBusca" alt="Buscar" onclick="alerta()"/></a>
     </div>
-
+     <!--mostar a função de busca-->
     <script>
         function alerta(){
             alert("teste")
@@ -62,54 +69,41 @@
     <!--imgtxt11-->
     <section class="imgtxt1">
         <div class="texto1">
-            <p>"Lorem ipsum dolor sit amet, consectetur adipiscing elit,
-                sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.
-                Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris
-                nisi ut aliquip ex ea commodo consequat.
-                Duis aute irure dolor in reprehenderit in voluptate velit esse cillum
-                dolore eu fugiat nulla pariatur.
-                Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia
-                deserunt mollit anim id est
-                laborum."</p>
+            <p>Confira nossa tradução interativa, uma ferramenta inovadora que permite traduzir palavras e frases 
+                para a Língua Brasileira de Sinais (Libras). Com uma abordagem dinâmica e envolvente, você poderá 
+                aprender e se aprofundar no universo da Libras de maneira acessível e acolhedora. 
+                É uma oportunidade única de expandir seu conhecimento e se conectar ainda mais com a comunidade surda,
+                 promovendo inclusão e compreensão mútua.</p>
         </div>
         <div>
-            <img src="img/teste1.webp" class="imagem1">
+            <img src="img/home/sejabemvindocopia2.gif" class="imagem1">
         </div>
     </section>
 
     <!--imgtxt2-->
     <section class="imgtxt2">
         <div>
-            <img src="img/teste1.webp" class="imagem2">
+            <img src="img/home/leitura.avif" class="imagem2">
         </div>
         <div class="texto2">
-            <p>"Lorem ipsum dolor sit amet, consectetur adipiscing elit,
-                sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.
-                Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris
-                nisi ut aliquip ex ea commodo consequat.
-                Duis aute irure dolor in reprehenderit in voluptate velit esse cillum
-                dolore eu fugiat nulla pariatur.
-                Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia
-                deserunt mollit anim id est
-                laborum."</p>
+            <p>Confira também nossa livraria virtual, repleta de uma variedade de gêneros e conteúdos enriquecedores, 
+                não apenas sobre as Libras, mas também sobre diversos temas relacionados. 
+                Explore uma vasta gama de livros e materiais que expandem seu conhecimento, 
+                abordando tópicos relevantes e atualizados para enriquecer sua compreensão e aprendizado.</p>
         </div>
     </section>
 
     <!--imgtxt3-->
     <section class="imgtxt3">
         <div>
-            <p class="texto3">"Lorem ipsum dolor sit amet, consectetur adipiscing elit,
-                sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.
-                Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris
-                nisi ut aliquip ex ea commodo consequat.
-                Duis aute irure dolor in reprehenderit in voluptate velit esse cillum
-                dolore eu fugiat nulla pariatur.
-                Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia
-                deserunt mollit anim id est
-                laborum."</p>
+            <p class="texto3">
+                Entre em contato com novas pessoas em nosso fórum de conversação e amplie sua compreensão sobre 
+                o dia a dia, experiências e vivências de quem usa as Libras. 
+                Troque ideias, compartilhe dicas e aprenda mais sobre como é conviver com a Libras no cotidiano,
+                 conhecendo histórias inspiradoras e aprofundando seu entendimento sobre essa importante forma de comunicação.</p>
         </div>
         <div>
-            <img src="img/teste1.webp" class="imagem3">
+            <img src="img/home/bate papo teste2.avif" class="imagem3">
         </div>
     </section>
 
@@ -117,18 +111,15 @@
     <section class="imgtxt4">
         </div>
         <div>
-            <img src="img/teste1.webp" class="imagem4">
+            <img src="img/home/sobre nós.jpeg" class="imagem4">
         </div>
         <div>
-            <p class="texto4">"Lorem ipsum dolor sit amet, consectetur adipiscing elit,
-                sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.
-                Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris
-                nisi ut aliquip ex ea commodo consequat.
-                Duis aute irure dolor in reprehenderit in voluptate velit esse cillum
-                dolore eu fugiat nulla pariatur.
-                Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia
-                deserunt mollit anim id est
-                laborum."</p>
+            <p class="texto4">
+                Quer saber mais sobre nós? Acesse nossa página "Sobre Nós" e descubra de onde vêm nossas ideias, 
+                nossos valores e os objetivos que nos motivam. Conheça nossa missão, visão e o propósito que nos 
+                impulsiona a promover a inclusão e o acesso ao conhecimento. Nossos projetos e iniciativas 
+                 são pensados para transformar, inspirar e aproximar as pessoas, criando uma comunidade mais unida 
+                 e consciente das necessidades e riquezas da diversidade.</p>
 
     </section>
 
@@ -137,13 +128,26 @@
     <h2>Algumas Novidades </h2>
 
     <div class="scroll-container" id="scroll-Container">
-        <img src="img/teste1.webp" alt="Imagem 1">
-        <img src="img/teste1.webp" alt="Imagem 2">
-        <img src="img/teste1.webp" alt="Imagem 3">
-        <img src="img/teste1.webp" alt="Imagem 4">
-        <img src="img/teste1.webp" alt="Imagem 5">
-        <img src="img/teste1.webp" alt="Imagem 6">
-        <img src="img/teste1.webp" alt="Imagem 7">
+        <img src="img/home/noticia 1.PNG" alt="Imagem" class="carroceu"> <!--Noticia 1-->
+        <p class="noticia"><a href="https://www.librasol.com.br/brasil-ira-sediar-6a-edicao-dos-jogos-pan-americanos-de-surdos/#google_vignette">Brasil irá sediar 6ª edição dos Jogos Pan-americanos de Surdos</a></p>
+        
+        <img src="img/home/noticia 2.PNG" alt="Imagem" class="carroceu"> <!--noticia 2-->
+        <p class="noticia"><a href="https://www.librasol.com.br/exame-nacional-de-proficiencia-em-libras-e-aprovado-pela-cas/">Exame nacional de proficiência em Libras é aprovado pela CAS</a></p>
+        
+        <img src="img/home/noticia 3.PNG" alt="Imagem" class="carroceu"> <!--noticia 3-->
+        <p class="noticia"><a href="https://www.librasol.com.br/fundo-social-esta-com-inscricoes-abertas-para-o-curso-de-libras/#google_vignette">Fundo Social está com inscrições abertas para o curso de Libras</a></p>
+        
+        <img src="img/home/noticia 4.PNG" alt="Imagem" class="carroceu"> <!--noticia 4-->
+        <p class="noticia"><a href="https://gauchazh.clicrbs.com.br/colunistas/juliana-bublitz/noticia/2023/10/conheca-o-cafe-sinalizante-em-porto-alegre-um-estimulo-a-lingua-brasileira-de-sinais-libras-clnt6envl0084016sg0r73khc.html">Conheça o Café Sinalizante em Porto Alegre, um estímulo à Língua Brasileira de Sinais (Libras)</a></p>
+        
+        <img src="img/home/noticia 5.PNG" alt="Imagem" class="carroceu"> <!--noticia 5-->
+        <p class="noticia"><a href="https://gauchazh.clicrbs.com.br/pioneiro/cultura-e-lazer/noticia/2022/04/no-clima-da-surdolimpiadas-conheca-a-escola-em-caxias-que-ensina-libras-para-criancas-de-0-a-5-anos-cl2ktuawb0090016756263o3h.html">No clima da Surdolimpíadas, conheça a escola em Caxias que ensina Libras para crianças de 0 a 5 anos</a></p>
+       
+        <img src="img/home/noticia 6.PNG" alt="Imagem" class="carroceu"> <!--noticia 6-->
+        <p class="noticia"><a href="https://gauchazh.clicrbs.com.br/politica/eleicoes/noticia/2020/10/eleitores-surdos-terao-auxilio-de-interpretes-de-libras-em-videochamadas-no-dia-da-votacao-no-rs-ckgtkfamr0043015xdca1uc7x.html">Eleitores surdos terão auxílio de intérpretes de Libras em videochamadas no dia da votação no RS</a></p>
+        
+        <img src="img/home/noticia 7.PNG" alt="Imagem" class="carroceu"> <!--noticia 7-->
+        <p class="noticia"><a href="https://gauchazh.clicrbs.com.br/pioneiro/geral/noticia/2020/04/professora-surda-relata-dificuldade-enfrentada-durante-a-pandemia-12489846.html">Professora surda relata dificuldade enfrentada durante a pandemia</a></p>
     </div>
     <br>
     <br>
@@ -151,9 +155,9 @@
     <footer> &copy; 2024 Matirin. Todos os direitos reservados.
         <div>
             <div class="icons"> <!--Icones-->
-                <img src="img/instlogo.png">
-                <img src="img/Github-Logo.png" class="Github">
-                <img src="img/simbolo-zap.png" class="zapzap">
+                <img src="img/home/instlogo.png">
+                <img src="img/home/Github-Logo.png" class="Github">
+                <img src="img/home/simbolo-zap.png" class="zapzap">
             </div>
         </div>
     </footer>
