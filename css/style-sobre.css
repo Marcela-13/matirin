@@ -81,6 +81,7 @@ p {
     text-align: center;
     font-size: 120%;
     font-family: 'copperplate';
+   
 }
 
 main {
@@ -252,7 +253,7 @@ p {
     height: auto;
     text-align: center;
     padding: 2%;
-    
+  
 
 }
 
@@ -312,6 +313,7 @@ p {
         flex-direction: column;
         justify-content: center;
         align-items: start;
+        
     }
 
     .card-foto img {
@@ -337,6 +339,7 @@ p {
         width: 90%;
         height: auto;
         text-align: center;
+        text-decoration: none !important;
         
     }
     
@@ -366,9 +369,10 @@ p {
     .texto3.ativo,
     .texto4.ativo,
     .texto5.ativo {
+        text-decoration: none !important;
         display: block;
         /* Quando o card estiver "ativo", os textos ficam visíveis */
-    
+        
     }
-
+ 
 }
