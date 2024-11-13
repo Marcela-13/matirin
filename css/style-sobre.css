@@ -17,14 +17,14 @@ header {
     display: flex;
     list-style: none;
     margin-top: 20;
-    background-color: #aeeec3;
+    background-color: #63d4c5;
     height: 35px;
     display: flex;
     justify-content: center;
 }
 
 .nav ul li {
-    background-color: #7ee6d8;
+    background-color: #b1f8e3;
     margin: 0 50px;
     padding: 5px;
     height: 14px;
@@ -93,11 +93,11 @@ main {
 .missao,
 .valores,
 .visao {
-    background-color: #92dbdb;
+    background-color: #a2f1e4;
     color: black;
     padding: 5%;
     margin: 10%;
-    width: 100%;
+    width: 90%;
     display: flex;
     flex-direction: column;
     border: 1px solid rgba(0, 0, 0, 0);
@@ -108,7 +108,7 @@ main {
 .missao:hover,
 .visao:hover,
 .valores:hover {
-    background-color: #96e7f5;
+    background-color: #63d4c5;
 }
 
 .missao img,
@@ -137,7 +137,7 @@ main {
 
 /* Estlizando a classe específica do quadro sobre */
 .sobre-text {
-    background-color: #92dbdb;
+    background-color: #a2f1e4;
     border: 1px solid rgba(0, 0, 0, 0);
     border-radius: 5px;
     width: 60%;
@@ -151,10 +151,11 @@ main {
 }
 
 .sobre-text:hover {
-    background-color: #96e7f5;
-
-    /* Hover no quadro Sobre */
+    background-color: #63d4c5;
 }
+
+/* Hover no quadro Sobre */
+
 
 .grupo {
     margin: 5%;
@@ -187,12 +188,14 @@ main {
 .fotos img {
     border: 1px solid rgba(0, 0, 0, 0);
     border-radius: 5px;
+    width: 70%;
+    height: 75%;
 }
 
 .foto,
 p {
     display: flex;
-    justify-content: center; 
+    justify-content: center;
     flex-direction: column;
 }
 
@@ -200,19 +203,22 @@ p {
 .card-foto img {
     margin-bottom: 5%;
     display: block;
-    width: 80%;
-    height: 80%;
+
+}
+
+.botao {
+    display: none;
 }
 
 /* Card do texto-fala das integrantes*/
 .overlay {
     position: absolute;
     bottom: 90%;
-    background-color: rgb(159, 230, 226);
+    background-color: #a2f1e4;
     overflow: hidden;
     transition: .3s ease;
     border-radius: 5px;
-    width: 30%;
+    width: 100%;
     height: auto;
 
 }
@@ -220,13 +226,17 @@ p {
 .card-foto:hover .overlay {
     margin-bottom: 5%;
     bottom: 0;
-    height: 95%;
+    height: 90%;
     width: 80%;
 
 }
 
 /*texto-fala das integrantes*/
-.texto {
+.texto1,
+.texto2,
+.texto3,
+.texto4,
+.texto5 {
     color: black;
     position: absolute;
     top: 50%;
@@ -242,6 +252,7 @@ p {
     height: auto;
     text-align: center;
     padding: 2%;
+    
 
 }
 
@@ -263,14 +274,14 @@ p {
     }
 
     .sobre-text {
-        background-color: #b9e0f3;
         border: 1px solid rgba(0, 0, 0, 0);
         border-radius: 5px;
-        width: 100%;
+        width: 95%;
         height: auto;
     }
 
     .sobre {
+
         padding: 2%;
     }
 
@@ -281,17 +292,83 @@ p {
 
     /*Cards de fotos e texto*/
     .fotos {
-        width: 200%;
         height: auto;
         flex-direction: column;
     }
 
+    .botao {
+        margin-left: 10%;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        flex-direction: row;
+        width: 30%;
+        height: 30%;
+    }
 
-    .texto {
+    .card-foto {
         width: 100%;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: start;
+    }
+
+    .card-foto img {
+        padding: 5%;
+        width: 50%;
         height: auto;
-        text-align: center;
-        font-size: 90%;
+        border-radius: 10%;
 
     }
+
+
+    .texto1,
+    .texto2,
+    .texto3,
+    .texto4,
+    .texto5 {
+        color: black;
+        font-size: 100%;
+        height: auto;
+        text-align: center;
+        padding: 2%;
+        display: none;
+        width: 90%;
+        height: auto;
+        text-align: center;
+        
+    }
+    
+    .card-foto:hover .overlay {
+        display: none;
+
+    }
+
+    .overlay {
+        position: absolute;
+        right: 0;
+        width: 50%;
+
+    }
+
+    /* Estilo para o efeito ativado ao clicar */
+    .card-foto.ativo .overlay {
+        margin-bottom: 5%;
+        bottom: 0;
+        height: 90%;
+        width: 50%;
+
+    }
+
+    .texto1.ativo,
+    .texto2.ativo,
+    .texto3.ativo,
+    .texto4.ativo,
+    .texto5.ativo {
+        display: block;
+        /* Quando o card estiver "ativo", os textos ficam visíveis */
+    
+    }
+
 }
