@@ -12,11 +12,11 @@
 <body>
     <header>
         <div class="logo">
-            <img src="../img/logo.png">
+            <img src="../img/home/logo.png">
         </div>
         <div id="Busca"> <!--Barra de pesquisa-->
             <input type="text" id="txtBusca" placeholder="Buscar..." />
-            <img src="../img/pesquisa2semfundo.png" id="btnBusca" alt="Buscar" />
+            <img src="img/home/pesquisa2semfundo.png" id="btnBusca" alt="Buscar" />
             <button>buscar</button>
         </div>
         <div class="nome"> <!--Nome do site-->
@@ -24,6 +24,13 @@
         </div>
         <div class="cadastro"> <!--Cadastro-->
             <img src="../img/image.png" href="pages/formulario.html">
+
+        </div>
+        <!-- Botão de Menu Hamburguinho -->
+        <div class="hamburger" onclick="toggleMenu()">
+            <span></span>
+            <span></span>
+            <span></span>
         </div>
     </header>
 
@@ -42,7 +49,7 @@
     <main>
         <section>
             <div class="missao">
-                <img src="../img/shuttle.png" alt="ícone de um foguete representando a missaõ do card">
+                <img src="../img/sobrenos/shuttle.png" alt="ícone de um foguete representando a missaõ do card">
                 <h2>Missão</h2>
                 <p>O projeto visa a inclusão social, cultural e educacional da comunidade surda no Brasil por meio da
                     promoção e valorização da Língua Brasileira de Sinais (Libras).Queremos criar um espaço mais
@@ -51,7 +58,7 @@
                     apropriada, respeitosa e completa.</p>
             </div><br><br>
             <div class="visao">
-                <img src="../img/eye.png" alt="Ícone de olho que está representando a visão do card ">
+                <img src="../img/sobrenos/eye.png" alt="Ícone de olho que está representando a visão do card ">
                 <h2>Visão</h2>
                 <p>Ser a principal plataforma digital por onde a aprendizagem e a difusão da Libras ocorram, para causar
                     a inclusão social, cultural e educacional da comunidade de surdos. Nosso intuito é criar um ambiente
@@ -62,7 +69,7 @@
                 </p>
             </div><br><br>
             <div class="valores">
-                <img src="../img/charity.png"
+                <img src="../img/sobrenos/charity.png"
                     alt="Ícone de um coração seguro por duas mãos que está representando a visão do card">
                 <h3>Valores</h3>
                 <p>Acreditamos que a mudança social começa nas ações cotidianas que promovem a igualdade e a
@@ -78,12 +85,13 @@
         <section class="sobre">
             <h1>Sobre Nós</h1>
             <div class="sobre-text">
-                <p>Nós somos um grupo de meninas que iniciaram um curso na Afesu Moinho e que, a partir de nossas
-                    pesquisas a respeito da comunidade surda e de seus desafios, nos sensibilizamos com suas
+                <p>Nós somos um grupo de mulheres que iniciaram o curso de desenvolvimento web na Afesu Moinho , após
+                    diversas pesquisas a respeito da comunidade surda e de seus desafios, nos sensibilizamos com suas
                     dificuldades, como a pouca visibilidade de sua linguagem, no caso do Brasil as LIBRAS, e decidimos
-                    usar dessa temática para desenvolvermos um site que pode vir a ser um exemplo de empatia e inclusão.
+                    utilizar essa temática para desenvolvermos o site auxiliar de Libras, que pode vir a ser um exemplo
+                    de empatia e inclusão.
                 </p>
-                <img class="grupo" src="../../img/icone2.png" alt="icone de grupo">
+                <img class="grupo" src="../img/sobrenos/grupo.png" alt="icone de grupo">
             </div>
         </section>
     </main>
@@ -92,8 +100,10 @@
         <div class="card-foto">
             <img id="foto1" src="../img/eve.jfif" alt="Foto da integrante Evellyn">
             <div class="overlay">
-                <div class="texto1">"Libras é a ponte que conecta mundos, transformando silêncios em vozes e diversidade
-                    em inclusão."</div>
+                <div class="texto1">"Todos nós falamos a mesma linguagem quando se trata de amor, respeito e inclusão.
+                    Com as mãos, criamos pontes que nos unem, e com o coração, ouvimos o que palavras não podem dizer.
+                    Juntos, fazemos do mundo um lugar onde cada gesto conta."
+                    ~Evellyn~</div>
             </div><!--Botão 1-->
         </div><button class="botao" onclick="ativarEfeito1()">Clique Aqui</button>
         <div class="card-foto">
@@ -126,7 +136,8 @@
             <img id="foto5" src="../img/rai.jfif" alt="Foto da integrante Raiani">
             <div class="overlay">
                 <div class="texto5">"Libras é a linguagem que transforma gestos em laços, conectando pessoas e
-                    enriquecendo a comunicação."</div>
+                    enriquecendo a comunicação."
+                    ~Raiani~</div>
             </div><!--Botão 5-->
         </div><button id="botao" class="botao" onclick="ativarEfeito5()">Clique Aqui</button>
     </div>
@@ -135,14 +146,15 @@
         <footer> &copy; 2024 Matirin. Todos os direitos reservados.
             <div>
                 <div class="icons"> <!--Icones-->
-                    <img src="../img/instlogo.png">
-                    <img src="../img/Github-Logo.png" class="Github">
-                    <img src="../img/simbolo-zap.png" class="zapzap">
+                    <img src="../img/home/instlogo.png">
+                    <img src="../img/home/Github-Logo.png" class="Github">
+                    <img src="../img/home/simbolo-zap.png" class="zapzap">
                 </div>
             </div>
         </footer>
     </section>
     <script src="../js/script-sobre.js"></script>
+    <script src="../nav.js"></script>
 </body>
 
 </html>

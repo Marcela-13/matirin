@@ -43,19 +43,24 @@ header .cadastro {
     display: flex;
     align-items: center;
 }
-#Busca input, #Busca2 input {
+
+#Busca input,
+#Busca2 input {
     border-radius: 10px;
     border: none;
     padding: 8px;
     margin-right: 0px;
 }
-#btnBusca {/*imagem de busca */
+
+#btnBusca {
+    /*imagem de busca */
     height: 30px;
     margin-right: 5px;
     display: none;
 }
 
-#Busca2{ /*busca 2, só aparece quando vai para a adaptação em celular*/
+#Busca2 {
+    /*busca 2, só aparece quando vai para a adaptação em celular*/
     margin-top: 40px;
     display: none;
     align-items: center;
@@ -193,6 +198,7 @@ footer {
     /* Ajustes de layout do header */
     header {
         gap: 1%;
+
     }
 
     header .logo {
@@ -216,22 +222,26 @@ footer {
 
     /* Menu escondido inicialmente, aparece com a classe .show */
     .nav {
-        margin-top: -100px;
-        display: none; /* Escondido por padrão */
+        display: none;
+        /* Escondido por padrão */
         flex-direction: column;
-        position: fixed;
+        position: absolute;
         right: 0;
         width: 200px;
         height: 100vh;
-        background-color: #2499c7;
+        background-color:  #44a9d1;
         transition: transform 0.3s ease;
-        transform: translateX(100%); /* Esconde o menu fora da tela */
+        transform: translateX(100%);
+        /* Esconde o menu fora da tela */
         z-index: 1000;
+        border-radius: 7px;
     }
 
     .nav.show {
         display: flex;
-        transform: translateX(0); /* Mostra o menu ao ser clicado */
+        transform: translateX(0);
+        /* Mostra o menu ao ser clicado */
+
     }
 
     .nav ul {
@@ -241,6 +251,9 @@ footer {
         list-style: none;
         padding: 0;
         margin: 0;
+        width: 100%;
+        background-color:  #44a9d1;
+        padding: 4%;
     }
 
     .nav ul li {
@@ -249,7 +262,9 @@ footer {
         height: 35px;
         margin-top: 6px;
         border-radius: 7px;
-        
+        margin: 5px;
+        background-color: #b1f0ea;
+
     }
 
     .nav ul li a {
@@ -259,7 +274,7 @@ footer {
         display: block;
         width: 100%;
         border-radius: 5px;
-        transition:  0.3s;
+        transition: 0.3s;
     }
 
     .nav ul li a:hover {
@@ -270,7 +285,7 @@ footer {
     #Busca {
         display: none;
     }
-    
+
     #Busca2 {
         display: flex;
         align-items: center;

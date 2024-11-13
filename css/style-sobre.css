@@ -17,14 +17,14 @@ header {
     display: flex;
     list-style: none;
     margin-top: 20;
-    background-color: #aeeec3;
+    background-color: #63d4c5;
     height: 35px;
     display: flex;
     justify-content: center;
 }
 
 .nav ul li {
-    background-color: #7ee6d8;
+    background-color: #b1f8e3;
     margin: 0 50px;
     padding: 5px;
     height: 14px;
@@ -252,6 +252,7 @@ p {
     height: auto;
     text-align: center;
     padding: 2%;
+    
 
 }
 
@@ -271,16 +272,16 @@ p {
         height: auto;
         margin-top: 2%;
     }
-    
+
     .sobre-text {
         border: 1px solid rgba(0, 0, 0, 0);
         border-radius: 5px;
         width: 95%;
         height: auto;
     }
-  
+
     .sobre {
-      
+
         padding: 2%;
     }
 
@@ -336,10 +337,9 @@ p {
         width: 90%;
         height: auto;
         text-align: center;
-
-
+        
     }
-
+    
     .card-foto:hover .overlay {
         display: none;
 
@@ -368,6 +368,7 @@ p {
     .texto5.ativo {
         display: block;
         /* Quando o card estiver "ativo", os textos ficam visíveis */
+    
     }
 
 }
