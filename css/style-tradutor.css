@@ -4,6 +4,7 @@
     box-sizing: border-box;
 }
 
+
 aside {
     background-color: #47a598;
     position: fixed;
@@ -33,7 +34,7 @@ main {
     background: linear-gradient(0deg, rgba(220, 255, 233, 1) 24%, rgba(206, 247, 255, 1) 66%);
     display: flex;
     flex-direction: column;
-    justify-content: space-around;
+    justify-content: center;
     align-items: center;
     height: 90vh;
     width: 100%;
@@ -41,8 +42,8 @@ main {
 
 
 #video {
-    width: 30%;
-    height: 40%;
+    width: 90%;
+    height: 60%;
     border-radius: 5px;
     justify-content: center;
     align-items: center;
@@ -50,16 +51,18 @@ main {
 }
 
 form {
-    width: 30%;
+    width: 60%;
     height: 14%;
-    margin-bottom: 10%;
-
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
 }
 
 #label-tradução {
     scroll-margin-top: 30px;
     font-size: 15px;
     color: #645b62;
+
 }
 
 textarea {
@@ -75,7 +78,7 @@ textarea {
 
 
 #botao {
-    width: 30%;
+    width: 60%;
     height: 35%;
     justify-content: center;
     text-align: center;
@@ -85,18 +88,23 @@ textarea {
     background-color: #47a598;
     border-radius: 10px;
     /* Bordas arredondadas */
+
 }
 
-.btn-tradutor:hover {
+#botao-houver {
     background-color: #1b6e97;
 }
 
-#name{
-        font-size: 50px; /* Aumenta o tamanho da fonte */
-        padding: 10px;   /* Aumenta o espaçamento interno */
-        width: 250px;    /* Largura do campo */
-        margin-bottom: 10px; /* Espaçamento abaixo do campo */
-    }
+#name {
+    font-size: 50px;
+    /* Aumenta o tamanho da fonte */
+    padding: 10px;
+    /* Aumenta o espaçamento interno */
+    width: 250px;
+    /* Largura do campo */
+    margin-bottom: 10px;
+    /* Espaçamento abaixo do campo */
+}
 
 footer {
     display: flex;
@@ -160,13 +168,13 @@ footer {
 
 
 
-    /* The container <div> - needed to position the dropdown content */
+    /* O contêiner <div> - necessário para posicionar o conteúdo do menu suspenso */
     .dropdown {
         position: relative;
         display: inline-block;
     }
 
-    /* Dropdown Content (Hidden by Default) */
+    /* Conteúdo suspenso (oculto por padrão) */
     .dropdown-content {
         display: none;
         position: absolute;
@@ -178,7 +186,7 @@ footer {
         border-radius: 10px;
     }
 
-    /* Links inside the dropdown */
+    /* Links dentro do menu suspenso */
     .dropdown-content li {
         color: black;
         padding: 12px 16px;
@@ -187,17 +195,17 @@ footer {
 
     }
 
-    /* Change color of dropdown links on hover */
+    /* Muda a cor dos links suspensos ao passar o mouse */
     .dropdown-content li:hover {
         background-color: #f1f1f1
     }
 
-    /* Show the dropdown menu on hover */
+    /* Mostra o menu suspenso ao passar o mouse */
     .dropdown:hover .dropdown-content {
         display: block;
     }
 
-    /* Change the background color of the dropdown button when the dropdown content is shown */
+   /* Altera a cor de fundo do botão suspenso quando o conteúdo do menu suspenso é mostrado */
     .dropdown:hover .dropbtn {
         background-color: #86beda;
     }
@@ -213,21 +221,22 @@ footer {
         /* Bordas arredondadas */
         color: rgb(6, 31, 54)
     }
+
     #video {
-        width: 90%;
-        height: 300px;
+        width: 100%;
+        height: 100%;
         border-radius: 5px;
         justify-content: center;
         align-items: center;
         display: flex;
     }
-    
+
     label {
         margin-top: 200px;
     }
 
     form {
-        width: 60%
-
+        width: 70%
+    
     }
 }

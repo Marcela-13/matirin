@@ -4,7 +4,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Tradutor e vídeo </title>
+    <title>Tradutor e Vídeo</title>
     <link rel="stylesheet" href="../css/style-tradutor.css">
     <link rel="stylesheet" href="../css/nav-footer.css">
 </head>
@@ -12,63 +12,63 @@
 <body>
     <header>
         <div class="logo">
-            <img src="../img/logo.png">
+            <img src="../img/logo.png" alt="Logo">
         </div>
-        <div id="Busca"> <!--Barra de pesquisa-->
+        <div id="Busca"> <!-- Barra de pesquisa -->
             <input type="text" id="txtBusca" placeholder="Buscar..." />
             <img src="../img/pesquisa2semfundo.png" id="btnBusca" alt="Buscar" />
-            <button>buscar</button>
+            <button type="button">Buscar</button> <!-- Adicionei o type="button" -->
         </div>
-        <div class="nome"> <!--Nome do site-->
+        <div class="nome"> <!-- Nome do site -->
             <h1 class="nomedosite">Matirin</h1>
         </div>
-        <div class="cadastro"> <!--Cadastro-->
-            <img src="../img/image.png" href="pages/formulario.html">
+        <div class="cadastro"> <!-- Cadastro -->
+            <a href="pages/formulario.html">
+                <img src="../img/image.png" alt="Cadastro">
+            </a>
         </div>
     </header>
 
-    <!--Navegação-->
+    <!-- Navegação -->
     <div class="nav">
         <ul>
             <li><a href="../index.html">Home</a></li>
             <li><a href="sobre.html">Sobre nós</a></li>
             <li><a href="tradutor.html">Tradução interativa</a></li>
-            <li><a href="informacao.html">livros</a></li>
+            <li><a href="informacao.html">Livros</a></li>
             <li><a href="rede.html">Rede</a></li>
-
         </ul>
     </div>
+
+    <!-- Barra lateral -->
     <aside>
-        <!--barra lateral -->
-
-        <h3> Histórico de palavras traduzidas</h3>
+        <h3>Histórico de palavras traduzidas</h3>
         <ul>
-
             <li>Chat 1 - 2024-09-20</li>
             <li>Chat 2 - 2024-09-21</li>
             <li>Chat 3 - 2024-09-22</li>
         </ul>
-
-
     </aside>
 
     <main>
         <div>
             <video id="video" controls>
                 <source src="../img/bomdia.mp4" type="video/mp4">
+                Seu navegador não suporta o formato de vídeo.
             </video>
-        </div>
-        <form>
-            <label id="label-tradução">Traduza Aqui </label>
-            <textarea name="Mensagem" id="inputTexto "placeholder="digite a palavra"></textarea>
-            <button id="botao">Traduzir</button>
-        </form>
 
-
+            <!-- Formulário de tradução -->
+            <form>
+                <label for="inputTexto" id="label-tradução">Traduza Aqui</label>
+                <textarea name="Mensagem" id="inputTexto" placeholder="Digite a palavra"></textarea>
+                <button type="submit" id="botao">Traduzir</button> <!-- Alterado o tipo para submit -->
+            </form>
         </div>
+
+        <!-- Histórico em formato dropdown -->
         <div class="historico-cel">
             <div class="dropdown">
-                <button class="dropbtn">Histórico </button>
+                <button class="dropbtn">Histórico</button>
                 <ul class="dropdown-content">
                     <li>Chat 1 - 2024-09-20</li>
                     <li>Chat 2 - 2024-09-21</li>
@@ -76,19 +76,20 @@
                 </ul>
             </div>
         </div>
-
     </main>
 
-    <footer> &copy; 2024 Matirin. Todos os direitos reservados.
+    <!-- Rodapé -->
+    <footer>
+        &copy; 2024 Matirin. Todos os direitos reservados.
         <div>
-            <div class="icons"> <!--Icones-->
-                <img src="img/instlogo.png">
-                <img src="img/Github-Logo.png" class="Github">
-                <img src="img/simbolo-zap.png" class="zapzap">
-
+            <div class="icons"> <!-- Ícones -->
+                <img src="img/instlogo.png" alt="Instagram">
+                <img src="img/Github-Logo.png" class="Github" alt="Github">
+                <img src="img/simbolo-zap.png" class="zapzap" alt="WhatsApp">
             </div>
         </div>
     </footer>
+
     <script src="script.js"></script>
 </body>
 
