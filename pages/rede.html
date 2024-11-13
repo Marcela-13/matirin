@@ -5,7 +5,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Fórum</title>
-    <link rel="stylesheet" href="../css/style.css">
+    <link rel="stylesheet" href="../css/nav-footer.css">
     <link rel="stylesheet" href="../css/rede-style.css" />
     <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
    
@@ -15,15 +15,30 @@
 <body>
     <header>
         <div class="logo">
-            <img>
+            <img src="../img/logo.png">
+        </div>
+        <div id="Busca"> <!--Barra de pesquisa-->
+            <input type="text" id="txtBusca" placeholder="Buscar..." />
+            <img src="../img/pesquisa2semfundo.png" id="btnBusca" alt="Buscar" />
+            <button>buscar</button>
+        </div>
+        <div class="nome"> <!--Nome do site-->
+            <h1 class="nomedosite">Matirin</h1>
+        </div>
+        <div class="cadastro"> <!--Cadastro-->
+            <img src="img/image.png" href="pages/formulario.html">
         </div>
     </header>
+
+    <!--Navegação-->
     <div class="nav">
         <ul>
-            <li link="pages/tradutor.html"><a>Tradução interativa</a></li>
-            <li link="pages/rede.html"><a>Rede</a></li>
-            <li link="pages/sobre.html"><a>Sobre nós</a></li>
-            <li link="pages/inforação.html"><a>Informações</a></li>
+             <li><a href="pages/index.html">Home</a></li>   
+             <li><a href="pages/sobre.html">Sobre nós</a></li>
+             <li><a href="pages/tradutor.html">Tradução interativa</a></li>
+          
+            <li><a href="pages/informacao.html">livros</a></li>
+            <li><a href="pages/rede.html">Rede</a></li>
         </ul>
     </div>
 
@@ -32,15 +47,15 @@
             <div class="form1">
             <h1>Criar Fórum</h1>
                 <input type="tel" id="phone" name="phone" placeholder="Insira um título">
-                <textarea id="w3review1" name="w3review1" rows="15" cols="21" type="tel" id="phone" name="phone"
+                <textarea id="w3review1" name="w3review1" rows="15" cols="67" type="tel" id="phone" name="phone"
                     placeholder="Digite sua pergunta"></textarea>
                 <div class="div-btn">
                     <button class="button1"> Add imagem
-                        <i class="material-icons" style="font-size:25px;color:rgb(255, 255, 255);left: 1%;">add_a_photo</i>
+                        <i class="material-icons" style="font-size:20px;color:rgb(255, 255, 255);left: 1%;">add_a_photo</i>
 
                     </button>
                     <button class="button2">Publicar
-                        <i class="material-icons icon" style="font-size:25px;color:rgb(255, 255, 255);left: 10%;">send</i>
+                        <i class="material-icons icon" style="font-size:20px;color:rgb(255, 255, 255);left: 1%;">send</i>
                     </button>
                 </div>
             </div>
@@ -110,7 +125,7 @@
                 </div>
                 <div class="form2">
                     <div class="suggestions">
-                        <textarea id="w3review" name="w3review " rows="15"  cols="130" type="tel" id="phone" name="phone"
+                        <textarea id="w3review" name="w3review " rows="7"  cols="104" type="tel" id="phone" name="phone"
                             placeholder="Adicione uma sugestão"></textarea>
                             <button class="fa fa-mail-reply " style="font-size:16px;margin-top: 3px; border-radius: 5px;height: 25%; width:11%;border:none; cursor:pointer; background-color:rgb(0, 255, 34);color:rgb(0, 0, 0);left: 10%;">Responder <i class="fa fa-mail-"></i></button>
                     </div>
@@ -120,7 +135,14 @@
         </div>
 
 
-        <footer>&copy; 2024 Matirin. Todos os direitos reservados. </footer>
-</body>
+        <footer> &copy; 2024 Matirin. Todos os direitos reservados.
+            <div>
+                <div class="icons"> <!--Icones-->
+                    <img src="../img/instlogo.png">
+                    <img src="../img/Github-Logo.png" class="Github">
+                    <img src="../img/simbolo-zap.png" class="zapzap">
+                </div>
+            </div>
+        </footer></body>
 
 </html> 

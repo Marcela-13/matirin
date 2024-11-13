@@ -26,13 +26,11 @@ header .cadastro {
     justify-content: center;
     align-items: center;
 }
-
 .cadastro img {
     height: 60px;
     width: 70px;
     border-radius: 100px;
 }
-
 .cadastro img:hover {
     transform: scale(1.2);
 }
@@ -51,6 +49,7 @@ header .cadastro {
     padding: 8px;
     margin-right: 0px;
 }
+
 
 #btnBusca {
     /*imagem de busca */
@@ -81,7 +80,6 @@ header .cadastro {
     margin: 5px 0;
     transition: all 0.3s;
 }
-
 button {
     font-family: 'monospace';
     font-size: 16px;
@@ -94,7 +92,6 @@ button {
     cursor: pointer;
     margin-left: 4px;
 }
-
 button:hover {
     background-color: #0f4966;
     color: aliceblue;
@@ -109,7 +106,6 @@ button:hover {
     display: flex;
     justify-content: center;
 }
-
 .nav ul li {
     background-color: #b1f8e3;
     margin: 0 50px;
@@ -118,7 +114,6 @@ button:hover {
     margin-top: 6px;
     border-radius: 7px;
 }
-
 .nav ul li a {
     text-decoration: none;
     color: #333;
@@ -128,7 +123,6 @@ button:hover {
 .ativo {
     text-decoration: underline !important;
 }
-
 .nav ul li a:hover {
     transition: 2s;
     margin-top: 5px;
