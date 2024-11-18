@@ -55,6 +55,7 @@ body {
     text-align: left;
     margin-left: 15%;
     max-width: 1000px;
+    font-size: 17px;
 }
 
 .imgtxt2 {
@@ -75,6 +76,7 @@ body {
     text-align: right;
     margin-right: 15%;
     max-width: 1000px;
+    font-size: 17px;
 }
 
 .imgtxt3 {
@@ -95,6 +97,7 @@ body {
     text-align: left;
     margin-left: 15%;
     max-width: 1000px;
+    font-size: 17px;
 }
 
 .imgtxt4 {
@@ -115,6 +118,7 @@ body {
     text-align: right;
     margin-right: 15%;
     max-width: 1000px;
+    font-size: 17px;
 }
 
 /*Carrocel de imagens*/
@@ -139,21 +143,23 @@ div.scroll-container img {
     border-radius: 30px;
 }
 
-.noticia{
-    background-color: aliceblue;
-    height: 180px;
-    border-radius: 5px;
-    text-align: center;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    margin-right: 30px;
+.noticiadiv{
+   background-color: aliceblue;
+   display: flex;
+   justify-content: center;
+   align-items: center;
+   text-align: center;
+   flex-direction: column;
+   padding: 10px;
+   height: 180px;
+  border-radius: 7px;
+  margin-right: 30px;
 }
-.noticia:hover{
+.noticiadiv:hover{
     background-color: rgba(206, 247, 255, 1);
 }
-div .noticia p{
-   
+p.noticia{
+    display: flex;
 }
 
 @media (max-width: 480px) {
@@ -285,7 +291,7 @@ div .noticia p{
         width: 300px;
         height: 150px;
     }
-    .noticia{
+    .noticiadiv{
         height: 140px;
     }
 

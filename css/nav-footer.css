@@ -70,7 +70,7 @@ header .cadastro {
 }
 
 .hamburger span {
-    width: 30px;
+    width: 25px;
     height: 3px;
     background: #fff;
     margin: 5px 0;
@@ -97,6 +97,7 @@ button:hover {
 
 /*Navegação*/
 .nav ul {
+    background-color: #63D4C5;
     font-family: 'monospace';
     display: flex;
     list-style: none;
@@ -109,9 +110,10 @@ button:hover {
     background-color: #b1f8e3;
     margin: 0 50px;
     padding: 5px;
-    height: 25px;
-    margin-top: 6px;
+    height: 24px;
+    margin-top: 2px;
     border-radius: 7px;
+    margin-bottom: 2px;
 }
 
 .nav ul li a {
@@ -192,7 +194,7 @@ footer {
 
     /* Ajustes de layout do header */
     header {
-        gap: 1%;
+        gap:10%;
     }
 
     header .logo {
@@ -221,9 +223,8 @@ footer {
         flex-direction: column;
         position: fixed;
         right: 0;
-        width: 200px;
+        width: 180px;
         height: 100vh;
-        background-color: #2499c7;
         transition: transform 0.3s ease;
         transform: translateX(100%); /* Esconde o menu fora da tela */
         z-index: 1000;
@@ -240,16 +241,16 @@ footer {
         align-items: center;
         list-style: none;
         padding: 0;
+        border-radius: none;
         margin: 0;
     }
 
     .nav ul li {
-        width: 100%;
+        width: 170px;
         padding: 5px;
-        height: 35px;
-        margin-top: 6px;
-        border-radius: 7px;
-        
+        height: 30px;
+        margin-top: 1px;
+        border-radius: none;
     }
 
     .nav ul li a {
@@ -258,12 +259,8 @@ footer {
         font-size: 1.1em;
         display: block;
         width: 100%;
-        border-radius: 5px;
         transition:  0.3s;
-    }
-
-    .nav ul li a:hover {
-        background-color: #63d4c5;
+        text-align: center;
     }
 
     /* Oculta a barra de pesquisa original e exibe a versão móvel */
