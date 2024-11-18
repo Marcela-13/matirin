@@ -24,29 +24,34 @@
     <!--teste-->
     <header>
         <div class="logo">
-            <img src="../img/logo.png">
+            <img src="../img/home/logo.png">
         </div>
         <div id="Busca"> <!--Barra de pesquisa-->
             <input type="text" id="txtBusca" placeholder="Buscar..." />
-            <img src="../img/pesquisa2semfundo.png" id="btnBusca" alt="Buscar" />
+            <img src="../img/home/pesquisa2semfundo.png" id="btnBusca" alt="Buscar" />
             <button>buscar</button>
         </div>
         <div class="nome"> <!--Nome do site-->
             <h1 class="nomedosite">Matirin</h1>
         </div>
         <div class="cadastro"> <!--Cadastro-->
-            <img src="../img/image.png" href="pages/formulario.html">
+            <img src="../img/home/cadastrod.png" href="pages/formulario.html">
+        </div>
+         <!-- Botão de Menu Hamburguinho -->
+         <div class="hamburger" onclick="toggleMenu()">
+            <span></span>
+            <span></span>
+            <span></span>
         </div>
     </header>
 
     <!--Navegação-->
     <div class="nav">
         <ul>
-             <li><a href="../Index.html">Home</a></li>   
+             <li><a href="../index.html">Home</a></li>   
              <li><a href="sobre.html">Sobre nós</a></li>
              <li><a href="tradutor.html">Tradução interativa</a></li>
-          
-            <li><a href="informacao.html">livros</a></li>
+            <li><a href="informacao.html"><p class="underline">Livros</p></a></li>
             <li><a href="rede.html">Rede</a></li>
         </ul>
     </div>
@@ -85,7 +90,7 @@
                 <section class="grid-item">
                     <div class="container">
                         <a href="https://www.amazon.com.br/Contos-Cl%C3%A1ssicos-em-Libras-Rapunzel/dp/6580921684/ref=pd_sim_d_sccl_2_3/146-7070421-9794669?pd_rd_w=C8Top&content-id=amzn1.sym.8555f615-361b-42f7-96c4-206bb8a5174e&pf_rd_p=8555f615-361b-42f7-96c4-206bb8a5174e&pf_rd_r=2S4NK5ECV09Z6QHTJ9A0&pd_rd_wg=Uxjfg&pd_rd_r=5148d387-fe32-43e5-9650-cc34ef797b56&pd_rd_i=6580921684&psc=1">
-                            <img src="../img/rapunzel.jpg" alt="rapunzel">
+                            <img src="../img/livros/rapunzel.jpg" alt="rapunzel">
                         </a>
                         <div class="middle">
                             <p>Rapunzel vive numa imensa torre, prisioneira do mundo, por uma bruxa malvada. O cabelo da menina nunca é cortado e é conservado como uma gigantesca trança. Um dia, um príncipe passando pelo local, ouve Rapunzel cantando, e decide salvá-la das garras da bruxa.</p>
@@ -99,7 +104,7 @@
                     <div class="container">
                         <a
                             href="https://www.amazon.com.br/Turma-M%C3%B4nica-Contos-Cl%C3%A1ssicos-Libras/dp/6555474963/ref=pd_sim_d_sccl_2_1/146-7070421-9794669?pd_rd_w=Jes8s&content-id=amzn1.sym.8555f615-361b-42f7-96c4-206bb8a5174e&pf_rd_p=8555f615-361b-42f7-96c4-206bb8a5174e&pf_rd_r=EDSK76J6788R7TXEAHP8&pd_rd_wg=1BUfa&pd_rd_r=3a03049a-8ae9-49c6-b352-115ea6428127&pd_rd_i=6555474963&psc=1">
-                            <img src="../img/turma.jpg" alt="Turma da Monica">
+                            <img src="../img/livros/turma.jpg" alt="Turma da Monica">
                         </a>
                         <div class="middle">
                             <p>Sueli é a primeira personagem surda das histórias de Mauricio de Sousa. Na HQ que marca a sua estreia, o novo professor de Educação Física, Jairo Woo, é apresentado aos alunos na escola do bairro do Limoeiro. E os filhos dele, Sueli e Felipe, também estudarão lá.</p>
@@ -128,7 +133,7 @@
                     <div class="container">
                         <a
                             href="https://www.amazon.com.br/Contos-Cl%C3%A1ssicos-Libras-Chapeuzinho-Vermelho/dp/6580921692/ref=sr_1_5?dib=eyJ2IjoiMSJ9.o6DdANBYFXf0VUnQLrRtA7OtSJ_J0t-_6BtAklbddTn8XLxGnhV-KOHcgXFHiF74a76-bZqDvgDMV8VkEGQGP7Pab8LjYCsbvL-HuZPqCpV1c7wLoGF60j5KMxgzPAsj9OV5OtjY3QsvXBxEft-uMbtZSAfuQxwG0CFhZLRtkrwuyzfGnpy74e_xgVPHPi01QmKiVWt4uxXXnaFJ0YwqyKaGy1d2LOneBQsvmtlbYD8.wjsF_nDGfd07I29-325u2JI-kIFYU6Sbh1ZEvA-U_9I&dib_tag=se&keywords=L%C3%ADngua+brasileira+de+sinais&qid=1729710904&s=books&sr=1-5">
-                            <img src="../img/chapeu.jpg" alt="Chapeuzinho vermelho">
+                            <img src="../img/livros/chapeu.jpg" alt="Chapeuzinho vermelho">
                         </a>
                         <div class="middle">
                             <p>O enredo conta sobre uma menina que sempre usava uma capa vermelha e um dia teve que atravessar a floresta para levar uma cesta de doces para sua avó, mas no meio do caminho é enganada por um lobo mau.</p>
@@ -230,7 +235,7 @@
             <section class="grid-item">
                 <div class="container">
                     <a href="https://leiasp.odilo.us/info/alice-atraves-do-espelho-01140163">
-                        <img src="../img/AliceadE.jpg" alt="Alice">
+                        <img src="../img/livros/AliceadE.jpg" alt="Alice">
                     </a>
 
                     <div class="middle">
@@ -261,7 +266,7 @@
 
                 <div class="container">
                     <a href="https://leiasp.odilo.us/info/a-ilha-do-tesouro-01140166">
-                        <img src="../img/ilha.jpg" alt="ilha">
+                        <img src="../img/livros/ilha.jpg" alt="ilha">
                     </a>
                     <div class="middle">
                         <p>
@@ -283,7 +288,7 @@
 
                 <div class="container">
                     <a href="https://leiasp.odilo.us/info/cancao-para-ninar-menino-grande-01000572">
-                        <img src="../img/cançaopninar.jpeg" alt="canção">
+                        <img src="../img/livros/cançaopninar.jpeg" alt="canção">
                     </a>
 
                     <div class="middle">
@@ -343,7 +348,7 @@
             <section class="grid-item">
                 <div class="container">
                     <a href="https://leiasp.odilo.us/info/a-cartomante-01000841">
-                        <img src="../img/acart.jpg" alt="A cartomante">
+                        <img src="../img/livros/acart.jpg" alt="A cartomante">
                     </a>
                     <div class="middle">
                         <p>“A cartomante” é um conto de Machado de Assis e faz parte da obra Várias histórias, livro
@@ -383,7 +388,7 @@
 
             <div class="container">
                 <a href="https://leiasp.odilo.us/info/1984-01000585">
-                    <img src="../img/louco.jpeg" alt="1984">
+                    <img src="../img/livros/louco.jpeg" alt="1984">
                 </a>
 
 
@@ -413,12 +418,13 @@
         <footer> &copy; 2024 Matirin. Todos os direitos reservados.
             <div>
                 <div class="icons"> <!--Icones-->
-                    <img src="../img/instlogo.png">
-                    <img src="../img/Github-Logo.png" class="Github">
-                    <img src="../img/simbolo-zap.png" class="zapzap">
+                    <img src="../img/home/instlogo.png">
+                    <img src="../img/home/Github-Logo.png" class="Github">
+                    <img src="../img/home/simbolo-zap.png" class="zapzap">
                 </div>
             </div>
         </footer>
+        <script src="../nav.js"></script>
     </body>
 
 </html>
