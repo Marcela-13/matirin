@@ -1,6 +1,6 @@
 /*Header*/
 header {
-    background-color: #2499c7; 
+    background-color: #2499c7;
     display: flex;
     color: rgb(0, 0, 0);
     height: 100px;
@@ -15,8 +15,7 @@ header .nome {
     text-align: center;
     font-family: 'times';
     font-size: 2em;
-    color: #c8edff   
-
+    color: #c8edff
 }
 
 /*Cadastro*/
@@ -42,26 +41,56 @@ header .cadastro {
     display: flex;
     align-items: center;
 }
-#Busca input {
+
+#Busca input,
+#Busca2 input {
     border-radius: 10px;
     border: none;
     padding: 8px;
     margin-right: 0px;
 }
-#btnBusca { /*botão de busca */
+
+
+#btnBusca {
+    /*imagem de busca */
     height: 30px;
     margin-right: 5px;
+    display: none;
+}
+
+#Busca2 {
+    /*busca 2, só aparece quando vai para a adaptação em celular*/
+    margin-top: 40px;
+    display: none;
+    align-items: center;
+}
+
+/* Botão Hamburguinho */
+.hamburger {
+    display: none;
+    flex-direction: column;
+    cursor: pointer;
+    margin-right: 20px;
+}
+
+.hamburger span {
+    width: 30px;
+    height: 3px;
+    background: #fff;
+    margin: 5px 0;
+    transition: all 0.3s;
 }
 button {
     font-family: 'monospace';
     font-size: 16px;
     border: none;
     border-radius: 10px;
-    width: 70px;
+    width: 60px;
     height: 20px;
     background-color: #a2f1e4;
     transition: 0.3s;
     cursor: pointer;
+    margin-left: 4px;
 }
 button:hover {
     background-color: #0f4966;
@@ -74,8 +103,6 @@ button:hover {
     display: flex;
     list-style: none;
     margin-top: 20;
-    background-color: #63d4c5;
-    height: 36px;
     display: flex;
     justify-content: center;
 }
@@ -92,7 +119,8 @@ button:hover {
     color: #333;
     font-weight: bold;
 }
-.ativo{
+
+.ativo {
     text-decoration: underline !important;
 }
 .nav ul li a:hover {
@@ -111,7 +139,7 @@ button:hover {
 }
 
 .logo img {
-    width: 80%;
+    width: 110px;
     height: auto;
 }
 
@@ -137,11 +165,6 @@ footer {
     margin: 0 10px;
 }
 
-.icons img:hover {
-    transform: scale(1.2);
-    /* Aumenta o ícone ao passar o mouse */
-}
-
 .icons .Github {
     width: 40px;
     height: 20px;
@@ -152,51 +175,126 @@ footer {
     height: 22px;
 }
 
-/*
+.icons img:hover {
+    transform: scale(1.2);
+    /* Aumenta o ícone ao passar o mouse */
+}
+
+
+/* CSS responsivo para telas menores */
 @media (max-width: 480px) {
 
-header {
-        background-color: #86beda;
+    /* Exibe o botão hamburguinho */
+    .hamburger {
+        display: flex;
     }
 
-    header .logo { 
+    /* Ajustes de layout do header */
+    header {
+        gap: 1%;
+
+    }
+
+    header .logo {
+        /* Tamanho reduzido para o logo */
         margin-right: 10px;
-        gap: 10%;
+        height: 10px;
+        width: 120px;
     }
 
-    header .cadastro{ 
+    header .cadastro {
+        /* Oculta o ícone de cadastro */
         display: none;
     }
 
-    header .nome {   
-        margin-left: 20px;
-        font-size: 10px;
+    header .nome {
+        /* Ajusta o nome do site */
+        justify-content: center;
+        align-items: center;
+        font-size: 20px;
     }
 
-    .nav { 
-        margin-top: 10px;
+    /* Menu escondido inicialmente, aparece com a classe .show */
+    .nav {
         display: none;
+        /* Escondido por padrão */
         flex-direction: column;
         position: absolute;
-        background: #333;
-        top: 60px;
         right: 0;
         width: 200px;
+        height: 100vh;
+        background-color:  #44a9d1;
+        transition: transform 0.3s ease;
+        transform: translateX(100%);
+        /* Esconde o menu fora da tela */
+        z-index: 1000;
+        border-radius: 7px;
     }
-    .nav .active {
+
+    .nav.show {
+        display: flex;
+        transform: translateX(0);
+        /* Mostra o menu ao ser clicado */
+
+    }
+
+    .nav ul {
+        flex-direction: column;
+        justify-content: space-around;
+        align-items: center;
+        list-style: none;
+        padding: 0;
+        margin: 0;
+        width: 100%;
+        background-color:  #44a9d1;
+        padding: 4%;
+    }
+
+    .nav ul li {
+        width: 100%;
+        padding: 5px;
+        height: 35px;
+        margin-top: 6px;
+        border-radius: 7px;
+        margin: 5px;
+        background-color: #b1f0ea;
+
+    }
+
+    .nav ul li a {
+        color: #000000;
+        text-decoration: none;
+        font-size: 1.1em;
+        display: block;
+        width: 100%;
+        border-radius: 5px;
+        transition: 0.3s;
+    }
+
+    .nav ul li a:hover {
+        background-color: #63d4c5;
+    }
+
+    /* Oculta a barra de pesquisa original e exibe a versão móvel */
+    #Busca {
+        display: none;
+    }
+
+    #Busca2 {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+    }
+
+    #Busca2 input {
+        width: 60%;
+        border-radius: 10px;
+        border: none;
+        padding: 8px;
+    }
+
+    #btnBusca {
+        height: 40px;
         display: flex;
     }
-    .menu-toggle {
-        display: flex;
-    }
-
-    #Busca{ 
-        width: 50%;
-    }
-
-
-    .video-background{
-        width: 80%;
-        height: 40%;
-    }
-}*/
+}
