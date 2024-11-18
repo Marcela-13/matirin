@@ -51,7 +51,7 @@ main {
 }
 
 form {
-    width: 60%;
+    width: 70%;
     height: 14%;
     justify-content: center;
     align-items: center;
@@ -66,7 +66,7 @@ form {
 }
 
 textarea {
-    width: 100%;
+    width: 130%;
     height: 100%;
     border: 2px solid #0f4966;
     /* Borda de 2 pixels, sólida e azul */
@@ -78,7 +78,7 @@ textarea {
 
 
 #botao {
-    width: 60%;
+    width: 40%;
     height: 35%;
     justify-content: center;
     text-align: center;
@@ -91,7 +91,7 @@ textarea {
 
 }
 
-#botao-houver {
+#botao:hover {
     background-color: #1b6e97;
 }
 
@@ -119,10 +119,6 @@ footer {
 }
 
 @media (max-width: 480px) {
-    #conteiner {
-        position: relative;
-
-    }
 
     main {
         background-color: rgb(220, 255, 233);
@@ -131,7 +127,7 @@ footer {
         flex-direction: column;
         justify-content: space-around;
         align-items: center;
-        height: 80vh;
+        height: 90vh;
     }
 
 
@@ -160,6 +156,7 @@ footer {
         border: 2px solid rgb(191, 218, 243);
         border-radius: 10px;
         /* Bordas arredondadas */
+
     }
 
     .btn-tradutor:hover {
@@ -205,13 +202,14 @@ footer {
         display: block;
     }
 
-   /* Altera a cor de fundo do botão suspenso quando o conteúdo do menu suspenso é mostrado */
+    /* Altera a cor de fundo do botão suspenso quando o conteúdo do menu suspenso é mostrado */
     .dropdown:hover .dropbtn {
         background-color: #86beda;
     }
 
     #botao {
-        width: 50%;
+        width: 100%;
+        height: 60%;
         text-align: center;
         cursor: pointer;
         border: 4px solid rgb(191, 218, 243);
@@ -224,7 +222,7 @@ footer {
 
     #video {
         width: 100%;
-        height: 100%;
+        height: 80%;
         border-radius: 5px;
         justify-content: center;
         align-items: center;
@@ -236,7 +234,13 @@ footer {
     }
 
     form {
-        width: 70%
-    
+        width: 75%;
+        height: 30%;
+    }
+
+    #botao {
+        width: 50%;
+        height: 40%;
+
     }
 }
