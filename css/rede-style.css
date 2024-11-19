@@ -138,7 +138,7 @@ margin-bottom: 10px;
     padding: 15px;
     margin: 20px;
 
-    height: 166px;
+    height: 175px;
     width: 100%;
 
 
@@ -282,10 +282,9 @@ footer {
         margin: 20px;
         position: relative;
         left: -21%;
-        height: 172px;
         justify-content: center;
         width: 170%;
-        height: 230px;
+        height: 261px;
         flex-direction: column;
        
     }
