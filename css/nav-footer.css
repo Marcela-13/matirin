@@ -193,12 +193,8 @@ footer {
 
     /* Ajustes de layout do header */
     header {
-<<<<<<< HEAD
-        gap:10%;
-=======
         gap: 1%;
 
->>>>>>> origin/develop
     }
 
     header .logo {
@@ -229,10 +225,7 @@ footer {
         right: 0;
         width: 180px;
         height: 100vh;
-<<<<<<< HEAD
-=======
         background-color:  #44a9d1;
->>>>>>> origin/develop
         transition: transform 0.3s ease;
         transform: translateX(100%);
         /* Esconde o menu fora da tela */
@@ -263,18 +256,12 @@ footer {
     .nav ul li {
         width: 170px;
         padding: 5px;
-<<<<<<< HEAD
-        height: 30px;
-        margin-top: 1px;
-        border-radius: none;
-=======
         height: 35px;
         margin-top: 6px;
         border-radius: 7px;
         margin: 5px;
         background-color: #b1f0ea;
 
->>>>>>> origin/develop
     }
 
     .nav ul li a {
@@ -283,17 +270,12 @@ footer {
         font-size: 1.1em;
         display: block;
         width: 100%;
-<<<<<<< HEAD
-        transition:  0.3s;
-        text-align: center;
-=======
         border-radius: 5px;
         transition: 0.3s;
     }
 
     .nav ul li a:hover {
         background-color: #63d4c5;
->>>>>>> origin/develop
     }
 
     /* Oculta a barra de pesquisa original e exibe a versão móvel */
