@@ -55,6 +55,7 @@ body {
     text-align: left;
     margin-left: 15%;
     max-width: 1000px;
+    font-size: 17px;
 }
 
 .imgtxt2 {
@@ -75,6 +76,7 @@ body {
     text-align: right;
     margin-right: 15%;
     max-width: 1000px;
+    font-size: 17px;
 }
 
 .imgtxt3 {
@@ -95,6 +97,7 @@ body {
     text-align: left;
     margin-left: 15%;
     max-width: 1000px;
+    font-size: 17px;
 }
 
 .imgtxt4 {
@@ -115,6 +118,7 @@ body {
     text-align: right;
     margin-right: 15%;
     max-width: 1000px;
+    font-size: 17px;
 }
 
 /*Carrocel de imagens*/
@@ -124,37 +128,59 @@ h2 {
 }
 
 div.scroll-container {
-    background-color: #52bba9;
+    margin-top: 10px;
+    background-color: #47a598;
     overflow: hidden;
     white-space: nowrap;
-    padding: 3px;
+    padding: 10px;
     display: flex;
     align-items: center;
-    margin-top: 20px;
-}
-div.scroll-container img {
-    padding: 5px;
-    width: 200px;
-    height: 200px;
-    border-radius: 30px;
 }
 
-.noticia{
-    background-color: aliceblue;
-    height: 180px;
-    border-radius: 5px;
-    text-align: center;
-    display: flex;
-    justify-content: center;
+div.scroll-item {
+    display: inline-flex;
     align-items: center;
-    margin-right: 30px;
+    background: aliceblue;
+    margin-right: 10px;
+    padding: 20px;
+    border-radius: 5px;
+    color: rgb(0, 0, 0);
+   width: 490px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.2);
+    align-items: center;
+    text-align: center;
 }
-.noticia:hover{
-    background-color: rgba(206, 247, 255, 1);
+div.scroll-item:hover{
+    background-color: rgb(214, 255, 241);
 }
-div .noticia p{
-   
+
+div.scroll-item img {
+    width: 170px;
+    height: 130px;
+    margin-right: 10px;
+    border-radius: 5px;
+    object-fit: cover;
 }
+
+div.scroll-item p {
+    margin: 0;
+    font-size: 14px;
+    padding: 3px;
+}
+
+div.scroll-item a {
+    color: #2499c7;
+    text-decoration: none;
+    font-size: 14px;
+    margin-top: 5px;
+    display: block;
+}
+
+div.scroll-item a:hover {
+    text-decoration: underline;
+}
+
+
 
 @media (max-width: 480px) {
 
@@ -277,16 +303,16 @@ div .noticia p{
         font-size: 20px;
     }
     div.scroll-container{
-        padding: 2px;
+        padding: 3px;
         margin-top: 20px;
     }
-    div.scroll-container img {
-        padding: 6px;
-        width: 300px;
-        height: 150px;
+    div.scroll-item {
+        padding: 10px;
+        width: 400px;
+        height: 120px;
     }
-    .noticia{
-        height: 140px;
+    div.scroll-item img{
+        height: 110px;
     }
 
 }
