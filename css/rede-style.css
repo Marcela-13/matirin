@@ -1,3 +1,10 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+
 /*Corpo da página*/
 body{
    
@@ -17,9 +24,9 @@ body{
 }
 .form1 {
     background-color: #ffffff;
-    width: 55%;
-    height: 50%;
-    padding: 5%;
+    width: 67%;
+    height: 70%;
+    padding: 8%;
     display: flex;
     flex-direction: column;
     border-radius: 8px;
@@ -30,16 +37,24 @@ body{
 
 h1{
     position: relative;
-    left: 23%;
+    left: 13%;
 }
 .div-btn{
-margin: 3%;
+    width: 100%;
+margin: 1%;
+display: flex;
+justify-content: center;
+align-items: center;
 }
 .button1 {
     background: #00a3ee;
-    padding: 4px 8px;
+    padding: 1%;
+    height: 82%;
+    width: 50%;
+    margin: 2%;
     border-radius: 8px;
     position: relative;
+    left: -3%;
     cursor: pointer;
     border: none
 }
@@ -47,17 +62,19 @@ margin: 3%;
 #phone{
     margin: 15%;
     height: 7%;
-    width: 98%;
+    width: 99%;
     position: relative;
     right: 15%;
 }
 .button2 {
     background: #13e200;
-    padding: 4px 8px;
+    padding: 1px;
+    height: 78%;
+    width: 41%;
+    margin: 1%;
     border-radius: 8px;
     margin: 2%;
     position: relative;
-    left: 16%;
     cursor: pointer;
     border: none;
 
@@ -79,9 +96,16 @@ margin: 3%;
     width: 52%;
 
 }
-#w3review{
+
+#w3revie{
+    width: 5px;
+}
+
+#w3review1{
     height: 90%;
-   
+   width: 105%;
+   position: relative;
+   left: -3%;
 }
 
 /*Comentários*/
@@ -92,7 +116,7 @@ margin: 3%;
     padding: 15px;
     margin: 20px;
     
-    height: 150px;
+    height: 166px;
     width: 100%;
     
 
@@ -110,7 +134,7 @@ margin: 3%;
     font-size: 0.9em;
     color: #666;
     position: relative;
-    left: 60%;
+    left: 36%;
 }
 
 .comment-body {
@@ -178,9 +202,9 @@ footer{
     
     }
  .form1{
-    height: 280px;
-    width: 466%;
-  
+    height: 285px;
+    width: 468%;
+
     padding: 20%;
     display: flex;
     flex-direction: column;
@@ -208,14 +232,14 @@ footer{
     font-size: 0.9em;
     color: #666;
     position: relative;
-    left: 100%;
+    left: -8%;
 }
 #w3review1{
-   height: 97px;
+   height: 95px;
    width: 90%;
-   margin: 3%;
+   margin: 2%;
    position: relative;
-   left: 6.5px;
+   left: 3%;
 }
 .div-btn{
     margin: 1%;
@@ -251,7 +275,7 @@ footer{
         height: 150px;
         width: 100%;
         position: relative;
-        left: -3%;
+        left: -2%;
     }
     #w3review{
         height: 95px;
@@ -259,5 +283,9 @@ footer{
         margin: 1%;
         position: relative;
         left: 3%;
+     }
+
+     .fa.fa-mail-reply{
+        width: 60px;
      }
 }

@@ -26,13 +26,11 @@ header .cadastro {
     justify-content: center;
     align-items: center;
 }
-
 .cadastro img {
     height: 60px;
     width: 70px;
     border-radius: 100px;
 }
-
 .cadastro img:hover {
     transform: scale(1.2);
 }
@@ -43,19 +41,25 @@ header .cadastro {
     display: flex;
     align-items: center;
 }
-#Busca input, #Busca2 input {
+
+#Busca input,
+#Busca2 input {
     border-radius: 10px;
     border: none;
     padding: 8px;
     margin-right: 0px;
 }
-#btnBusca {/*imagem de busca */
+
+
+#btnBusca {
+    /*imagem de busca */
     height: 30px;
     margin-right: 5px;
     display: none;
 }
 
-#Busca2{ /*busca 2, só aparece quando vai para a adaptação em celular*/
+#Busca2 {
+    /*busca 2, só aparece quando vai para a adaptação em celular*/
     margin-top: 40px;
     display: none;
     align-items: center;
@@ -76,7 +80,6 @@ header .cadastro {
     margin: 5px 0;
     transition: all 0.3s;
 }
-
 button {
     font-family: 'monospace';
     font-size: 16px;
@@ -89,7 +92,6 @@ button {
     cursor: pointer;
     margin-left: 4px;
 }
-
 button:hover {
     background-color: #0f4966;
     color: aliceblue;
@@ -105,7 +107,6 @@ button:hover {
     display: flex;
     justify-content: center;
 }
-
 .nav ul li {
     background-color: #b1f8e3;
     margin: 0 50px;
@@ -115,7 +116,6 @@ button:hover {
     border-radius: 7px;
     margin-bottom: 2px;
 }
-
 .nav ul li a {
     text-decoration: none;
     color: #333;
@@ -125,7 +125,6 @@ button:hover {
 .ativo {
     text-decoration: underline !important;
 }
-
 .nav ul li a:hover {
     transition: 2s;
     margin-top: 5px;
@@ -194,7 +193,12 @@ footer {
 
     /* Ajustes de layout do header */
     header {
+<<<<<<< HEAD
         gap:10%;
+=======
+        gap: 1%;
+
+>>>>>>> origin/develop
     }
 
     header .logo {
@@ -218,21 +222,29 @@ footer {
 
     /* Menu escondido inicialmente, aparece com a classe .show */
     .nav {
-        margin-top: -100px;
-        display: none; /* Escondido por padrão */
+        display: none;
+        /* Escondido por padrão */
         flex-direction: column;
-        position: fixed;
+        position: absolute;
         right: 0;
         width: 180px;
         height: 100vh;
+<<<<<<< HEAD
+=======
+        background-color:  #44a9d1;
+>>>>>>> origin/develop
         transition: transform 0.3s ease;
-        transform: translateX(100%); /* Esconde o menu fora da tela */
+        transform: translateX(100%);
+        /* Esconde o menu fora da tela */
         z-index: 1000;
+        border-radius: 7px;
     }
 
     .nav.show {
         display: flex;
-        transform: translateX(0); /* Mostra o menu ao ser clicado */
+        transform: translateX(0);
+        /* Mostra o menu ao ser clicado */
+
     }
 
     .nav ul {
@@ -243,14 +255,26 @@ footer {
         padding: 0;
         border-radius: none;
         margin: 0;
+        width: 100%;
+        background-color:  #44a9d1;
+        padding: 4%;
     }
 
     .nav ul li {
         width: 170px;
         padding: 5px;
+<<<<<<< HEAD
         height: 30px;
         margin-top: 1px;
         border-radius: none;
+=======
+        height: 35px;
+        margin-top: 6px;
+        border-radius: 7px;
+        margin: 5px;
+        background-color: #b1f0ea;
+
+>>>>>>> origin/develop
     }
 
     .nav ul li a {
@@ -259,15 +283,24 @@ footer {
         font-size: 1.1em;
         display: block;
         width: 100%;
+<<<<<<< HEAD
         transition:  0.3s;
         text-align: center;
+=======
+        border-radius: 5px;
+        transition: 0.3s;
+    }
+
+    .nav ul li a:hover {
+        background-color: #63d4c5;
+>>>>>>> origin/develop
     }
 
     /* Oculta a barra de pesquisa original e exibe a versão móvel */
     #Busca {
         display: none;
     }
-    
+
     #Busca2 {
         display: flex;
         align-items: center;
