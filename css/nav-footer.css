@@ -72,7 +72,6 @@ header .cadastro {
     cursor: pointer;
     margin-right: 20px;
 }
-
 .hamburger span {
     width: 25px;
     height: 3px;
@@ -80,6 +79,7 @@ header .cadastro {
     margin: 5px 0;
     transition: all 0.3s;
 }
+
 button {
     font-family: 'monospace';
     font-size: 16px;
@@ -130,6 +130,9 @@ button:hover {
     margin-top: 5px;
     border-radius: 7px;
     margin: 0 50px;
+}
+.formulário{
+    display: none;
 }
 
 /*logo*/
@@ -194,7 +197,6 @@ footer {
     /* Ajustes de layout do header */
     header {
         gap: 1%;
-
     }
 
     header .logo {
@@ -204,10 +206,11 @@ footer {
         width: 120px;
     }
 
-    header .cadastro {
-        /* Oculta o ícone de cadastro */
-        display: none;
+    /*simbolo de cadastro*/
+    .cadastro img { 
+        display: none;/* Oculta o ícone de cadastro */
     }
+   
 
     header .nome {
         /* Ajusta o nome do site */
@@ -218,50 +221,38 @@ footer {
 
     /* Menu escondido inicialmente, aparece com a classe .show */
     .nav {
-        display: none;
-        /* Escondido por padrão */
+        display: none;  /* Escondido por padrão */
         flex-direction: column;
         position: absolute;
         right: 0;
-        width: 180px;
-        height: 100vh;
-        background-color:  #44a9d1;
+        width: 173px;
+        background-color: #63D4C5;
         transition: transform 0.3s ease;
         transform: translateX(100%);
-        /* Esconde o menu fora da tela */
         z-index: 1000;
-        border-radius: 7px;
     }
-
     .nav.show {
         display: flex;
-        transform: translateX(0);
-        /* Mostra o menu ao ser clicado */
-
+        transform: translateX(0); /* Mostra o menu ao ser clicado */
     }
-
     .nav ul {
         flex-direction: column;
         justify-content: space-around;
         align-items: center;
         list-style: none;
         padding: 0;
-        border-radius: none;
+        border-radius: 0;
         margin: 0;
         width: 100%;
-        background-color:  #44a9d1;
-        padding: 4%;
     }
 
     .nav ul li {
         width: 170px;
-        padding: 5px;
-        height: 35px;
-        margin-top: 6px;
-        border-radius: 7px;
+        height: 30px;
+        margin-top: 1px;
+        border-radius: 0;
         margin: 5px;
-        background-color: #b1f0ea;
-
+        text-align: center;
     }
 
     .nav ul li a {
@@ -273,9 +264,8 @@ footer {
         border-radius: 5px;
         transition: 0.3s;
     }
-
-    .nav ul li a:hover {
-        background-color: #63d4c5;
+    .formulário{
+        display: flex;
     }
 
     /* Oculta a barra de pesquisa original e exibe a versão móvel */
@@ -287,6 +277,7 @@ footer {
         display: flex;
         align-items: center;
         justify-content: center;
+        z-index: -100;
     }
 
     #Busca2 input {
