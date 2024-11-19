@@ -7,25 +7,37 @@
     <title>Tradutor e Vídeo</title>
     <link rel="stylesheet" href="../css/style-tradutor.css">
     <link rel="stylesheet" href="../css/nav-footer.css">
-    <link rel= "icon" type="image/x-icon" href="/img/home/logo.png">
-</head>  
+    <link rel="icon" type="image/x-icon" href="/img/home/logo.png">
+</head>
+
 <body>
     <header>
         <div class="logo">
-            <img src="../img/logo.png" alt="Logo">
+            <img src="../img/home/logo.png" alt="Logo">
         </div>
-        <div id="Busca"> <!-- Barra de pesquisa -->
+        <!-- Barra de pesquisa -->
+        <div id="Busca">
             <input type="text" id="txtBusca" placeholder="Buscar..." />
             <img src="../img/pesquisa2semfundo.png" id="btnBusca" alt="Buscar" />
-            <button type="button">Buscar</button> <!-- Adicionei o type="button" -->
+            <!-- Adicionei o type="button" -->
+            <button type="button">Buscar</button>
         </div>
-        <div class="nome"> <!-- Nome do site -->
+        <!-- Nome do site -->
+        <div class="nome">
             <h1 class="nomedosite">Matirin</h1>
         </div>
-        <div class="cadastro"> <!-- Cadastro -->
+        <!-- Cadastro -->
+        <div class="cadastro">
             <a href="pages/formulario.html">
-                <img src="../img/image.png" alt="Cadastro">
+                <img src="../img/home/cadastrod.png" alt="Cadastro">
             </a>
+
+        </div>
+        <!-- Botão de Menu Hamburguinho -->
+        <div class="hamburger" onclick="toggleMenu()">
+            <span></span>
+            <span></span>
+            <span></span>
         </div>
     </header>
 
@@ -44,14 +56,12 @@
     <aside>
         <h3>Histórico de palavras traduzidas</h3>
         <ul>
-            <li>Chat 1 - 2024-09-20</li>
-            <li>Chat 2 - 2024-09-21</li>
-            <li>Chat 3 - 2024-09-22</li>
         </ul>
     </aside>
 
     <main>
         <div>
+            <!--Vídeo com bom dia , demonstração de boneca interativa-->
             <video id="video" controls>
                 <source src="../img/bomdia.mp4" type="video/mp4">
                 Seu navegador não suporta o formato de vídeo.
@@ -70,27 +80,27 @@
             <div class="dropdown">
                 <button class="dropbtn">Histórico</button>
                 <ul class="dropdown-content">
-                    <li>Chat 1 - 2024-09-20</li>
-                    <li>Chat 2 - 2024-09-21</li>
-                    <li>Chat 3 - 2024-09-22</li>
                 </ul>
             </div>
         </div>
     </main>
-
-    <!-- Rodapé -->
-    <footer>
-        &copy; 2024 Matirin. Todos os direitos reservados.
-        <div>
-            <div class="icons"> <!-- Ícones -->
-                <img src="img/home/instlogo.png" alt="Instagram">
-                <img src="img/home/Github-Logo.png" class="Github" alt="Github">
-                <img src="img/simbolo-zap.png" class="zapzap" alt="WhatsApp">
+    <section>
+        <!-- Rodapé -->
+        <footer>
+            &copy; 2024 Matirin. Todos os direitos reservados.
+            <div>
+                <div class="icons"> <!-- Ícones -->
+                    <img src="../img/home/instlogo.png"> 
+                    <img src="../img/home/Github-Logo.png" class="Github">
+                    <img src="../img/home/simbolo-zap.png" class="zapzap">
+                </div>
             </div>
-        </div>
-    </footer>
+        </footer>
+    </section>
+    <!-- Link para o arquivo JS -->
 
-    <script src="../script.js"></script> <!-- Link para o arquivo JS -->
+    <script src="../js/nav.js"></script>   
+     <script src="../js/script.js"></script>
 </body>
 
 </html>
