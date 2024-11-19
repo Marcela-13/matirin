@@ -94,7 +94,7 @@ main {
 .missao,
 .valores,
 .visao {
-    background-color: #a2dbf1; 
+    background-color: #a2dbf1;
     color: black;
     padding: 5%;
     margin: 10%;
@@ -128,7 +128,7 @@ main {
     border-radius: 5px;
     justify-content: space-around;
     align-items: center;
-   
+
 }
 
 .sobre h1 {
@@ -151,8 +151,8 @@ main {
     /* Justificando o texto */
 }
 
-.sobre-text:hover { 
-    background-color: #419ac4; 
+.sobre-text:hover {
+    background-color: #419ac4;
 }
 
 /* Hover no quadro Sobre */
@@ -305,6 +305,7 @@ p {
         flex-direction: row;
         width: 30%;
         height: 30%;
+        margin-bottom: 3%;
     }
 
     .card-foto {
