@@ -10,6 +10,7 @@ body {
     background: linear-gradient(0deg, rgba(220, 255, 233, 1) 24%, rgba(206, 247, 255, 1) 66%);
 }
 
+
 /*teste video*/
 .container {
     position: relative;
@@ -180,6 +181,9 @@ div.scroll-item a:hover {
 
 
 @media (max-width: 480px) {
+    .nav{
+        margin-top: -80px;
+    }
 
     /*itens video*/
 
