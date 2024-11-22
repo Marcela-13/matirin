@@ -63,6 +63,7 @@ header .cadastro {
     margin-top: 40px;
     display: none;
     align-items: center;
+
 }
 
 /* Botão Hamburguinho */
@@ -81,8 +82,7 @@ header .cadastro {
 }
 
 button {
-    font-family: 'monospace';
-    font-size: 16px;
+    font-size: 14px;
     border: none;
     border-radius: 10px;
     width: 60px;
