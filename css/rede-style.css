@@ -2,7 +2,7 @@
     margin: 0;
     padding: 0;
     box-sizing: border-box;
-    font-family: monospace;
+  font-family: 'copperplate';
 }
 /*Corpo da página*/
 body {
@@ -103,8 +103,7 @@ margin-bottom: 10px;
     display: flex;
     justify-content: center;
     align-items: center;
-    position: relative;
-    left: 8%;
+  
 }
 
 
@@ -144,6 +143,24 @@ margin-bottom: 10px;
 
 }
 
+strong{
+    font-family: monospace;
+
+}
+
+.name{
+    font-family: 'time';
+}
+
+p{
+    font-family: monospace;
+
+}
+
+.título{
+    font-family: monospace;
+
+}
 .comment-body {
     font-size: 1em;
     line-height: 1.5;
@@ -220,12 +237,6 @@ footer {
 /*Responsividade do site*/
 @media(max-width: 480px) {
 
-    .btn{
-        width: 40% !important;
-        height: 27px !important;
-        position: relative;
-        left: 2% !important;
-    }
     .main {
         flex-direction: column;
         width: 100%;
@@ -325,6 +336,7 @@ footer {
        
     }
 
+    /*botões do form1*/
     .button1 {
         margin: 1%;
       
@@ -361,6 +373,7 @@ footer {
         position: relative;
         left: 3%;
     }
+    /*form2*/
     .form2 {
 
         border-radius: 8px;
@@ -376,5 +389,11 @@ footer {
         flex-direction: column;
     }
 
+    .btn{
+        width: 40% !important;
+        height: 27px !important;
+        position: relative;
+        left: 2% !important;
+    }
 
 }
