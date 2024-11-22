@@ -2,6 +2,7 @@
   margin: 0;
   padding: 0;
   box-sizing: border-box;
+  font-family: monospace;
   
 
 }
@@ -14,13 +15,20 @@ body {
 /* ele centraliza a parte azul*/
 .flex-content {
   display: flex;
+  /*background-image: url('../img/livros/mato.gif');
+  background-repeat: no-repeat;*/
   justify-content: center;
   align-items: center;
   width: 100%;
   height: 50vh;
 
 }
+ 
+h2{
 
+  background-color: #63d4c5;
+
+}
 
 /*ele marca a area do texto*/
 .texto-informaçao {
@@ -39,11 +47,6 @@ body {
   
   
 
-}
-
-/*ele deixa marcado a pagina que esta*/
-.underline {
-  text-decoration: underline;
 }
 
 /*mantem as letras dentro o middle*/
@@ -201,7 +204,7 @@ footer {
   }
 
    p{
-    font-size: 70%;
+    font-size: 72%;
   }
 
 
