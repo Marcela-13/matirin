@@ -5,18 +5,20 @@
 }
 
 aside {
-    background-color: #47a598;
+    background-color: #c3ebd2;
     position: fixed;
+    border: 20px solid #47a598;
     width: 20%;
     height: 60%;
     margin-top: 5%;
     border-radius: 5%;
-    padding: 5%;
+    padding: 1%;
 }
 
 h3 {
     font-family: monospace;
-    font-size: 20px; 
+    font-size: 25px; 
+    margin-bottom: 60px;
 }
 
 
@@ -29,42 +31,43 @@ aside ul li {
 }
 
 main {
-    background-color:rgb(220,255,233);
-    background: linear-gradient(0deg, rgba(220,255,233,1) 24%, rgba(206,247,255,1) 66%);
+    background-color: rgb(220, 255, 233);
+    background: linear-gradient(0deg, rgba(220, 255, 233, 1) 24%, rgba(206, 247, 255, 1) 66%);
     display: flex;
     flex-direction: column;
-    justify-content: space-around;
+    justify-content: center;
     align-items: center;
     height: 90vh;
     width: 100%;
 }
 
-.tela {
-    background-image: url("../img/bom\ dia.gif");
-    background-repeat: no-repeat; 
-    background-size: 100% 100%;
-    background-color: #000000;
-    border-radius: 5%;
-    width: 30%;
-    height: 50%;
 
+#video {
+    width: 100%;
+    height: 70%;
+    border-radius: 5px;
+    justify-content: center;
+    align-items: center;
+    display: flex;
 }
 
 form {
-    width: 30%;
-    height: 12%;
-    margin-bottom: 10%;
-
+    width: 75%;
+    height: 24%;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
 }
 
 #label-tradução {
     scroll-margin-top: 30px;
     font-size: 15px;
     color: #645b62;
+
 }
 
 textarea {
-    width: 100%;
+    width: 130%;
     height: 100%;
     border: 2px solid #0f4966;
     /* Borda de 2 pixels, sólida e azul */
@@ -74,24 +77,34 @@ textarea {
     /* Margem superior e inferior */
 }
 
-.btn-tradutor {
-    width: 30%;
-    height: 35%;
+#botao {
+    width: 40%;
+    height: 45%;
     justify-content: center;
+    position: relative;
     text-align: center;
+    left: 40%;
     cursor: pointer;
     border: 4px solid rgb(191, 218, 243);
     color: #000000;
     background-color: #47a598;
     border-radius: 10px;
-    /* Bordas arredondadas */
 }
 
-.btn-tradutor:hover {
+#botao:hover {
     background-color: #1b6e97;
 }
 
-
+#name {
+    font-size: 50px;
+    /* Aumenta o tamanho da fonte */
+    padding: 10px;
+    /* Aumenta o espaçamento interno */
+    width: 250px;
+    /* Largura do campo */
+    margin-bottom: 10px;
+    /* Espaçamento abaixo do campo */
+}
 
 footer {
     display: flex;
@@ -106,10 +119,16 @@ footer {
 }
 
 @media (max-width: 480px) {
-    #conteiner {
-        position: relative;
-    }
 
+    main {
+        background-color: rgb(220, 255, 233);
+        background: linear-gradient(0deg, rgba(220, 255, 233, 1) 24%, rgba(206, 247, 255, 1) 66%);
+        display: flex;
+        flex-direction: column;
+        justify-content: space-around;
+        align-items: center;
+        height: 90vh;
+    }
 
 
     aside {
@@ -125,10 +144,10 @@ footer {
     }
 
     .dropbtn {
-        background-color: #aeeec3;
+        background-color: #47a598;
         color: rgb(0, 0, 0);
-        padding: 16px;
-        font-size: 10px;
+        padding: 20px;
+        font-size: 15px;
         border: none;
         cursor: pointer;
         width: 200px;
@@ -137,49 +156,63 @@ footer {
         border: 2px solid rgb(191, 218, 243);
         border-radius: 10px;
         /* Bordas arredondadas */
+
     }
 
-    /* The container <div> - needed to position the dropdown content */
+    .btn-tradutor:hover {
+        background-color: #1b6e97; 
+    }
+
+
+
+    /* O contêiner <div> - necessário para posicionar o conteúdo do menu suspenso */
     .dropdown {
         position: relative;
         display: inline-block;
     }
 
-    /* Dropdown Content (Hidden by Default) */
+    /* Conteúdo suspenso (oculto por padrão) */
     .dropdown-content {
         display: none;
         position: absolute;
-        background-color: #f9f9f9;
-        min-width: 160px;
+        background-color: #47a598;
+        min-width: 200px;
         box-shadow: 0px 8px 16px 0px rgba(0, 0, 0, 0.2);
         z-index: 1;
+        margin-top: -90%;
+        border-radius: 10px;
     }
 
-    /* Links inside the dropdown */
+    /* Links dentro do menu suspenso */
     .dropdown-content li {
         color: black;
         padding: 12px 16px;
         text-decoration: none;
         display: block;
+
     }
 
-    /* Change color of dropdown links on hover */
+    /* Muda a cor dos links suspensos ao passar o mouse */
     .dropdown-content li:hover {
         background-color: #f1f1f1
     }
 
-    /* Show the dropdown menu on hover */
+    /* Mostra o menu suspenso ao passar o mouse */
     .dropdown:hover .dropdown-content {
         display: block;
     }
 
-    /* Change the background color of the dropdown button when the dropdown content is shown */
+    /* Altera a cor de fundo do botão suspenso quando o conteúdo do menu suspenso é mostrado */
     .dropdown:hover .dropbtn {
         background-color: #86beda;
     }
 
-    .btn-tradutor {
-        width: 30%;
+    #botao {
+        width: 70%;
+        height: 60%;
+        display: flex;
+        justify-content: center;
+        align-items: center;
         text-align: center;
         cursor: pointer;
         border: 4px solid rgb(191, 218, 243);
@@ -190,9 +223,13 @@ footer {
         color: rgb(6, 31, 54)
     }
 
-    .tela {
-        padding: 5px;
-        width: 50%;
+    #video {
+        width: 100%;
+        height: 80%;
+        border-radius: 5px;
+        justify-content: center;
+        align-items: center;
+        display: flex;
     }
 
     label {
@@ -200,7 +237,13 @@ footer {
     }
 
     form {
-        margin-bottom: 10%;
-        width: 200px;
+        width: 75%;
+        height: 30%;
+    }
+
+    #botao {
+        width: 50%;
+        height: 40%;
+
     }
 }
