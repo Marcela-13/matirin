@@ -227,7 +227,6 @@ footer {
         right: 0;
         width: 180px;
         height: 100vh;
-        background-color:  #44a9d1;
         transition: transform 0.3s ease;
         transform: translateX(100%);
         /* Esconde o menu fora da tela */
@@ -251,8 +250,9 @@ footer {
         border-radius: none;
         margin: 0;
         width: 100%;
-        background-color:  #44a9d1;
+        background-color: #2499c7;
         padding: 4%;
+        text-align: center;
     }
 
     .nav ul li {
