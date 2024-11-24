@@ -94,7 +94,7 @@ main {
 .missao,
 .valores,
 .visao {
-    background-color: #a2dbf1; 
+    background-color: #a2dbf1;
     color: black;
     padding: 5%;
     margin: 10%;
@@ -133,6 +133,7 @@ main {
 
 .sobre h1 {
     font-size: 50px;
+    
 }
 
 /* Estlizando a classe específica do quadro sobre */
@@ -143,7 +144,7 @@ main {
     width: 60%;
     height: 60%;
     padding: 5%;
-
+    margin-bottom: 80%;
 }
 
 .sobre-text p {
@@ -151,8 +152,8 @@ main {
     /* Justificando o texto */
 }
 
-.sobre-text:hover { 
-    background-color: #419ac4; 
+.sobre-text:hover {
+    background-color: #419ac4;
 }
 
 /* Hover no quadro Sobre */
@@ -280,6 +281,7 @@ p {
         border-radius: 5px;
         width: 95%;
         height: auto;
+        margin-bottom: 0;
     }
 
     .sobre {
@@ -305,6 +307,7 @@ p {
         flex-direction: row;
         width: 30%;
         height: 30%;
+        margin-bottom: 3%;
     }
 
     .card-foto {
