@@ -8,14 +8,15 @@
     <link rel="stylesheet" href="../css/nav-footer.css">
     <link rel="stylesheet" href="../css/rede-style.css" />
     <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
-   
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link rel="icon" type="image/x-icon" href="/img/home/logo.png">
 </head>
 
 <body>
     <header>
         <div class="logo">
-            <img src="../img/logo.png">
+            <img src="../img/home/logo.png">
         </div>
         <div id="Busca"> <!--Barra de pesquisa-->
             <input type="text" id="txtBusca" placeholder="Buscar..." />
@@ -26,36 +27,48 @@
             <h1 class="nomedosite">Matirin</h1>
         </div>
         <div class="cadastro"> <!--Cadastro-->
-            <img src="img/image.png" href="pages/formulario.html">
+            <img src="../img/cadastrod.png" href="pages/formulario.html">
+        </div>
+        <!-- Botão de Menu Hamburguinho -->
+        <div class="hamburger" onclick="toggleMenu()">
+            <span></span>
+            <span></span>
+            <span></span>
         </div>
     </header>
 
     <!--Navegação-->
     <div class="nav">
         <ul>
-             <li><a href="pages/index.html">Home</a></li>   
-             <li><a href="pages/sobre.html">Sobre nós</a></li>
-             <li><a href="pages/tradutor.html">Tradução interativa</a></li>
-          
-            <li><a href="pages/informacao.html">livros</a></li>
-            <li><a href="pages/rede.html">Rede</a></li>
+            <li><a href="../index.html">Home</a></li>
+            <li><a href="./sobre.html">Sobre nós</a></li>
+            <li><a href="./tradutor.html">Tradução interativa</a></li>
+            <li><a href="informacao.html">livros</a></li>
+            <li><a href="rede.html">Rede</a></li>
         </ul>
     </div>
-
+    <div class="image-container">
+        <img src="../img/4.gif" class="gif">
+    </div>
     <div class="main">
         <div class="content">
             <div class="form1">
-            <h1>Criar Fórum</h1>
+                <h1>Criar Fórum</h1>
+
+                <label class="título">Título:</label>
                 <input type="tel" id="phone" name="phone" placeholder="Insira um título">
+
+                <label class="título">Adicione sua questão:</label>
                 <textarea id="w3review1" name="w3review1" rows="15" cols="67" type="tel" id="phone" name="phone"
                     placeholder="Digite sua pergunta"></textarea>
                 <div class="div-btn">
-                    <button class="button1"> Add imagem
-                        <i class="material-icons" style="font-size:20px;color:rgb(255, 255, 255);left: 1%;">add_a_photo</i>
+                 
+                   
 
                     </button>
-                    <button class="button2">Publicar
-                        <i class="material-icons icon" style="font-size:20px;color:rgb(255, 255, 255);left: 1%;">send</i>
+                    <button class="button2"> Criação
+                        <i class="material-icons icon"
+                            style="font-size:20px;color:rgb(255, 255, 255);left: 1%;">send</i>
                     </button>
                 </div>
             </div>
@@ -63,86 +76,129 @@
 
 
         <div class="feed">
-
             <div class="comment">
                 <div class="comment-header">
-                    <strong>Romilson</strong>
-                    <span class="comment-date">02 de Outubro, 2024</span>
-                </div>
-                <strong>O que vocês sabem sobre libras?</strong>
-                <div class="comment-body">
-                    <p>Este é um comentário interessante! Estou ansioso para ver mais discussões como esta.</p>
-                </div>
-                <div>
-                    <i class="material-icons icone">visibility</i>
-                    <i class="material-icons">comment</i>
-                </div>
-            </div>
-            <div class="comment">
-                <div class="comment-header">
-                    <strong>Romilson</strong>
-                    <span class="comment-date">02 de Outubro, 2024</span>
-                </div>
-                <strong>O que vocês sabem sobre libras?</strong>
-                <div class="comment-body">
-                    <p>Este é um comentário interessante! Estou ansioso para ver mais discussões como esta.</p>
-                </div>
-                <div>
-                    <i class="material-icons icone">visibility</i>
-                    <i class="material-icons">comment</i>
-                </div>
-            </div>
-
-            <div class="comment">
-
-                <div class="comment-header">
-                    <strong>Romilson</strong>
-                    <span class="comment-date">02 de Outubro, 2024</span>
-                </div>
-                <strong>O que vocês sabem sobre libras?</strong>
-                <div class="comment-body">
-                    <p>Este é um comentário interessante! Estou ansioso para ver mais discussões como esta.</p>
-                </div>
-                <div>
-                    <i class="material-icons icone">visibility</i>
-                    <i class="material-icons">comment</i>
-                </div>
-
-            </div>
-           
-            <div class="comment">
-                <div class="comment-header">
-                    <strong>Romilson</strong>
-                    <span class="comment-date">02 de Outubro, 2024</span>
-                </div>
-                <strong>O que vocês sabem sobre libras?</strong>
-                <div class="comment-body">
-                    <p>Este é um comentário interessante! Estou ansioso para ver mais discussões como esta.</p>
-                </div>
-                <div>
-                    <i class="material-icons icone">visibility</i>
-                    <i class="material-icons">comment</i>
-                </div>
-                <div class="form2">
-                    <div class="suggestions">
-                        <textarea id="w3review" name="w3review " rows="7"  cols="104" type="tel" id="phone" name="phone"
-                            placeholder="Adicione uma sugestão"></textarea>
-                            <button class="fa fa-mail-reply " style="font-size:16px;margin-top: 3px; border-radius: 5px;height: 25%; width:11%;border:none; cursor:pointer; background-color:rgb(0, 255, 34);color:rgb(0, 0, 0);left: 10%;">Responder <i class="fa fa-mail-"></i></button>
+                    <div>
+                        <img src="../img/professora.jpg" style="border-radius: 50%;  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2); width: 40px;
+    height: 38px;"><strong class="name">Sandra flores</strong>
                     </div>
-              
+
+                    <span class="comment-date">02 de Outubro, 2024</span>
                 </div>
+                <strong>Quais estratégias podem ser usadas para criar um ambiente de aprendizado mais inclusivo para alunos surdos, especialmente no que se refere a atividades em grupo?</strong>
+                <div class="comment-body">
+                    <p>Sou professora e queria ser mais interativa possível com meus alunos.</p>
+                </div>
+                <div>
+                    <button style="color: brown;font-size:17px;width: 0px;left: 23%" ;><i
+                            class="fa fa-heart"></i></button>
+                    <i class="material-icons icone">visibility</i>
+                    <i class="material-icons">comment</i>
+                </div>
+            </div>
+            <div class="comment">
+                <div class="comment-header">
+                    <div>
+                        <img src="../img/cirurgiã.jpg" style="border-radius: 50%;  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2); width: 40px;
+    height: 38px;"><strong class="name">Kátia Rodrigues</strong>
+                    </div>
+
+                    <span class="comment-date">02 de Outubro, 2024</span>
+                </div>
+                <strong>Existem recursos ou materiais de treinamento em Libras voltados para médicos e cirurgiões?</strong>
+                <div class="comment-body">
+                    <p>Sou médica cirurgiã e queria conteúdos relacionados á libras para treinar em minha área
+                    .</p>
+                </div>
+                <div>
+                    <button style="color: brown;font-size:17px;width: 0px;left: 23%" ;><i
+                            class="fa fa-heart"></i></button>
+                    <i class="material-icons icone">visibility</i>
+                    <i class="material-icons">comment</i>
+                </div>
+            </div>
+            <div class="comment">
+                <div class="comment-header">
+                <div>           <img src="../img/aeronáutico.jpg" style="border-radius: 50%;  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2); width: 40px;
+    height: 38px;"><strong class="name">Lucas Kenid</strong></div>
+         
+                    <span class="comment-date">02 de Outubro, 2024</span>
+                </div>
+                <strong>Como posso melhorar minha comunicação em Libras com colegas surdos no ambiente de trabalho, especialmente em situações de emergência?</strong>
+                <div class="comment-body">
+                    <p>Sou técnico aeronáutico e queria ajudar as pessoas na emergência.</p>
+                </div>
+                <div>
+                    <button style="color: brown;font-size:17px;width: 0px;left: 23%" ;><i
+                            class="fa fa-heart"></i></button>
+                    <i class="material-icons icone">visibility</i>
+                    <i class="material-icons">comment</i>
+                </div>
+            </div>
+
+            <div class="comment">
+
+                <div class="comment-header">
+                    <div><img src="../img/estudante.jpg" style="border-radius: 50%;  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2); width: 40px;
+    height: 38px;"><strong class="name">Júlia Lima</strong></div>
+                    <span class="comment-date">02 de Outubro, 2024</span>
+                </div>
+                <strong>Alguém me indica um livro curto e interativo de libras?</strong>
+                <div class="comment-body">
+                    <p>Tenho um amigo com deficiência auditiva  e queria achar maneiras que ele possa se enturmar,quero indicar um livro pra ele.</p>
+                </div>
+                <div>
+                    <button style="color: brown;font-size:17px;width: 0px;left: 23%" ;><i
+                            class="fa fa-heart"></i></button>
+                    <i class="material-icons icone">visibility</i>
+                    <i class="material-icons">comment</i>
+                </div>
+
+            </div>
+
+            <div class="comment">
+                <div class="comment-header">
+                    <div> <img src="../img/intérprete de libras.jpg" style="border-radius: 50%;  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2); width: 40px;
+    height: 38px;"><strong class="name">Samara</strong></div>
+                   
+                    <span class="comment-date">02 de Outubro, 2024</span>
+                </div>
+                <strong>    Quais os melhores livros de libras para eu apresentar para meus pacientes?</strong>
+                <div class="comment-body">
+                    <p>Sou intérprete de libras e queria ser mais interativa com meus pacientes,se alguém souber por favor comentem aqui e me dê dicas.</p>
+                </div>
+                <div>
+                    <button style="color: brown;font-size:17px;width: 0px;left: 23%" ;><i
+                            class="fa fa-heart"></i></button>
+                    <i class="material-icons icone">visibility</i>
+                    <i class="material-icons">comment</i>
+                </div>
+
+            </div>
+            <div class="form2">
+                <div class="suggestions">
+                    <textarea id="w3review" name="w3review " rows="7" cols="125" type="tel" id="phone" name="phone"
+                        placeholder="Adicione uma sugestão"></textarea>
+                    <button class="fa fa-mail-reply btn "
+                        style="font-size:16px;margin-top: 3px; border-radius: 5px;height: 25%; width:11%;border:none; cursor:pointer; background-color:rgb(0, 255, 34);color:rgb(0, 0, 0);left: 10%;">Responder
+                        <i class="fa fa-mail-"></i></button>
+                </div>
+
             </div>
         </div>
 
-
-        <footer> &copy; 2024 Matirin. Todos os direitos reservados.
-            <div>
-                <div class="icons"> <!--Icones-->
-                    <img src="../img/instlogo.png">
-                    <img src="../img/Github-Logo.png" class="Github">
-                    <img src="../img/simbolo-zap.png" class="zapzap">
-                </div>
+    </div>
+    <footer> &copy; 2024 Matirin. Todos os direitos reservados.
+        <div>
+            <div class="icons"> <!--Icones-->
+                <img src="../img/home/instlogo.png">
+                <img src="../img/home/Github-Logo.png" class="Github">
+                <img src="../img/home/simbolo-zap.png" class="zapzap">
             </div>
-        </footer></body>
+        </div>
+    </footer>
+    <script src="../js/nav.js"></script>
+    <script src="../js/script-rede.js"></script>
+</body>
 
-</html> 
+</html>

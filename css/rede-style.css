@@ -4,28 +4,41 @@
     box-sizing: border-box;
 }
 
-
 /*Corpo da página*/
-body{
-   
-    background-color:linear-gradient( #bbeaff,#7ecf8f)  ;
+body {
+    width: 100%;
+    background: rgb(206, 247, 255);
+    background: linear-gradient(0deg, rgba(206, 247, 255, 1) 0%, rgba(220, 255, 233, 1) 100%);
+    background-repeat: no-repeat;
+    background-size: cover;
 }
+
+.gif {
+    height: 470px;
+    width: 1895px;
+    line-height: 200px;
+    text-align: center;
+
+}
+
+
 .main {
     display: flex;
     justify-content: space-around;
-    margin-top: 5%;
-    background:linear-gradient( #bbeaff,#7ecf8f)  ; ;
+    margin-top: 1%;
+    margin-bottom: 12%;
 }
 
 /*Área de criar Fórum*/
-.content{
+.content {
     width: 30%;
 
 }
+
 .form1 {
     background-color: #ffffff;
     width: 67%;
-    height: 70%;
+    height: 40%;
     padding: 8%;
     display: flex;
     flex-direction: column;
@@ -35,43 +48,50 @@ body{
 
 }
 
-h1{
-    position: relative;
-    left: 13%;
-}
-.div-btn{
+/*input do form1*/
+#phone {
+    margin: 1%;
     width: 100%;
-margin: 1%;
-display: flex;
-justify-content: center;
-align-items: center;
 }
+
+/*textearea do form1*/
+#w3review {
+    width: 98%;
+}
+
+h1 {
+    text-align: center;
+    margin-bottom: 10px;
+
+}
+
+.título {
+    position: relative;
+    left: 8%;
+}
+
+/*Botões do form1*/
+
 .button1 {
     background: #00a3ee;
     padding: 1%;
     height: 82%;
-    width: 50%;
+    width: 160px;
     margin: 2%;
     border-radius: 8px;
     position: relative;
-    left: -3%;
+    left: -14%;
     cursor: pointer;
     border: none
 }
 
-#phone{
-    margin: 15%;
-    height: 7%;
-    width: 99%;
-    position: relative;
-    right: 15%;
-}
+
 .button2 {
     background: #13e200;
     padding: 1px;
     height: 78%;
-    width: 41%;
-    margin: 1%;
+    width: 55%;
+    margin: 5%;
     border-radius: 8px;
     margin: 2%;
     position: relative;
@@ -80,33 +100,37 @@ align-items: center;
 
 }
 
-.material-symbols-outlined{
+.div-btn {
+    width: 90%;
+    margin: 3%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+}
+
+
+/*Ícones dos botões do form1*/
+.material-symbols-outlined {
     position: relative;
     position: relative;
     left: 56%;
 }
-.material-symbols-outlined{
+
+.material-symbols-outlined {
     position: relative;
     left: 3%;
     color: #ffffff;
 }
 
 /*Área de comentários*/
-.feed{
+.feed {
     width: 52%;
 
 }
 
-#w3revie{
-    width: 5px;
-}
 
-#w3review1{
-    height: 90%;
-   width: 105%;
-   position: relative;
-   left: -3%;
-}
+
 
 /*Comentários*/
 .comment {
@@ -115,26 +139,30 @@ align-items: center;
     box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
     padding: 15px;
     margin: 20px;
-    
-    height: 166px;
+
+    height: 175px;
     width: 100%;
-    
+
 
 }
 
-.comment-header {
-    display: flex;
-    justify-content: space-between;
-    width: 600px;
-    height: 50px;
-   
+strong {
+    font-family: monospace;
+
 }
-/*Data*/
-.comment-date {
-    font-size: 0.9em;
-    color: #666;
-    position: relative;
-    left: 36%;
+
+.name {
+    font-family: 'time';
+}
+
+p {
+    font-family: monospace;
+
+}
+
+.título {
+    font-family: monospace;
+
 }
 
 .comment-body {
@@ -143,18 +171,44 @@ align-items: center;
     margin: 1%;
 
 }
-.material-icons{
+
+.comment-header {
+    display: flex;
+    justify-content: space-between;
+    height: 50px;
+
+}
+
+.comment-header div {
+    display: flex;
+    justify-content: start;
+    align-items: center;
+}
+
+.name {
+    margin-left: 10px;
+}
+
+/*Data*/
+.comment-date {
+    font-size: 0.9em;
+    color: #666;
+    display: flex;
+    justify-content: end;
+    align-items: center;
+}
+
+
+/*ícone dos comentários*/
+.material-icons {
     color: #666;
     position: relative;
     left: 90%;
     padding: 4px;
 }
-/*Rodapé*/
-footer{
-    position: fixed;
-}
-/*sugestão*/
-.form2{
+
+/*sugestão form2*/
+.form2 {
     background-color: white;
     border-radius: 8px;
     box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
@@ -162,130 +216,186 @@ footer{
     display: flex;
     justify-content: space-around;
     margin-top: 5%;
-    height: 150px;
+    height: 190px;
     width: 100%;
-   
-}
-
-.suggestions{
-  height: 60%;
-  margin: 6px;
-}
-.fa fa-mail-reply{
-    background: #00ff00;
-    padding: 9px 0px;
-    border-radius: 8px;
-    margin: 2%;
     position: relative;
-    left: -7%;
-    cursor: pointer;
-
+    left: 2%;
 
 }
+
+/*textearea do form2*/
+#w3review1 {
+    margin: 1%;
+    width: 100%;
+}
+
+/*botão responder*/
+.suggestions {
+    height: 60%;
+    margin: 6px;
+}
+
+
 /*Responsividade do site*/
-@media(max-width: 480px){
+@media(max-width: 480px) {
 
-
- 
-    .main{
+    .main {
         flex-direction: column;
+        width: 100%;
+        justify-content: center;
+        align-items: center;
+
     }
-    
+
+    .content {
+        width: 100%;
+        display: flex;
+        justify-content: center;
+
+    }
+
+    .gif {
+        height: 150%;
+        width: 100%;
+        line-height: 200px;
+        text-align: center;
+    }
+
+    .form1 {
+        width: 100%;
+
+    }
+
+    h2 {
+        position: relative;
+        left: 5%;
+    }
+
+    h3 {
+        position: relative;
+        left: 5%;
+    }
+
+
+    #phone {
+
+
+        height: 6%;
+        width: 79%;
+        position: relative;
+        left: 6%;
+        right: 4.0%;
+    }
+
+    .feed {
+        position: relative;
+        left: -12%;
+    }
+
     .comment {
-   
+
         padding: 15px;
         margin: 20px;
-        
-        height: 140px;
-        width: 275%;
-   flex-direction: column;
-    
+        position: relative;
+        left: -21%;
+        justify-content: center;
+        width: 170%;
+        height: 261px;
+        flex-direction: column;
+
     }
- .form1{
-    height: 285px;
-    width: 468%;
 
-    padding: 20%;
-    display: flex;
-    flex-direction: column;
-    border-radius: 8px;
-    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
-    margin: 12%;
- }
- #phone{
 
-    margin: 5%;
-    height: 7%;
-  width: 89%;
-    position: relative;
-    left: 0px;
-    right: 4.0%;
- }
 
-.material-icons{
-    color: #666;
-    position: relative;
-    left: 80%;
-    padding: 4px;
-}
-.comment-date {
-    font-size: 0.9em;
-    color: #666;
-    position: relative;
-    left: -8%;
-}
-#w3review1{
-   height: 95px;
-   width: 90%;
-   margin: 2%;
-   position: relative;
-   left: 3%;
-}
-.div-btn{
-    margin: 1%;
-    position: relative;
-    left: 20%;
+
+    .material-icons {
+        color: #666;
+        position: relative;
+        left: 75%;
+        padding: 4px;
     }
+
+
+    p {
+        padding: 18px;
+    }
+
+
+    #w3review1 {
+        height: 50%;
+        width: 79%;
+        margin: 2%;
+        position: relative;
+        left: 6%;
+    }
+
+
+    .div-btn {
+
+        position: relative;
+        left: -1%;
+
+    }
+
+    /*botões do form1*/
     .button1 {
-       margin: 1%;
-        padding: 3px 5px;
+        margin: 1%;
+
         border-radius: 8px;
         position: relative;
-        left: -7%;
+        left: -2%;
+        width: 50%;
         cursor: pointer;
         border: none
     }
+
     .button2 {
         position: relative;
-        left: 15%;
-        padding: 3px 9px;
+        left: 2%;
+
+        width: 37%;
         border-radius: 8px;
         margin: 1%;
         cursor: pointer;
         border: none
-    
     }
-    .form2{
-  
+
+    .div-btn {
+        width: 90%;
+        margin: 3%;
+        display: flex;
+
+    }
+
+
+    .fa.fa-mail-reply {
+
+        width: 1000px;
+        position: relative;
+        left: 3%;
+    }
+
+    /*form2*/
+    .form2 {
+
         border-radius: 8px;
         padding: 14px;
         display: flex;
+        justify-content: center;
         justify-content: space-around;
         margin-top: 5%;
-        height: 150px;
-        width: 100%;
+        height: 100%;
+        width: 170%;
         position: relative;
-        left: -2%;
+        left: -12%;
+        flex-direction: column;
     }
-    #w3review{
-        height: 95px;
-        width: 90%;
-        margin: 1%;
-        position: relative;
-        left: 3%;
-     }
 
-     .fa.fa-mail-reply{
-        width: 60px;
-     }
+    .btn {
+        width: 40% !important;
+        height: 27px !important;
+        position: relative;
+        left: 2% !important;
+    }
+
 }

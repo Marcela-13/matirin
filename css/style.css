@@ -10,6 +10,7 @@ body {
     background: linear-gradient(0deg, rgba(220, 255, 233, 1) 24%, rgba(206, 247, 255, 1) 66%);
 }
 
+
 /*teste video*/
 .container {
     position: relative;
@@ -27,7 +28,7 @@ body {
     width: 100%;
 }
 .content {
-    z-index: -1;
+    z-index: -100;
 }
 .nome-video {
     text-align: center;
@@ -50,12 +51,11 @@ body {
     margin-right: 90px;
 }
 .texto1 p {
-    font-family: 'copperplate';
-    font-size: 140%;
     text-align: left;
     margin-left: 15%;
     max-width: 1000px;
-    font-size: 17px;
+    font-size: 19px;
+    font-family: monospace;
 }
 
 .imgtxt2 {
@@ -71,12 +71,11 @@ body {
     margin-left: 90px;
 }
 .texto2 p {
-    font-family: 'copperplate';
-    font-size: 140%;
     text-align: right;
     margin-right: 15%;
     max-width: 1000px;
-    font-size: 17px;
+    font-size: 19px;
+    font-family: monospace
 }
 
 .imgtxt3 {
@@ -92,12 +91,11 @@ body {
     margin-right: 90px;
 }
 .texto3 {
-    font-family: 'copperplate';
-    font-size: 140%;
     text-align: left;
     margin-left: 15%;
     max-width: 1000px;
-    font-size: 17px;
+    font-size: 19px;
+    font-family: monospace
 }
 
 .imgtxt4 {
@@ -113,12 +111,11 @@ body {
     margin-left: 90px;
 }
 .texto4 {
-    font-family: 'copperplate';
-    font-size: 140%;
     text-align: right;
     margin-right: 15%;
     max-width: 1000px;
-    font-size: 17px;
+    font-size: 19px;
+    font-family: monospace
 }
 
 /*Carrocel de imagens*/
@@ -163,6 +160,7 @@ div.scroll-item img {
 }
 
 div.scroll-item p {
+    font-family: monospace;
     margin: 0;
     font-size: 14px;
     padding: 3px;
@@ -183,6 +181,9 @@ div.scroll-item a:hover {
 
 
 @media (max-width: 480px) {
+    .nav{
+        margin-top: -80px;
+    }
 
     /*itens video*/
 
@@ -304,7 +305,7 @@ div.scroll-item a:hover {
     }
     div.scroll-container{
         padding: 3px;
-        margin-top: 20px;
+        margin-top: 10px;
     }
     div.scroll-item {
         padding: 10px;
