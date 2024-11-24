@@ -2,8 +2,8 @@
     margin: 0;
     padding: 0;
     box-sizing: border-box;
-  font-family: 'copperplate';
 }
+
 /*Corpo da página*/
 body {
     width: 100%;
@@ -26,7 +26,7 @@ body {
     display: flex;
     justify-content: space-around;
     margin-top: 1%;
-margin-bottom: 12%;
+    margin-bottom: 12%;
 }
 
 /*Área de criar Fórum*/
@@ -47,19 +47,21 @@ margin-bottom: 12%;
     margin: 6%;
 
 }
+
 /*input do form1*/
 #phone {
-margin: 1%;
-width: 100%;
+    margin: 1%;
+    width: 100%;
 }
+
 /*textearea do form1*/
 #w3review {
-width: 98%;
+    width: 98%;
 }
 
 h1 {
-text-align: center;
-margin-bottom: 10px;
+    text-align: center;
+    margin-bottom: 10px;
 
 }
 
@@ -97,13 +99,14 @@ margin-bottom: 10px;
     border: none;
 
 }
+
 .div-btn {
     width: 90%;
     margin: 3%;
     display: flex;
     justify-content: center;
     align-items: center;
-  
+
 }
 
 
@@ -143,24 +146,25 @@ margin-bottom: 10px;
 
 }
 
-strong{
+strong {
     font-family: monospace;
 
 }
 
-.name{
+.name {
     font-family: 'time';
 }
 
-p{
+p {
     font-family: monospace;
 
 }
 
-.título{
+.título {
     font-family: monospace;
 
 }
+
 .comment-body {
     font-size: 1em;
     line-height: 1.5;
@@ -174,12 +178,14 @@ p{
     height: 50px;
 
 }
-.comment-header div{
+
+.comment-header div {
     display: flex;
     justify-content: start;
     align-items: center;
 }
-.name{
+
+.name {
     margin-left: 10px;
 }
 
@@ -218,7 +224,7 @@ p{
 }
 
 /*textearea do form2*/
-#w3review1{
+#w3review1 {
     margin: 1%;
     width: 100%;
 }
@@ -229,10 +235,6 @@ p{
     margin: 6px;
 }
 
-/*Rodapé*/
-footer {
-    position: fixed;
-}
 
 /*Responsividade do site*/
 @media(max-width: 480px) {
@@ -244,24 +246,26 @@ footer {
         align-items: center;
 
     }
+
     .content {
         width: 100%;
         display: flex;
         justify-content: center;
-    
-    } 
-    
-    .gif{
+
+    }
+
+    .gif {
         height: 150%;
         width: 100%;
         line-height: 200px;
         text-align: center;
     }
-     .form1 {
+
+    .form1 {
         width: 100%;
-        
+
     }
- 
+
     h2 {
         position: relative;
         left: 5%;
@@ -272,10 +276,10 @@ footer {
         left: 5%;
     }
 
-    
+
     #phone {
 
-      
+
         height: 6%;
         width: 79%;
         position: relative;
@@ -283,10 +287,11 @@ footer {
         right: 4.0%;
     }
 
-.feed{
-    position: relative;
-    left: -12%;
-}
+    .feed {
+        position: relative;
+        left: -12%;
+    }
+
     .comment {
 
         padding: 15px;
@@ -297,7 +302,7 @@ footer {
         width: 170%;
         height: 261px;
         flex-direction: column;
-       
+
     }
 
 
@@ -308,10 +313,6 @@ footer {
         position: relative;
         left: 75%;
         padding: 4px;
-    }
-
-    img{
-        margin-top: -2%;
     }
 
 
@@ -333,13 +334,13 @@ footer {
 
         position: relative;
         left: -1%;
-       
+
     }
 
     /*botões do form1*/
     .button1 {
         margin: 1%;
-      
+
         border-radius: 8px;
         position: relative;
         left: -2%;
@@ -359,20 +360,21 @@ footer {
         border: none
     }
 
-   .div-btn{
-       width: 90%;
-    margin: 3%;
-    display: flex;
-  
-   }
+    .div-btn {
+        width: 90%;
+        margin: 3%;
+        display: flex;
+
+    }
 
 
     .fa.fa-mail-reply {
-     
+
         width: 1000px;
         position: relative;
         left: 3%;
     }
+
     /*form2*/
     .form2 {
 
@@ -389,7 +391,7 @@ footer {
         flex-direction: column;
     }
 
-    .btn{
+    .btn {
         width: 40% !important;
         height: 27px !important;
         position: relative;
