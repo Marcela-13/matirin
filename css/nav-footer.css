@@ -74,7 +74,7 @@ header .cadastro {
 }
 
 .hamburger span {
-    width: 30px;
+    width: 25px;
     height: 3px;
     background: #fff;
     margin: 5px 0;
@@ -99,6 +99,7 @@ button:hover {
 
 /*Navegação*/
 .nav ul {
+    background-color: #63D4C5;
     font-family: 'monospace';
     display: flex;
     list-style: none;
@@ -111,9 +112,10 @@ button:hover {
     background-color: #b1f8e3;
     margin: 0 50px;
     padding: 5px;
-    height: 25px;
-    margin-top: 6px;
+    height: 24px;
+    margin-top: 2px;
     border-radius: 7px;
+    margin-bottom: 2px;
 }
 .nav ul li a {
     text-decoration: none;
@@ -222,7 +224,7 @@ footer {
         flex-direction: column;
         position: absolute;
         right: 0;
-        width: 200px;
+        width: 180px;
         height: 100vh;
         background-color:  #44a9d1;
         transition: transform 0.3s ease;
@@ -245,6 +247,7 @@ footer {
         align-items: center;
         list-style: none;
         padding: 0;
+        border-radius: none;
         margin: 0;
         width: 100%;
         background-color:  #44a9d1;
@@ -252,7 +255,7 @@ footer {
     }
 
     .nav ul li {
-        width: 100%;
+        width: 170px;
         padding: 5px;
         height: 35px;
         margin-top: 6px;
