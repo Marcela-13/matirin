@@ -128,11 +128,12 @@ main {
     border-radius: 5px;
     justify-content: space-around;
     align-items: center;
-
+   
 }
 
 .sobre h1 {
     font-size: 50px;
+    
 }
 
 /* Estlizando a classe específica do quadro sobre */
@@ -143,7 +144,7 @@ main {
     width: 60%;
     height: 60%;
     padding: 5%;
-
+    margin-bottom: 80%;
 }
 
 .sobre-text p {
@@ -280,6 +281,7 @@ p {
         border-radius: 5px;
         width: 95%;
         height: auto;
+        margin-bottom: 0;
     }
 
     .sobre {
