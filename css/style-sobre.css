@@ -128,7 +128,7 @@ main {
     border-radius: 5px;
     justify-content: space-around;
     align-items: center;
-   
+    
 }
 
 .sobre h1 {
@@ -142,9 +142,10 @@ main {
     border: 1px solid rgba(0, 0, 0, 0);
     border-radius: 5px;
     width: 60%;
-    height: 60%;
+    height: 40%;
     padding: 5%;
-    margin-bottom: 80%;
+    margin-bottom: 100%;
+   
 }
 
 .sobre-text p {
@@ -191,7 +192,7 @@ main {
     border: 1px solid rgba(0, 0, 0, 0);
     border-radius: 5px;
     width: 70%;
-    height: 75%;
+    height: 70%;
 }
 
 .foto,
@@ -250,7 +251,7 @@ p {
     -ms-transform: translate(-50%, -50%);
     /*(-webkit- e -ms-): Esses prefixos são usados para garantir compatibilidade com navegadores mais antigos (como versões antigas do Safari e do Internet Explorer)*/
     transform: translate(-50%, -50%);
-    font-size: 100%;
+    font-size: 95%;
     width: 100%;
     height: auto;
     text-align: center;
@@ -285,6 +286,7 @@ p {
     }
 
     .sobre {
+        
         padding: 2%;
     }
 
@@ -333,7 +335,7 @@ p {
     .texto4,
     .texto5 {
         color: black;
-        font-size: 100%;
+        font-size: 95%;
         height: auto;
         text-align: center;
         padding: 2%;
