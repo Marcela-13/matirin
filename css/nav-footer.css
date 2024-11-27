@@ -108,7 +108,9 @@ button:hover {
     font-family: 'monospace';
     display: flex;
     list-style: none;
+    background-color: #53D4C5;
     margin-top: 20;
+    background-color: #63D4C5;
     display: flex;
     justify-content: center;
     z-index: 10000px;

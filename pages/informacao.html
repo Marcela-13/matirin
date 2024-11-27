@@ -7,34 +7,65 @@
     <title>Projeto Matirin</title>
     <link rel="stylesheet" href="../css/style-livro.css" />
     <link rel="stylesheet" href="../css/nav-footer.css">
+    <link rel="icon" type="image/x-icon" href="../img/home/logo.png">
 </head>
 
 <body>
+    <!--teste-->
+    <div vw class="enabled">
+        <div vw-access-button class="active"></div>
+        <div vw-plugin-wrapper>
+          <div class="vw-plugin-top-wrapper"></div>
+        </div>
+      </div>
+      <script src="https://vlibras.gov.br/app/vlibras-plugin.js"></script>
+      <script>
+        new window.VLibras.Widget('https://vlibras.gov.br/app');
+      </script>
+    <!--teste-->
     <header>
         <div class="logo">
             <img src="../img/home/logo.png">
         </div>
         <div id="Busca"> <!--Barra de pesquisa-->
             <input type="text" id="txtBusca" placeholder="Buscar..." />
-            <img src="../img/pesquisa2semfundo.png" id="btnBusca" alt="Buscar" />
+            <img src="../img/home/pesquisa2semfundo.png" id="btnBusca" alt="Buscar" />
             <button>buscar</button>
         </div>
         <div class="nome"> <!--Nome do site-->
             <h1 class="nomedosite">Mátirin</h1>
         </div>
         <div class="cadastro"> <!--Cadastro-->
+<<<<<<< HEAD
             <a href="../pages/formulario.html"><img src="../img/home/cadastrod.png"></a>
+=======
+            <img src="../img/home/cadastrod.png" href="pages/formulario.html">
+        </div>
+         <!-- Botão de Menu Hamburguinho -->
+         <div class="hamburger" onclick="toggleMenu()">
+            <span></span>
+            <span></span>
+            <span></span>
+>>>>>>> a43cfe87661ac7d22f1405f26dfdbb4ec24077d7
         </div>
     </header>
 
     <!--Navegação-->
     <div class="nav">
         <ul>
+<<<<<<< HEAD
              <li><a href="../Index.html">Home</a></li>   
              <li><a href="../pages/sobre.html">Sobre nós</a></li>
              <li><a href="../pages/tradutor.html">Tradução interativa</a></li>
             <li><a class="ativo" href="../pages/informacao.html">Livros</a></li>
             <li><a href="../pages/rede.html">Rede</a></li>
+=======
+             <li><a href="../index.html">Home</a></li>   
+             <li><a href="sobre.html">Sobre nós</a></li>
+             <li><a href="tradutor.html">Tradução interativa</a></li>
+            <li><a class="ativo" href="informacao.html">Livros</a></li>
+            <li><a href="rede.html">Rede</a></li>
+>>>>>>> a43cfe87661ac7d22f1405f26dfdbb4ec24077d7
         </ul>
     </div>
 
@@ -42,7 +73,9 @@
     
 
             <section class="flex-content">
+          
                 <div class="texto-informaçao">
+                   
                     <h1 id="infomaçao">A importância da leitura </h1>
                     <p> incentivo à leitura em Libras (Língua Brasileira de Sinais) é crucial para a inclusão e o
                         desenvolvimento das pessoas surdas. Ele promove o acesso equitativo à informação e à
@@ -57,99 +90,149 @@
             
                
         </main>
-        <!--teste-->
-    
-
- <!--teste-->     
-        <h1 class="subtitulo" id="fotos"> Livros</h1>
+     
+        <h2>literatura infantil</h2>
         <section class="grid-livraria">
+           
             <div class="grid-item">
 
         
 
                 <!--o texto aparece quando passa o mouse na imagem-->
+
+                <section class="grid-item">
+                    <div class="container">
+                        <a href="https://www.amazon.com.br/Contos-Cl%C3%A1ssicos-em-Libras-Rapunzel/dp/6580921684/ref=pd_sim_d_sccl_2_3/146-7070421-9794669?pd_rd_w=C8Top&content-id=amzn1.sym.8555f615-361b-42f7-96c4-206bb8a5174e&pf_rd_p=8555f615-361b-42f7-96c4-206bb8a5174e&pf_rd_r=2S4NK5ECV09Z6QHTJ9A0&pd_rd_wg=Uxjfg&pd_rd_r=5148d387-fe32-43e5-9650-cc34ef797b56&pd_rd_i=6580921684&psc=1">
+                            <img src="../img/livros/rapunzel.jpg" alt="rapunzel">
+                        </a>
+                        <div class="middle">
+                            <p>Rapunzel vive numa imensa torre, prisioneira do mundo, por uma bruxa malvada. O cabelo da menina nunca é cortado e é conservado como uma gigantesca trança. Um dia, um príncipe passando pelo local, ouve Rapunzel cantando, e decide salvá-la das garras da bruxa.</p>
+                        </div>
+                    </div>
+                </section>
+
+                 </div>
+
+                 <section class="grid-item">
+                    <div class="container">
+                        <a
+                            href="https://www.amazon.com.br/Turma-M%C3%B4nica-Contos-Cl%C3%A1ssicos-Libras/dp/6555474963/ref=pd_sim_d_sccl_2_1/146-7070421-9794669?pd_rd_w=Jes8s&content-id=amzn1.sym.8555f615-361b-42f7-96c4-206bb8a5174e&pf_rd_p=8555f615-361b-42f7-96c4-206bb8a5174e&pf_rd_r=EDSK76J6788R7TXEAHP8&pd_rd_wg=1BUfa&pd_rd_r=3a03049a-8ae9-49c6-b352-115ea6428127&pd_rd_i=6555474963&psc=1">
+                            <img src="../img/livros/turma.jpg" alt="Turma da Monica">
+                        </a>
+                        <div class="middle">
+                            <p>Sueli é a primeira personagem surda das histórias de Mauricio de Sousa. Na HQ que marca a sua estreia, o novo professor de Educação Física, Jairo Woo, é apresentado aos alunos na escola do bairro do Limoeiro. E os filhos dele, Sueli e Felipe, também estudarão lá.</p>
+                        </div>
+                    </div>
+                </section>
+
+                <section class="grid-item">
+                    <div class="container">
+                      <a href="https://www.amazon.com.br/Contos-cl%C3%A1ssicos-adormecida-Projetos-escolares/dp/8543227879/ref=sr_1_29?__mk_pt_BR=%C3%85M%C3%85%C5%BD%C3%95%C3%91&crid=3USXPDC42J9FG&dib=eyJ2IjoiMSJ9.KvRQWZRLnQhUXzP5tv5O-PwhuiXUjuNzBcIR-d_BhNv8XLxGnhV-KOHcgXFHiF74Gd_bVOG-xRY7QY_STcPnXPqYzA3R9xt9W4f2aw2lAEh4t0v_R2PTaJRKFLEt0-SMmZWtI12Wzi_ceetoaQNt-aMOQqnxm78Z_EeX25AEKfoDfHltz52IotxirBlm6mIFH2byXgtsgyZhdi7kOUuyO8slTpRlgo9Hy4Txxs-sZ9RW-L6aZxSfZPtuuFr59Uh3k4PxIB88faaLaw0Y4CQdKBE1mZPZppyzvJUzT8jIYUg.08YzeRdC41Qhg7btfObJw6r3iIGHq6A31mG3wuRt_Do&dib_tag=se&keywords=livros+em+libras&qid=1731520970&sprefix=livros+e%2Caps%2C3977&sr=8-29">
+                        <img src="../img/bela.jpg" alt="bela adormecida">
+                      </a>
+                      <div class="middle">
+                        <p>Uma jovem é amaldiçoada e condenada ao sono profundo até receber o beijo do amor verdadeiro.</p>
+                      </div>
+                    </div>
+                  </section>
+                  <section class="grid-item">
+                    <div class="container">
+                        <a
+                            href="https://www.amazon.com.br/Contos-Cl%C3%A1ssicos-Libras-Chapeuzinho-Vermelho/dp/6580921692/ref=sr_1_5?dib=eyJ2IjoiMSJ9.o6DdANBYFXf0VUnQLrRtA7OtSJ_J0t-_6BtAklbddTn8XLxGnhV-KOHcgXFHiF74a76-bZqDvgDMV8VkEGQGP7Pab8LjYCsbvL-HuZPqCpV1c7wLoGF60j5KMxgzPAsj9OV5OtjY3QsvXBxEft-uMbtZSAfuQxwG0CFhZLRtkrwuyzfGnpy74e_xgVPHPi01QmKiVWt4uxXXnaFJ0YwqyKaGy1d2LOneBQsvmtlbYD8.wjsF_nDGfd07I29-325u2JI-kIFYU6Sbh1ZEvA-U_9I&dib_tag=se&keywords=L%C3%ADngua+brasileira+de+sinais&qid=1729710904&s=books&sr=1-5">
+                            <img src="../img/livros/chapeu.jpg" alt="Chapeuzinho vermelho">
+                        </a>
+                        <div class="middle">
+                            <p>O enredo conta sobre uma menina que sempre usava uma capa vermelha e um dia teve que atravessar a floresta para levar uma cesta de doces para sua avó, mas no meio do caminho é enganada por um lobo mau.</p>
+                        </div>
+                    </div>
+                </section>
+
+                 
+
+                  <!--teste-->
+        </section>
+                  <h2>Aprendendo libras</h2>
+                  <!--teste-->
+                
+                  
+
+              <section class="grid-livraria">
+                  <section class="grid-item">
+                    <div class="container">
+                      <a href="https://www.amazon.com.br/crian%C3%A7as-ouvintes-segunda-poss%C3%ADvel-inclus%C3%A3o/dp/6555231645/ref=sr_1_25?__mk_pt_BR=%C3%85M%C3%85%C5%BD%C3%95%C3%91&crid=3USXPDC42J9FG&dib=eyJ2IjoiMSJ9.KvRQWZRLnQhUXzP5tv5O-PwhuiXUjuNzBcIR-d_BhNv8XLxGnhV-KOHcgXFHiF74Gd_bVOG-xRY7QY_STcPnXPqYzA3R9xt9W4f2aw2lAEh4t0v_R2PTaJRKFLEt0-SMmZWtI12Wzi_ceetoaQNt-aMOQqnxm78Z_EeX25AEKfoDfHltz52IotxirBlm6mIFH2byXgtsgyZhdi7kOUuyO8slTpRlgo9Hy4Txxs-sZ9RW-L6aZxSfZPtuuFr59Uh3k4PxIB88faaLaw0Y4CQdKBE1mZPZppyzvJUzT8jIYUg.08YzeRdC41Qhg7btfObJw6r3iIGHq6A31mG3wuRt_Do&dib_tag=se&keywords=livros+em+libras&qid=1731520970&sprefix=livros+e%2Caps%2C3977&sr=8-25&ufe=app_do%3Aamzn1.fos.6d798eae-cadf-45de-946a-f477d47705b9">
+                        <img src="../img/en.jpg" alt="Ensino de libras a crianças ouvintes como segunda língua e fator possível de inclusão social">
+                      </a>
+                      <div class="middle">
+                        <p>A ideia central deste projeto é a de fazer a inclusão ao contrário, começando com as crianças ouvintes aprendendo a ver o seu par diferente como outro igual, na certeza de que, quanto antes tenham contato com ele, menos teremos que falar de inclusão no futuro.</p>
+                      </div>
+                    </div>
+                  </section>
+              
+              
+              
+              
+              
+              
+            <section class="grid-item">
+                <div class="container">
+                    <a href="https://www.amazon.com.br/Libras-Aprender-Est%C3%A1-Suas-M%C3%A3os/dp/8544418902/ref=sr_1_14?__mk_pt_BR=%C3%85M%C3%85%C5%BD%C3%95%C3%91&crid=3USXPDC42J9FG&dib=eyJ2IjoiMSJ9.KvRQWZRLnQhUXzP5tv5O-PwhuiXUjuNzBcIR-d_BhNv8XLxGnhV-KOHcgXFHiF74Gd_bVOG-xRY7QY_STcPnXPqYzA3R9xt9W4f2aw2lAEh4t0v_R2PTaJRKFLEt0-SMmZWtI12Wzi_ceetoaQNt-aMOQqnxm78Z_EeX25AEKfoDfHltz52IotxirBlm6mIFH2byXgtsgyZhdi7kOUuyO8slTpRlgo9Hy4Txxs-sZ9RW-L6aZxSfZPtuuFr59Uh3k4PxIB88faaLaw0Y4CQdKBE1mZPZppyzvJUzT8jIYUg.08YzeRdC41Qhg7btfObJw6r3iIGHq6A31mG3wuRt_Do&dib_tag=se&keywords=livros+em+libras&qid=1731520970&sprefix=livros+e%2Caps%2C3977&sr=8-14&ufe=app_do%3Aamzn1.fos.6d798eae-cadf-45de-946a-f477d47705b9">
+                        <img src="../img/lib.jpg" alt="aprender">
+                    </a>
+
+
+                    <div class="middle">
+
+                        <p>O livro “LIBRAS: APRENDER ESTÁ EM SUAS MÃOS”, agora em sua 2ª edição e com algumas alterações, é um material de apoio indispensável a professores de Libras, acadêmicos e outras pessoas interessadas em aprender a Libras.</p>
+                    </div>
+                </div>
+
+                </div>
+            </section>
+            <section class="grid-item">
+                <div class="container">
+                    <a href="https://leiasp.odilo.us/info/terra-sonambula-01000626">
+                        <img src="../img/terra-sonambula.jpg" alt="Terra sonâmbula">
+                    </a>
+
+                    <div class="middle">
+
+                        <p> Primeiro romance de Mia Couto, Terra Sonâmbula é uma verdadeira aula sobre a velha arte de contar histórias. No Moçambique pós-independência, mergulhado em uma devastadora guerra civil, um velho e um menino empreendem uma viagem recheada de fantasias míticas</p>
+                    </div>
+                </div>
+
+                </div>
+            </section>
+            <section class="grid-item">
+                <div class="container">
+                    <a href="https://www.amazon.com.br/grande-livro-libras-Lingua-brasileira/dp/6587817424">
+                        <img src="../img/LIBB.jpg" alt="O Grande Livro de Libras: Lingua brasileira de sinais: Suplementos e Guias de estudo">
+                    </a>
+
+                    <div class="middle">
+
+                        <p>Quando se fala em inclusão social, tem se como princípio básico a transformação da sociedade no sentido de entender as necessidades dos diferentes grupos e procurar atende-las, possibilitando, assim, o exercício pleno da cidadania.</p>
+                    </div>
+                </div>
+                </div>
+            </section>
+            </section>
+
+            <!--tete-->
+
+            <h2>Livros que vão te levar para outro mundo de descobertas</h2>
+
+            <section class="grid-livraria">
+            <section class="grid-item">
                 <div class="container">
                     <a href="https://leiasp.odilo.us/info/alice-no-pais-das-maravilhas-01140162">
-                        <img src="../img/aliceno.webp" alt="Alice1">
-                    </a>
-
-
-
-                    <div class="middle">
-
-                        <p> A jornada de Alice nos lembra da importância de permanecer fiel a nós mesmos e de seguir
-                            nossos próprios sonhos e aspirações, mesmo quando o mundo ao nosso redor parece estranho e
-                            confuso.</p>
-                    </div>
-                </div>
-
-
-
-
-            </div>
-            <section class="grid-item">
-                <div class="container">
-                    <a href="https://leiasp.odilo.us/info/1984-01000585">
-                        <img src="../img/louco.jpeg" alt="1984">
-                    </a>
-
-
-                    <div class="middle">
-
-                        <p>1984 mostra uma futura realidade distópica ocorrida no ano de 1984. Nessa
-                            realidade, a Inglaterra é comandada por um regime totalitarista em que todos são vigiados
-                            pelo
-                            Grande Irmão. Winston Smith, protagonista da narrativa, questiona o poder vigente.</p>
-                    </div>
-                </div>
-
-                </div>
-            </section>
-            <section class="grid-item">
-                <div class="container">
-                    <a href="https://leiasp.odilo.us/info/aprendendo-a-cair-01000590">
-                        <img src="../img/livro1.jpeg" alt="1">
+                        <img src="../img/SED00009_225x318-4.jpg" alt="Alice">
                     </a>
 
                     <div class="middle">
 
-                        <p> Neuerkerode é uma vila alemã gerida inteiramente por pessoas com algum tipo de
-                            deficiência mental. Eles administram o restaurante local, o bar, o supermercado – eles estão
-                            no
-                            comando.</p>
-                    </div>
-                </div>
-
-                </div>
-            </section>
-            <section class="grid-item">
-                <div class="container">
-                    <a href="https://leiasp.odilo.us/info/a-volta-ao-mundo-em-80-dias-01000874">
-                        <img src="../img/livro2.jpg" alt="2">
-                    </a>
-
-                    <div class="middle">
-
-                        <p>Um inglês rico, metódico e um tanto quanto solitário aposta com seus
-                            colegas do clube de jogos que conseguirá dar uma volta ao mundo em apenas 80 dias. Para tal
-                            feito, Fogg convida seu fiel empregado Jean Passepartout e juntos viverão muitas
-                            aventuras.</p>
-                    </div>
-                </div>
-                </div>
-            </section>
-            <section class="grid-item">
-                <div class="container">
-                    <a href="https://leiasp.odilo.us/info/a-bruxa-nao-vai-para-a-fogueira-neste-livro-01000617">
-                        <img src="../img/bruxa.jpeg" alt="bruxa">
-                    </a>
-
-                    <div class="middle">
-
-                        <p>Um relato poético, inspirador e contundente da mulher no século XXI Aqueles que
-                            consideram “bruxa” um xingamento não poderiam estar mais enganados: bruxas são mulheres
-                            capazes
-                            de incendiar o mundo ao seu redor.</p>
+        <p>A jornada de Alice nos lembra da importância de permanecer fiel a nós mesmos e de seguir
+            nossos próprios sonhos e aspirações, mesmo quando o mundo ao nosso redor parece estranho e
+            confuso.</p>
                     </div>
                 </div>
 
@@ -158,7 +241,7 @@
             <section class="grid-item">
                 <div class="container">
                     <a href="https://leiasp.odilo.us/info/alice-atraves-do-espelho-01140163">
-                        <img src="../img/AliceadE.jpg" alt="Alice">
+                        <img src="../img/livros/AliceadE.jpg" alt="Alice">
                     </a>
 
                     <div class="middle">
@@ -174,18 +257,12 @@
             </section>
             <section class="grid-item">
                 <div class="container">
-                    <a href="https://leiasp.odilo.us/info/a-escrava-isaura-01000847">
-                        <img src="../img/isaura.jpg" alt="isaura">
+                    <a href="https://leiasp.odilo.us/info/o-jardim-secreto-01140174">
+                        <img src="../img/jardim.jpg" alt="jardim">
                     </a>
                     <div class="middle">
                         <p>
-                            A escrava Isaura é um romance regionalista do escritor mineiro Bernardo Guimarães.
-                            Nessa obra, de caráter abolicionista, Isaura, uma escrava branca, é assediada
-                            incessantemente
-                            por
-                            Leôncio, seu dono por herança e proprietário de uma fazenda. No entanto, a jovem não cede
-                            aos
-                            desejos do vilão e consegue fugir.
+                            Após ficar órfã, Mary Lennox vai morar na Inglaterra com seu tio viúvo. A mansão tem quase cem quartos e seu tio se mantém trancado lá. Os jardins que cercam a grande propriedade despertam a curiosidade de Mary. Ao decidir explorá-los, a órfã descobre um jardim secreto, cercado por muros e trancado com uma chave perdida. Com a ajuda de dois companheiros, Mary descobre como trazer o jardim de volta à vida.
                         </p>
                     </div>
                 </div>
@@ -195,7 +272,7 @@
 
                 <div class="container">
                     <a href="https://leiasp.odilo.us/info/a-ilha-do-tesouro-01140166">
-                        <img src="../img/ilha.jpg" alt="ilha">
+                        <img src="../img/livros/ilha.jpg" alt="ilha">
                     </a>
                     <div class="middle">
                         <p>
@@ -207,19 +284,22 @@
                     </div>
                 </div>
             </section>
-            <section class="grid-item">
+        </section>
+
+        <h2>Aprendendo cada vez mais com diferentes livros</h2>
+
+
+        <section class="grid-livraria">
+  <section class="grid-item">
 
                 <div class="container">
-                    <a href="https://leiasp.odilo.us/info/arsene-lupin-ladrao-de-casaca-01000607">
-                        <img src="../img/lupin.jpeg" alt="LUPIN">
+                    <a href="https://leiasp.odilo.us/info/cancao-para-ninar-menino-grande-01000572">
+                        <img src="../img/livros/cançaopninar.jpeg" alt="canção">
                     </a>
 
                     <div class="middle">
 
-                        <p>A alta sociedade francesa diverte-se a bordo do transatlântico Provence, quando chega a
-                            notícia: Arsène Lupin, o ladrão impossível de se capturar, viaja disfarçado entre os
-                            passageiros. Eis a chance de o Inspetor Ganimard prender o homem capaz de realizar crimes
-                            perfeitos e fugas espetaculares.</p>
+                        <p>Trata-se de um mosaico afetuoso de experiências negras, um canto amoroso e dolorido. Na figura do personagem Fio Jasmim, Conceição discute com maestria as contradições e complexidades em torno da masculinidade de homens negros e os efeitos nas relações com as mulheres negras. </p>
                     </div>
                 </div>
 
@@ -229,15 +309,13 @@
 
                 <div class="container">
 
-                    <a href="https://leiasp.odilo.us/info/o-pequeno-principe-preto-01000604">
-                        <img src="../img/ppreto.jpeg" alt="príncipe">
+                    <a href="https://leiasp.odilo.us/info/bons-dias-01000848">
+                        <img src="../img/Machado_de_Assis___Bons_Dias_1__ORIGINAL.jpg" alt="dias">
                     </a>
 
                     <div class="middle">
 
-                        <p>Este livro delicado traz a história do Pequeno Príncipe Preto que vive em um remoto planeta
-                            com sua única companheira, uma árvore Baobá. Quando chegam as ventanias, o menino viaja por
-                            diferentes planetas, espalhando o amor e a empatia. </p>
+                        <p>A série de crônicas intitulada Bons Dias, publicada entre 1888e 1889, é a perfeita síntese desse registro machadiano. Tanto que nela encontramos, por exemplo, uma sátira ao transporte do meteorito caído em Bedengó e, no mesmo texto, uma discussão sobre a implantação do federalismo no Brasil. </p>
                     </div>
                 </div>
 
@@ -245,39 +323,38 @@
             </section>
             <section class="grid-item">
                 <div class="container">
-                    <a href="https://leiasp.odilo.us/info/o-pequeno-principe-01000601">
-                        <img src="../img/pequeno.jpeg" alt="príncipe">
+                    <a href="https://www.amazon.com.br/Pressa-ser-feliz-Cr%C3%B4nicas-ansioso/dp/8542212223">
+                        <img src="../img/feliz.jpg" alt="príncipe">
                     </a>
 
                     <div class="middle">
 
-                        <p>Esse livro conta a história de uma criança, o pequeno príncipe que vive em um planeta bem
-                            pequeno, um asteroide na verdade, onde tem uma vida super tranquila. Um certo dia, uma flor
-                            cresce lindamente em seu planeta e seus dias passam a ser mais felizes.</p>
+                        <p>Textos inéditos do autor do blog Neologismo: o cotidiano de alguém que sabe ser feliz apesar da ansiedade. Matheus Rocha, autor do blog Neologismo, gosta de falar sobre a vida. E a vida tem dessas coisas: paixões, relacionamentos desencontrados e amores que marcam o coração. </p>
                     </div>
                 </div>
             </section>
 
             <section class="grid-item">
                 <div class="container">
-                    <a href="https://leiasp.odilo.us/info/o-menino-nelson-mandela-01000595">
-                        <img src="../img/meni.jpeg" alt="NELSON">
+                    <a href="https://www.amazon.com.br/melhor-Nelson-Rodrigues-Teatro-cr%C3%B4nicas/dp/8520942946/ref=sr_1_1?__mk_pt_BR=%C3%85M%C3%85%C5%BD%C3%95%C3%91&crid=1TTQ44WULRTV8&dib=eyJ2IjoiMSJ9.OeLKFifd-WhnbImGSDhmp783GkjHklrdacOWefEmjgUKvcuOVdme8SGT5VWDLfSlvWFJ0SQZULVLKEU4ysJjmwd-q8yfTzECMcsnb5s1zE5Cl4prG5OvnGUABShFX5_oHKTSopxZjsCZMX5vCSA6C6hZ3DJWMjYkUEOFJKmDNRi1fmL-5WcgUPwXkJWZGTcGFGXycycfnLWbBIDvvdCVjk3i-gFmNCcKxKwqkmR9r_Q.l7iqoJBIBq4vUw6vkOZKNB2HVM0O6xmGRTJVdH1UWEE&dib_tag=se&keywords=O+Melhor+de+Nelson+Rodrigues&qid=1731950765&s=books&sprefix=o+melhor+de+nelson+rodrigues%2Cstripbooks%2C326&sr=1-1">
+                        <img src="../img/rodri.jpg" alt="O melhor de Nelson Rodrigues">
                     </a>
 
                     <div class="middle">
 
-                        <p>Da infância como pastor de ovelhas passando por sua libertação após quase trinta anos de
-                            prisão, a biografia romanceada O MENINO NELSON MANDELA, de Viviana Mazza, conta a história
-                            do ativista que ganhou o Prêmio Nobel da Paz em 1993 e liderou seu povo na luta pela
-                            liberdade.</p>
+                        <p>O livro O Melhor de Nelson Rodrigues faz parte de uma coleção que apresenta autores de destaque da literatura brasileira. Nelson Rodrigues (1912-1980) foi um artista que revolucionou o teatro nacional, além de também atuar como jornalista, contista e, claro, cronista.</p>
                     </div>
                 </div>
             </section>
+        </section>
+
+        <h2>Livros que vão te fazer refletir</h2>
+        <section class="grid-livraria">
 
             <section class="grid-item">
                 <div class="container">
                     <a href="https://leiasp.odilo.us/info/a-cartomante-01000841">
-                        <img src="../img/acart.jpg" alt="A cartomante">
+                        <img src="../img/livros/acart.jpg" alt="A cartomante">
                     </a>
                     <div class="middle">
                         <p>“A cartomante” é um conto de Machado de Assis e faz parte da obra Várias histórias, livro
@@ -289,38 +366,52 @@
 
             <section class="grid-item">
                 <div class="container">
-                    <a
-                        href="https://www.amazon.com.br/Contos-Cl%C3%A1ssicos-Libras-Chapeuzinho-Vermelho/dp/6580921692/ref=sr_1_5?dib=eyJ2IjoiMSJ9.o6DdANBYFXf0VUnQLrRtA7OtSJ_J0t-_6BtAklbddTn8XLxGnhV-KOHcgXFHiF74a76-bZqDvgDMV8VkEGQGP7Pab8LjYCsbvL-HuZPqCpV1c7wLoGF60j5KMxgzPAsj9OV5OtjY3QsvXBxEft-uMbtZSAfuQxwG0CFhZLRtkrwuyzfGnpy74e_xgVPHPi01QmKiVWt4uxXXnaFJ0YwqyKaGy1d2LOneBQsvmtlbYD8.wjsF_nDGfd07I29-325u2JI-kIFYU6Sbh1ZEvA-U_9I&dib_tag=se&keywords=L%C3%ADngua+brasileira+de+sinais&qid=1729710904&s=books&sr=1-5">
-                        <img src="../img/chapeu.jpg" alt="Chapeuzinho vermelho">
-                    </a>
-                    <div class="middle">
-                        <p>O enredo conta sobre uma menina que sempre usava uma capa vermelha e um dia teve que atravessar a floresta para levar uma cesta de doces para sua avó, mas no meio do caminho é enganada por um lobo mau.</p>
-                    </div>
+                  <a href="https://www.amazon.com.br/Ouvinte-Surdez-Ensinar-Aprender-Libras/dp/8579340500/ref=sr_1_15?__mk_pt_BR=%C3%85M%C3%85%C5%BD%C3%95%C3%91&crid=3USXPDC42J9FG&dib=eyJ2IjoiMSJ9.KvRQWZRLnQhUXzP5tv5O-PwhuiXUjuNzBcIR-d_BhNv8XLxGnhV-KOHcgXFHiF74Gd_bVOG-xRY7QY_STcPnXPqYzA3R9xt9W4f2aw2lAEh4t0v_R2PTaJRKFLEt0-SMmZWtI12Wzi_ceetoaQNt-aMOQqnxm78Z_EeX25AEKfoDfHltz52IotxirBlm6mIFH2byXgtsgyZhdi7kOUuyO8slTpRlgo9Hy4Txxs-sZ9RW-L6aZxSfZPtuuFr59Uh3k4PxIB88faaLaw0Y4CQdKBE1mZPZppyzvJUzT8jIYUg.08YzeRdC41Qhg7btfObJw6r3iIGHq6A31mG3wuRt_Do&dib_tag=se&keywords=livros+em+libras&qid=1731520970&sprefix=livros+e%2Caps%2C3977&sr=8-15&ufe=app_do%3Aamzn1.fos.6d798eae-cadf-45de-946a-f477d47705b9">
+                    <img src="../img/ouv.jpg" alt="O Ouvinte e a Surdez. Sobre Ensinar e Aprender a Libras ">
+                  </a>
+                  <div class="middle">
+                    <p>O ouvinte e o desconhecido mundo da surdez… Mútuo desconhecimento! Do ouvinte ― que convive com um mundo que desconhece ― e da surdez ― que desconhece o ouvinte e o mundo dele.</p>
+                  </div>
                 </div>
-            </section>
+              </section>
+
+
 
             <section class="grid-item">
                 <div class="container">
-                    <a
-                        href="https://www.amazon.com.br/Turma-M%C3%B4nica-Contos-Cl%C3%A1ssicos-Libras/dp/6555474963/ref=pd_sim_d_sccl_2_1/146-7070421-9794669?pd_rd_w=Jes8s&content-id=amzn1.sym.8555f615-361b-42f7-96c4-206bb8a5174e&pf_rd_p=8555f615-361b-42f7-96c4-206bb8a5174e&pf_rd_r=EDSK76J6788R7TXEAHP8&pd_rd_wg=1BUfa&pd_rd_r=3a03049a-8ae9-49c6-b352-115ea6428127&pd_rd_i=6555474963&psc=1">
-                        <img src="../img/turma.jpg" alt="Turma da Monica">
-                    </a>
-                    <div class="middle">
-                        <p>Sueli é a primeira personagem surda das histórias de Mauricio de Sousa. Na HQ que marca a sua estreia, o novo professor de Educação Física, Jairo Woo, é apresentado aos alunos na escola do bairro do Limoeiro. E os filhos dele, Sueli e Felipe, também estudarão lá.</p>
-                    </div>
+                  <a href="https://www.amazon.com.br/Fam%C3%ADlia-Libras-Filipe-Mac%C3%AAdo/dp/6553844860/ref=sr_1_3?__mk_pt_BR=%C3%85M%C3%85%C5%BD%C3%95%C3%91&crid=3USXPDC42J9FG&dib=eyJ2IjoiMSJ9.KvRQWZRLnQhUXzP5tv5O-PwhuiXUjuNzBcIR-d_BhNv8XLxGnhV-KOHcgXFHiF74Gd_bVOG-xRY7QY_STcPnXPqYzA3R9xt9W4f2aw2lAEh4t0v_R2PTaJRKFLEt0-SMmZWtI12Wzi_ceetoaQNt-aMOQqnxm78Z_EeX25AEKfoDfHltz52IotxirBlm6mIFH2byXgtsgyZhdi7kOUuyO8slTpRlgo9Hy4Txxs-sZ9RW-L6aZxSfZPtuuFr59Uh3k4PxIB88faaLaw0Y4CQdKBE1mZPZppyzvJUzT8jIYUg.08YzeRdC41Qhg7btfObJw6r3iIGHq6A31mG3wuRt_Do&dib_tag=se&keywords=livros+em+libras&qid=1731520730&sprefix=livros+e%2Caps%2C3977&sr=8-3">
+                    <img src="../img/familia.jpg" alt="Familia da libras">
+                  </a>
+                  <div class="middle">
+                    <p>Você sabia que existem famílias diferentes e todas são muito importantes? Neste livro, vamos aprender com o escritor Filipe Macedo, o Passarinho, como podemos nos comunicar por meio das mãos.</p>
+                  </div>
                 </div>
-            </section>
+              </section>
 
-            <section class="grid-item">
-                <div class="container">
-                    <a href="https://www.amazon.com.br/Contos-Cl%C3%A1ssicos-em-Libras-Rapunzel/dp/6580921684/ref=pd_sim_d_sccl_2_3/146-7070421-9794669?pd_rd_w=C8Top&content-id=amzn1.sym.8555f615-361b-42f7-96c4-206bb8a5174e&pf_rd_p=8555f615-361b-42f7-96c4-206bb8a5174e&pf_rd_r=2S4NK5ECV09Z6QHTJ9A0&pd_rd_wg=Uxjfg&pd_rd_r=5148d387-fe32-43e5-9650-cc34ef797b56&pd_rd_i=6580921684&psc=1">
-                        <img src="../img/rapunzel.jpg" alt="rapunzel">
-                    </a>
-                    <div class="middle">
-                        <p>Rapunzel vive numa imensa torre, prisioneira do mundo, por uma bruxa malvada. O cabelo da menina nunca é cortado e é conservado como uma gigantesca trança. Um dia, um príncipe passando pelo local, ouve Rapunzel cantando, e decide salvá-la das garras da bruxa.</p>
-                    </div>
+
+
+
+
+            <div class="container">
+                <a href="https://leiasp.odilo.us/info/1984-01000585">
+                    <img src="../img/livros/louco.jpeg" alt="1984">
+                </a>
+
+
+
+                <div class="middle">
+
+                    <p> 1984 mostra uma futura realidade distópica ocorrida no ano de 1984. Nessa
+                        realidade, a Inglaterra é comandada por um regime totalitarista em que todos são vigiados
+                        pelo
+                        Grande Irmão. Winston Smith, protagonista da narrativa, questiona o poder vigente.</p>
                 </div>
-            </section>
+            </div>
+        </section>
+
+            
+
+           
 
 
 
@@ -333,12 +424,13 @@
         <footer> &copy; 2024 Matirin. Todos os direitos reservados.
             <div>
                 <div class="icons"> <!--Icones-->
-                    <img src="../img/instlogo.png">
-                    <img src="../img/Github-Logo.png" class="Github">
-                    <img src="../img/simbolo-zap.png" class="zapzap">
+                    <img src="../img/home/instlogo.png">
+                    <img src="../img/home/Github-Logo.png" class="Github">
+                    <img src="../img/home/simbolo-zap.png" class="zapzap">
                 </div>
             </div>
         </footer>
+        <script src="../js/nav.js"></script>
     </body>
 
 </html>
