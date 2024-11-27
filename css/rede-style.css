@@ -2,7 +2,7 @@
     margin: 0;
     padding: 0;
     box-sizing: border-box;
-  font-family: 'copperplate';
+  font-family: 'Montserrat';
 }
 /*Corpo da página*/
 body {
@@ -12,11 +12,10 @@ body {
     background-repeat: no-repeat;
     background-size: cover;
 }
-
+/*gif*/
 .gif {
-    height: 470px;
-    width: 1895px;
-    line-height: 200px;
+    height:500px;
+    width:100%;
     text-align: center;
 
 }
@@ -34,6 +33,12 @@ margin-bottom: 12%;
     width: 30%;
 
 }
+/*Fórum*/
+h1 {
+    text-align: center;
+    margin-bottom: 10px;
+    
+    }
 
 .form1 {
     background-color: #ffffff;
@@ -47,48 +52,28 @@ margin-bottom: 12%;
     margin: 6%;
 
 }
-/*input do form1*/
+/*input do Fórum*/
 #phone {
 margin: 1%;
 width: 100%;
 }
-/*textearea do form1*/
+/*textearea do Fórum*/
 #w3review {
 width: 98%;
-}
-
-h1 {
-text-align: center;
-margin-bottom: 10px;
-
 }
 
 .título {
     position: relative;
     left: 8%;
+    font-family: monospace;
 }
 
-/*Botões do form1*/
-
+/*Botão do Fórum*/
 .button1 {
-    background: #00a3ee;
-    padding: 1%;
-    height: 82%;
-    width: 160px;
-    margin: 2%;
-    border-radius: 8px;
-    position: relative;
-    left: -14%;
-    cursor: pointer;
-    border: none
-}
-
-
-.button2 {
     background: #13e200;
     padding: 1px;
     height: 78%;
-    width: 55%;
+    width: 40%;
     margin: 5%;
     border-radius: 8px;
     margin: 2%;
@@ -106,28 +91,11 @@ margin-bottom: 10px;
   
 }
 
-
-/*Ícones dos botões do form1*/
-.material-symbols-outlined {
-    position: relative;
-    position: relative;
-    left: 56%;
-}
-
-.material-symbols-outlined {
-    position: relative;
-    left: 3%;
-    color: #ffffff;
-}
-
 /*Área de comentários*/
 .feed {
     width: 52%;
 
 }
-
-
-
 
 /*Comentários*/
 .comment {
@@ -142,25 +110,30 @@ margin-bottom: 10px;
 
 
 }
-
-strong{
-    font-family: monospace;
-
-}
-
+/*nome dos usuários*/
 .name{
     font-family: 'time';
+    margin-left: 10px;
+
 }
 
+.comment-header div{
+    display: flex;
+    justify-content: start;
+    align-items: center;
+}
+
+/*questão dos usuários*/
+strong{
+    font-family: monospace;
+}
+
+/*pergunta dos usuários*/
 p{
     font-family: monospace;
 
 }
 
-.título{
-    font-family: monospace;
-
-}
 .comment-body {
     font-size: 1em;
     line-height: 1.5;
@@ -168,22 +141,7 @@ p{
 
 }
 
-.comment-header {
-    display: flex;
-    justify-content: space-between;
-    height: 50px;
-
-}
-.comment-header div{
-    display: flex;
-    justify-content: start;
-    align-items: center;
-}
-.name{
-    margin-left: 10px;
-}
-
-/*Data*/
+/*Data dos comentários*/
 .comment-date {
     font-size: 0.9em;
     color: #666;
@@ -192,7 +150,12 @@ p{
     align-items: center;
 }
 
+.comment-header {
+    display: flex;
+    justify-content: space-between;
+    height: 50px;
 
+}
 /*ícone dos comentários*/
 .material-icons {
     color: #666;
@@ -201,7 +164,7 @@ p{
     padding: 4px;
 }
 
-/*sugestão form2*/
+/*caixa de resposta*/
 .form2 {
     background-color: white;
     border-radius: 8px;
@@ -217,13 +180,13 @@ p{
 
 }
 
-/*textearea do form2*/
+/*textearea da caixa de resposta*/
 #w3review1{
     margin: 1%;
     width: 100%;
 }
 
-/*botão responder*/
+/*botão da caixa de resposta*/
 .suggestions {
     height: 60%;
     margin: 6px;
@@ -237,26 +200,31 @@ footer {
 /*Responsividade do site*/
 @media(max-width: 480px) {
 
-    .main {
-        flex-direction: column;
-        width: 100%;
-        justify-content: center;
-        align-items: center;
 
-    }
-    .content {
-        width: 100%;
-        display: flex;
-        justify-content: center;
-    
-    } 
-    
+    /*gif*/
     .gif{
         height: 150%;
         width: 100%;
         line-height: 200px;
         text-align: center;
     }
+
+    /*corpo da página*/
+        .main {
+            flex-direction: column;
+            width: 100%;
+            justify-content: center;
+            align-items: center;
+    
+        }
+    
+    .content {
+        width: 100%;
+        display: flex;
+        justify-content: center;
+    
+    } 
+    /*Fórum*/
      .form1 {
         width: 100%;
         
@@ -267,12 +235,7 @@ footer {
         left: 5%;
     }
 
-    h3 {
-        position: relative;
-        left: 5%;
-    }
-
-    
+    /*input do Fórum*/
     #phone {
 
       
@@ -283,10 +246,39 @@ footer {
         right: 4.0%;
     }
 
-.feed{
-    position: relative;
-    left: -12%;
-}
+    /*textarea do Fórum */
+    #w3review1 {
+        height: 50%;
+        width: 79%;
+        margin: 2%;
+        position: relative;
+        left: 6%;
+    }
+
+     /*botão do Fórum*/
+     .button2 {
+        position: relative;
+        left: 2%;
+
+        width: 37%;
+        border-radius: 8px;
+        margin: 1%;
+        cursor: pointer;
+        border: none
+    }
+/*feed de comentários*/
+    .feed{
+        position: relative;
+        left: -12%;
+    }
+
+    .comentários {
+        position: relative;
+        left: 25%;
+        margin-top: 20%;
+    }
+    
+/*comentários*/
     .comment {
 
         padding: 15px;
@@ -299,9 +291,9 @@ footer {
         flex-direction: column;
        
     }
+    
 
-
-
+/*ícones dos comentários*/
 
     .material-icons {
         color: #666;
@@ -310,70 +302,14 @@ footer {
         padding: 4px;
     }
 
-    img{
-        margin-top: -2%;
-    }
-
-
+/*Questões dos comentários*/
     p {
         padding: 18px;
     }
 
-
-    #w3review1 {
-        height: 50%;
-        width: 79%;
-        margin: 2%;
-        position: relative;
-        left: 6%;
-    }
-
-
-    .div-btn {
-
-        position: relative;
-        left: -1%;
-       
-    }
-
-    /*botões do form1*/
-    .button1 {
-        margin: 1%;
-      
-        border-radius: 8px;
-        position: relative;
-        left: -2%;
-        width: 50%;
-        cursor: pointer;
-        border: none
-    }
-
-    .button2 {
-        position: relative;
-        left: 2%;
-
-        width: 37%;
-        border-radius: 8px;
-        margin: 1%;
-        cursor: pointer;
-        border: none
-    }
-
-   .div-btn{
-       width: 90%;
-    margin: 3%;
-    display: flex;
+   
   
-   }
-
-
-    .fa.fa-mail-reply {
-     
-        width: 1000px;
-        position: relative;
-        left: 3%;
-    }
-    /*form2*/
+    /*caixa de resposta*/
     .form2 {
 
         border-radius: 8px;
@@ -387,6 +323,14 @@ footer {
         position: relative;
         left: -12%;
         flex-direction: column;
+    }
+
+    /*botão da caixa de resposta*/
+    .fa.fa-mail-reply {
+     
+        width: 1000px;
+        position: relative;
+        left: 3%;
     }
 
     .btn{
