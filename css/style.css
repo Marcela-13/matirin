@@ -18,23 +18,30 @@ body {
     display: flex;
     justify-content: center;
     align-items: center;
+    margin-top: 0px;
 }
 .video-background {
     position: absolute;
-    background-image: url("../img/home/bom\ dia.gif");
+    margin-top: -56px;
+    background-image: url("../img/home/bom\ dia.gif ");
     background-repeat: no-repeat;
     background-size: cover;
     height: 100%;
     width: 100%;
+    filter: brightness(70%);
 }
 .content {
     z-index: -100;
 }
 .nome-video {
     text-align: center;
-    font-size: 1.5em;
+    font-size: 9em;
     color: white;
-    margin-top: 790px;
+   display: flex;
+   justify-content: center;
+    font-family: "Montserrat", sans-serif;
+    font-weight: 200;
+    z-index: 1000;
 }
 
 /*imagens centrais*/
@@ -46,16 +53,16 @@ body {
 }
 .imagem1 {
     border-radius: 70px;
-    height: 390px;
-    width: 390px;
-    margin-right: 90px;
+    height: 350px;
+    width: 350px;
+    margin-right: 100px;
 }
 .texto1 p {
     text-align: left;
     margin-left: 15%;
     max-width: 1000px;
-    font-size: 19px;
-    font-family: monospace;
+    font-size: 22px;
+    font-family: "Montserrat", sans-serif;
 }
 
 .imgtxt2 {
@@ -66,16 +73,16 @@ body {
 }
 .imagem2 {
     border-radius: 70px;
-    height: 390px;
-    width: 390px;
-    margin-left: 90px;
+    height: 350px;
+    width: 350px;
+    margin-left: 100px;
 }
 .texto2 p {
     text-align: right;
     margin-right: 15%;
     max-width: 1000px;
-    font-size: 19px;
-    font-family: monospace
+    font-size: 22px;
+    font-family: "Montserrat", sans-serif;
 }
 
 .imgtxt3 {
@@ -86,16 +93,16 @@ body {
 }
 .imagem3 {
     border-radius: 70px;
-    height: 390px;
-    width: 390px;
-    margin-right: 90px;
+    height: 350px;
+    width: 350px;
+    margin-right: 100px;
 }
 .texto3 {
     text-align: left;
     margin-left: 15%;
     max-width: 1000px;
-    font-size: 19px;
-    font-family: monospace
+    font-size: 22px;
+    font-family: "Montserrat", sans-serif;
 }
 
 .imgtxt4 {
@@ -106,22 +113,23 @@ body {
 }
 .imagem4 {
     border-radius: 70px;
-    height: 390px;
-    width: 390px;
-    margin-left: 90px;
+    height: 350px;
+    width: 350px;
+    margin-left: 100px;
 }
 .texto4 {
     text-align: right;
     margin-right: 15%;
     max-width: 1000px;
-    font-size: 19px;
-    font-family: monospace
+    font-size: 22px;
+    font-family: "Montserrat", sans-serif;
 }
 
 /*Carrocel de imagens*/
 h2 {
     margin-top: 300px;
     text-align: center;
+    font-family: "Mulish", sans-serif;
 }
 
 div.scroll-container {
@@ -160,7 +168,7 @@ div.scroll-item img {
 }
 
 div.scroll-item p {
-    font-family: monospace;
+    font-family: "Montserrat", sans-serif;
     margin: 0;
     font-size: 14px;
     padding: 3px;
@@ -172,6 +180,7 @@ div.scroll-item a {
     font-size: 14px;
     margin-top: 5px;
     display: block;
+    font-family: "Mulish", sans-serif;
 }
 
 div.scroll-item a:hover {
@@ -196,10 +205,8 @@ div.scroll-item a:hover {
         width: 90%;
         height: 80%;
     }
-    .nome-video {
-        /*texto do video*/
-        margin-top: 295px;
-        font-size: 20px;
+    .nome-video {  /*texto do video*/
+        font-size: 40px;
     }
 
 
@@ -207,7 +214,7 @@ div.scroll-item a:hover {
 
     .imgtxt1 {
         /*imagem e texto 1*/
-        margin-top: 90px;
+        margin-top: 80px;
         flex-direction: column-reverse;
         justify-content: center;
         align-items: center;
@@ -223,9 +230,8 @@ div.scroll-item a:hover {
         /*texto 1*/
         font-size: 100%;
       text-align: center;
-      margin-left: 0;
-      margin-left: 5px;
-      margin-right: 5px;
+      margin-left: 9px;
+      margin-right: 9px;
     }
 
     .imgtxt2 {
@@ -246,9 +252,8 @@ div.scroll-item a:hover {
         /*texto 2*/
         font-size: 100%;
         text-align: center;
-        margin-right: 0;
-        margin-left: 5px;
-        margin-right: 5px;
+        margin-left: 9px;
+      margin-right: 9px;
     }
 
     .imgtxt3 {
@@ -269,9 +274,8 @@ div.scroll-item a:hover {
         /*texto 3*/
         font-size: 100%;
         text-align: center;
-        margin-left: 0;
-        margin-left: 5px;
-        margin-right: 5px;
+        margin-left: 9px;
+        margin-right: 9px;
     }
 
     .imgtxt4 {
@@ -292,9 +296,8 @@ div.scroll-item a:hover {
         /*texto 4*/
         font-size: 100%;
         text-align: center;
-        margin-right: 0;
-        margin-left: 5px;
-        margin-right: 5px;
+        margin-left: 9px;
+        margin-right: 9px;
     }
 
     /*carroceu de imagens*/

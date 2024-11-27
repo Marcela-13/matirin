@@ -7,7 +7,8 @@
 
 
 body {
-  background-color: hsl(180, 96%, 82%);
+  background: rgb(220, 255, 233);
+  background: linear-gradient(0deg, rgba(220, 255, 233, 1) 24%, rgba(206, 247, 255, 1) 66%);
 }
 
 .flex-content {
