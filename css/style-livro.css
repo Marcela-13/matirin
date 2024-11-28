@@ -8,10 +8,7 @@
 }
 
 body {
-<
   background: rgb(220, 255, 233);
-=======
->>>>>>> a43cfe87661ac7d22f1405f26dfdbb4ec24077d7
   background: linear-gradient(0deg, rgba(220, 255, 233, 1) 24%, rgba(206, 247, 255, 1) 66%);
 }
 
