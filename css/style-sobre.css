@@ -4,10 +4,7 @@
     box-sizing: border-box;
 }
 
-<<<<<<< HEAD
-=======
 
->>>>>>> a43cfe87661ac7d22f1405f26dfdbb4ec24077d7
 /* Estilização dos elementos*/
 body {
     background: rgb(220, 255, 233);
@@ -91,10 +88,7 @@ main {
     width: 60%;
     height: 60%;
     padding: 5%;
-<<<<<<< HEAD
-=======
     margin-bottom: 80%;
->>>>>>> a43cfe87661ac7d22f1405f26dfdbb4ec24077d7
 }
 
 .sobre-text p {

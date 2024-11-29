@@ -6,8 +6,9 @@
 
 /*body*/
 body {
-    background: rgb(220, 255, 233);
-    background: linear-gradient(0deg, rgba(220, 255, 233, 1) 24%, rgba(206, 247, 255, 1) 66%);
+    background: aliceblue;
+   /* background: rgb(220, 255, 233);
+    background: linear-gradient(0deg, rgba(220, 255, 233, 1) 24%, rgba(206, 247, 255, 1) 66%);*/
 }
 
 
@@ -20,33 +21,32 @@ body {
     align-items: center;
     margin-top: 0px;
 }
-.video-background {
+.video {
     position: absolute;
     margin-top: -56px;
-    background-image: url("../img/home/bom\ dia.gif ");
     background-repeat: no-repeat;
-    background-size: cover;
-    height: 100%;
+    background-size: contain;
     width: 100%;
     filter: brightness(70%);
-}
-.content {
     z-index: -100;
 }
-.nome-video {
-    text-align: center;
-    font-size: 9em;
-    color: white;
-   display: flex;
-   justify-content: center;
+#textobemvindo{  
+    position: absolute; 
+    bottom: 10%;
+     font-size: 5.5rem;
+    color: #ffffff;
+    white-space: nowrap;
+    overflow: hidden;
+    border-right: 2px solid #ffffff;
+    width: fit-content;
+    margin: auto; 
     font-family: "Montserrat", sans-serif;
     font-weight: 200;
-    z-index: 1000;
 }
 
 /*imagens centrais*/
 .imgtxt1 {
-    margin-top: 5%;
+    margin-top: 10%;
     display: flex;
     justify-content: space-around;
     align-items: center;
@@ -200,12 +200,12 @@ div.scroll-item a:hover {
         position: relative;
         height: 400px;
     }
-    .video-background {
+    .video {
         /*video*/
         width: 90%;
         height: 80%;
     }
-    .nome-video {  /*texto do video*/
+    #textobemvindo{  /*texto do video*/
         font-size: 40px;
     }
 
