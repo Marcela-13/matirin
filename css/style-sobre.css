@@ -4,62 +4,6 @@
     box-sizing: border-box;
 }
 
-header {
-    background-color: #86beda;
-    display: flex;
-    grid-template-columns: 30fr 10fr;
-    color: rgb(0, 0, 0);
-    height: 90px;
-    width: 100%;
-}
-
-.nav ul {
-    display: flex;
-    list-style: none;
-    margin-top: 20;
-    background-color: #63d4c5;
-    height: 35px;
-    display: flex;
-    justify-content: center;
-}
-
-.nav ul li {
-    background-color: #b1f8e3;
-    margin: 0 50px;
-    padding: 5px;
-    height: 14px;
-    margin-top: 5px;
-    border-radius: 9px;
-}
-
-.nav ul li a {
-    text-decoration: none;
-    color: #333;
-    font-weight: bold;
-}
-
-.nav ul li a:hover {
-    background-color: #8af1f1;
-    transition: 2s;
-    margin-top: 5px;
-    border-radius: 9px;
-    margin: 0 50px;
-    padding: 5px;
-    height: 14px;
-}
-
-
-footer {
-    display: flex;
-    justify-content: space-around;
-    align-items: center;
-    background-color: #5a5a5a;
-    padding: 10px 0;
-    text-align: center;
-    width: 100%;
-    position: relative;
-    bottom: 0;
-}
 
 /* Estilização dos elementos*/
 body {
@@ -128,11 +72,12 @@ main {
     border-radius: 5px;
     justify-content: space-around;
     align-items: center;
-
+   
 }
 
 .sobre h1 {
     font-size: 50px;
+    
 }
 
 /* Estlizando a classe específica do quadro sobre */
@@ -143,7 +88,7 @@ main {
     width: 60%;
     height: 60%;
     padding: 5%;
-
+    margin-bottom: 80%;
 }
 
 .sobre-text p {
@@ -280,6 +225,7 @@ p {
         border-radius: 5px;
         width: 95%;
         height: auto;
+        margin-bottom: 0;
     }
 
     .sobre {
