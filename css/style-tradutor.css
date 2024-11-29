@@ -31,8 +31,7 @@ aside ul li {
 }
 
 main {
-    background-color: rgb(220, 255, 233);
-    background: linear-gradient(0deg, rgba(220, 255, 233, 1) 24%, rgba(206, 247, 255, 1) 66%);
+    background-color: rgb(255, 255, 255);
     display: flex;
     flex-direction: column;
     justify-content: center;
