@@ -7,7 +7,6 @@
 
 }
 
-
 body {
   /*background: linear-gradient(0deg, rgba(220, 255, 233, 1) 24%, rgba(206, 247, 255, 1) 66%);*/
   background-color: #c6f6ff;
@@ -155,24 +154,6 @@ h2{
 .container:hover .middle p {
   display: block;
 }
- 
-
-footer {
-  display: flex;
-  justify-content: space-around;
-  align-items: center;
-  background-color: #86beda;
-  padding: 10px 0;
-  text-align: center;
-  width: 100%;
-  position: relative;
-  bottom: 0;
-
-}
-
-/*teste*/
-
- 
 
 
 /*para celular*/
