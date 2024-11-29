@@ -99,10 +99,11 @@ button:hover {
 
 /*Navegação*/
 .nav ul {
-    font-family: 'monospace';
     display: flex;
     list-style: none;
     margin-top: 20;
+    background-color: #63d4c5;
+    height: 35px;
     display: flex;
     justify-content: center;
 }
