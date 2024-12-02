@@ -15,405 +15,457 @@
     <div vw class="enabled">
         <div vw-access-button class="active"></div>
         <div vw-plugin-wrapper>
-          <div class="vw-plugin-top-wrapper"></div>
+            <div class="vw-plugin-top-wrapper"></div>
         </div>
-      </div>
-      <script src="https://vlibras.gov.br/app/vlibras-plugin.js"></script>
-      <script>
+    </div>
+    <script src="https://vlibras.gov.br/app/vlibras-plugin.js"></script>
+    <script>
         new window.VLibras.Widget('https://vlibras.gov.br/app');
-      </script>
+    </script>
     <!--teste-->
     <header>
         <div class="logo">
             <img src="../img/home/logo.png">
         </div>
-        <div id="Busca"> <!--Barra de pesquisa-->
-            <input type="text" id="txtBusca" placeholder="Buscar..." />
-            <img src="../img/home/pesquisa2semfundo.png" id="btnBusca" alt="Buscar" />
-            <button>buscar</button>
-        </div>
+
         <div class="nome"> <!--Nome do site-->
             <h1 class="nomedosite">Mátirin</h1>
         </div>
-        <div class="cadastro"> <!--Cadastro-->
-            <a href="../pages/formulario.html"><img src="../img/home/cadastrod.png"></a>
-            <img src="../img/home/cadastrod.png" href="pages/formulario.html">
+        <div id="Busca"> <!--Barra de pesquisa-->
+            <input type="text" id="txtBusca" placeholder="..." />
+            <img src="img/home/pesquisa2semfundo.png" id="btnBusca" alt="Buscar" />
+            <button onclick="alerta()">Buscar</button>
         </div>
-         <!-- Botão de Menu Hamburguinho -->
-         <div class="hamburger" onclick="toggleMenu()">
+        <!--mostar a função de busca-->
+        <script>
+            function alerta() {
+                alert("teste")
+            }
+        </script>
+
+
+        <div class="cadastro"> <!--Cadastro-->
+            <a href="./formulario.html"><img src="../img/home/cadastrod.png"></a>
+        </div>
+        <!-- Botão de Menu Hamburguinho -->
+        <div class="hamburger" onclick="toggleMenu()">
             <span></span>
             <span></span>
             <span></span>
         </div>
     </header>
 
-    <!--Navegação-->
+    <!-- Navegação -->
     <div class="nav">
         <ul>
-             <li><a href="../Index.html">Home</a></li>   
-             <li><a href="../pages/sobre.html">Sobre nós</a></li>
-             <li><a href="../pages/tradutor.html">Tradução interativa</a></li>
-            <li><a class="ativo" href="../pages/informacao.html">Livros</a></li>
-            <li><a href="../pages/rede.html">Rede</a></li>
+            <li><a href="../index.html">Home</a></li>
+            <li><a href="./sobre.html">Sobre nós</a></li>
+            <li><a class="ativo" href="./tradutor.html">Tradução interativa</a></li>
+            <li><a href="./informacao.html">Livros</a></li>
+            <li><a href="./rede.html">Rede</a></li>
+            <li class="formulário"><a href="./formulario.html">Login</a></li>
         </ul>
     </div>
+    <section class="flex-content">
+        <div class="texto-informaçao">
+            <h1 id="infomaçao">A importância da leitura </h1>
+            <p> incentivo à leitura em Libras (Língua Brasileira de Sinais) é crucial para a inclusão e o
+                desenvolvimento das pessoas surdas. Ele promove o acesso equitativo à informação e à
+                cultura,
+                garantindo que todos possam expandir seus conhecimentos e habilidades.</p>
+            <p>Além disso, a leitura em Libras fortalece a identidade cultural e linguística da comunidade
+                surda. Investir em materiais e programas de leitura acessíveis é fundamental para a
+                construção
+                de uma sociedade mais justa e informada.</p>
+            <br></br>
+        </div>
+    </section>
 
-        <main>
-    
 
-            <section class="flex-content">
-          
-                <div class="texto-informaçao">
-                   
-                    <h1 id="infomaçao">A importância da leitura </h1>
-                    <p> incentivo à leitura em Libras (Língua Brasileira de Sinais) é crucial para a inclusão e o
-                        desenvolvimento das pessoas surdas. Ele promove o acesso equitativo à informação e à
-                        cultura,
-                        garantindo que todos possam expandir seus conhecimentos e habilidades.</p>
-                    <p>Além disso, a leitura em Libras fortalece a identidade cultural e linguística da comunidade
-                        surda. Investir em materiais e programas de leitura acessíveis é fundamental para a
-                        construção
-                        de uma sociedade mais justa e informada.</p>
-                    <br></br>
-                </div>
-            
-               
-        </main>
 
-        
-     
-        <h2>literatura infantil</h2>
-        <section class="grid-livraria">
-           
-            <div class="grid-item">
 
-        
+    <h2>literatura infantil</h2>
+    <section class="grid-livraria">
 
-                <!--o texto aparece quando passa o mouse na imagem-->
+        <div class="grid-item">
 
-                <section class="grid-item">
-                    <div class="container">
-                        <a href="https://www.amazon.com.br/Contos-Cl%C3%A1ssicos-em-Libras-Rapunzel/dp/6580921684/ref=pd_sim_d_sccl_2_3/146-7070421-9794669?pd_rd_w=C8Top&content-id=amzn1.sym.8555f615-361b-42f7-96c4-206bb8a5174e&pf_rd_p=8555f615-361b-42f7-96c4-206bb8a5174e&pf_rd_r=2S4NK5ECV09Z6QHTJ9A0&pd_rd_wg=Uxjfg&pd_rd_r=5148d387-fe32-43e5-9650-cc34ef797b56&pd_rd_i=6580921684&psc=1">
-                            <img src="../img/livros/rapunzel.jpg" alt="rapunzel">
-                        </a>
-                        <div class="middle">
-                            <p>Rapunzel vive numa imensa torre, prisioneira do mundo, por uma bruxa malvada. O cabelo da menina nunca é cortado e é conservado como uma gigantesca trança. Um dia, um príncipe passando pelo local, ouve Rapunzel cantando, e decide salvá-la das garras da bruxa.</p>
-                        </div>
-                    </div>
-                </section>
 
-                 </div>
 
-                 <section class="grid-item">
-                    <div class="container">
-                        <a
-                            href="https://www.amazon.com.br/Turma-M%C3%B4nica-Contos-Cl%C3%A1ssicos-Libras/dp/6555474963/ref=pd_sim_d_sccl_2_1/146-7070421-9794669?pd_rd_w=Jes8s&content-id=amzn1.sym.8555f615-361b-42f7-96c4-206bb8a5174e&pf_rd_p=8555f615-361b-42f7-96c4-206bb8a5174e&pf_rd_r=EDSK76J6788R7TXEAHP8&pd_rd_wg=1BUfa&pd_rd_r=3a03049a-8ae9-49c6-b352-115ea6428127&pd_rd_i=6555474963&psc=1">
-                            <img src="../img/livros/turma.jpg" alt="Turma da Monica">
-                        </a>
-                        <div class="middle">
-                            <p>Sueli, a primeira personagem surda do Bairro do Limoeiro - apresenta, na Língua Brasileira de Sinais (LIBRAS), um belo clássico infantil: O Lobo e os Sete Cabritinhos. Encante-se com esta história, enquanto acompanha lindas imagens da turminha mais animada de todas!</p>
-                        </div>
-                    </div>
-                </section>
+            <!--o texto aparece quando passa o mouse na imagem-->
 
-                <section class="grid-item">
-                    <div class="container">
-                      <a href="https://www.amazon.com.br/Contos-cl%C3%A1ssicos-adormecida-Projetos-escolares/dp/8543227879/ref=sr_1_29?__mk_pt_BR=%C3%85M%C3%85%C5%BD%C3%95%C3%91&crid=3USXPDC42J9FG&dib=eyJ2IjoiMSJ9.KvRQWZRLnQhUXzP5tv5O-PwhuiXUjuNzBcIR-d_BhNv8XLxGnhV-KOHcgXFHiF74Gd_bVOG-xRY7QY_STcPnXPqYzA3R9xt9W4f2aw2lAEh4t0v_R2PTaJRKFLEt0-SMmZWtI12Wzi_ceetoaQNt-aMOQqnxm78Z_EeX25AEKfoDfHltz52IotxirBlm6mIFH2byXgtsgyZhdi7kOUuyO8slTpRlgo9Hy4Txxs-sZ9RW-L6aZxSfZPtuuFr59Uh3k4PxIB88faaLaw0Y4CQdKBE1mZPZppyzvJUzT8jIYUg.08YzeRdC41Qhg7btfObJw6r3iIGHq6A31mG3wuRt_Do&dib_tag=se&keywords=livros+em+libras&qid=1731520970&sprefix=livros+e%2Caps%2C3977&sr=8-29">
-                        <img src="../img/bela.jpg" alt="bela adormecida">
-                      </a>
-                      <div class="middle">
-                        <p>Uma jovem é amaldiçoada e condenada ao sono profundo até receber o beijo do amor verdadeiro.</p>
-                      </div>
-                    </div>
-                  </section>
-                  <section class="grid-item">
-                    <div class="container">
-                        <a
-                            href="https://www.amazon.com.br/Contos-Cl%C3%A1ssicos-Libras-Chapeuzinho-Vermelho/dp/6580921692/ref=sr_1_5?dib=eyJ2IjoiMSJ9.o6DdANBYFXf0VUnQLrRtA7OtSJ_J0t-_6BtAklbddTn8XLxGnhV-KOHcgXFHiF74a76-bZqDvgDMV8VkEGQGP7Pab8LjYCsbvL-HuZPqCpV1c7wLoGF60j5KMxgzPAsj9OV5OtjY3QsvXBxEft-uMbtZSAfuQxwG0CFhZLRtkrwuyzfGnpy74e_xgVPHPi01QmKiVWt4uxXXnaFJ0YwqyKaGy1d2LOneBQsvmtlbYD8.wjsF_nDGfd07I29-325u2JI-kIFYU6Sbh1ZEvA-U_9I&dib_tag=se&keywords=L%C3%ADngua+brasileira+de+sinais&qid=1729710904&s=books&sr=1-5">
-                            <img src="../img/livros/chapeu.jpg" alt="Chapeuzinho vermelho">
-                        </a>
-                        <div class="middle">
-                            <p>O enredo conta sobre uma menina que sempre usava uma capa vermelha e um dia teve que atravessar a floresta para levar uma cesta de doces para sua avó, mas no meio do caminho é enganada por um lobo mau.</p>
-                        </div>
-                    </div>
-                </section>
-
-                <section class="grid-item">
-
-                    <div class="container">
-    
-                        <a href="https://www.amazon.com.br/COLORINDO-COM-LIBRAS-CLUBE-LELEIA-ebook/dp/B0DDWN43T3/ref=sr_1_52?adgrpid=125191390276&dib=eyJ2IjoiMSJ9.KvRQWZRLnQhUXzP5tv5O-JyjEwFNY-jPugrsMgsXtm4DPRLOLwybYcBVVnBk3NviYkym96u5cOxhesoe3bcl9vmlKDJz9qMgTJDe4FC__0XvfVW-cEWFqpDnZ6R9W84xn0N5BY-2wjCTNMG3kqre5KCJQyCRrZUBsTzeX_GOSwmNJCPoM7tm90zIcaTwulCRw-92y9m0j1KKlYIGgItykB7rmlK7eub8KM5rAwFMuEkPgaeLzuUEf4kXk-T4_eusO8oid14B1LjrYgteuWSHAkKg_5h9wzbi8Z6WuF07HPA.g6PTvg1kbbzbdRK7Zu042EDUHbnCv3y6LXBiPRgaO58&dib_tag=se&hvadid=535203690434&hvdev=c&hvlocphy=9196292&hvnetw=g&hvqmt=e&hvrand=13164723581411331899&hvtargid=kwd-346405401577&hydadcr=19199_13333549&keywords=livros+em+libras&qid=1732733902&sr=8-52">
-                            <img src="../img/livros/pintura.jpg" alt="dias">
-                        </a>
-    
-                        <div class="middle">
-    
-                            <p>Livro de colorir com LIBRAS (Língua Brasileira de Sinais), é um livro cativante para encantar e entreter as crianças. Os pequenos artistas encontrarão uma combinação de desenhos e sinais me Libras o que favorece a ensino bilíngue!</p>
-                        </div>
-                    </div>
-    
-                    </div>
-                </section>
-
-                 
-
-                  
-        </section>
-                  
-                  
-                
-                  
-
-              <section class="grid-livraria">
-                  <section class="grid-item">
-                    <div class="container">
-                      <a href="https://www.amazon.com.br/crian%C3%A7as-ouvintes-segunda-poss%C3%ADvel-inclus%C3%A3o/dp/6555231645/ref=sr_1_25?__mk_pt_BR=%C3%85M%C3%85%C5%BD%C3%95%C3%91&crid=3USXPDC42J9FG&dib=eyJ2IjoiMSJ9.KvRQWZRLnQhUXzP5tv5O-PwhuiXUjuNzBcIR-d_BhNv8XLxGnhV-KOHcgXFHiF74Gd_bVOG-xRY7QY_STcPnXPqYzA3R9xt9W4f2aw2lAEh4t0v_R2PTaJRKFLEt0-SMmZWtI12Wzi_ceetoaQNt-aMOQqnxm78Z_EeX25AEKfoDfHltz52IotxirBlm6mIFH2byXgtsgyZhdi7kOUuyO8slTpRlgo9Hy4Txxs-sZ9RW-L6aZxSfZPtuuFr59Uh3k4PxIB88faaLaw0Y4CQdKBE1mZPZppyzvJUzT8jIYUg.08YzeRdC41Qhg7btfObJw6r3iIGHq6A31mG3wuRt_Do&dib_tag=se&keywords=livros+em+libras&qid=1731520970&sprefix=livros+e%2Caps%2C3977&sr=8-25&ufe=app_do%3Aamzn1.fos.6d798eae-cadf-45de-946a-f477d47705b9">
-                        <img src="../img/en.jpg" alt="Ensino de libras a crianças ouvintes como segunda língua e fator possível de inclusão social">
-                      </a>
-                      <div class="middle">
-                        <p>A ideia central deste projeto é a de fazer a inclusão ao contrário, começando com as crianças ouvintes aprendendo a ver o seu par diferente como outro igual, na certeza de que, quanto antes tenham contato com ele, menos teremos que falar de inclusão no futuro.</p>
-                      </div>
-                    </div>
-                  </section>
-              
-              
-              
-              
-              
-              
             <section class="grid-item">
                 <div class="container">
-                    <a href="https://www.amazon.com.br/Libras-Aprender-Est%C3%A1-Suas-M%C3%A3os/dp/8544418902/ref=sr_1_14?__mk_pt_BR=%C3%85M%C3%85%C5%BD%C3%95%C3%91&crid=3USXPDC42J9FG&dib=eyJ2IjoiMSJ9.KvRQWZRLnQhUXzP5tv5O-PwhuiXUjuNzBcIR-d_BhNv8XLxGnhV-KOHcgXFHiF74Gd_bVOG-xRY7QY_STcPnXPqYzA3R9xt9W4f2aw2lAEh4t0v_R2PTaJRKFLEt0-SMmZWtI12Wzi_ceetoaQNt-aMOQqnxm78Z_EeX25AEKfoDfHltz52IotxirBlm6mIFH2byXgtsgyZhdi7kOUuyO8slTpRlgo9Hy4Txxs-sZ9RW-L6aZxSfZPtuuFr59Uh3k4PxIB88faaLaw0Y4CQdKBE1mZPZppyzvJUzT8jIYUg.08YzeRdC41Qhg7btfObJw6r3iIGHq6A31mG3wuRt_Do&dib_tag=se&keywords=livros+em+libras&qid=1731520970&sprefix=livros+e%2Caps%2C3977&sr=8-14&ufe=app_do%3Aamzn1.fos.6d798eae-cadf-45de-946a-f477d47705b9">
-                        <img src="../img/lib.jpg" alt="aprender">
-                    </a>
-
-
-                    <div class="middle">
-
-                        <p>O livro “LIBRAS: APRENDER ESTÁ EM SUAS MÃOS”, agora em sua 2ª edição e com algumas alterações, é um material de apoio indispensável a professores de Libras, acadêmicos e outras pessoas interessadas em aprender a Libras.</p>
-                    </div>
-                </div>
-
-                </div>
-            </section>
-            <section class="grid-item">
-                <div class="container">
-                    <a href="https://www.amazon.com.br/Libras-autismo-um-di%C3%A1logo-poss%C3%ADvel/dp/655956777X/ref=sr_1_61?crid=3J85DC4KJCS5G&dib=eyJ2IjoiMSJ9.7AzE_OX8UDtvFvWWHwfc-66RuoH2rQKmwNxZXqhNpOxFMEr8IKLod1B3XRfWOVEwblC7fXF55M4dLRmOp9-Xm0vcVNt7IEOvX9rUV3Rje17bVqzUhgFoVr1vwDgIULuOrZaj4hrVCm-eyfYW7MNDyXRQRbJPHvmZbPJh1Dve0_EB4Pw_0e1eqfUV4qJOonz3YwsJ-9PwSnG7sM04UnP7gQ0FfkzjLmm9h7VDGsGs6mK_FC2COqw-ZXbw3Y7O6NXFIiSNoTYG3X3Q8z87TpYdV60yudLU2jBN_MiAhrHLQrA.O22YUBWEqRQoB0LS1SuTict8bEuS4c4RPerD-4hVeC0&dib_tag=se&keywords=livros+em+libras&qid=1732729912&sprefix=%2Caps%2C198&sr=8-61&ufe=app_do%3Aamzn1.fos.a492fd4a-f54d-4e8d-8c31-35e0a04ce61e">
-                        <img src="../img/livros/lia.jpg" alt="Terra sonâmbula">
-                    </a>
-
-                    <div class="middle">
-
-                        <p>O livro aborda as dificuldades de comunicação entre professores e alunos com TEA e surdez, destacando Libras e C.A.A. como estratégias inclusivas. </p>
-                    </div>
-                </div>
-
-                </div>
-            </section>
-            <section class="grid-item">
-                <div class="container">
-                    <a href="https://www.amazon.com.br/grande-livro-libras-Lingua-brasileira/dp/6587817424">
-                        <img src="../img/LIBB.jpg" alt="O Grande Livro de Libras: Lingua brasileira de sinais: Suplementos e Guias de estudo">
-                    </a>
-
-                    <div class="middle">
-
-                        <p>Quando se fala em inclusão social, tem se como princípio básico a transformação da sociedade no sentido de entender as necessidades dos diferentes grupos e procurar atende-las, possibilitando, assim, o exercício pleno da cidadania.</p>
-                    </div>
-                </div>
-                </div>
-            </section>
-            </section>
-
-            
-
-        
-
-            <section class="grid-livraria">
-            <section class="grid-item">
-                <div class="container">
-                    <a href="https://www.amazon.com.br/L%C3%ADngua-Brasileira-Sinais-Tecnologias-Digitais/dp/8584291679/ref=sr_1_37?crid=3J85DC4KJCS5G&dib=eyJ2IjoiMSJ9.KvRQWZRLnQhUXzP5tv5O-JyjEwFNY-jPugrsMgsXtm4DPRLOLwybYcBVVnBk3NviYkym96u5cOxhesoe3bcl9vmlKDJz9qMgTJDe4FC__0XvfVW-cEWFqpDnZ6R9W84xn0N5BY-2wjCTNMG3kqre5KCJQyCRrZUBsTzeX_GOSwmNJCPoM7tm90zIcaTwulCRw-92y9m0j1KKlYIGgItykB7rmlK7eub8KM5rAwFMuEkPgaeLzuUEf4kXk-T4_eusO8oid14B1LjrYgteuWSHAkKg_5h9wzbi8Z6WuF07HPA.g6PTvg1kbbzbdRK7Zu042EDUHbnCv3y6LXBiPRgaO58&dib_tag=se&keywords=livros+em+libras&qid=1732729323&sprefix=%2Caps%2C198&sr=8-37&ufe=app_do%3Aamzn1.fos.6d798eae-cadf-45de-946a-f477d47705b9">
-                        <img src="../img/livros/tec.jpg" alt="dan">
-                    </a>
-
-                    <div class="middle">
-
-        <p>As tecnologias digitais facilitam a comunicação entre surdos e ouvintes, contribuindo para a interação social e o desenvolvimento de recursos, como ferramentas para a Libras.
-        </p>
-                    </div>
-                </div>
-
-                </div>
-            </section>
-            <section class="grid-item">
-                <div class="container">
-                    <a href="https://www.amazon.com.br/Educa%C3%A7%C3%A3o-Para-Tr%C3%A2nsito-Escolas-Libras/dp/8538018418/ref=sr_1_43?crid=3J85DC4KJCS5G&dib=eyJ2IjoiMSJ9.KvRQWZRLnQhUXzP5tv5O-JyjEwFNY-jPugrsMgsXtm4DPRLOLwybYcBVVnBk3NviYkym96u5cOxhesoe3bcl9vmlKDJz9qMgTJDe4FC__0XvfVW-cEWFqpDnZ6R9W84xn0N5BY-2wjCTNMG3kqre5KCJQyCRrZUBsTzeX_GOSwmNJCPoM7tm90zIcaTwulCRw-92y9m0j1KKlYIGgItykB7rmlK7eub8KM5rAwFMuEkPgaeLzuUEf4kXk-T4_eusO8oid14B1LjrYgteuWSHAkKg_5h9wzbi8Z6WuF07HPA.g6PTvg1kbbzbdRK7Zu042EDUHbnCv3y6LXBiPRgaO58&dib_tag=se&keywords=livros+em+libras&qid=1732729323&sprefix=%2Caps%2C198&sr=8-43">
-                        <img src="../img/livros/tra.jpg" alt="Alice">
-                    </a>
-
-                    <div class="middle">
-
-                        <p>Conhecimentos sobre o funcionamento de veículos, primeiros socorros e legislação de trânsito são essenciais para futuros condutores, garantindo segurança e responsabilidade ao dirigir nas ruas e rodovias. </p>
-                    </div>
-                </div>
-
-                </div>
-            </section>
-            <section class="grid-item">
-                <div class="container">
-                    <a href="https://www.amazon.com.br/constru%C3%A7%C3%A3o-sentidos-escrita-aluno-surdo/dp/8585689595/ref=pd_rhf_dp_s_pd_crcd_d_sccl_1_10/146-7070421-9794669?pd_rd_w=nD1IZ&content-id=amzn1.sym.1b2190ca-db28-46be-85f8-55611bc8c041&pf_rd_p=1b2190ca-db28-46be-85f8-55611bc8c041&pf_rd_r=TES995EAFDWQHT26EXRE&pd_rd_wg=BRxv2&pd_rd_r=ecd0a347-5333-4ad6-b886-10cdd9f8f904&pd_rd_i=8585689595&psc=1">
-                        <img src="../img/livros/senti.jpg" alt="jardim">
+                    <a
+                        href="https://www.amazon.com.br/Contos-Cl%C3%A1ssicos-em-Libras-Rapunzel/dp/6580921684/ref=pd_sim_d_sccl_2_3/146-7070421-9794669?pd_rd_w=C8Top&content-id=amzn1.sym.8555f615-361b-42f7-96c4-206bb8a5174e&pf_rd_p=8555f615-361b-42f7-96c4-206bb8a5174e&pf_rd_r=2S4NK5ECV09Z6QHTJ9A0&pd_rd_wg=Uxjfg&pd_rd_r=5148d387-fe32-43e5-9650-cc34ef797b56&pd_rd_i=6580921684&psc=1">
+                        <img src="../img/livros/rapunzel.jpg" alt="rapunzel">
                     </a>
                     <div class="middle">
-                        <p>O livro discute a linguagem na educação do surdo, analisando redações com base em Vygotsky e Bakhtin, considerando a interferência da LIBRAS na coesão e continuidade temática.
-   </p>
-                           
+                        <p>Rapunzel vive numa imensa torre, prisioneira do mundo, por uma bruxa malvada. O cabelo da
+                            menina nunca é cortado e é conservado como uma gigantesca trança. Um dia, um príncipe
+                            passando pelo local, ouve Rapunzel cantando, e decide salvá-la das garras da bruxa.</p>
                     </div>
                 </div>
             </section>
-            <section class="grid-item">
 
+        </div>
 
-                <div class="container">
-                    <a href="https://www.amazon.com.br/Pr%C3%A1tico-L%C3%ADngua-Brasileira-Sinais-Profissionais/dp/854622661X/ref=sr_1_38?crid=3J85DC4KJCS5G&dib=eyJ2IjoiMSJ9.KvRQWZRLnQhUXzP5tv5O-JyjEwFNY-jPugrsMgsXtm4DPRLOLwybYcBVVnBk3NviYkym96u5cOxhesoe3bcl9vmlKDJz9qMgTJDe4FC__0XvfVW-cEWFqpDnZ6R9W84xn0N5BY-2wjCTNMG3kqre5KCJQyCRrZUBsTzeX_GOSwmNJCPoM7tm90zIcaTwulCRw-92y9m0j1KKlYIGgItykB7rmlK7eub8KM5rAwFMuEkPgaeLzuUEf4kXk-T4_eusO8oid14B1LjrYgteuWSHAkKg_5h9wzbi8Z6WuF07HPA.g6PTvg1kbbzbdRK7Zu042EDUHbnCv3y6LXBiPRgaO58&dib_tag=se&keywords=livros+em+libras&qid=1732730215&sprefix=%2Caps%2C198&sr=8-38&ufe=app_do%3Aamzn1.fos.6d798eae-cadf-45de-946a-f477d47705b9">
-                        <img src="../img/livros/saudw.jpg" alt="ilha">
-                    </a>
-                    <div class="middle">
-                        <p>
-                            O Guia Prático de Língua Brasileira de Sinais (Libras) para profissionais da saúde é uma obra que se destaca pela sua relevância e impacto no campo da medicina e da comunicação. 
-                            
-                        </p>
-                    </div>
+        <section class="grid-item">
+            <div class="container">
+                <a
+                    href="https://www.amazon.com.br/Turma-M%C3%B4nica-Contos-Cl%C3%A1ssicos-Libras/dp/6555474963/ref=pd_sim_d_sccl_2_1/146-7070421-9794669?pd_rd_w=Jes8s&content-id=amzn1.sym.8555f615-361b-42f7-96c4-206bb8a5174e&pf_rd_p=8555f615-361b-42f7-96c4-206bb8a5174e&pf_rd_r=EDSK76J6788R7TXEAHP8&pd_rd_wg=1BUfa&pd_rd_r=3a03049a-8ae9-49c6-b352-115ea6428127&pd_rd_i=6555474963&psc=1">
+                    <img src="../img/livros/turma.jpg" alt="Turma da Monica">
+                </a>
+                <div class="middle">
+                    <p>Sueli, a primeira personagem surda do Bairro do Limoeiro - apresenta, na Língua Brasileira de
+                        Sinais (LIBRAS), um belo clássico infantil: O Lobo e os Sete Cabritinhos. Encante-se com esta
+                        história, enquanto acompanha lindas imagens da turminha mais animada de todas!</p>
                 </div>
-            </section>
+            </div>
         </section>
 
-        <h2></h2>
-
-
-        <section class="grid-livraria">
-  <section class="grid-item">
-
-                <div class="container">
-                    <a href="https://www.amazon.com.br/TECH-LIBRAS-Eesquisas-tecnologias-educacionais/dp/6525116619/ref=sr_1_56?adgrpid=125191390276&dib=eyJ2IjoiMSJ9.2Bj2AA8XtXt_pyaagHWLRdw2ZYKHoDjfcmYCP5kQoFQyBgmayRsYEs0lM8qcGpyUblC7fXF55M4dLRmOp9-Xm0vcVNt7IEOvX9rUV3Rje17bVqzUhgFoVr1vwDgIULuOrZaj4hrVCm-eyfYW7MNDySOtuc3wG9n4GWBmZVUF4vYYUg3JZ7CUaoYyLv9iWNEJYwsJ-9PwSnG7sM04UnP7gQ0FfkzjLmm9h7VDGsGs6mKADrfkD2A1NYebk8mYCALtZEyYZv5GnekKexkV--Xx8a0yudLU2jBN_MiAhrHLQrA.egZPkxO-jUmRPGVLfgpkQpqwwNWOlMhBOojm8VticWQ&dib_tag=se&hvadid=535203690434&hvdev=c&hvlocphy=9196292&hvnetw=g&hvqmt=e&hvrand=13164723581411331899&hvtargid=kwd-346405401577&hydadcr=19199_13333549&keywords=livros+em+libras&qid=1732734152&sr=8-56&ufe=app_do%3Aamzn1.fos.6d798eae-cadf-45de-946a-f477d47705b9">
-                        <img src="../img/livros/lit.jpg" alt="canção">
-                    </a>
-
-                    <div class="middle">
-
-                        <p>Esta obra primeiramente significa a materialização de um sonho nascido e cultivado no campo das ideias, discussões e pesquisas que envolvem e entrelaçam as trajetórias acadêmicas e professoral das autoras organizadoras. </p>
-                    </div>
+        <section class="grid-item">
+            <div class="container">
+                <a
+                    href="https://www.amazon.com.br/Contos-cl%C3%A1ssicos-adormecida-Projetos-escolares/dp/8543227879/ref=sr_1_29?__mk_pt_BR=%C3%85M%C3%85%C5%BD%C3%95%C3%91&crid=3USXPDC42J9FG&dib=eyJ2IjoiMSJ9.KvRQWZRLnQhUXzP5tv5O-PwhuiXUjuNzBcIR-d_BhNv8XLxGnhV-KOHcgXFHiF74Gd_bVOG-xRY7QY_STcPnXPqYzA3R9xt9W4f2aw2lAEh4t0v_R2PTaJRKFLEt0-SMmZWtI12Wzi_ceetoaQNt-aMOQqnxm78Z_EeX25AEKfoDfHltz52IotxirBlm6mIFH2byXgtsgyZhdi7kOUuyO8slTpRlgo9Hy4Txxs-sZ9RW-L6aZxSfZPtuuFr59Uh3k4PxIB88faaLaw0Y4CQdKBE1mZPZppyzvJUzT8jIYUg.08YzeRdC41Qhg7btfObJw6r3iIGHq6A31mG3wuRt_Do&dib_tag=se&keywords=livros+em+libras&qid=1731520970&sprefix=livros+e%2Caps%2C3977&sr=8-29">
+                    <img src="../img/bela.jpg" alt="bela adormecida">
+                </a>
+                <div class="middle">
+                    <p>Uma jovem é amaldiçoada e condenada ao sono profundo até receber o beijo do amor verdadeiro.</p>
                 </div>
-
+            </div>
+        </section>
+        <section class="grid-item">
+            <div class="container">
+                <a
+                    href="https://www.amazon.com.br/Contos-Cl%C3%A1ssicos-Libras-Chapeuzinho-Vermelho/dp/6580921692/ref=sr_1_5?dib=eyJ2IjoiMSJ9.o6DdANBYFXf0VUnQLrRtA7OtSJ_J0t-_6BtAklbddTn8XLxGnhV-KOHcgXFHiF74a76-bZqDvgDMV8VkEGQGP7Pab8LjYCsbvL-HuZPqCpV1c7wLoGF60j5KMxgzPAsj9OV5OtjY3QsvXBxEft-uMbtZSAfuQxwG0CFhZLRtkrwuyzfGnpy74e_xgVPHPi01QmKiVWt4uxXXnaFJ0YwqyKaGy1d2LOneBQsvmtlbYD8.wjsF_nDGfd07I29-325u2JI-kIFYU6Sbh1ZEvA-U_9I&dib_tag=se&keywords=L%C3%ADngua+brasileira+de+sinais&qid=1729710904&s=books&sr=1-5">
+                    <img src="../img/livros/chapeu.jpg" alt="Chapeuzinho vermelho">
+                </a>
+                <div class="middle">
+                    <p>O enredo conta sobre uma menina que sempre usava uma capa vermelha e um dia teve que atravessar a
+                        floresta para levar uma cesta de doces para sua avó, mas no meio do caminho é enganada por um
+                        lobo mau.</p>
                 </div>
-            </section>
-           (...)
-            <section class="grid-item">
-                <div class="container">
-                    <a href="https://www.amazon.com.br/Gloss%C3%A1rio-Ci%C3%AAncias-Em-Libras-Pedag%C3%B3gica/dp/8547321950/ref=sr_1_24?adgrpid=125191390276&dib=eyJ2IjoiMSJ9.KvRQWZRLnQhUXzP5tv5O-JyjEwFNY-jPugrsMgsXtm4DPRLOLwybYcBVVnBk3NviYkym96u5cOxhesoe3bcl9vmlKDJz9qMgTJDe4FC__0XvfVW-cEWFqpDnZ6R9W84xn0N5BY-2wjCTNMG3kqre5KCJQyCRrZUBsTzeX_GOSwmNJCPoM7tm90zIcaTwulCRw-92y9m0j1KKlYIGgItykB7rmlK7eub8KM5rAwFMuEkPgaeLzuUEf4kXk-T4_eusO8oid14B1LjrYgteuWSHAkKg_5h9wzbi8Z6WuF07HPA.g6PTvg1kbbzbdRK7Zu042EDUHbnCv3y6LXBiPRgaO58&dib_tag=se&hvadid=535203690434&hvdev=c&hvlocphy=9196292&hvnetw=g&hvqmt=e&hvrand=13164723581411331899&hvtargid=kwd-346405401577&hydadcr=19199_13333549&keywords=livros+em+libras&qid=1732733902&sr=8-24&ufe=app_do%3Aamzn1.fos.6d798eae-cadf-45de-946a-f477d47705b9">
-                        <img src="../img/livros/cien.jpg" alt="príncipe">
-                    </a>
-
-                    <div class="middle">
-
-                        <p>A educação de surdos enfrenta desafios, como a escassez de materiais didáticos adequados, dificultando a compreensão dos conceitos ensinados em sala de aula para esses estudantes. </p>
-                    </div>
-                </div>
-            </section>
-
-            <section class="grid-item">
-                <div class="container">
-                    <a href="https://www.amazon.com.br/Tenho-Introdu%C3%A7%C3%A3o-Libras-Educa%C3%A7%C3%A3o-Surdos/dp/8576003074/ref=pd_sim_d_sccl_3_11/146-7070421-9794669?pd_rd_w=qA3Cd&content-id=amzn1.sym.8555f615-361b-42f7-96c4-206bb8a5174e&pf_rd_p=8555f615-361b-42f7-96c4-206bb8a5174e&pf_rd_r=MF9MTWEE0E9XVGKRW0YW&pd_rd_wg=ddmFd&pd_rd_r=f7104fad-b8e0-4279-b109-18331c00cb14&pd_rd_i=8576003074&psc=1">
-                        <img src="../img/livros/agor.jpg" alt="O melhor de Nelson Rodrigues">
-                    </a>
-
-                    <div class="middle">
-
-                        <p>Este livro reúne textos de autores surdos e ouvintes sobre LIBRAS e educação de surdos, visando oferecer conhecimento inicial e aprofundamento teórico para professores da educação básica. </p>
-                    </div>
-                </div>
-            </section>
+            </div>
         </section>
 
-        
-        <section class="grid-livraria">
-
-            <section class="grid-item">
-                <div class="container">
-                    <a href="https://www.amazon.com.br/Quando-as-m%C3%A3os-podem-falar/dp/6553844887/ref=sr_1_49?crid=3J85DC4KJCS5G&dib=eyJ2IjoiMSJ9.KvRQWZRLnQhUXzP5tv5O-JyjEwFNY-jPugrsMgsXtm4DPRLOLwybYcBVVnBk3NviYkym96u5cOxhesoe3bcl9vmlKDJz9qMgTJDe4FC__0XvfVW-cEWFqpDnZ6R9W84xn0N5BY-2wjCTNMG3kqre5KCJQyCRrZUBsTzeX_GOSwmNJCPoM7tm90zIcaTwulCRw-92y9m0j1KKlYIGgItykB7rmlK7eub8KM5rAwFMuEkPgaeLzuUEf4kXk-T4_eusO8oid14B1LjrYgteuWSHAkKg_5h9wzbi8Z6WuF07HPA.g6PTvg1kbbzbdRK7Zu042EDUHbnCv3y6LXBiPRgaO58&dib_tag=se&keywords=livros+em+libras&qid=1732729323&sprefix=%2Caps%2C198&sr=8-49">
-                        <img src="../img/livros/mao.jpg" alt="A cartomante">
-                    </a>
-                    <div class="middle">
-                        <p>A história de Tauane, uma jovem surda, destaca os desafios que enfrenta em uma sociedade ouvinte. A narrativa explora sua jornada e como a Língua Brasileira de Sinais (Libras) permite que ela se comunique, mostrando a importância dessa língua e a adaptação ao mundo ao seu redor.</p>
-                    </div>
-                </div>
-            </section>
-
-            <section class="grid-item">
-                <div class="container">
-                  <a href="https://www.amazon.com.br/Ouvinte-Surdez-Ensinar-Aprender-Libras/dp/8579340500/ref=sr_1_15?__mk_pt_BR=%C3%85M%C3%85%C5%BD%C3%95%C3%91&crid=3USXPDC42J9FG&dib=eyJ2IjoiMSJ9.KvRQWZRLnQhUXzP5tv5O-PwhuiXUjuNzBcIR-d_BhNv8XLxGnhV-KOHcgXFHiF74Gd_bVOG-xRY7QY_STcPnXPqYzA3R9xt9W4f2aw2lAEh4t0v_R2PTaJRKFLEt0-SMmZWtI12Wzi_ceetoaQNt-aMOQqnxm78Z_EeX25AEKfoDfHltz52IotxirBlm6mIFH2byXgtsgyZhdi7kOUuyO8slTpRlgo9Hy4Txxs-sZ9RW-L6aZxSfZPtuuFr59Uh3k4PxIB88faaLaw0Y4CQdKBE1mZPZppyzvJUzT8jIYUg.08YzeRdC41Qhg7btfObJw6r3iIGHq6A31mG3wuRt_Do&dib_tag=se&keywords=livros+em+libras&qid=1731520970&sprefix=livros+e%2Caps%2C3977&sr=8-15&ufe=app_do%3Aamzn1.fos.6d798eae-cadf-45de-946a-f477d47705b9">
-                    <img src="../img/ouv.jpg" alt="O Ouvinte e a Surdez. Sobre Ensinar e Aprender a Libras ">
-                  </a>
-                  <div class="middle">
-                    <p>O ouvinte e o desconhecido mundo da surdez… Mútuo desconhecimento! Do ouvinte ― que convive com um mundo que desconhece ― e da surdez ― que desconhece o ouvinte e o mundo dele.</p>
-                  </div>
-                </div>
-              </section>
-
-
-
-            <section class="grid-item">
-                <div class="container">
-                  <a href="https://www.amazon.com.br/Fam%C3%ADlia-Libras-Filipe-Mac%C3%AAdo/dp/6553844860/ref=sr_1_3?__mk_pt_BR=%C3%85M%C3%85%C5%BD%C3%95%C3%91&crid=3USXPDC42J9FG&dib=eyJ2IjoiMSJ9.KvRQWZRLnQhUXzP5tv5O-PwhuiXUjuNzBcIR-d_BhNv8XLxGnhV-KOHcgXFHiF74Gd_bVOG-xRY7QY_STcPnXPqYzA3R9xt9W4f2aw2lAEh4t0v_R2PTaJRKFLEt0-SMmZWtI12Wzi_ceetoaQNt-aMOQqnxm78Z_EeX25AEKfoDfHltz52IotxirBlm6mIFH2byXgtsgyZhdi7kOUuyO8slTpRlgo9Hy4Txxs-sZ9RW-L6aZxSfZPtuuFr59Uh3k4PxIB88faaLaw0Y4CQdKBE1mZPZppyzvJUzT8jIYUg.08YzeRdC41Qhg7btfObJw6r3iIGHq6A31mG3wuRt_Do&dib_tag=se&keywords=livros+em+libras&qid=1731520730&sprefix=livros+e%2Caps%2C3977&sr=8-3">
-                    <img src="../img/familia.jpg" alt="Familia da libras">
-                  </a>
-                  <div class="middle">
-                    <p>Você sabia que existem famílias diferentes e todas são muito importantes? Neste livro, vamos aprender com o escritor Filipe Macedo, o Passarinho, como podemos nos comunicar por meio das mãos.</p>
-                  </div>
-                </div>
-              </section>
-
-
-
-
+        <section class="grid-item">
 
             <div class="container">
-                <a href="https://www.amazon.com.br/Conex%C3%B5es-Silenciosas-Brasileira-Facilitadora-Comunicacional/dp/6525063337/ref=sr_1_63?crid=3J85DC4KJCS5G&dib=eyJ2IjoiMSJ9.7AzE_OX8UDtvFvWWHwfc-66RuoH2rQKmwNxZXqhNpOxFMEr8IKLod1B3XRfWOVEwblC7fXF55M4dLRmOp9-Xm0vcVNt7IEOvX9rUV3Rje17bVqzUhgFoVr1vwDgIULuOrZaj4hrVCm-eyfYW7MNDyXRQRbJPHvmZbPJh1Dve0_EB4Pw_0e1eqfUV4qJOonz3YwsJ-9PwSnG7sM04UnP7gQ0FfkzjLmm9h7VDGsGs6mK_FC2COqw-ZXbw3Y7O6NXFIiSNoTYG3X3Q8z87TpYdV60yudLU2jBN_MiAhrHLQrA.O22YUBWEqRQoB0LS1SuTict8bEuS4c4RPerD-4hVeC0&dib_tag=se&keywords=livros+em+libras&qid=1732729912&sprefix=%2Caps%2C198&sr=8-63&ufe=app_do%3Aamzn1.fos.6d798eae-cadf-45de-946a-f477d47705b9">
-                    <img src="../img/livros/cone.jpg" alt="1984">
+
+                <a
+                    href="https://www.amazon.com.br/COLORINDO-COM-LIBRAS-CLUBE-LELEIA-ebook/dp/B0DDWN43T3/ref=sr_1_52?adgrpid=125191390276&dib=eyJ2IjoiMSJ9.KvRQWZRLnQhUXzP5tv5O-JyjEwFNY-jPugrsMgsXtm4DPRLOLwybYcBVVnBk3NviYkym96u5cOxhesoe3bcl9vmlKDJz9qMgTJDe4FC__0XvfVW-cEWFqpDnZ6R9W84xn0N5BY-2wjCTNMG3kqre5KCJQyCRrZUBsTzeX_GOSwmNJCPoM7tm90zIcaTwulCRw-92y9m0j1KKlYIGgItykB7rmlK7eub8KM5rAwFMuEkPgaeLzuUEf4kXk-T4_eusO8oid14B1LjrYgteuWSHAkKg_5h9wzbi8Z6WuF07HPA.g6PTvg1kbbzbdRK7Zu042EDUHbnCv3y6LXBiPRgaO58&dib_tag=se&hvadid=535203690434&hvdev=c&hvlocphy=9196292&hvnetw=g&hvqmt=e&hvrand=13164723581411331899&hvtargid=kwd-346405401577&hydadcr=19199_13333549&keywords=livros+em+libras&qid=1732733902&sr=8-52">
+                    <img src="../img/livros/pintura.jpg" alt="dias">
                 </a>
 
+                <div class="middle">
+
+                    <p>Livro de colorir com LIBRAS (Língua Brasileira de Sinais), é um livro cativante para encantar e
+                        entreter as crianças. Os pequenos artistas encontrarão uma combinação de desenhos e sinais me
+                        Libras o que favorece a ensino bilíngue!</p>
+                </div>
+            </div>
+
+            </div>
+        </section>
+
+
+
+
+    </section>
+
+
+
+
+
+    <section class="grid-livraria">
+        <section class="grid-item">
+            <div class="container">
+                <a
+                    href="https://www.amazon.com.br/crian%C3%A7as-ouvintes-segunda-poss%C3%ADvel-inclus%C3%A3o/dp/6555231645/ref=sr_1_25?__mk_pt_BR=%C3%85M%C3%85%C5%BD%C3%95%C3%91&crid=3USXPDC42J9FG&dib=eyJ2IjoiMSJ9.KvRQWZRLnQhUXzP5tv5O-PwhuiXUjuNzBcIR-d_BhNv8XLxGnhV-KOHcgXFHiF74Gd_bVOG-xRY7QY_STcPnXPqYzA3R9xt9W4f2aw2lAEh4t0v_R2PTaJRKFLEt0-SMmZWtI12Wzi_ceetoaQNt-aMOQqnxm78Z_EeX25AEKfoDfHltz52IotxirBlm6mIFH2byXgtsgyZhdi7kOUuyO8slTpRlgo9Hy4Txxs-sZ9RW-L6aZxSfZPtuuFr59Uh3k4PxIB88faaLaw0Y4CQdKBE1mZPZppyzvJUzT8jIYUg.08YzeRdC41Qhg7btfObJw6r3iIGHq6A31mG3wuRt_Do&dib_tag=se&keywords=livros+em+libras&qid=1731520970&sprefix=livros+e%2Caps%2C3977&sr=8-25&ufe=app_do%3Aamzn1.fos.6d798eae-cadf-45de-946a-f477d47705b9">
+                    <img src="../img/en.jpg"
+                        alt="Ensino de libras a crianças ouvintes como segunda língua e fator possível de inclusão social">
+                </a>
+                <div class="middle">
+                    <p>A ideia central deste projeto é a de fazer a inclusão ao contrário, começando com as crianças
+                        ouvintes aprendendo a ver o seu par diferente como outro igual, na certeza de que, quanto antes
+                        tenham contato com ele, menos teremos que falar de inclusão no futuro.</p>
+                </div>
+            </div>
+        </section>
+
+
+
+
+
+
+        <section class="grid-item">
+            <div class="container">
+                <a
+                    href="https://www.amazon.com.br/Libras-Aprender-Est%C3%A1-Suas-M%C3%A3os/dp/8544418902/ref=sr_1_14?__mk_pt_BR=%C3%85M%C3%85%C5%BD%C3%95%C3%91&crid=3USXPDC42J9FG&dib=eyJ2IjoiMSJ9.KvRQWZRLnQhUXzP5tv5O-PwhuiXUjuNzBcIR-d_BhNv8XLxGnhV-KOHcgXFHiF74Gd_bVOG-xRY7QY_STcPnXPqYzA3R9xt9W4f2aw2lAEh4t0v_R2PTaJRKFLEt0-SMmZWtI12Wzi_ceetoaQNt-aMOQqnxm78Z_EeX25AEKfoDfHltz52IotxirBlm6mIFH2byXgtsgyZhdi7kOUuyO8slTpRlgo9Hy4Txxs-sZ9RW-L6aZxSfZPtuuFr59Uh3k4PxIB88faaLaw0Y4CQdKBE1mZPZppyzvJUzT8jIYUg.08YzeRdC41Qhg7btfObJw6r3iIGHq6A31mG3wuRt_Do&dib_tag=se&keywords=livros+em+libras&qid=1731520970&sprefix=livros+e%2Caps%2C3977&sr=8-14&ufe=app_do%3Aamzn1.fos.6d798eae-cadf-45de-946a-f477d47705b9">
+                    <img src="../img/lib.jpg" alt="aprender">
+                </a>
 
 
                 <div class="middle">
 
-                    <p>Um indivíduo bilíngue possui mais recursos comunicativos em comparação àquele que domina apenas uma língua. Essa assertiva é comumente associada à realidade das pessoas que vivem em países com mais de uma língua oﬁcial, vinculadas à predominância linguística verbal.</p>
+                    <p>O livro “LIBRAS: APRENDER ESTÁ EM SUAS MÃOS”, agora em sua 2ª edição e com algumas alterações, é
+                        um material de apoio indispensável a professores de Libras, acadêmicos e outras pessoas
+                        interessadas em aprender a Libras.</p>
+                </div>
+            </div>
+
+            </div>
+        </section>
+        <section class="grid-item">
+            <div class="container">
+                <a
+                    href="https://www.amazon.com.br/Libras-autismo-um-di%C3%A1logo-poss%C3%ADvel/dp/655956777X/ref=sr_1_61?crid=3J85DC4KJCS5G&dib=eyJ2IjoiMSJ9.7AzE_OX8UDtvFvWWHwfc-66RuoH2rQKmwNxZXqhNpOxFMEr8IKLod1B3XRfWOVEwblC7fXF55M4dLRmOp9-Xm0vcVNt7IEOvX9rUV3Rje17bVqzUhgFoVr1vwDgIULuOrZaj4hrVCm-eyfYW7MNDyXRQRbJPHvmZbPJh1Dve0_EB4Pw_0e1eqfUV4qJOonz3YwsJ-9PwSnG7sM04UnP7gQ0FfkzjLmm9h7VDGsGs6mK_FC2COqw-ZXbw3Y7O6NXFIiSNoTYG3X3Q8z87TpYdV60yudLU2jBN_MiAhrHLQrA.O22YUBWEqRQoB0LS1SuTict8bEuS4c4RPerD-4hVeC0&dib_tag=se&keywords=livros+em+libras&qid=1732729912&sprefix=%2Caps%2C198&sr=8-61&ufe=app_do%3Aamzn1.fos.a492fd4a-f54d-4e8d-8c31-35e0a04ce61e">
+                    <img src="../img/livros/lia.jpg" alt="Terra sonâmbula">
+                </a>
+
+                <div class="middle">
+
+                    <p>O livro aborda as dificuldades de comunicação entre professores e alunos com TEA e surdez,
+                        destacando Libras e C.A.A. como estratégias inclusivas. </p>
+                </div>
+            </div>
+
+            </div>
+        </section>
+        <section class="grid-item">
+            <div class="container">
+                <a href="https://www.amazon.com.br/grande-livro-libras-Lingua-brasileira/dp/6587817424">
+                    <img src="../img/LIBB.jpg"
+                        alt="O Grande Livro de Libras: Lingua brasileira de sinais: Suplementos e Guias de estudo">
+                </a>
+
+                <div class="middle">
+
+                    <p>Quando se fala em inclusão social, tem se como princípio básico a transformação da sociedade no
+                        sentido de entender as necessidades dos diferentes grupos e procurar atende-las, possibilitando,
+                        assim, o exercício pleno da cidadania.</p>
+                </div>
+            </div>
+            </div>
+        </section>
+    </section>
+
+
+
+
+
+    <section class="grid-livraria">
+        <section class="grid-item">
+            <div class="container">
+                <a
+                    href="https://www.amazon.com.br/L%C3%ADngua-Brasileira-Sinais-Tecnologias-Digitais/dp/8584291679/ref=sr_1_37?crid=3J85DC4KJCS5G&dib=eyJ2IjoiMSJ9.KvRQWZRLnQhUXzP5tv5O-JyjEwFNY-jPugrsMgsXtm4DPRLOLwybYcBVVnBk3NviYkym96u5cOxhesoe3bcl9vmlKDJz9qMgTJDe4FC__0XvfVW-cEWFqpDnZ6R9W84xn0N5BY-2wjCTNMG3kqre5KCJQyCRrZUBsTzeX_GOSwmNJCPoM7tm90zIcaTwulCRw-92y9m0j1KKlYIGgItykB7rmlK7eub8KM5rAwFMuEkPgaeLzuUEf4kXk-T4_eusO8oid14B1LjrYgteuWSHAkKg_5h9wzbi8Z6WuF07HPA.g6PTvg1kbbzbdRK7Zu042EDUHbnCv3y6LXBiPRgaO58&dib_tag=se&keywords=livros+em+libras&qid=1732729323&sprefix=%2Caps%2C198&sr=8-37&ufe=app_do%3Aamzn1.fos.6d798eae-cadf-45de-946a-f477d47705b9">
+                    <img src="../img/livros/tec.jpg" alt="dan">
+                </a>
+
+                <div class="middle">
+
+                    <p>As tecnologias digitais facilitam a comunicação entre surdos e ouvintes, contribuindo para a
+                        interação social e o desenvolvimento de recursos, como ferramentas para a Libras.
+                    </p>
+                </div>
+            </div>
+
+            </div>
+        </section>
+        <section class="grid-item">
+            <div class="container">
+                <a
+                    href="https://www.amazon.com.br/Educa%C3%A7%C3%A3o-Para-Tr%C3%A2nsito-Escolas-Libras/dp/8538018418/ref=sr_1_43?crid=3J85DC4KJCS5G&dib=eyJ2IjoiMSJ9.KvRQWZRLnQhUXzP5tv5O-JyjEwFNY-jPugrsMgsXtm4DPRLOLwybYcBVVnBk3NviYkym96u5cOxhesoe3bcl9vmlKDJz9qMgTJDe4FC__0XvfVW-cEWFqpDnZ6R9W84xn0N5BY-2wjCTNMG3kqre5KCJQyCRrZUBsTzeX_GOSwmNJCPoM7tm90zIcaTwulCRw-92y9m0j1KKlYIGgItykB7rmlK7eub8KM5rAwFMuEkPgaeLzuUEf4kXk-T4_eusO8oid14B1LjrYgteuWSHAkKg_5h9wzbi8Z6WuF07HPA.g6PTvg1kbbzbdRK7Zu042EDUHbnCv3y6LXBiPRgaO58&dib_tag=se&keywords=livros+em+libras&qid=1732729323&sprefix=%2Caps%2C198&sr=8-43">
+                    <img src="../img/livros/tra.jpg" alt="Alice">
+                </a>
+
+                <div class="middle">
+
+                    <p>Conhecimentos sobre o funcionamento de veículos, primeiros socorros e legislação de trânsito são
+                        essenciais para futuros condutores, garantindo segurança e responsabilidade ao dirigir nas ruas
+                        e rodovias. </p>
+                </div>
+            </div>
+
+            </div>
+        </section>
+        <section class="grid-item">
+            <div class="container">
+                <a
+                    href="https://www.amazon.com.br/constru%C3%A7%C3%A3o-sentidos-escrita-aluno-surdo/dp/8585689595/ref=pd_rhf_dp_s_pd_crcd_d_sccl_1_10/146-7070421-9794669?pd_rd_w=nD1IZ&content-id=amzn1.sym.1b2190ca-db28-46be-85f8-55611bc8c041&pf_rd_p=1b2190ca-db28-46be-85f8-55611bc8c041&pf_rd_r=TES995EAFDWQHT26EXRE&pd_rd_wg=BRxv2&pd_rd_r=ecd0a347-5333-4ad6-b886-10cdd9f8f904&pd_rd_i=8585689595&psc=1">
+                    <img src="../img/livros/senti.jpg" alt="jardim">
+                </a>
+                <div class="middle">
+                    <p>O livro discute a linguagem na educação do surdo, analisando redações com base em Vygotsky e
+                        Bakhtin, considerando a interferência da LIBRAS na coesão e continuidade temática.
+                    </p>
+
+                </div>
+            </div>
+        </section>
+        <section class="grid-item">
+
+
+            <div class="container">
+                <a
+                    href="https://www.amazon.com.br/Pr%C3%A1tico-L%C3%ADngua-Brasileira-Sinais-Profissionais/dp/854622661X/ref=sr_1_38?crid=3J85DC4KJCS5G&dib=eyJ2IjoiMSJ9.KvRQWZRLnQhUXzP5tv5O-JyjEwFNY-jPugrsMgsXtm4DPRLOLwybYcBVVnBk3NviYkym96u5cOxhesoe3bcl9vmlKDJz9qMgTJDe4FC__0XvfVW-cEWFqpDnZ6R9W84xn0N5BY-2wjCTNMG3kqre5KCJQyCRrZUBsTzeX_GOSwmNJCPoM7tm90zIcaTwulCRw-92y9m0j1KKlYIGgItykB7rmlK7eub8KM5rAwFMuEkPgaeLzuUEf4kXk-T4_eusO8oid14B1LjrYgteuWSHAkKg_5h9wzbi8Z6WuF07HPA.g6PTvg1kbbzbdRK7Zu042EDUHbnCv3y6LXBiPRgaO58&dib_tag=se&keywords=livros+em+libras&qid=1732730215&sprefix=%2Caps%2C198&sr=8-38&ufe=app_do%3Aamzn1.fos.6d798eae-cadf-45de-946a-f477d47705b9">
+                    <img src="../img/livros/saudw.jpg" alt="ilha">
+                </a>
+                <div class="middle">
+                    <p>
+                        O Guia Prático de Língua Brasileira de Sinais (Libras) para profissionais da saúde é uma obra
+                        que se destaca pela sua relevância e impacto no campo da medicina e da comunicação.
+
+                    </p>
+                </div>
+            </div>
+        </section>
+    </section>
+
+    <h2></h2>
+
+
+    <section class="grid-livraria">
+        <section class="grid-item">
+
+            <div class="container">
+                <a
+                    href="https://www.amazon.com.br/TECH-LIBRAS-Eesquisas-tecnologias-educacionais/dp/6525116619/ref=sr_1_56?adgrpid=125191390276&dib=eyJ2IjoiMSJ9.2Bj2AA8XtXt_pyaagHWLRdw2ZYKHoDjfcmYCP5kQoFQyBgmayRsYEs0lM8qcGpyUblC7fXF55M4dLRmOp9-Xm0vcVNt7IEOvX9rUV3Rje17bVqzUhgFoVr1vwDgIULuOrZaj4hrVCm-eyfYW7MNDySOtuc3wG9n4GWBmZVUF4vYYUg3JZ7CUaoYyLv9iWNEJYwsJ-9PwSnG7sM04UnP7gQ0FfkzjLmm9h7VDGsGs6mKADrfkD2A1NYebk8mYCALtZEyYZv5GnekKexkV--Xx8a0yudLU2jBN_MiAhrHLQrA.egZPkxO-jUmRPGVLfgpkQpqwwNWOlMhBOojm8VticWQ&dib_tag=se&hvadid=535203690434&hvdev=c&hvlocphy=9196292&hvnetw=g&hvqmt=e&hvrand=13164723581411331899&hvtargid=kwd-346405401577&hydadcr=19199_13333549&keywords=livros+em+libras&qid=1732734152&sr=8-56&ufe=app_do%3Aamzn1.fos.6d798eae-cadf-45de-946a-f477d47705b9">
+                    <img src="../img/livros/lit.jpg" alt="canção">
+                </a>
+
+                <div class="middle">
+
+                    <p>Esta obra primeiramente significa a materialização de um sonho nascido e cultivado no campo das
+                        ideias, discussões e pesquisas que envolvem e entrelaçam as trajetórias acadêmicas e professoral
+                        das autoras organizadoras. </p>
+                </div>
+            </div>
+
+            </div>
+        </section>
+        (...)
+        <section class="grid-item">
+            <div class="container">
+                <a
+                    href="https://www.amazon.com.br/Gloss%C3%A1rio-Ci%C3%AAncias-Em-Libras-Pedag%C3%B3gica/dp/8547321950/ref=sr_1_24?adgrpid=125191390276&dib=eyJ2IjoiMSJ9.KvRQWZRLnQhUXzP5tv5O-JyjEwFNY-jPugrsMgsXtm4DPRLOLwybYcBVVnBk3NviYkym96u5cOxhesoe3bcl9vmlKDJz9qMgTJDe4FC__0XvfVW-cEWFqpDnZ6R9W84xn0N5BY-2wjCTNMG3kqre5KCJQyCRrZUBsTzeX_GOSwmNJCPoM7tm90zIcaTwulCRw-92y9m0j1KKlYIGgItykB7rmlK7eub8KM5rAwFMuEkPgaeLzuUEf4kXk-T4_eusO8oid14B1LjrYgteuWSHAkKg_5h9wzbi8Z6WuF07HPA.g6PTvg1kbbzbdRK7Zu042EDUHbnCv3y6LXBiPRgaO58&dib_tag=se&hvadid=535203690434&hvdev=c&hvlocphy=9196292&hvnetw=g&hvqmt=e&hvrand=13164723581411331899&hvtargid=kwd-346405401577&hydadcr=19199_13333549&keywords=livros+em+libras&qid=1732733902&sr=8-24&ufe=app_do%3Aamzn1.fos.6d798eae-cadf-45de-946a-f477d47705b9">
+                    <img src="../img/livros/cien.jpg" alt="príncipe">
+                </a>
+
+                <div class="middle">
+
+                    <p>A educação de surdos enfrenta desafios, como a escassez de materiais didáticos adequados,
+                        dificultando a compreensão dos conceitos ensinados em sala de aula para esses estudantes. </p>
+                </div>
+            </div>
+        </section>
+
+        <section class="grid-item">
+            <div class="container">
+                <a
+                    href="https://www.amazon.com.br/Tenho-Introdu%C3%A7%C3%A3o-Libras-Educa%C3%A7%C3%A3o-Surdos/dp/8576003074/ref=pd_sim_d_sccl_3_11/146-7070421-9794669?pd_rd_w=qA3Cd&content-id=amzn1.sym.8555f615-361b-42f7-96c4-206bb8a5174e&pf_rd_p=8555f615-361b-42f7-96c4-206bb8a5174e&pf_rd_r=MF9MTWEE0E9XVGKRW0YW&pd_rd_wg=ddmFd&pd_rd_r=f7104fad-b8e0-4279-b109-18331c00cb14&pd_rd_i=8576003074&psc=1">
+                    <img src="../img/livros/agor.jpg" alt="O melhor de Nelson Rodrigues">
+                </a>
+
+                <div class="middle">
+
+                    <p>Este livro reúne textos de autores surdos e ouvintes sobre LIBRAS e educação de surdos, visando
+                        oferecer conhecimento inicial e aprofundamento teórico para professores da educação básica. </p>
+                </div>
+            </div>
+        </section>
+    </section>
+
+
+    <section class="grid-livraria">
+
+        <section class="grid-item">
+            <div class="container">
+                <a
+                    href="https://www.amazon.com.br/Quando-as-m%C3%A3os-podem-falar/dp/6553844887/ref=sr_1_49?crid=3J85DC4KJCS5G&dib=eyJ2IjoiMSJ9.KvRQWZRLnQhUXzP5tv5O-JyjEwFNY-jPugrsMgsXtm4DPRLOLwybYcBVVnBk3NviYkym96u5cOxhesoe3bcl9vmlKDJz9qMgTJDe4FC__0XvfVW-cEWFqpDnZ6R9W84xn0N5BY-2wjCTNMG3kqre5KCJQyCRrZUBsTzeX_GOSwmNJCPoM7tm90zIcaTwulCRw-92y9m0j1KKlYIGgItykB7rmlK7eub8KM5rAwFMuEkPgaeLzuUEf4kXk-T4_eusO8oid14B1LjrYgteuWSHAkKg_5h9wzbi8Z6WuF07HPA.g6PTvg1kbbzbdRK7Zu042EDUHbnCv3y6LXBiPRgaO58&dib_tag=se&keywords=livros+em+libras&qid=1732729323&sprefix=%2Caps%2C198&sr=8-49">
+                    <img src="../img/livros/mao.jpg" alt="A cartomante">
+                </a>
+                <div class="middle">
+                    <p>A história de Tauane, uma jovem surda, destaca os desafios que enfrenta em uma sociedade ouvinte.
+                        A narrativa explora sua jornada e como a Língua Brasileira de Sinais (Libras) permite que ela se
+                        comunique, mostrando a importância dessa língua e a adaptação ao mundo ao seu redor.</p>
+                </div>
+            </div>
+        </section>
+
+        <section class="grid-item">
+            <div class="container">
+                <a
+                    href="https://www.amazon.com.br/Ouvinte-Surdez-Ensinar-Aprender-Libras/dp/8579340500/ref=sr_1_15?__mk_pt_BR=%C3%85M%C3%85%C5%BD%C3%95%C3%91&crid=3USXPDC42J9FG&dib=eyJ2IjoiMSJ9.KvRQWZRLnQhUXzP5tv5O-PwhuiXUjuNzBcIR-d_BhNv8XLxGnhV-KOHcgXFHiF74Gd_bVOG-xRY7QY_STcPnXPqYzA3R9xt9W4f2aw2lAEh4t0v_R2PTaJRKFLEt0-SMmZWtI12Wzi_ceetoaQNt-aMOQqnxm78Z_EeX25AEKfoDfHltz52IotxirBlm6mIFH2byXgtsgyZhdi7kOUuyO8slTpRlgo9Hy4Txxs-sZ9RW-L6aZxSfZPtuuFr59Uh3k4PxIB88faaLaw0Y4CQdKBE1mZPZppyzvJUzT8jIYUg.08YzeRdC41Qhg7btfObJw6r3iIGHq6A31mG3wuRt_Do&dib_tag=se&keywords=livros+em+libras&qid=1731520970&sprefix=livros+e%2Caps%2C3977&sr=8-15&ufe=app_do%3Aamzn1.fos.6d798eae-cadf-45de-946a-f477d47705b9">
+                    <img src="../img/ouv.jpg" alt="O Ouvinte e a Surdez. Sobre Ensinar e Aprender a Libras ">
+                </a>
+                <div class="middle">
+                    <p>O ouvinte e o desconhecido mundo da surdez… Mútuo desconhecimento! Do ouvinte ― que convive com
+                        um mundo que desconhece ― e da surdez ― que desconhece o ouvinte e o mundo dele.</p>
                 </div>
             </div>
         </section>
 
 
-            
 
-           
-
-
-
-
-
-
-
-
-        </section>
-        <footer> &copy; 2024 Matirin. Todos os direitos reservados.
-            <div>
-                <div class="icons"> <!--Icones-->
-                    <img src="../img/home/instlogo.png">
-                    <img src="../img/home/Github-Logo.png" class="Github">
-                    <img src="../img/home/simbolo-zap.png" class="zapzap">
+        <section class="grid-item">
+            <div class="container">
+                <a
+                    href="https://www.amazon.com.br/Fam%C3%ADlia-Libras-Filipe-Mac%C3%AAdo/dp/6553844860/ref=sr_1_3?__mk_pt_BR=%C3%85M%C3%85%C5%BD%C3%95%C3%91&crid=3USXPDC42J9FG&dib=eyJ2IjoiMSJ9.KvRQWZRLnQhUXzP5tv5O-PwhuiXUjuNzBcIR-d_BhNv8XLxGnhV-KOHcgXFHiF74Gd_bVOG-xRY7QY_STcPnXPqYzA3R9xt9W4f2aw2lAEh4t0v_R2PTaJRKFLEt0-SMmZWtI12Wzi_ceetoaQNt-aMOQqnxm78Z_EeX25AEKfoDfHltz52IotxirBlm6mIFH2byXgtsgyZhdi7kOUuyO8slTpRlgo9Hy4Txxs-sZ9RW-L6aZxSfZPtuuFr59Uh3k4PxIB88faaLaw0Y4CQdKBE1mZPZppyzvJUzT8jIYUg.08YzeRdC41Qhg7btfObJw6r3iIGHq6A31mG3wuRt_Do&dib_tag=se&keywords=livros+em+libras&qid=1731520730&sprefix=livros+e%2Caps%2C3977&sr=8-3">
+                    <img src="../img/familia.jpg" alt="Familia da libras">
+                </a>
+                <div class="middle">
+                    <p>Você sabia que existem famílias diferentes e todas são muito importantes? Neste livro, vamos
+                        aprender com o escritor Filipe Macedo, o Passarinho, como podemos nos comunicar por meio das
+                        mãos.</p>
                 </div>
             </div>
-        </footer>
-        <script src="../js/nav.js"></script>
-    </body>
+        </section>
+
+
+
+
+
+        <div class="container">
+            <a
+                href="https://www.amazon.com.br/Conex%C3%B5es-Silenciosas-Brasileira-Facilitadora-Comunicacional/dp/6525063337/ref=sr_1_63?crid=3J85DC4KJCS5G&dib=eyJ2IjoiMSJ9.7AzE_OX8UDtvFvWWHwfc-66RuoH2rQKmwNxZXqhNpOxFMEr8IKLod1B3XRfWOVEwblC7fXF55M4dLRmOp9-Xm0vcVNt7IEOvX9rUV3Rje17bVqzUhgFoVr1vwDgIULuOrZaj4hrVCm-eyfYW7MNDyXRQRbJPHvmZbPJh1Dve0_EB4Pw_0e1eqfUV4qJOonz3YwsJ-9PwSnG7sM04UnP7gQ0FfkzjLmm9h7VDGsGs6mK_FC2COqw-ZXbw3Y7O6NXFIiSNoTYG3X3Q8z87TpYdV60yudLU2jBN_MiAhrHLQrA.O22YUBWEqRQoB0LS1SuTict8bEuS4c4RPerD-4hVeC0&dib_tag=se&keywords=livros+em+libras&qid=1732729912&sprefix=%2Caps%2C198&sr=8-63&ufe=app_do%3Aamzn1.fos.6d798eae-cadf-45de-946a-f477d47705b9">
+                <img src="../img/livros/cone.jpg" alt="1984">
+            </a>
+
+
+
+            <div class="middle">
+
+                <p>Um indivíduo bilíngue possui mais recursos comunicativos em comparação àquele que domina apenas uma
+                    língua. Essa assertiva é comumente associada à realidade das pessoas que vivem em países com mais de
+                    uma língua oﬁcial, vinculadas à predominância linguística verbal.</p>
+            </div>
+        </div>
+    </section>
+
+
+
+
+
+
+
+
+
+
+
+
+
+    </section>
+    <footer> &copy; 2024 Matirin. Todos os direitos reservados.
+        <div>
+            <div class="icons"> <!--Icones-->
+                <img src="../img/home/instlogo.png">
+                <img src="../img/home/Github-Logo.png" class="Github">
+                <img src="../img/home/simbolo-zap.png" class="zapzap">
+            </div>
+        </div>
+    </footer>
+    <script src="../js/nav.js"></script>
+</body>
 
 </html>

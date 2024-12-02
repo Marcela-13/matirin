@@ -2,9 +2,7 @@
   margin: 0;
   padding: 0;
   box-sizing: border-box;
-  font-family: monospace;
-  
-
+  font-family: "Montserrat", sans-serif;
 }
 
 body {
@@ -15,23 +13,22 @@ body {
 
 /* ele centraliza a parte azul*/
 .flex-content {
+  position: relative;
+  top: -30px;
   display: flex;
-  background-image: url('../img/livros/vaidar.jpg');
+  background-image: url('../img/livros/fundo-livro.jpg');
   background-repeat: no-repeat;
   justify-content: center;
   align-items: center;
   width: 100%;
   height: 50vh;
   background-size: cover;
-  
+}
+.flex-content::before{
+  filter: blur();
 
 }
- 
-h2{
 
-  background-color: #ffffff;
-
-}
 
 /*ele marca a area do texto*/
 .texto-informaçao {
@@ -39,17 +36,12 @@ h2{
   flex-direction: column;
   justify-content: center;
   border-radius: 10px;
-  background-color: rgb(87, 204, 240);
-  width: 40%;
+  background-color: rgb(149, 215, 235);
+  width: 60%;
   transition: 0.5s;
-  overflow: hidden;
-  border-style: solid;
-  border-color: #0ed5f8;
-  height: 85%;
+  height: 60%;
   padding: 4%;
-  
-  
-
+  color: white;
 }
 
 /*mantem as letras dentro o middle*/
