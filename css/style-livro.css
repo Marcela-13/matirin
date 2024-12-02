@@ -172,6 +172,63 @@ body {
   display: block;
 }
 
+.carousel-container {
+  position: relative;
+  width: 80%;
+  height: 300px;
+  margin: 30px auto;
+  overflow: hidden;
+  border-radius: 20px;
+  background-color: #f0f8ff;
+  box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2);
+}
+
+.carousel {
+  display: flex;
+  animation: slide 10s infinite;
+}
+
+.carousel-item {
+  flex: 0 0 100%;
+  text-align: center;
+  padding: 20px;
+}
+
+.carousel-item img {
+  max-width: 150px;
+  height: auto;
+  margin: 0 auto;
+  display: block;
+  border-radius: 15px;
+  transition: transform 0.3s;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);
+}
+
+.carousel-item:hover img {
+  transform: scale(1.1);
+}
+
+.carousel-item p {
+  font-size: 16px;
+  color: #333;
+  margin-top: 15px;
+}
+
+@keyframes slide {
+  0%, 20% {
+      transform: translateX(0%);
+  }
+  25%, 45% {
+      transform: translateX(-100%);
+  }
+  50%, 70% {
+      transform: translateX(-200%);
+  }
+  75%, 95% {
+      transform: translateX(-300%);
+  }
+}
+
 
 /*para celular*/
 
