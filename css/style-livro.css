@@ -11,38 +11,47 @@ body {
   background: linear-gradient(0deg, rgba(220, 255, 233, 1) 24%, rgba(206, 247, 255, 1) 66%);*/
 }
 
-/* ele centraliza a parte azul*/
 .flex-content {
   position: relative;
   top: -30px;
   display: flex;
-  background-image: url('../img/livros/fundo-livro.jpg');
-  background-repeat: no-repeat;
   justify-content: center;
   align-items: center;
   width: 100%;
   height: 50vh;
+  overflow: hidden; /* Para evitar que o pseudo-elemento ultrapasse os limites */
+}
+
+.flex-content::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-image: url('../img/livros/fundo-livro.jpg');
+  background-repeat: no-repeat;
   background-size: cover;
+  background-position: center;
+  filter: blur(5px); /* Aplica o filtro à imagem */
+  z-index: -1; /* Garante que o fundo fique atrás do conteúdo */
 }
-.flex-content::before{
-  filter: blur();
 
-}
-
-
-/*ele marca a area do texto*/
 .texto-informaçao {
+  position: relative; /* Mantém o texto acima do fundo */
   display: flex;
   flex-direction: column;
   justify-content: center;
   border-radius: 10px;
-  background-color: rgb(149, 215, 235);
+  background-color: #2499c7;
   width: 60%;
   transition: 0.5s;
   height: 60%;
   padding: 4%;
   color: white;
+  z-index: 1; /* Prioriza o texto acima do pseudo-elemento */
 }
+
 
 /*mantem as letras dentro o middle*/
 .grid-item {
