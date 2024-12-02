@@ -28,7 +28,7 @@ body {
     background-repeat: no-repeat;
     background-size: contain;
     width: 100%;
-    filter: brightness(70%);
+    filter: brightness(75%);
     z-index: -100;
 }
 
@@ -53,15 +53,24 @@ body {
     justify-content: space-around;
     align-items: center;
 }
-
 .imagem1 {
     border-radius: 70px;
     height: 350px;
     width: 350px;
     margin-right: 100px;
+    margin-top: 30%;
+}
+
+.vjmais{
+    display: none;
+    background-color: #b1f0ea;
+    width: 150px;
+    border-radius: 5px;
+    justify-content: center;
 }
 
 .texto1 p {
+    text-align: center;
     text-align: left;
     margin-left: 15%;
     max-width: 1000px;
@@ -84,6 +93,7 @@ body {
 }
 
 .texto2 p {
+    text-align: center;
     text-align: right;
     margin-right: 15%;
     max-width: 1000px;
@@ -97,10 +107,11 @@ h2 {
     margin-top: 10%;
     text-align: center;
     font-family: "Mulish", sans-serif;
+    font-size: 25px;
 }
 
 div.scroll-container {
-    margin-top: 10px;
+    margin-top: 14px;
     background-color: #47a598;
     overflow: hidden;
     white-space: nowrap;
@@ -114,8 +125,8 @@ div.scroll-item {
     align-items: center;
     background: aliceblue;
     margin-right: 10px;
-    padding: 20px;
-    border-radius: 5px;
+    padding: 10px;
+    border-radius: 10px;
     color: rgb(0, 0, 0);
     width: 490px;
     box-shadow: 0 4px 6px rgba(0, 0, 0, 0.2);
@@ -129,16 +140,16 @@ div.scroll-item:hover {
 
 div.scroll-item img {
     width: 170px;
-    height: 130px;
+    height: 160px;
     margin-right: 10px;
-    border-radius: 5px;
+    border-radius: 30px;
     object-fit: cover;
 }
 
 div.scroll-item p {
     font-family: "Montserrat", sans-serif;
     margin: 0;
-    font-size: 14px;
+    font-size: 17px;
     padding: 3px;
 }
 
@@ -168,7 +179,7 @@ div.scroll-item a:hover {
     .container {
         position: relative;
         width: 100%;
-        min-height: 30vh;
+        min-height: 30vh; 
     }
 
     #textobemvindo {
@@ -181,11 +192,12 @@ div.scroll-item a:hover {
 
     .imgtxt1 {
         /*imagem e texto 1*/
-        margin-top: 10%;
-        margin-top: 80px;
         flex-direction: column-reverse;
         justify-content: center;
         align-items: center;
+    }
+    .vjmais{
+        display: flex;
     }
     .imgtxt2 {
         /*imagem e texto 2*/
@@ -197,10 +209,11 @@ div.scroll-item a:hover {
 
     .imagem1, .imagem2{
         /*imagem 1*/
-        margin-top: 5%;
-        height: 230px;
-        margin-bottom: 9px;
-        padding: 20px;
+        margin-top: 15%;
+        height: 280px;
+        width: 280px;
+        margin-bottom: 5px;
+        padding: 5px;
         margin-right: 0;
         margin-left: 0;
     }
@@ -209,6 +222,7 @@ div.scroll-item a:hover {
         display: flex;
         justify-content: center;
         align-items: center;
+        font-size: 17px;
     }
 
     .texto1 p, .texto2 p{
@@ -228,7 +242,7 @@ div.scroll-item a:hover {
     }
 
     div.scroll-container {
-        padding: 3px;
+        padding: 4px;
         margin-top: 10px;
     }
 
@@ -240,6 +254,9 @@ div.scroll-item a:hover {
 
     div.scroll-item img {
         height: 110px;
+        width: 110px;
     }
-
+    div.scroll-item p {
+        font-size: 14px;
+    }
 }
