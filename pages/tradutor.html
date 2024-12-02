@@ -4,7 +4,6 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="icon" type="image/x-icon" href="img/home/logo.png">
     <title>Tradutor e Vídeo</title>
     <link rel="stylesheet" href="../css/style-tradutor.css">
     <link rel="stylesheet" href="../css/nav-footer.css">
@@ -13,28 +12,27 @@
 
 <body>
     <header>
+
         <div class="logo">
-            <img src="../img/home/logo.png">
+            <img src="../img/home/logo.png" alt="Logo">
         </div>
-
-        <div class="nome"> <!--Nome do site-->
-            <h1 class="nomedosite">Mátirin</h1>
+        <!-- Barra de pesquisa -->
+        <div id="Busca">
+            <input type="text" id="txtBusca" placeholder="Buscar..." />
+            <img src="../img/pesquisa2semfundo.png" id="btnBusca" alt="Buscar" />
+            <!-- Adicionei o type="button" -->
+            <button type="button">Buscar</button>
         </div>
-        <div id="Busca"> <!--Barra de pesquisa-->
-            <input type="text" id="txtBusca" placeholder="..." />
-            <img src="img/home/pesquisa2semfundo.png" id="btnBusca" alt="Buscar" />
-            <button onclick="alerta()">Buscar</button>
+        <!-- Nome do site -->
+        <div class="nome">
+            <h1 class="nomedosite">Matirin</h1>
         </div>
-        <!--mostar a função de busca-->
-        <script>
-            function alerta() {
-                alert("teste")
-            }
-        </script>
+        <!-- Cadastro -->
+        <div class="cadastro">
+            <a href="../pages/formulario.html">
+                <img src="../img/home/cadastrod.png" alt="Cadastro">
+            </a>
 
-
-        <div class="cadastro"> <!--Cadastro-->
-            <a href="./formulario.html"><img src="../img/home/cadastrod.png"></a>
         </div>
         <!-- Botão de Menu Hamburguinho -->
         <div class="hamburger" onclick="toggleMenu()">
@@ -48,15 +46,16 @@
     <div class="nav">
         <ul>
             <li><a href="../index.html">Home</a></li>
-            <li><a href="./sobre.html">Sobre nós</a></li>
-            <li><a  class="ativo" href="./tradutor.html">Tradução interativa</a></li>
-            <li><a href="./informacao.html">Livros</a></li>
-            <li><a href="./rede.html">Rede</a></li>
-            <li class="formulário"><a href="./formulario.html">Login</a></li>
+            <li><a href="sobre.html">Sobre nós</a></li>
+            <li><a href="tradutor.html">Tradução interativa</a></li>
+            <li><a href="informacao.html">Livros</a></li>
+            <li><a href="rede.html">Rede</a></li>
         </ul>
     </div>
-    <div class="container">
-        <img src="../img/image.png">
+
+<!--banner -->
+    <div class="Container2">
+        <img src="../img/librasbanner.webp">
     </div>
 
     <!-- Barra lateral -->
@@ -97,7 +96,7 @@
             &copy; 2024 Matirin. Todos os direitos reservados.
             <div>
                 <div class="icons"> <!-- Ícones -->
-                    <img src="../img/home/instlogo.png"> 
+                    <img src="../img/home/instlogo.png">
                     <img src="../img/home/Github-Logo.png" class="Github">
                     <img src="../img/home/simbolo-zap.png" class="zapzap">
                 </div>
@@ -106,8 +105,8 @@
     </section>
     <!-- Link para o arquivo JS -->
 
-    <script src="../js/nav.js"></script>   
-     <script src="../js/script.js"></script>
+    <script src="../js/nav.js"></script>
+    <script src="../js/script.js"></script>
 </body>
 
 </html>

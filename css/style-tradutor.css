@@ -3,8 +3,8 @@
     padding: 0;
     box-sizing: border-box;
 }
-.container {
-    width: 100%;
+.Container2 {
+    width: 20px;
     height: 10vh;
     display: flex;
     justify-content: center;
@@ -92,12 +92,12 @@ textarea {
 }
 
 #botao {
-    width: 40%;
-    height: 45%;
+    width: 30%;
+    height: 40%;
     justify-content: center;
     position: relative;
     text-align: center;
-    left: 40%;
+    left: 35%;
     cursor: pointer;
     border: 4px solid rgb(191, 218, 243);
     color: #000000;
