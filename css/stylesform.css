@@ -33,6 +33,7 @@ h2 {
 /*caixa de texto*/
 label {
     margin: 10px 0 5px;
+    font-family: "Mulish", sans-serif;
 }
 input{
     height: 30px;
@@ -47,6 +48,7 @@ textarea {
     margin-bottom: 15px;
 }
 textarea {
+    font-family: "Montserrat", sans-serif;
     color: #c8edff;
     resize: none;
     height: 100px;
@@ -67,13 +69,15 @@ button {
 button a{
     text-decoration: none;
     color:white;
-    font-size: 12px;
+    font-size: 10px;
+    font-family: "Montserrat", sans-serif;
 }
 button a:hover{
     color: black;
 }
 
 .return{
+    font-family: "Montserrat", sans-serif;
     justify-content: center;
     align-items: center;
     margin-top: 10px;
