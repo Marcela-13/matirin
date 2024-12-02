@@ -52,6 +52,21 @@ body {
   z-index: 1; /* Prioriza o texto acima do pseudo-elemento */
 }
 
+.titulo{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  color: white;
+}
+.titulo h2{
+  background-color: #2499c7;
+  width: 40%;
+  border-radius: 10px;
+  text-align: center;
+  font-size: 30px;
+  padding: 5px;
+}
+
 
 /*mantem as letras dentro o middle*/
 .grid-item {
@@ -79,7 +94,7 @@ body {
 /*localização de onde esta os livros*/
 .grid-livraria {
   display: grid;
-  grid-template-columns: repeat(5, 1fr);
+  grid-template-columns: repeat(4, 1fr);
   /* 4 colunas com largura igual */
   grid-template-rows: auto;
   /* Altura automática para as linhas */
