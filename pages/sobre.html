@@ -16,18 +16,26 @@
         <div class="logo">
             <img src="../img/home/logo.png">
         </div>
-        <div id="Busca"> <!--Barra de pesquisa-->
-            <input type="text" id="txtBusca" placeholder="Buscar..." />
-            <img src="img/home/pesquisa2semfundo.png" id="btnBusca" alt="Buscar" />
-            <button>Buscar</button>
-        </div>
+
         <div class="nome"> <!--Nome do site-->
             <h1 class="nomedosite">Mátirin</h1>
         </div>
-        <div class="cadastro"> <!--Cadastro-->
-            <a href="../pages/formulario.html"><img src="../img/home/cadastrod.png"></a>
+        <div id="Busca"> <!--Barra de pesquisa-->
+            <input type="text" id="txtBusca" placeholder="..." />
+            <img src="img/home/pesquisa2semfundo.png" id="btnBusca" alt="Buscar" />
+            <button onclick="alerta()">Buscar</button>
         </div>
-        
+        <!--mostar a função de busca-->
+        <script>
+            function alerta() {
+                alert("teste")
+            }
+        </script>
+
+
+        <div class="cadastro"> <!--Cadastro-->
+            <a href="./formulario.html"><img src="../img/home/cadastrod.png"></a>
+        </div>
         <!-- Botão de Menu Hamburguinho -->
         <div class="hamburger" onclick="toggleMenu()">
             <span></span>
@@ -36,20 +44,36 @@
         </div>
     </header>
 
-    <!--Navegação-->
+    <!-- Navegação -->
     <div class="nav">
         <ul>
             <li><a href="../index.html">Home</a></li>
-            <li><a class="ativo" href="sobre.html">Sobre nós</a></li>
-            <li><a href="tradutor.html">Tradução Interativa</a></li>
-            <li><a href="informacao.html">Livros</a></li>
-            <li><a href="rede.html">Rede</a></li>
+            <li><a class="ativo" href="./sobre.html">Sobre nós</a></li>
+            <li><a class="./tradutor.html">Tradução interativa</a></li>
+            <li><a href="./informacao.html">Livros</a></li>
+            <li><a href="./rede.html">Rede</a></li>
+            <li class="formulário"><a href="./formulario.html">Login</a></li>
         </ul>
     </div>
-
+    <div class="container">
+        <img src="../img/sobrenos/fundo-libras.png">
+    </div>
+        <!--Seção sobre (ou sobre nós integrantes e/ou sobre o projeto no geral)-->
+        <section class="sobre">
+            <h1>Sobre Nós</h1>
+            <div class="sobre-text">
+                <p>Nós somos um grupo de mulheres que iniciaram o curso de desenvolvimento web na Afesu Moinho, após
+                    diversas pesquisas a respeito da comunidade surda e de seus desafios, nos sensibilizamos com suas
+                    dificuldades, como a pouca visibilidade de sua linguagem, no caso do Brasil à LIBRAS, e decidimos
+                    utilizar essa temática para desenvolvermos o site auxiliar de Libras, que pode vir a ser um exemplo
+                    de empatia e inclusão.
+                </p>
+        
+            </div>
+        </section>
     <!--Cards sobre missão, visão, valores-->
     <main>
-        <section>
+        <section class="cards-texto">
             <div class="missao">
                 <img src="../img/sobrenos/shuttle1.png" alt="ícone de um foguete representando a missaõ do card">
                 <h2>Missão</h2>
@@ -58,7 +82,7 @@
                     inclusivo e acolhedor, onde todas as pessoas possam ser incluídas igualmente utilizando a linguagem
                     de sinais, podendo comunicar seus pensamentos, emoções e necessidades de maneira
                     apropriada, respeitosa e completa.</p>
-            </div><br><br>
+            </div>
             <div class="visao">
                 <img src="../img/sobrenos/eye.png" alt="Ícone de olho que está representando a visão do card ">
                 <h2>Visão</h2>
@@ -69,7 +93,7 @@
                     conhecimento e da inovação, queremos fortalecer a língua de sinais como ferramenta para a inclusão
                     da comunidade surda.
                 </p>
-            </div><br><br>
+            </div>
             <div class="valores">
                 <img src="../img/sobrenos/valor.png"
                     alt="Ícone de um coração seguro por duas mãos que está representando a visão do card">
@@ -81,21 +105,9 @@
                     forma significativa com indivíduos ouvintes. Nosso trabalho é guiado por uma profunda compreensão e
                     empatia, permitindo-nos criar uma atmosfera de aprendizado sensível, centrada nas necessidades
                     reais da comunidade surda.</p>
-            </div><br><br>
-        </section>
-        <!--Seção sobre (ou sobre nós integrantes e/ou sobre o projeto no geral)-->
-        <section class="sobre">
-            <h1>Sobre Nós</h1>
-            <div class="sobre-text">
-                <p>Nós somos um grupo de mulheres que iniciaram o curso de desenvolvimento web na Afesu Moinho, após
-                    diversas pesquisas a respeito da comunidade surda e de seus desafios, nos sensibilizamos com suas
-                    dificuldades, como a pouca visibilidade de sua linguagem, no caso do Brasil à LIBRAS, e decidimos
-                    utilizar essa temática para desenvolvermos o site auxiliar de Libras, que pode vir a ser um exemplo
-                    de empatia e inclusão.
-                </p>
-                <img class="grupo" src="../img/sobrenos/grupo.png" alt="icone de grupo">
             </div>
         </section>
+
     </main>
     <!--Galeria de imagens das integrantes, onde terá uma foto de cada integrante do grupo mais um breve texto sobre ela-->
     <div class="fotos">
@@ -148,7 +160,7 @@
         <footer> &copy; 2024 Matirin. Todos os direitos reservados.
             <div>
                 <div class="icons"> <!--Icones-->
-                    <img src="../img/home/instlogo.png"> 
+                    <img src="../img/home/instlogo.png">
                     <img src="../img/home/Github-Logo.png" class="Github">
                     <img src="../img/home/simbolo-zap.png" class="zapzap">
                 </div>

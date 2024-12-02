@@ -11,21 +11,32 @@ body {
     background: linear-gradient(0deg, rgba(220, 255, 233, 1) 24%, rgba(206, 247, 255, 1) 66%);
 }
 
+.container {
+    width: 100%;
+    height: 10vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 100px;
+}
 
+.container img {
+    position: absolute;
+    background-size: cover;
+    width: 100%;
+    filter: brightness(50%);
+    z-index: -100;
+}
 
 h2,
 h3 {
     text-align: center;
     font-size: 200%;
-    font-family: Georgia;
 }
-
 
 p {
     text-align: center;
     font-size: 120%;
-    font-family: Arial;
-
 }
 
 main {
@@ -34,7 +45,7 @@ main {
 
 }
 
-/*Estilização dos cards (missão, visão, valores)*/
+/*Estilização dos cards de texto (missão, visão, valores)*/
 .missao,
 .valores,
 .visao {
@@ -42,12 +53,17 @@ main {
     color: black;
     padding: 5%;
     margin: 10%;
-    width: 70%;
-    display: flex;
-    flex-direction: column;
     border: 1px solid rgba(0, 0, 0, 0);
     border-radius: 5px;
     text-align: justify;
+   
+}
+
+.cards-texto {
+    margin: 7%;
+    width: 70%;
+    display: flex;
+    justify-content: center;
 }
 
 .missao:hover,
@@ -59,59 +75,29 @@ main {
 .missao img,
 .visao img,
 .valores img {
-    width: 20%;
+    width: 35%;
     height: auto;
 }
 
 /* Estilização da Seção sobre*/
-/* Estilizando a seção sobre por completo */
 .sobre {
     display: flex;
     flex-direction: column;
-    border: 1px solid rgba(0, 0, 0, 0);
-    border-radius: 5px;
     justify-content: space-around;
     align-items: center;
-    
 }
 
 .sobre h1 {
+    color: white;
     font-size: 50px;
-    
+
 }
 
 /* Estlizando a classe específica do quadro sobre */
 .sobre-text {
-    background-color: #a2dbf1;
-    border: 1px solid rgba(0, 0, 0, 0);
-    border-radius: 5px;
-    width: 60%;
-    height: 40%;
-    padding: 5%;
-    margin-bottom: 100%;
-   
-}
-
-.sobre-text p {
-    text-align: justify;
-    /* Justificando o texto */
-}
-
-.sobre-text:hover {
-    background-color: #419ac4;
-}
-
-/* Hover no quadro Sobre */
-
-
-.grupo {
-    margin: 5%;
-    padding: 10%;
-    width: 90%;
-    height: auto;
-    display: flex;
-    justify-content: center;
-    align-items: center;
+    width: 50%;
+    height: 90%;
+    color: white;
 }
 
 /*Estilizando os cards com as fotos e texto-fala das integrantes */
@@ -134,7 +120,7 @@ main {
 
 .fotos img {
     border: 1px solid rgba(0, 0, 0, 0);
-    border-radius: 5px;
+    border-radius: 40px;
     width: 70%;
     height: 70%;
 }
@@ -165,7 +151,7 @@ p {
     background-color: #a2dbf1;
     overflow: hidden;
     transition: .3s ease;
-    border-radius: 5px;
+    border-radius: 40px;
     width: 100%;
     height: auto;
 
@@ -176,7 +162,6 @@ p {
     bottom: 0;
     height: 90%;
     width: 80%;
-
 }
 
 /*texto-fala das integrantes*/
@@ -195,7 +180,7 @@ p {
     -ms-transform: translate(-50%, -50%);
     /*(-webkit- e -ms-): Esses prefixos são usados para garantir compatibilidade com navegadores mais antigos (como versões antigas do Safari e do Internet Explorer)*/
     transform: translate(-50%, -50%);
-    font-size: 95%;
+    font-size: 100%;
     width: 100%;
     height: auto;
     text-align: center;
@@ -230,7 +215,7 @@ p {
     }
 
     .sobre {
-        
+
         padding: 2%;
     }
 
@@ -243,6 +228,7 @@ p {
     .fotos {
         height: auto;
         flex-direction: column;
+
     }
 
     .botao {
@@ -254,6 +240,8 @@ p {
         width: 30%;
         height: 30%;
         margin-bottom: 3%;
+        border-radius: 10px;
+
     }
 
     .card-foto {
@@ -268,7 +256,7 @@ p {
         padding: 5%;
         width: 50%;
         height: auto;
-        border-radius: 10%;
+
 
     }
 
@@ -279,7 +267,7 @@ p {
     .texto4,
     .texto5 {
         color: black;
-        font-size: 95%;
+        font-size: 100%;
         height: auto;
         text-align: center;
         padding: 2%;
