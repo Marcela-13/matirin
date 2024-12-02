@@ -4,6 +4,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="icon" type="image/x-icon" href="img/home/logo.png">
     <title>Tradutor e Vídeo</title>
     <link rel="stylesheet" href="../css/style-tradutor.css">
     <link rel="stylesheet" href="../css/nav-footer.css">
@@ -13,25 +14,27 @@
 <body>
     <header>
         <div class="logo">
-            <img src="../img/home/logo.png" alt="Logo">
+            <img src="../img/home/logo.png">
         </div>
-        <!-- Barra de pesquisa -->
-        <div id="Busca">
-            <input type="text" id="txtBusca" placeholder="Buscar..." />
-            <img src="../img/pesquisa2semfundo.png" id="btnBusca" alt="Buscar" />
-            <!-- Adicionei o type="button" -->
-            <button type="button">Buscar</button>
-        </div>
-        <!-- Nome do site -->
-        <div class="nome">
-            <h1 class="nomedosite">Matirin</h1>
-        </div>
-        <!-- Cadastro -->
-        <div class="cadastro">
-            <a href="pages/formulario.html">
-                <img src="../img/home/cadastrod.png" alt="Cadastro">
-            </a>
 
+        <div class="nome"> <!--Nome do site-->
+            <h1 class="nomedosite">Mátirin</h1>
+        </div>
+        <div id="Busca"> <!--Barra de pesquisa-->
+            <input type="text" id="txtBusca" placeholder="..." />
+            <img src="img/home/pesquisa2semfundo.png" id="btnBusca" alt="Buscar" />
+            <button onclick="alerta()">Buscar</button>
+        </div>
+        <!--mostar a função de busca-->
+        <script>
+            function alerta() {
+                alert("teste")
+            }
+        </script>
+
+
+        <div class="cadastro"> <!--Cadastro-->
+            <a href="./formulario.html"><img src="../img/home/cadastrod.png"></a>
         </div>
         <!-- Botão de Menu Hamburguinho -->
         <div class="hamburger" onclick="toggleMenu()">
@@ -45,11 +48,15 @@
     <div class="nav">
         <ul>
             <li><a href="../index.html">Home</a></li>
-            <li><a href="sobre.html">Sobre nós</a></li>
-            <li><a href="tradutor.html">Tradução interativa</a></li>
-            <li><a href="informacao.html">Livros</a></li>
-            <li><a href="rede.html">Rede</a></li>
+            <li><a href="./sobre.html">Sobre nós</a></li>
+            <li><a  class="ativo" href="./tradutor.html">Tradução interativa</a></li>
+            <li><a href="./informacao.html">Livros</a></li>
+            <li><a href="./rede.html">Rede</a></li>
+            <li class="formulário"><a href="./formulario.html">Login</a></li>
         </ul>
+    </div>
+    <div class="container">
+        <img src="../img/image.png">
     </div>
 
     <!-- Barra lateral -->
@@ -63,7 +70,7 @@
         <div>
             <!--Vídeo com bom dia , demonstração de boneca interativa-->
             <video id="video" controls>
-                <source src="../img/bomdia.mp4" type="video/mp4">
+                <source src="../img/bomdianovo.mp4" type="video/mp4">
                 Seu navegador não suporta o formato de vídeo.
             </video>
 

@@ -4,10 +4,21 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Projeto Mátirin</title>
     <title>Home</title>
     <link rel="icon" type="image/x-icon" href="img/home/logo.png">
     <link rel="stylesheet" href="css/style.css" />
     <link rel="stylesheet" href="css/nav-footer.css" />
+    <style>
+        @import url('https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap');
+    </style>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Dancing+Script:wght@400..700&family=Montserrat:ital,wght@0,100..900;1,100..900&family=Mulish:ital,wght@0,200..1000;1,200..1000&display=swap"
+        rel="stylesheet">
+    <link
+        href="https://fonts.googleapis.com/css2?family=Bree+Serif&family=Dancing+Script:wght@400..700&family=Montserrat:ital,wght@0,100..900;1,100..900&family=Mulish:ital,wght@0,200..1000;1,200..1000&display=swap"
+        rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 </head>
 
 <body>
@@ -15,10 +26,14 @@
         <div class="logo">
             <img src="img/home/logo.png">
         </div>
+
+        <div class="nome"> <!--Nome do site-->
+            <h1 class="nomedosite">Mátirin</h1>
+        </div>
         <div id="Busca"> <!--Barra de pesquisa-->
-            <input type="text" id="txtBusca" placeholder="Buscar..." />
+            <input type="text" id="txtBusca" placeholder="..." />
             <img src="img/home/pesquisa2semfundo.png" id="btnBusca" alt="Buscar" />
-            <button onclick="alerta()">buscar</button>
+            <button onclick="alerta()">Buscar</button>
         </div>
         <!--mostar a função de busca-->
         <script>
@@ -27,9 +42,7 @@
             }
         </script>
 
-        <div class="nome"> <!--Nome do site-->
-            <h1 class="nomedosite">Matirin</h1>
-        </div>
+
         <div class="cadastro"> <!--Cadastro-->
             <a href="pages/formulario.html"><img src="img/home/cadastrod.png"></a>
         </div>
@@ -56,20 +69,22 @@
     <div class="nav">
         <ul>
             <li><a class="ativo" href="index.htmlS">Home</a></li>
-            <li><a href="./pages/sobre.html">Sobre nós</a></li>
-            <li><a href="./pages/tradutor.html">Tradução interativa</a></li>
-            <li><a href="./pages/informacao.html">livros</a></li>
-            <li><a href="./pages/rede.html">Rede</a></li>
-            <li class="formulário"><a href="./pages/formulario.html">Login</a></li>
+            <li><a href="/pages/sobre.html">Sobre nós</a></li>
+            <li><a href="/pages/tradutor.html">Tradução interativa</a></li>
+            <li><a href="/pages/informacao.html">Livros</a></li>
+            <li><a href="/pages/rede.html">Rede</a></li>
+            <li class="formulário"><a href="pages/formulario.html">Login</a></li>
+
         </ul>
     </div>
 
     <!-- video de fundo-->
     <div class="container">
-        <div class="video-background" id="quadrante1">
-            <p class="nome-video">Seja bem vindo</p>
-        </div>
-
+        <h1 id="textobemvindo"></h1>
+        <video autoplay muted loop class="video">
+            <source src="./img/home/vdhome.mp4" type="video/mp4">
+            Seu navegador não suporta o vídeo.
+        </video>
     </div>
 
     <!--imagens centrais-->
@@ -101,9 +116,9 @@
     </section>
 
     <!--imgtxt3-->
-    <section class="imgtxt3">
-        <div>
-            <p class="texto3">
+    <section class="imgtxt1">
+        <div class="texto1">
+            <p>
                 Entre em contato com novas pessoas em nosso fórum de conversação e amplie sua compreensão sobre
                 o dia a dia, experiências e vivências de quem usa as Libras.
                 Troque ideias, compartilhe dicas e aprenda mais sobre como é conviver com a Libras no cotidiano,
@@ -111,23 +126,23 @@
                 comunicação.</p>
         </div>
         <div>
-            <img src="img/home/bate papo teste2.avif" class="imagem3">
+            <img src="img/home/bate papo teste2.avif" class="imagem1">
         </div>
     </section>
 
     <!--imgtxt4-->
-    <section class="imgtxt4">
-        </div>
+    <section class="imgtxt2">
         <div>
-            <img src="img/home/sobre nós.jpeg" class="imagem4">
+            <img src="img/home/sobre nós.jpeg" class="imagem2">
         </div>
-        <div>
-            <p class="texto4">
+        <div class="texto2">
+            <p>
                 Quer saber mais sobre nós? Acesse nossa página "Sobre Nós" e descubra de onde vêm nossas ideias,
                 nossos valores e os objetivos que nos motivam. Conheça nossa missão, visão e o propósito que nos
                 impulsiona a promover a inclusão e o acesso ao conhecimento. Nossos projetos e iniciativas
                 são pensados para transformar, inspirar e aproximar as pessoas, criando uma comunidade mais unida
                 e consciente das necessidades e riquezas da diversidade.</p>
+        </div>
 
     </section>
 
@@ -158,7 +173,7 @@
         <div class="scroll-item">
             <img src="img/home/noticia 3.PNG" alt="Imagem" class="carroceu"> <!--noticia 3-->
             <div class="noticiadiv">
-                <p class="noticia">Fundo Social está <br>com inscrições abertas para o </p>curso de Libras
+                <p class="noticia">Fundo Social está <br>com inscrições abertas para <br>o curso de Libras</p>
                 <a
                     href="https://www.librasol.com.br/fundo-social-esta-com-inscricoes-abertas-para-o-curso-de-libras/#google_vignette">Veja
                     mais</a>
@@ -170,7 +185,8 @@
             <div class="noticiadiv">
                 <p class="noticia"> Conheça o Café Sinalizante <br>em Porto Alegre, um <br>estímulo à Língua Brasileira
                     <br> de
-                    Sinais (Libras)</p>
+                    Sinais (Libras)
+                </p>
                 <a
                     href="https://gauchazh.clicrbs.com.br/colunistas/juliana-bublitz/noticia/2023/10/conheca-o-cafe-sinalizante-em-porto-alegre-um-estimulo-a-lingua-brasileira-de-sinais-libras-clnt6envl0084016sg0r73khc.html">
                     Veja mais
@@ -182,7 +198,8 @@
             <div class="noticiadiv">
                 <p class="noticia"> No clima da Surdolimpíadas, <br>conheça a escola em <br>Caxias que ensina Libras
                     <br> para
-                    crianças de 0 a 5 anos</p>
+                    crianças de 0 a 5 anos
+                </p>
                 <a
                     href="https://gauchazh.clicrbs.com.br/pioneiro/cultura-e-lazer/noticia/2022/04/no-clima-da-surdolimpiadas-conheca-a-escola-em-caxias-que-ensina-libras-para-criancas-de-0-a-5-anos-cl2ktuawb0090016756263o3h.html">Veja
                     mais
@@ -195,7 +212,8 @@
                 <p class="noticia"> Eleitores surdos terão auxílio <br>de intérpretes de Libras <br>em videochamadas no
                     <br> dia
                     da
-                    votação no RS</p>
+                    votação no RS
+                </p>
                 <a
                     href="https://gauchazh.clicrbs.com.br/politica/eleicoes/noticia/2020/10/eleitores-surdos-terao-auxilio-de-interpretes-de-libras-em-videochamadas-no-dia-da-votacao-no-rs-ckgtkfamr0043015xdca1uc7x.html">Veja
                     mais
