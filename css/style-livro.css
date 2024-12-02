@@ -70,20 +70,12 @@ body {
 
 /*mantem as letras dentro o middle*/
 .grid-item {
-  border-radius: 8px;
-  overflow: hidden;
   text-align: center;
   padding: 10px;
   height: 10vh;
+  border-radius: 10px;
 }
 
-/*imagens e deixa elas co a mesma proporção*/
-.grid-item img {
-  background-color: #000000;
-  width: 20%;
-  height: 20%;
-  border-radius: 50%;
-}
 
 /*texto*/
 .grid-item p {
@@ -120,7 +112,6 @@ body {
   display: block;
   transition: .5s ease;
   backface-visibility: hidden;
-
 }
 
 .grid-livraria .grid-item:hover {
@@ -130,12 +121,18 @@ body {
 
 /*texto que aparece na imagem*/
 .container {
+  border-radius: 10px;
   position: relative;
   width: 50%;
+  background-color: #f0f8ff;
+  box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2);
+
 
 }
 
 .container img {
+  border-radius: 10px;
+  width: 100%;
   height: 300px;
 }
 
@@ -152,6 +149,7 @@ body {
   padding: 7%;
   border: 1px solid black;
   height: 300px;
+  border-radius: 10px;
 }
 
 .middle p {
@@ -174,8 +172,8 @@ body {
 
 .carousel-container {
   position: relative;
-  width: 80%;
-  height: 300px;
+  width: 30%;
+  height: 400px;
   margin: 30px auto;
   overflow: hidden;
   border-radius: 20px;
@@ -195,8 +193,8 @@ body {
 }
 
 .carousel-item img {
-  max-width: 150px;
-  height: auto;
+  width: 200px;
+  height: 300px;
   margin: 0 auto;
   display: block;
   border-radius: 15px;
@@ -211,7 +209,7 @@ body {
 .carousel-item p {
   font-size: 16px;
   color: #333;
-  margin-top: 15px;
+  margin-top: 30px;
 }
 
 @keyframes slide {
