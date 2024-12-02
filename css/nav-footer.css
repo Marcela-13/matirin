@@ -66,7 +66,6 @@ header .cadastro {
 
 #Busca2 {
     /*busca 2, só aparece quando vai para a adaptação em celular*/
-    margin-top: 40px;
     display: none;
     align-items: center;
 }
@@ -299,7 +298,7 @@ footer {
     }
 
     #Busca2 input {
-        width: 60%;
+        width: 50%;
         border-radius: 10px;
         border: none;
         padding: 8px;
