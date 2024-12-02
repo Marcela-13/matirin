@@ -7,8 +7,9 @@
 /*Corpo da página*/
 body {
     width: 100%;
-    background: rgb(206, 247, 255);
-    background: linear-gradient(0deg, rgba(206, 247, 255, 1) 0%, rgba(220, 255, 233, 1) 100%);
+    background: aliceblue;
+    /*background: rgb(206, 247, 255);
+    background: linear-gradient(0deg, rgba(206, 247, 255, 1) 0%, rgba(220, 255, 233, 1) 100%);*/
     background-repeat: no-repeat;
     background-size: cover;
 }
@@ -17,7 +18,7 @@ body {
     height:500px;
     width:100%;
     text-align: center;
-
+    margin-top:-29px;
 }
 
 
