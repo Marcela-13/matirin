@@ -3,19 +3,20 @@
     padding: 0;
     box-sizing: border-box;
 }
-.Container {
-    width: 60px;
-    height: 50vh;
+.container {
+    width: 100%;
+    height: 8vh;
     display: flex;
     justify-content: center;
     align-items: center;
-    margin-top: 0px;
+    margin-top: 100px;
 }
+
 .container img {
     position: absolute;
     background-size: cover;
     width: 100%;
-    filter: brightness(50%);
+    filter: brightness(45%);
     z-index: -100;
 }
 
@@ -23,8 +24,6 @@ aside {
     background-color: #c3ebd2;
     position: fixed;
     border: 20px solid #47a598;
-    margin-top: 150px;
-    margin-left: 30px;
     width: 20%;
     height: 60%;
     border-radius: 30px;
@@ -52,15 +51,12 @@ main {
     flex-direction: column;
     justify-content: center;
     align-items: center;
-    height: 0vh;
     width: 100%;
 }
 
 
 #video {
     width: 100%;
-    height: 60%;
-    margin-top: 80px;
     border-radius:5px;
     justify-content:center;
     align-items:center;
