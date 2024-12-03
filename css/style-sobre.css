@@ -33,19 +33,19 @@ body {
 .missao h2,
 .valores h2,
 .visao h2{
-    font-size: 40px;
+    font-size: 36px;
 }
 .missao p,
 .valores p,
 .visao p{
-    font-size: 20px;
+    font-size: 18px;
 }
 .sobre {
     display: flex;
     flex-direction: column;
     align-items: center;
     justify-content: center;
-    margin-bottom: 20%;
+    margin-bottom: 10%;
     margin-top: -5%;
    
 }
@@ -72,7 +72,7 @@ body {
     background-color: #a2dbf1;
     color: black;
     width: 30%;
-    padding: 3%;
+    padding: 2%;
     border: 1px solid rgba(0, 0, 0, 0);
     border-radius: 15px;
     
