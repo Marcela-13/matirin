@@ -68,6 +68,10 @@ body {
 }
 
 
+
+  
+
+
 /*mantem as letras dentro o middle*/
 .grid-item {
   text-align: center;
@@ -123,7 +127,7 @@ body {
 .container {
   border-radius: 10px;
   position: relative;
-  width: 50%;
+  width: 40%;
   background-color: #f0f8ff;
   box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2);
 
@@ -181,6 +185,9 @@ body {
   box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2);
 }
 
+.livros{
+  display: flex;
+}
 .carousel {
   display: flex;
   animation: slide 10s infinite;
@@ -263,6 +270,16 @@ body {
 
    p{
     font-size: 72%;
+  }
+
+  .titulo h2{
+    width: 90%;
+    font-size: 25px;
+  padding: 20px;
+
+  }
+  .boneca{
+    display: none;
   }
 
 
