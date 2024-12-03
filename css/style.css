@@ -20,7 +20,7 @@ body {
     display: flex;
     justify-content: center;
     align-items: center;
-    margin-top: 0px;
+    margin-top: 1px;
 }
 
 .video {
@@ -47,6 +47,15 @@ body {
 }
 
 /*imagens centrais*/
+
+.vjmais{
+    display: none;
+    background-color: #b1f0ea;
+    width: 150px;
+    border-radius: 5px;
+    justify-content: center;
+}
+
 .imgtxt1 {
     margin-top: 10%;
     display: flex;
@@ -58,15 +67,10 @@ body {
     height: 350px;
     width: 350px;
     margin-right: 100px;
-    margin-top: 30%;
 }
 
-.vjmais{
-    display: none;
-    background-color: #b1f0ea;
-    width: 150px;
-    border-radius: 5px;
-    justify-content: center;
+#txt1{ /*primeira imagem estilizada separadamente*/
+    margin-top: 18%;
 }
 
 .texto1 p {
@@ -79,7 +83,7 @@ body {
 }
 
 .imgtxt2 {
-    margin-top: 5%;
+    margin-top: 10%;
     display: flex;
     justify-content: space-around;
     align-items: center;
@@ -104,14 +108,14 @@ body {
 
 /*Carrocel de imagens*/
 h2 {
-    margin-top: 10%;
+    margin-top: 5%;
     text-align: center;
     font-family: "Mulish", sans-serif;
-    font-size: 25px;
+    font-size: 30px;
 }
 
 div.scroll-container {
-    margin-top: 14px;
+    margin-top: 5px;
     background-color: #47a598;
     overflow: hidden;
     white-space: nowrap;
@@ -179,7 +183,7 @@ div.scroll-item a:hover {
     .container {
         position: relative;
         width: 100%;
-        min-height: 30vh; 
+        min-height: 30vh;
     }
 
     #textobemvindo {
@@ -198,6 +202,9 @@ div.scroll-item a:hover {
     }
     .vjmais{
         display: flex;
+    }
+    #txt1{ /*primeira imagem estilizada separadamente*/
+        margin-top: 9%;
     }
     .imgtxt2 {
         /*imagem e texto 2*/
@@ -247,7 +254,7 @@ div.scroll-item a:hover {
     }
 
     div.scroll-item {
-        padding: 10px;
+        padding: 15px;
         width: 100%;
         height: 120px;
     }
