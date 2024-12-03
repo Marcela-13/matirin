@@ -59,7 +59,7 @@ body {
 .imgtxt1 {
     margin-top: 10%;
     display: flex;
-    justify-content: space-around;
+    justify-content: space-evenly;
     align-items: center;
 }
 .imagem1 {
@@ -75,8 +75,6 @@ body {
 
 .texto1 p {
     text-align: center;
-    align-items: center;
-    margin-left: 15%;
     max-width: 1000px;
     font-size: 22px;
     font-family: "Montserrat", sans-serif;
@@ -85,7 +83,7 @@ body {
 .imgtxt2 {
     margin-top: 10%;
     display: flex;
-    justify-content: space-around;
+    justify-content: space-evenly;
     align-items: center;
 }
 
@@ -98,11 +96,14 @@ body {
 
 .texto2 p {
     text-align: center;
-    align-items: center;
-    margin-right: 15%;
     max-width: 1000px;
     font-size: 22px;
     font-family: "Montserrat", sans-serif;
+}
+
+.texto1, .texto2{
+    width: 40%;
+    padding: 5%;
 }
 
 
