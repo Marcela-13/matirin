@@ -34,12 +34,30 @@ h3 {
     font-size: 200%;
 }
 
-p {
-    text-align: center;
-    font-size: 120%;
+
+
+.sobre {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    margin-bottom: 20%;
+    margin-top: -5%;
+   
 }
 
+.sobre h1 {
+    color: white;
+    font-size: 50px;
 
+}
+
+/* Estlizando a classe específica do quadro sobre */
+.sobre-text {
+    width: 50%;
+    
+    color: white;
+}
 
 /*Estilização dos cards de texto (missão, visão, valores)*/
 .missao,
@@ -58,7 +76,7 @@ p {
 .cards-texto {
     display: flex;
     width: 100%;
-
+    justify-content: space-around;
 }
 
 .missao:hover,
@@ -75,26 +93,7 @@ p {
 }
 
 /* Estilização da Seção sobre*/
-.sobre {
-    display: flex;
-    flex-direction: column;
-    justify-content: space-around;
-    align-items: center;
-   
-}
 
-.sobre h1 {
-    color: white;
-    font-size: 50px;
-
-}
-
-/* Estlizando a classe específica do quadro sobre */
-.sobre-text {
-    width: 50%;
-    height: 90%;
-    color: white;
-}
 
 /*Estilizando os cards com as fotos e texto-fala das integrantes */
 .fotos {
