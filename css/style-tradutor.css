@@ -5,18 +5,17 @@
 }
 .container {
     width: 100%;
-    height: 8vh;
+    height: 10vh;
     display: flex;
     justify-content: center;
     align-items: center;
-    margin-top: 100px;
+    margin-top: 0px;
 }
-
 .container img {
     position: absolute;
     background-size: cover;
     width: 100%;
-    filter: brightness(45%);
+    filter: brightness(50%);
     z-index: -100;
 }
 
@@ -26,12 +25,12 @@ aside {
     border: 20px solid #47a598;
     width: 20%;
     height: 60%;
-    border-radius: 30px;
+    border-radius: 0 5% 5% 0;
     padding: 1%;
 }
 
 h3 {
-    font-family: "Mulish", sans-serif;
+    font-family: monospace;
     font-size: 25px; 
     margin-bottom: 60px;
 }
@@ -51,16 +50,18 @@ main {
     flex-direction: column;
     justify-content: center;
     align-items: center;
+    height: 90vh;
     width: 100%;
 }
 
 
 #video {
     width: 100%;
-    border-radius:5px;
-    justify-content:center;
-    align-items:center;
-    display:flex;
+    height: 70%;
+    border-radius: 5px;
+    justify-content: center;
+    align-items: center;
+    display: flex;
 }
 
 form {
@@ -91,12 +92,12 @@ textarea {
 }
 
 #botao {
-    width: 30%;
-    height: 30%;
+    width: 40%;
+    height: 45%;
     justify-content: center;
     position: relative;
     text-align: center;
-    left: 35%;
+    left: 40%;
     cursor: pointer;
     border: 4px solid rgb(191, 218, 243);
     color: #000000;
