@@ -2,7 +2,8 @@
     margin: 0;
     padding: 0;
     box-sizing: border-box;
-    font-family: "Montserrat", sans-serif;}
+    font-family: "Montserrat", sans-serif;
+}
 
 /*Corpo da página*/
 body {
@@ -13,15 +14,37 @@ body {
     background-repeat: no-repeat;
     background-size: cover;
 }
+
 /*gif*/
 .gif {
     filter: brightness(70%);
     height: 570px;
-    width:100%;
+    width: 100%;
     text-align: center;
-    margin-top:-29px;
+    margin-top: -29px;
 }
 
+/*Fórum*/
+.Fórum {
+    background-color: #2499c7;
+    width: 50%;
+    border-radius: 10px;
+    text-align: center;
+    font-size: 30px;
+    position: relative;
+    left: 23%;
+    margin: 3%;
+
+}
+
+.Fórum h2 {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: #ffffff;
+
+
+}
 
 .main {
     width: 100%;
@@ -39,12 +62,12 @@ body {
 h1 {
     text-align: center;
     margin-bottom: 10px;
-    
-    }
+
+}
 
 form {
     background-color: #ffffff;
-    width: 80%;
+    width: 70%;
     height: 40%;
     padding: 8%;
     display: flex;
@@ -75,7 +98,7 @@ h1 {
 .título {
     position: relative;
     left: 8%;
-  
+
 }
 
 /*Botão do Fórum*/
@@ -109,6 +132,10 @@ h1 {
 }
 
 /*Comentários*/
+.comentários {
+    margin-top: 2%;
+}
+
 .comment {
     background-color: white;
     border-radius: 8px;
@@ -125,7 +152,7 @@ h1 {
 
 
 .name {
-  
+
     margin-left: 10px;
 
 }
@@ -174,6 +201,7 @@ p {
     height: 50px;
 
 }
+
 /*ícone dos comentários*/
 .material-icons {
     color: #666;
@@ -198,6 +226,7 @@ p {
 
 }
 
+
 /*textearea do form2*/
 #w3review1 {
     margin: 1%;
@@ -211,6 +240,7 @@ p {
 }
 
 
+
 /*Responsividade do site*/
 @media(max-width: 480px) {
 
@@ -219,15 +249,24 @@ p {
         width: 100%;
         display: flex;
         justify-content: center;
-        flex-direction: column;
+
     }
 
-    .main{
+    .feed {
+        width: 80%;
+        display: flex;
+        flex-direction: column;
+        justify-content: baseline;
+        align-items: center;
+
+    }
+
+    .main {
         flex-direction: column;
         width: 100%;
         justify-content: center;
         align-items: center;
-      
+
     }
 
     /*gif*/
@@ -235,18 +274,30 @@ p {
         width: 100%;
         height: 50%;
         text-align: center;
+        margin-top: 0px;
+    }
+
+    .Fórum {
+        position: relative;
+        left: 12%;
+        width: 70%;
+
+    }
+
+    .Fórum h2 {
+        font-size: 30px;
     }
 
     /*form1*/
     .form1 {
-        width: 68%;  
+        width: 80%;
     }
 
- .título{
-    font-size: 14px;
- }
+    .título {
+        font-size: 14px;
+    }
 
- /*input do fórum*/
+    /*input do fórum*/
     #phone {
 
         font-size: 12px;
@@ -266,10 +317,10 @@ p {
         left: 6%;
     }
 
-     /*comentários*/
+    /*comentários*/
 
-    .comentários{
-      margin-top: 13%;
+    .comentários {
+        margin-top: 13%;
     }
 
     .comment {
@@ -277,31 +328,32 @@ p {
         padding: 15px;
         margin: 20px;
         position: relative;
-        left: -21%;
         justify-content: center;
         width: 100%;
         height: 261px;
         flex-direction: column;
 
     }
-    
+
     /*textos dos comentários*/
-    .name{
-        font-size: 10px;
-    }
-    strong{
+    .name {
         font-size: 10px;
     }
 
-    p{
-        font-size: 10px; 
+    strong {
+        font-size: 10px;
+    }
+
+    p {
+        font-size: 11px;
         padding: 18px;
     }
 
-    .comment-date{
+    .comment-date {
         font-size: 10px;
     }
-/*ícones dos comentários*/
+
+    /*ícones dos comentários*/
 
     .material-icons {
         color: #666;
@@ -347,18 +399,12 @@ p {
         margin-top: 5%;
         height: 100%;
         width: 100%;
-        position: relative;
-        left: -12%;
+
         flex-direction: column;
     }
 
-    /*botão do form2*/
-    .fa.fa-mail-reply {
-        font-size: 7px;
-        font-family: "Montserrat", sans-serif;
-        width: 1000px;
-        position: relative;
-        left: 3%;
+    .button {
+        width: 50% !important;
     }
 
     .btn {
