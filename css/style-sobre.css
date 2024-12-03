@@ -24,18 +24,22 @@ body {
     position: absolute;
     background-size: cover;
     width: 100%;
-    filter: brightness(50%);
+    filter: brightness(45%);
     z-index: -100;
 }
 
-h2,
-h3 {
-    text-align: center;
-    font-size: 200%;
+
+
+.missao h2,
+.valores h2,
+.visao h2{
+    font-size: 40px;
 }
-
-
-
+.missao p,
+.valores p,
+.visao p{
+    font-size: 20px;
+}
 .sobre {
     display: flex;
     flex-direction: column;
@@ -51,7 +55,9 @@ h3 {
     font-size: 50px;
 
 }
-
+.sobre p{
+    font-size: 20px;
+}
 /* Estlizando a classe específica do quadro sobre */
 .sobre-text {
     width: 50%;
@@ -66,7 +72,7 @@ h3 {
     background-color: #a2dbf1;
     color: black;
     width: 30%;
-    padding: 5%;
+    padding: 3%;
     border: 1px solid rgba(0, 0, 0, 0);
     border-radius: 15px;
     
@@ -84,12 +90,24 @@ h3 {
 .valores:hover {
     background-color: #419ac4;
 }
+.missao div,
+.visao div,
+.valores div {
+    width: 100%;
+   display: flex;
+   justify-content: center;
+   align-items: center;
+  
+    
+}
 
-.missao img,
-.visao img,
-.valores img {
-    width: 35%;
+.missao div img,
+.visao div img,
+.valores div img {
+    width: 150px;
     height: auto;
+    padding: 5%;
+
 }
 
 /* Estilização da Seção sobre*/
