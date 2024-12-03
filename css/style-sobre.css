@@ -39,11 +39,7 @@ p {
     font-size: 120%;
 }
 
-main {
-    display: flex;
-    justify-content: space-around;
 
-}
 
 /*Estilização dos cards de texto (missão, visão, valores)*/
 .missao,
@@ -51,19 +47,17 @@ main {
 .visao {
     background-color: #a2dbf1;
     color: black;
+    width: 30%;
     padding: 5%;
-    margin: 10%;
     border: 1px solid rgba(0, 0, 0, 0);
     border-radius: 15px;
-    text-align: justify;
+    
 
 }
 
 .cards-texto {
-    margin: 7%;
-    width: 70%;
     display: flex;
-    justify-content: center;
+    width: 100%;
 
 }
 
