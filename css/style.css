@@ -75,7 +75,7 @@ body {
 
 .texto1 p {
     text-align: center;
-    text-align: left;
+    align-items: center;
     margin-left: 15%;
     max-width: 1000px;
     font-size: 22px;
@@ -98,7 +98,7 @@ body {
 
 .texto2 p {
     text-align: center;
-    text-align: right;
+    align-items: center;
     margin-right: 15%;
     max-width: 1000px;
     font-size: 22px;
