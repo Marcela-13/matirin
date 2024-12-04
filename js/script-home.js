@@ -24,7 +24,7 @@ scrollContainer.addEventListener('mouseout', () => {
     scrollInterval = setInterval(scrollItems, 20);
 });
 
-const text = "Seja bem-vindos";
+const text = "Seja bem-vindo";
 let charIndex = 0;
 let isDeleting = false;
 
@@ -50,3 +50,4 @@ function type() {
 }
 
 type();
+
