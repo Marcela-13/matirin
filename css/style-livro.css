@@ -7,8 +7,6 @@
 
 body {
   background: aliceblue;
-  /*background: rgb(220, 255, 233);
-  background: linear-gradient(0deg, rgba(220, 255, 233, 1) 24%, rgba(206, 247, 255, 1) 66%);*/
 }
 
 .flex-content {
@@ -41,8 +39,10 @@ body {
   position: relative; /* Mantém o texto acima do fundo */
   display: flex;
   flex-direction: column;
+  text-align: center;
   justify-content: center;
   border-radius: 10px;
+  font-size: 20px;
   background-color: #2499c7;
   width: 60%;
   transition: 0.5s;
@@ -51,7 +51,6 @@ body {
   color: white;
   z-index: 1; /* Prioriza o texto acima do pseudo-elemento */
 }
-
 .titulo{
   display: flex;
   justify-content: center;
@@ -130,8 +129,6 @@ body {
   width: 40%;
   background-color: #f0f8ff;
   box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2);
-
-
 }
 
 .container img {
@@ -239,27 +236,34 @@ body {
 
 @media (max-width: 480px) {
   .texto-informaçao {
-    height: 70%;
+    height: 75%;
     width: 90%;
     transition: 0.5s;
     overflow: hidden;
     border-style: solid;
-    border-color: #020202;
-    font-size: 104%;
-    
-
-
-
+    border-color: #2499c7;
+    font-size: 20px;
+    text-align: center;
   }
+  .texto1 {
+    margin-top: 11px;
+    font-size: 17px;
+  }
+  .texto2 {
+    font-size: 17px;
+  }
+
+  
   .grid-livraria {
     grid-template-columns: 1fr ;
+    gap: 70px;
   }
   
   .grid-livraria .grid-item {
     transform: scale(1.1);
     transition: 0.2s;
   }
-
+ 
   .container .middle {
     width: 194%;
   }
@@ -281,6 +285,7 @@ body {
   .boneca{
     display: none;
   }
-
-
+  .carousel-container {
+    width: 80%;
+  }
 }
