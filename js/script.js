@@ -8,8 +8,8 @@ function iniciarVideo() {
 
     // Dicionário de vídeos correspondentes
     const traducoes = {
-        "bom dia": "../img/bomdia.mp4",
-        "boa tarde": "../img/boatarde.mp4"
+        "bom dia": "../img/bomdianovo.mp4",
+        "boa tarde": "../img/boatardenovo.mp4"
     };
 
     // Verifica se o texto é "bom dia"

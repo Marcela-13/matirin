@@ -7,47 +7,86 @@
 
 /* Estilização dos elementos*/
 body {
-    background: rgb(220, 255, 233);
-    background: linear-gradient(0deg, rgba(220, 255, 233, 1) 24%, rgba(206, 247, 255, 1) 66%);
-}
-
-
-
-h2,
-h3 {
-    text-align: center;
-    font-size: 200%;
-    font-family: Georgia;
-}
-
-
-p {
-    text-align: center;
-    font-size: 120%;
-    font-family: Arial;
+    background: #f0f8ff;
 
 }
 
-main {
+.container {
+    width: 100%;
+    height: 10vh;
     display: flex;
-    justify-content: space-around;
+    justify-content: center;
+    align-items: center;
+    margin-top: 100px;
+}
+
+.container img {
+    position: absolute;
+    background-size: cover;
+    width: 100%;
+    filter: brightness(45%);
+    z-index: -100;
+}
+
+
+
+.missao h2,
+.valores h2,
+.visao h2 {
+    font-size: 36px;
+}
+
+.missao p,
+.valores p,
+.visao p {
+    font-size: 18px;
+}
+
+/* Estilização da Seção sobre*/
+.sobre {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    margin-bottom: 10%;
+    margin-top: -5%;
 
 }
 
-/*Estilização dos cards (missão, visão, valores)*/
+.sobre h1 {
+    color: white;
+    font-size: 50px;
+
+}
+
+.sobre p {
+    font-size: 20px;
+}
+
+/* Estlizando a classe específica do quadro sobre */
+.sobre-text {
+    width: 50%;
+    color: white;
+}
+
+/*Estilização dos cards de texto (missão, visão, valores)*/
 .missao,
 .valores,
 .visao {
     background-color: #a2dbf1;
     color: black;
-    padding: 5%;
-    margin: 10%;
-    width: 70%;
-    display: flex;
-    flex-direction: column;
+    width: 30%;
+    padding: 2%;
     border: 1px solid rgba(0, 0, 0, 0);
-    border-radius: 5px;
-    text-align: justify;
+    border-radius: 15px;
+
+
+}
+
+.cards-texto {
+    display: flex;
+    width: 100%;
+    justify-content: space-around;
 }
 
 .missao:hover,
@@ -56,62 +95,24 @@ main {
     background-color: #419ac4;
 }
 
-.missao img,
-.visao img,
-.valores img {
-    width: 20%;
-    height: auto;
-}
-
-/* Estilização da Seção sobre*/
-/* Estilizando a seção sobre por completo */
-.sobre {
-    display: flex;
-    flex-direction: column;
-    border: 1px solid rgba(0, 0, 0, 0);
-    border-radius: 5px;
-    justify-content: space-around;
-    align-items: center;
-   
-}
-
-.sobre h1 {
-    font-size: 50px;
-    
-}
-
-/* Estlizando a classe específica do quadro sobre */
-.sobre-text {
-    background-color: #a2dbf1;
-    border: 1px solid rgba(0, 0, 0, 0);
-    border-radius: 5px;
-    width: 60%;
-    height: 60%;
-    padding: 5%;
-    margin-bottom: 80%;
-}
-
-.sobre-text p {
-    text-align: justify;
-    /* Justificando o texto */
-}
-
-.sobre-text:hover {
-    background-color: #419ac4;
-}
-
-/* Hover no quadro Sobre */
-
-
-.grupo {
-    margin: 5%;
-    padding: 10%;
-    width: 90%;
-    height: auto;
+.missao div,
+.visao div,
+.valores div {
+    width: 100%;
     display: flex;
     justify-content: center;
     align-items: center;
 }
+
+.missao div img,
+.visao div img,
+.valores div img {
+    width: 150px;
+    height: auto;
+    padding: 5%;
+}
+
+
 
 /*Estilizando os cards com as fotos e texto-fala das integrantes */
 .fotos {
@@ -133,9 +134,9 @@ main {
 
 .fotos img {
     border: 1px solid rgba(0, 0, 0, 0);
-    border-radius: 5px;
+    border-radius: 40px;
     width: 70%;
-    height: 75%;
+    height: 70%;
 }
 
 .foto,
@@ -152,8 +153,7 @@ p {
 
 }
 
-.botao {
-    background-color: #a2dbf1;
+.botão {
     display: none;
 }
 
@@ -164,7 +164,7 @@ p {
     background-color: #a2dbf1;
     overflow: hidden;
     transition: .3s ease;
-    border-radius: 5px;
+    border-radius: 40px;
     width: 100%;
     height: auto;
 
@@ -175,7 +175,6 @@ p {
     bottom: 0;
     height: 90%;
     width: 80%;
-
 }
 
 /*texto-fala das integrantes*/
@@ -205,36 +204,52 @@ p {
 
 /* Responsividade para telas menores (celular) */
 @media (max-width: 480px) {
-    main {
-        flex-direction: column-reverse;
+    .container {
+        margin-top: 0;
+        height: 40vh;
+    }
+
+    .container img {
+        filter: blur(2px);
+        filter: brightness(50%);
+        height: 50%;
+
     }
 
     /*Cards de texto*/
     .missao,
     .visao,
     .valores {
-        justify-content: center;
-        margin: auto;
         width: 90%;
-        height: auto;
+        height: 40%;
         margin-top: 2%;
     }
 
-    .sobre-text {
-        border: 1px solid rgba(0, 0, 0, 0);
-        border-radius: 5px;
-        width: 95%;
-        height: auto;
-        margin-bottom: 0;
+
+.missao div img,
+.visao div img,
+.valores div img {
+    width: 100px;
+}
+
+    .cards-texto {
+        padding: 2%;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        width: 100%;
+        height: 50%;
     }
 
-    .sobre {
-        padding: 2%;
+    .sobre-text {
+        text-align: center;
+        padding: 5%;
+        width: 100%;
     }
 
     .sobre h1 {
-        font-size: 30px;
-        margin-bottom: 5%;
+        margin-top: -70%;
+        font-size: 40px;
     }
 
     /*Cards de fotos e texto*/
@@ -243,14 +258,15 @@ p {
         flex-direction: column;
     }
 
-    .botao {
+    .botão {
+        background-color: #a2dbf1;
         margin-left: 10%;
         display: flex;
         justify-content: center;
         align-items: center;
         flex-direction: row;
-        width: 30%;
-        height: 30%;
+        width: 28%;
+        height: 30px;
         margin-bottom: 3%;
     }
 
@@ -258,7 +274,7 @@ p {
         width: 100%;
         display: flex;
         flex-direction: column;
-        justify-content: center;
+        justify-content: space-around;
         align-items: start;
     }
 
@@ -266,10 +282,7 @@ p {
         padding: 5%;
         width: 50%;
         height: auto;
-        border-radius: 10%;
-
     }
-
 
     .texto1,
     .texto2,
@@ -296,7 +309,7 @@ p {
 
     .overlay {
         position: absolute;
-        right: 0;
+        right: 4%;
         width: 50%;
 
     }
