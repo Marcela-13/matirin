@@ -6,126 +6,133 @@
 
 /*body*/
 body {
-    background: rgb(220, 255, 233);
-    background: linear-gradient(0deg, rgba(220, 255, 233, 1) 24%, rgba(206, 247, 255, 1) 66%);
+    background: aliceblue;
+    /* background: rgb(220, 255, 233);
+    background: linear-gradient(0deg, rgba(220, 255, 233, 1) 24%, rgba(206, 247, 255, 1) 66%);*/
 }
 
 
 /*teste video*/
 .container {
     position: relative;
-    height: 820px;
+    width: 100%;
+    min-height: 70vh;
     display: flex;
     justify-content: center;
     align-items: center;
+    margin-top: 1px;
 }
-.video-background {
+
+.video {
     position: absolute;
-    background-image: url("../img/home/bom\ dia.gif");
     background-repeat: no-repeat;
-    background-size: cover;
-    height: 100%;
+    background-size: contain;
     width: 100%;
-}
-.content {
+    filter: brightness(75%);
     z-index: -100;
 }
-.nome-video {
-    text-align: center;
-    font-size: 1.5em;
-    color: white;
-    margin-top: 790px;
+
+#textobemvindo {
+    position: absolute;
+    bottom: -10%;
+    font-size: 5.5rem;
+    color: #ffffff;
+    white-space: nowrap;
+    overflow: hidden;
+    border-right: 2px solid #ffffff;
+    width: fit-content;
+    margin: auto;
+    font-family: "Montserrat", sans-serif;
+    font-weight: 200;
 }
 
 /*imagens centrais*/
+
+.vjmais{
+    display: none;
+    background-color: #b1f0ea;
+    width: 180px;
+    border-radius: 5px;
+    justify-content: center;
+    text-decoration: none;
+    padding: 5px;
+    color:black;
+    font-family: "Mulish", sans-serif;
+}
+.vjmais:visited{
+    color: black ;
+    text-decoration: none;
+}
+
 .imgtxt1 {
-    margin-top: 5%;
+    margin-top: 10%;
     display: flex;
-    justify-content: space-around;
+    justify-content: space-evenly;
     align-items: center;
 }
 .imagem1 {
     border-radius: 70px;
-    height: 390px;
-    width: 390px;
-    margin-right: 90px;
+    height: 350px;
+    width: 350px;
+    margin-right: 100px;
 }
-.texto1 p {
-    text-align: left;
-    margin-left: 15%;
+
+#txt1{ /*primeira imagem estilizada separadamente*/
+    margin-top: 18%;
+}
+
+.txtmedia{
+    display: none;
+    text-align: center;
     max-width: 1000px;
-    font-size: 19px;
-    font-family: monospace;
+    font-size: 22px;
+    font-family: "Montserrat", sans-serif;
+}
+
+.texto1 p {
+    text-align: center;
+    max-width: 1000px;
+    font-size: 22px;
+    font-family: "Montserrat", sans-serif;
 }
 
 .imgtxt2 {
-    margin-top: 5%;
+    margin-top: 10%;
     display: flex;
-    justify-content: space-around;
+    justify-content: space-evenly;
     align-items: center;
 }
+
 .imagem2 {
     border-radius: 70px;
-    height: 390px;
-    width: 390px;
-    margin-left: 90px;
+    height: 350px;
+    width: 350px;
+    margin-left: 100px;
 }
+
 .texto2 p {
-    text-align: right;
-    margin-right: 15%;
+    text-align: center;
     max-width: 1000px;
-    font-size: 19px;
-    font-family: monospace
+    font-size: 22px;
+    font-family: "Montserrat", sans-serif;
 }
 
-.imgtxt3 {
-    margin-top: 5%;
-    display: flex;
-    justify-content: space-around;
-    align-items: center;
-}
-.imagem3 {
-    border-radius: 70px;
-    height: 390px;
-    width: 390px;
-    margin-right: 90px;
-}
-.texto3 {
-    text-align: left;
-    margin-left: 15%;
-    max-width: 1000px;
-    font-size: 19px;
-    font-family: monospace
+.texto1, .texto2{
+    width: 50%;
+    padding: 5%;
 }
 
-.imgtxt4 {
-    margin-top: 5%;
-    display: flex;
-    justify-content: space-around;
-    align-items: center;
-}
-.imagem4 {
-    border-radius: 70px;
-    height: 390px;
-    width: 390px;
-    margin-left: 90px;
-}
-.texto4 {
-    text-align: right;
-    margin-right: 15%;
-    max-width: 1000px;
-    font-size: 19px;
-    font-family: monospace
-}
 
 /*Carrocel de imagens*/
 h2 {
-    margin-top: 300px;
+    margin-top: 5%;
     text-align: center;
+    font-family: "Mulish", sans-serif;
+    font-size: 30px;
 }
 
 div.scroll-container {
-    margin-top: 10px;
+    margin-top: 5px;
     background-color: #47a598;
     overflow: hidden;
     white-space: nowrap;
@@ -139,30 +146,31 @@ div.scroll-item {
     align-items: center;
     background: aliceblue;
     margin-right: 10px;
-    padding: 20px;
-    border-radius: 5px;
+    padding: 10px;
+    border-radius: 10px;
     color: rgb(0, 0, 0);
-   width: 490px;
+    width: 490px;
     box-shadow: 0 4px 6px rgba(0, 0, 0, 0.2);
     align-items: center;
     text-align: center;
 }
-div.scroll-item:hover{
+
+div.scroll-item:hover {
     background-color: rgb(214, 255, 241);
 }
 
 div.scroll-item img {
     width: 170px;
-    height: 130px;
+    height: 160px;
     margin-right: 10px;
-    border-radius: 5px;
+    border-radius: 30px;
     object-fit: cover;
 }
 
 div.scroll-item p {
-    font-family: monospace;
+    font-family: "Montserrat", sans-serif;
     margin: 0;
-    font-size: 14px;
+    font-size: 17px;
     padding: 3px;
 }
 
@@ -172,6 +180,7 @@ div.scroll-item a {
     font-size: 14px;
     margin-top: 5px;
     display: block;
+    font-family: "Mulish", sans-serif;
 }
 
 div.scroll-item a:hover {
@@ -180,140 +189,110 @@ div.scroll-item a:hover {
 
 
 
+
 @media (max-width: 480px) {
-    .nav{
-        margin-top: -80px;
+
+    .nav {
+        margin-top: -42px;
+        width: 100%;
     }
 
     /*itens video*/
-
     .container {
         position: relative;
-        height: 400px;
-    }
-    .video-background {
-        /*video*/
-        width: 90%;
-        height: 80%;
-    }
-    .nome-video {
-        /*texto do video*/
-        margin-top: 295px;
-        font-size: 20px;
+        width: 100%;
+        min-height: 30vh;
     }
 
+    #textobemvindo {
+        /*texto do video*/
+        font-size: 30px;
+        bottom: 15%;
+    }
 
     /*itens do body*/
 
     .imgtxt1 {
         /*imagem e texto 1*/
-        margin-top: 90px;
         flex-direction: column-reverse;
         justify-content: center;
         align-items: center;
     }
-    .imagem1 {
-        /*imagem 1*/
-        height: 230px;
-        margin-bottom: 9px;
-        width: 230px;
-        margin-right: 0;
+    .vjmais{
+        display: flex;
     }
-    .texto1 p {
-        /*texto 1*/
-        font-size: 100%;
-      text-align: center;
-      margin-left: 0;
-      margin-left: 5px;
-      margin-right: 5px;
+    #txt1{ /*primeira imagem estilizada separadamente*/
+        margin-top: 9%;
     }
-
     .imgtxt2 {
         /*imagem e texto 2*/
-        margin-top: 20%;
+        margin-top: 10%;
         flex-direction: column;
         justify-content: center;
         align-items: center;
     }
-    .imagem2 {
-        /*imagem 2*/
-        height: 230px;
-        margin-bottom: 9px;
-        width: 230px;
+
+    .imagem1, .imagem2{
+        /*imagem 1*/
+        margin-top: 15%;
+        height: 280px;
+        width: 280px;
+        margin-bottom: 5px;
+        padding: 5px;
+        margin-right: 0;
         margin-left: 0;
     }
-    .texto2 p {
-        /*texto 2*/
-        font-size: 100%;
-        text-align: center;
-        margin-right: 0;
-        margin-left: 5px;
-        margin-right: 5px;
-    }
-
-    .imgtxt3 {
-        /*imagem e texto 3*/
-        margin-top: 20%;
-        flex-direction: column-reverse;
+    .texto1, .texto2{
+        width: 100%;
+        display: flex;
         justify-content: center;
         align-items: center;
-    }
-    .imagem3 {
-        /*imagem 3*/
-        height: 230px;
-        margin-bottom: 9px;
-        width: 230px;
-        margin-right: 0;
-    }
-    .texto3 {
-        /*texto 3*/
-        font-size: 100%;
-        text-align: center;
-        margin-left: 0;
-        margin-left: 5px;
-        margin-right: 5px;
+        font-size: 17px;
     }
 
-    .imgtxt4 {
-        /*imagem e texto 4*/
-        margin-top: 20%;
-        flex-direction: column;
-        justify-content: center;
-        align-items: center;
-    }
-    .imagem4 {
-        /*imagem 4*/
-        height: 230px;
-        margin-bottom: 9px;
-        width: 230px;
-        margin-left: 0;
-    }
-    .texto4 {
-        /*texto 4*/
+    .texto1 p, .texto2 p, .texto1 .txtmedia{
+        /*texto 1, 2, 3, 4*/
         font-size: 100%;
         text-align: center;
+        margin-left: 0;
+        max-width: 80%;
         margin-right: 0;
-        margin-left: 5px;
-        margin-right: 5px;
+    }
+
+    .txtmedia{
+        display: block;
+    }
+    .teste{
+        display: none;
     }
 
     /*carroceu de imagens*/
 
     h2 {
         margin-top: 100px;
-        font-size: 20px;
-    }
-    div.scroll-container{
-        padding: 3px;
-        margin-top: 10px;
-    }
-    div.scroll-item {
-        padding: 10px;
-        width: 400px;
-        height: 120px;
-    }
-    div.scroll-item img{
-        height: 110px;
+        font-size: 23px;
     }
 
+    div.scroll-container {
+        padding: 4px;
+        margin-top: 10px;
+    }
+
+    div.scroll-item {
+        padding: 15px;
+        width: 150%;
+        height: 120px;
+    }
+
+    div.scroll-item img {
+        height: 110px;
+        width: 110px;
+    }
+    div.scroll-item p {
+        font-size: 17px;
+    }
+    div.scroll-item a{
+        margin-top: 1px;
+        font-size: 15;
+    }
 }

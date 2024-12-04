@@ -14,8 +14,12 @@ header .nome {
     width: 50%;
     text-align: center;
     font-family: 'times';
-    font-size: 2em;
-    color: #c8edff
+    font-size: 1.7em;
+    color: #c8edff;
+    margin-left: 5px;
+    display: flex;
+  position: relative;
+  left: -12%;
 }
 
 /*Cadastro*/
@@ -30,6 +34,7 @@ header .cadastro {
     height: 60px;
     width: 70px;
     border-radius: 100px;
+    margin-right: 20px;
 }
 .cadastro img:hover {
     transform: scale(1.2);
@@ -37,9 +42,10 @@ header .cadastro {
 
 /*barra de pesquisa*/
 #Busca {
-    margin-top: 40px;
     display: flex;
     align-items: center;
+    position: relative;
+    left: 10%;
 }
 
 #Busca input,
@@ -47,7 +53,7 @@ header .cadastro {
     border-radius: 10px;
     border: none;
     padding: 8px;
-    margin-right: 0px;
+    margin-right: 0px;   
 }
 
 
@@ -60,7 +66,6 @@ header .cadastro {
 
 #Busca2 {
     /*busca 2, só aparece quando vai para a adaptação em celular*/
-    margin-top: 40px;
     display: none;
     align-items: center;
 }
@@ -81,8 +86,8 @@ header .cadastro {
     transition: all 0.3s;
 }
 button {
-    font-family: 'monospace';
-    font-size: 16px;
+    font-family: "Mulish", sans-serif;
+    font-size: 15px;
     border: none;
     border-radius: 10px;
     width: 60px;
@@ -99,31 +104,30 @@ button:hover {
 
 /*Navegação*/
 .nav ul {
-    background-color: #63D4C5;
     font-family: 'monospace';
     display: flex;
     list-style: none;
-    background-color: #53D4C5;
     margin-top: 20;
-    background-color: #63D4C5;
-    display: flex;
     justify-content: center;
+    z-index: 10000px;
 }
 .nav ul li {
-    background-color: #b1f8e3;
+    z-index: 10000;
     margin: 0 50px;
-    padding: 5px;
+    padding: 8px;
     height: 24px;
     margin-top: 2px;
     border-radius: 7px;
     margin-bottom: 2px;
 }
 .nav ul li a {
+    z-index: 1000;
     text-decoration: none;
-    color: #333;
+    color: #ffffff;
     font-weight: bold;
+    font-size: 25px;
+    font-family: "Mulish", sans-serif;
 }
-
 .ativo {
     text-decoration: underline !important;
 }
@@ -132,6 +136,9 @@ button:hover {
     margin-top: 5px;
     border-radius: 7px;
     margin: 0 50px;
+}
+li.formulário{
+    display: none;
 }
 
 /*logo*/
@@ -158,8 +165,11 @@ footer {
     padding: 10px 0;
     text-align: center;
     width: 100%;
-    position: relative;
     bottom: 0;
+    font-family: "Mulish", sans-serif;
+}
+div .direito{
+    text-align: center;
 }
 
 /*Icones*/
@@ -171,7 +181,7 @@ footer {
 
 .icons .Github {
     width: 40px;
-    height: 20px;
+    height: 21px;
 }
 
 .icons .zapzap {
@@ -196,7 +206,6 @@ footer {
     /* Ajustes de layout do header */
     header {
         gap: 1%;
-
     }
 
     header .logo {
@@ -215,7 +224,7 @@ footer {
         /* Ajusta o nome do site */
         justify-content: center;
         align-items: center;
-        font-size: 20px;
+        font-size: 28px;
     }
 
     /* Menu escondido inicialmente, aparece com a classe .show */
@@ -230,7 +239,7 @@ footer {
         transition: transform 0.3s ease;
         transform: translateX(100%);
         /* Esconde o menu fora da tela */
-        z-index: 1000;
+        z-index: 1000000;
         border-radius: 7px;
     }
 
@@ -245,25 +254,23 @@ footer {
         flex-direction: column;
         justify-content: space-around;
         align-items: center;
-        list-style: none;
         padding: 0;
         border-radius: none;
-        margin: 0;
         width: 100%;
         background-color: #2499c7;
-        padding: 4%;
+        padding: 3px;
         text-align: center;
+        margin-top: -10px;
     }
 
     .nav ul li {
-        width: 170px;
+        width: 175px;
         padding: 5px;
         height: 35px;
-        margin-top: 6px;
+        border-radius: 0;
         border-radius: 7px;
-        margin: 5px;
+        margin: 3px;
         background-color: #b1f0ea;
-
     }
 
     .nav ul li a {
@@ -279,6 +286,9 @@ footer {
     .nav ul li a:hover {
         background-color: #63d4c5;
     }
+    li.formulário{
+        display: flex;
+    }
 
     /* Oculta a barra de pesquisa original e exibe a versão móvel */
     #Busca {
@@ -292,7 +302,8 @@ footer {
     }
 
     #Busca2 input {
-        width: 60%;
+        margin-top: 10px;
+        width: 50%;
         border-radius: 10px;
         border: none;
         padding: 8px;
@@ -301,5 +312,6 @@ footer {
     #btnBusca {
         height: 40px;
         display: flex;
+        margin-top: 10px;
     }
 }
