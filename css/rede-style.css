@@ -9,8 +9,6 @@
 body {
     width: 100%;
     background: aliceblue;
-    /*background: rgb(206, 247, 255);
-    background: linear-gradient(0deg, rgba(206, 247, 255, 1) 0%, rgba(220, 255, 233, 1) 100%);*/
     background-repeat: no-repeat;
     background-size: cover;
 }
@@ -33,7 +31,7 @@ body {
     font-size: 30px;
     position: relative;
     left: 23%;
-    margin: 3%;
+    margin: 1%;
 
 }
 
@@ -58,14 +56,14 @@ body {
     width: 30%;
 }
 
-/*Fórum*/
+/*Fórum formulário*/
 h1 {
     text-align: center;
     margin-bottom: 10px;
 
 }
 
-form {
+.form1 {
     background-color: #ffffff;
     width: 70%;
     height: 40%;
@@ -78,13 +76,13 @@ form {
 
 }
 
-/*input do form1*/
+/*input do form*/
 #phone {
     margin: 1%;
     width: 100%;
 }
 
-/*textearea do form1*/
+/*textarea do form*/
 #w3review {
     width: 98%;
 }
@@ -94,14 +92,14 @@ h1 {
     margin-bottom: 10px;
 
 }
-
+/*títulos do form*/
 .título {
     position: relative;
     left: 8%;
 
 }
 
-/*Botão do Fórum*/
+/*Botão do form*/
 .button {
     background: #13e200;
     padding: 1px;
@@ -131,7 +129,7 @@ h1 {
 
 }
 
-/*Comentários*/
+/*Comentário*/
 .comentários {
     margin-top: 2%;
 }
@@ -142,26 +140,22 @@ h1 {
     box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
     padding: 15px;
     margin: 20px;
-
     height: 180px;
     width: 100%;
-
-
 }
 
-
-
+/*nome dos usuários*/
 .name {
-
     margin-left: 10px;
-
 }
 
+/*textos dos comentários*/
 p {
     font-size: 14px;
 
 }
 
+/*corpo do comentário*/
 .comment-body {
     font-size: 1em;
     line-height: 1.5;
@@ -169,6 +163,7 @@ p {
 
 }
 
+/*cabeçalho do comentário*/
 .comment-header {
     display: flex;
     justify-content: space-between;
@@ -182,24 +177,13 @@ p {
     align-items: center;
 }
 
-.name {
-    margin-left: 10px;
-}
-
-/*Data*/
+/*Data do comentáro*/
 .comment-date {
     font-size: 0.9em;
     color: #666;
     display: flex;
     justify-content: end;
     align-items: center;
-}
-
-.comment-header {
-    display: flex;
-    justify-content: space-between;
-    height: 50px;
-
 }
 
 /*ícone dos comentários*/
@@ -226,7 +210,6 @@ p {
 
 }
 
-
 /*textearea do form2*/
 #w3review1 {
     margin: 1%;
@@ -239,8 +222,6 @@ p {
     margin: 6px;
 }
 
-
-
 /*Responsividade do site*/
 @media(max-width: 480px) {
 
@@ -249,16 +230,15 @@ p {
         width: 100%;
         display: flex;
         justify-content: center;
-
     }
 
+    /*feed de comentários*/
     .feed {
         width: 80%;
         display: flex;
         flex-direction: column;
         justify-content: baseline;
         align-items: center;
-
     }
 
     .main {
@@ -266,7 +246,6 @@ p {
         width: 100%;
         justify-content: center;
         align-items: center;
-
     }
 
     /*gif*/
@@ -277,11 +256,11 @@ p {
         margin-top: 0px;
     }
 
+    /*área de forum*/
     .Fórum {
         position: relative;
         left: 12%;
         width: 70%;
-
     }
 
     .Fórum h2 {
@@ -293,13 +272,13 @@ p {
         width: 80%;
     }
 
+    /*label do form1*/
     .título {
         font-size: 14px;
     }
 
-    /*input do fórum*/
+    /*input do form1*/
     #phone {
-
         font-size: 12px;
         height: 6%;
         width: 79%;
@@ -308,7 +287,7 @@ p {
         right: 4.0%;
     }
 
-    /*textarea do fórum*/
+    /*textarea do form1*/
     #w3review1 {
         height: 50%;
         width: 79%;
@@ -317,14 +296,29 @@ p {
         left: 6%;
     }
 
-    /*comentários*/
+       /*botão do form1*/
+       .button {
+        margin: 1%;
+        border-radius: 8px;
+        position: relative;
+        left: -2%;
+        width: 50%;
+        cursor: pointer;
+        border: none
+    }
 
+    .div-btn {
+        width: 90%;
+        margin: 3%;
+        display: flex;
+    }
+
+    /*comentários*/
     .comentários {
         margin-top: 13%;
     }
 
     .comment {
-
         padding: 15px;
         margin: 20px;
         position: relative;
@@ -332,23 +326,20 @@ p {
         width: 100%;
         height: 261px;
         flex-direction: column;
-
     }
 
-    /*textos dos comentários*/
-    .name {
-        font-size: 10px;
-    }
-
+    /*nome do usuário*/
     strong {
         font-size: 10px;
     }
 
+    /*texto dos comentários*/
     p {
         font-size: 11px;
         padding: 18px;
     }
-
+    
+    /*data dos comentários*/
     .comment-date {
         font-size: 10px;
     }
@@ -366,29 +357,9 @@ p {
 
         position: relative;
         left: -1%;
-
     }
 
-    /*botão do form1*/
-    .button {
-        margin: 1%;
-
-        border-radius: 8px;
-        position: relative;
-        left: -2%;
-        width: 50%;
-        cursor: pointer;
-        border: none
-    }
-
-    .div-btn {
-        width: 90%;
-        margin: 3%;
-        display: flex;
-
-    }
-
-    /*form2*/
+    /*caixa de resposta*/
     .form2 {
 
         border-radius: 8px;
@@ -399,10 +370,10 @@ p {
         margin-top: 5%;
         height: 100%;
         width: 100%;
-
         flex-direction: column;
     }
-
+    
+    /*botão responder da caixa de resposta*/
     .button {
         width: 50% !important;
     }

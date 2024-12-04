@@ -1,5 +1,5 @@
 document.addEventListener("DOMContentLoaded", () => {
-    const criarForumButton = document.querySelector(".button2"); // Botão de criação do fórum
+    const criarForumButton = document.querySelector(".button"); // Botão de criação do fórum
     const feed = document.querySelector(".feed"); // Seção onde os cards são adicionados
 
     criarForumButton.addEventListener("click", () => {
