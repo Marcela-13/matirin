@@ -189,6 +189,7 @@ div.scroll-item a:hover {
 
 
 
+
 @media (max-width: 480px) {
 
     .nav {
@@ -279,7 +280,7 @@ div.scroll-item a:hover {
 
     div.scroll-item {
         padding: 15px;
-        width: 100%;
+        width: 150%;
         height: 120px;
     }
 
@@ -288,6 +289,10 @@ div.scroll-item a:hover {
         width: 110px;
     }
     div.scroll-item p {
-        font-size: 14px;
+        font-size: 17px;
+    }
+    div.scroll-item a{
+        margin-top: 1px;
+        font-size: 15;
     }
 }
