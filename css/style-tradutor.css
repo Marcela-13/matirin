@@ -3,14 +3,16 @@
     padding: 0;
     box-sizing: border-box;
 }
+/* medidas do banner*/ 
 .container {
     width: 100%;
-    height: 10vh;
+    height: 40vh;
     display: flex;
     justify-content: center;
     align-items: center;
     margin-top: 0px;
 }
+
 .container img {
     position: absolute;
     background-size: cover;
@@ -18,20 +20,22 @@
     filter: brightness(50%);
     z-index: -100;
 }
-
+ /* Histórico */ 
 aside {
     background-color: #c3ebd2;
-    position: fixed;
+    position: absolute;
     border: 20px solid #47a598;
+    margin-top: 100px;
     width: 20%;
     height: 60%;
-    border-radius: 0 5% 5% 0;
+    border-radius: 30px;
     padding: 1%;
+    left: 0;
 }
 
 h3 {
     font-family: monospace;
-    font-size: 25px; 
+    font-size: 25px;
     margin-bottom: 60px;
 }
 
@@ -45,7 +49,7 @@ aside ul li {
 }
 
 main {
-    background-color: rgb(255, 255, 255);
+    background-color: aliceblue;
     display: flex;
     flex-direction: column;
     justify-content: center;
@@ -54,7 +58,7 @@ main {
     width: 100%;
 }
 
-
+/* video interativo */ 
 #video {
     width: 100%;
     height: 70%;
@@ -63,7 +67,7 @@ main {
     align-items: center;
     display: flex;
 }
-
+ /* caixa de texto para tradução */ 
 form {
     width: 100%;
     height: 24%;
@@ -73,12 +77,13 @@ form {
 }
 
 #label-tradução {
-    scroll-margin-top: 30px;
-    font-size: 26px;
+    scroll-margin-top: 60px;
+    font-family: "Mulish", sans-serif;
     color: #645b62;
+    width:40px;
 
 }
-
+/*caixa de texto com elementos de cor */ 
 textarea {
     width: 100%;
     height: 50%;
@@ -90,21 +95,21 @@ textarea {
     margin: 10px 0;
     /* Margem superior e inferior */
 }
-
+/* botão tradutor */ 
 #botao {
     width: 40%;
-    height: 45%;
+    height: 30%;
     justify-content: center;
     position: relative;
     text-align: center;
-    left: 40%;
+    left: 25%;
     cursor: pointer;
     border: 4px solid rgb(191, 218, 243);
     color: #000000;
     background-color: #47a598;
     border-radius: 10px;
 }
-
+/*permite que o botão tradutor mude de cor ao clicar */
 #botao:hover {
     background-color: #1b6e97;
 }
@@ -135,13 +140,12 @@ footer {
 @media (max-width: 480px) {
 
     main {
-        background-color: rgb(220, 255, 233);
-        background: linear-gradient(0deg, rgba(220, 255, 233, 1) 24%, rgba(206, 247, 255, 1) 66%);
+        background-color: aliceblue;
         display: flex;
         flex-direction: column;
         justify-content: space-around;
         align-items: center;
-        height: 90vh;
+        height: 80vh;
     }
 
 
@@ -157,24 +161,26 @@ footer {
 
     }
 
+    /* histórico de palavras */
     .dropbtn {
         background-color: #47a598;
         color: rgb(0, 0, 0);
         padding: 20px;
         font-size: 15px;
         border: none;
+        margin-top: 30px;
         cursor: pointer;
-        width: 200px;
+        width: 230px;
         height: 20px;
-        margin: 5%;
         border: 2px solid rgb(191, 218, 243);
         border-radius: 10px;
         /* Bordas arredondadas */
 
     }
 
+    /*permite a mudança de cor no botão */
     .btn-tradutor:hover {
-        background-color: #1b6e97; 
+        background-color: #1b6e97;
     }
 
 
@@ -234,30 +240,27 @@ footer {
         /* Borda de 4 pixels, sólida e azul */
         border-radius: 10px;
         /* Bordas arredondadas */
-        color: rgb(6, 31, 54)
+        color: rgb(0, 0, 0)
     }
 
     #video {
         width: 100%;
-        height: 80%;
+        height: 100%;
         border-radius: 5px;
         justify-content: center;
         align-items: center;
         display: flex;
     }
 
-    label {
-        margin-top: 200px;
-    }
-
     form {
         width: 75%;
-        height: 30%;
+        height: 40%;
+        margin-left: 40px;
     }
 
     #botao {
         width: 50%;
-        height: 40%;
+        height: 30%;
 
     }
 }
