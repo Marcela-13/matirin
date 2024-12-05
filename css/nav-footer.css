@@ -165,8 +165,11 @@ footer {
     padding: 10px 0;
     text-align: center;
     width: 100%;
-    position: relative;
     bottom: 0;
+    font-family: "Mulish", sans-serif;
+}
+div .direito{
+    text-align: center;
 }
 
 /*Icones*/
@@ -178,7 +181,7 @@ footer {
 
 .icons .Github {
     width: 40px;
-    height: 20px;
+    height: 21px;
 }
 
 .icons .zapzap {
@@ -257,6 +260,7 @@ footer {
         background-color: #2499c7;
         padding: 3px;
         text-align: center;
+        margin-top: -10px;
     }
 
     .nav ul li {
@@ -298,6 +302,7 @@ footer {
     }
 
     #Busca2 input {
+        margin-top: 10px;
         width: 50%;
         border-radius: 10px;
         border: none;
@@ -307,5 +312,6 @@ footer {
     #btnBusca {
         height: 40px;
         display: flex;
+        margin-top: 10px;
     }
 }
