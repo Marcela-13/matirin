@@ -2,7 +2,9 @@ document.addEventListener("DOMContentLoaded", () => {
     const criarForumButton = document.querySelector(".button"); // Botão de criação do fórum
     const feed = document.querySelector(".feed"); // Seção onde os cards são adicionados
 
-    criarForumButton.addEventListener("click", () => {
+    criarForumButton.addEventListener("click", (event) => {
+        event.preventDefault(); // Impede o recarregamento da página
+
         // Captura os valores do formulário
         const titulo = document.getElementById("phone").value.trim();
         const questao = document.getElementById("w3review1").value.trim();
@@ -40,13 +42,11 @@ document.addEventListener("DOMContentLoaded", () => {
             </div>
         `;
 
-        // Adiciona o novo card ao feed
-        feed.prepend(novoCard);
+        // Adiciona o novo card ao feed após o título
+        feed.insertBefore(novoCard, feed.querySelector(".comentários").nextSibling);
 
         // Limpa os campos do formulário
         document.getElementById("phone").value = "";
         document.getElementById("w3review1").value = "";
-
-        alert("Fórum criado com sucesso!");
     });
 });
