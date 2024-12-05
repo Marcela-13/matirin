@@ -66,6 +66,10 @@ body {
   padding: 5px;
 }
 
+.sinopse{
+  font-size: 15px;
+}
+
 
 
   
@@ -287,5 +291,8 @@ body {
   }
   .carousel-container {
     width: 80%;
+  }
+  .sinopse{
+    font-size: 18px;
   }
 }
