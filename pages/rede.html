@@ -11,7 +11,17 @@
     <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
-    <link rel="icon" type="image/x-icon" href="/img/home/logo.png">
+
+    <style>
+        @import url('https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap');
+    </style>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Dancing+Script:wght@400..700&family=Montserrat:ital,wght@0,100..900;1,100..900&family=Mulish:ital,wght@0,200..1000;1,200..1000&display=swap"
+        rel="stylesheet">
+    <link
+        href="https://fonts.googleapis.com/css2?family=Bree+Serif&family=Dancing+Script:wght@400..700&family=Montserrat:ital,wght@0,100..900;1,100..900&family=Mulish:ital,wght@0,200..1000;1,200..1000&display=swap"
+        rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 </head>
 
 <body>
@@ -19,16 +29,25 @@
         <div class="logo">
             <img src="../img/home/logo.png">
         </div>
-        <div id="Busca"> <!--Barra de pesquisa-->
-            <input type="text" id="txtBusca" placeholder="Buscar..." />
-            <img src="../img/pesquisa2semfundo.png" id="btnBusca" alt="Buscar" />
-            <button>buscar</button>
-        </div>
+
         <div class="nome"> <!--Nome do site-->
             <h1 class="nomedosite">Mátirin</h1>
         </div>
+        <div id="Busca"> <!--Barra de pesquisa-->
+            <input type="text" id="txtBusca" placeholder="..." />
+            <img src="img/home/pesquisa2semfundo.png" id="btnBusca" alt="Buscar" />
+            <button onclick="alerta()">Buscar</button>
+        </div>
+        <!--mostar a função de busca-->
+        <script>
+            function alerta() {
+                alert("teste")
+            }
+        </script>
+
+
         <div class="cadastro"> <!--Cadastro-->
-            <a href="../pages/formulario.html"><img src="../img/home/cadastrod.png"></a>
+            <a href="./formulario.html"><img src="../img/home/cadastrod.png"></a>
         </div>
         <!-- Botão de Menu Hamburguinho -->
         <div class="hamburger" onclick="toggleMenu()">
@@ -41,42 +60,43 @@
     <!--Navegação-->
     <div class="nav">
         <ul>
-             <li><a href="../index.html">Home</a></li>   
-             <li><a href="../pages/sobre.html">Sobre nós</a></li>
-             <li><a href="../pages/tradutor.html">Tradução interativa</a></li>
+            <li><a href="../index.html">Home</a></li>
+            <li><a href="../pages/sobre.html">Sobre nós</a></li>
+            <li><a href="../pages/tradutor.html">Tradução interativa</a></li>
             <li><a href="../pages/informacao.html">Livros</a></li>
             <li><a class="ativo" href="../pages/rede.html">Rede</a></li>
         </ul>
     </div>
     <div class="image-container">
         <img src="../img/4.gif" class="gif">
+
+        <div class="Fórum">
+            <h2> Fórum</h2>
+        </div>
     </div>
+
+
     <div class="main">
         <div class="content">
-            <div class="form1">
+            <form class="form1">
                 <h1>Criar Fórum</h1>
-
                 <label class="título">Título:</label>
-                <input type="tel" id="phone" name="phone" placeholder="Insira um título">
+                <input type="tel" id="phone" name="phone" placeholder="Insira sua questão">
 
-                <label class="título">Adicione sua questão:</label>
+                <label class="título">Faça sua pergunta:</label>
                 <textarea id="w3review1" name="w3review1" rows="15" cols="67" type="tel" id="phone" name="phone"
                     placeholder="Digite sua pergunta"></textarea>
                 <div class="div-btn">
-                 
-                   
-
-                    </button>
-                    <button class="button2"> Criação
+                    <button class="button"> Criação
                         <i class="material-icons icon"
                             style="font-size:20px;color:rgb(255, 255, 255);left: 1%;">send</i>
                     </button>
                 </div>
-            </div>
+            </form>
         </div>
 
-
         <div class="feed">
+            <h1 class="comentários">Comentários</h1>
             <div class="comment">
                 <div class="comment-header">
                     <div>
@@ -86,7 +106,8 @@
 
                     <span class="comment-date">02 de Outubro, 2024</span>
                 </div>
-                <strong>Quais estratégias podem ser usadas para criar um ambiente de aprendizado mais inclusivo para alunos surdos, especialmente no que se refere a atividades em grupo?</strong>
+                <strong>Quais estratégias podem ser usadas para criar um ambiente de aprendizado mais inclusivo para
+                    alunos surdos, especialmente quando refere a atividades em grupo?</strong>
                 <div class="comment-body">
                     <p>Sou professora e queria ser mais interativa possível com meus alunos.</p>
                 </div>
@@ -106,10 +127,11 @@
 
                     <span class="comment-date">02 de Outubro, 2024</span>
                 </div>
-                <strong>Existem recursos ou materiais de treinamento em Libras voltados para médicos e cirurgiões?</strong>
+                <strong>Existem recursos ou materiais de treinamento em Libras voltados para médicos e
+                    cirurgiões?</strong>
                 <div class="comment-body">
                     <p>Sou médica cirurgiã e queria conteúdos relacionados á libras para treinar em minha área
-                    .</p>
+                        .</p>
                 </div>
                 <div>
                     <button style="color: brown;font-size:17px;width: 0px;left: 23%" ;><i
@@ -120,12 +142,13 @@
             </div>
             <div class="comment">
                 <div class="comment-header">
-                <div>           <img src="../img/aeronáutico.jpg" style="border-radius: 50%;  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2); width: 40px;
+                    <div> <img src="../img/aeronáutico.jpg" style="border-radius: 50%;  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2); width: 40px;
     height: 38px;"><strong class="name">Lucas Kenid</strong></div>
-         
+
                     <span class="comment-date">02 de Outubro, 2024</span>
                 </div>
-                <strong>Como posso melhorar minha comunicação em Libras com colegas surdos no ambiente de trabalho, especialmente em situações de emergência?</strong>
+                <strong>Como posso melhorar minha comunicação em Libras com colegas surdos no ambiente de trabalho,
+                    especialmente em situações de emergência?</strong>
                 <div class="comment-body">
                     <p>Sou técnico aeronáutico e queria ajudar as pessoas na emergência.</p>
                 </div>
@@ -146,7 +169,8 @@
                 </div>
                 <strong>Alguém me indica um livro curto e interativo de libras?</strong>
                 <div class="comment-body">
-                    <p>Tenho um amigo com deficiência auditiva  e queria achar maneiras que ele possa se enturmar,quero indicar um livro pra ele.</p>
+                    <p>Tenho um amigo com deficiência auditiva e queria achar maneiras que ele possa se enturmar,quero
+                        indicar um livro pra ele.</p>
                 </div>
                 <div>
                     <button style="color: brown;font-size:17px;width: 0px;left: 23%" ;><i
@@ -161,12 +185,13 @@
                 <div class="comment-header">
                     <div> <img src="../img/intérprete de libras.jpg" style="border-radius: 50%;  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2); width: 40px;
     height: 38px;"><strong class="name">Samara</strong></div>
-                   
+
                     <span class="comment-date">02 de Outubro, 2024</span>
                 </div>
-                <strong>    Quais os melhores livros de libras para eu apresentar para meus pacientes?</strong>
+                <strong> Quais os melhores livros de libras para eu apresentar para meus pacientes?</strong>
                 <div class="comment-body">
-                    <p>Sou intérprete de libras e queria ser mais interativa com meus pacientes,se alguém souber por favor comentem aqui e me dê dicas.</p>
+                    <p>Sou intérprete de libras e queria ser mais interativa com meus pacientes,se alguém souber por
+                        favor comentem aqui e me dê dicas.</p>
                 </div>
                 <div>
                     <button style="color: brown;font-size:17px;width: 0px;left: 23%" ;><i
@@ -180,9 +205,9 @@
                 <div class="suggestions">
                     <textarea id="w3review" name="w3review " rows="7" cols="125" type="tel" id="phone" name="phone"
                         placeholder="Adicione uma sugestão"></textarea>
-                    <button class="fa fa-mail-reply btn "
-                        style="font-size:16px;margin-top: 3px; border-radius: 5px;height: 25%; width:11%;border:none; cursor:pointer; background-color:rgb(0, 255, 34);color:rgb(0, 0, 0);left: 10%;">Responder
-                        <i class="fa fa-mail-"></i></button>
+                    <button class="button"
+                        style="font-size:16px;margin-top: 3px;  border-radius: 5px;height: 33%;  width:20%;border:none; cursor:pointer; background-color:rgb(0, 255, 34);color:rgb(0, 0, 0);left: 10%; ">Responder
+                    </button>
                 </div>
 
             </div>
