@@ -72,9 +72,6 @@ body {
 
 
 
-  
-
-
 /*mantem as letras dentro o middle*/
 .grid-item {
   text-align: center;
@@ -93,13 +90,14 @@ body {
 /*localização de onde esta os livros*/
 .grid-livraria {
   display: grid;
-  grid-template-columns: repeat(4, 1fr);
+  grid-template-columns: repeat(4, 25%);
   /* 4 colunas com largura igual */
   grid-template-rows: auto;
   /* Altura automática para as linhas */
   gap: 50px;
   /* Espaçamento entre os itens do grid */
-  padding: 50px;
+  padding: 70px;
+  margin-bottom: 40px;
 }
 
 .grid-livraria .grid-item {
@@ -244,10 +242,11 @@ body {
     width: 90%;
     transition: 0.5s;
     overflow: hidden;
+
     border-style: solid;
     border-color: #2499c7;
     font-size: 20px;
-    text-align: center;
+    padding: 7%;
   }
   .texto1 {
     margin-top: 11px;
@@ -260,16 +259,21 @@ body {
   
   .grid-livraria {
     grid-template-columns: 1fr ;
+    width: 100%;
     gap: 70px;
+    justify-content: center;
+    align-items: center;
+    margin-left: 10%;
   }
   
   .grid-livraria .grid-item {
     transform: scale(1.1);
     transition: 0.2s;
+    width: 100%;
   }
  
   .container .middle {
-    width: 194%;
+    width: 200%;
   }
 
   .container .middle p {
