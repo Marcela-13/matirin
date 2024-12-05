@@ -145,7 +145,7 @@ footer {
         flex-direction: column;
         justify-content: space-around;
         align-items: center;
-        height: 80vh;
+        height: 100vh;
     }
 
 
@@ -158,6 +158,7 @@ footer {
         display: flex;
         width: 100%;
         justify-content: center;
+        margin-top: 50%;
 
     }
 
@@ -168,9 +169,8 @@ footer {
         padding: 20px;
         font-size: 15px;
         border: none;
-        margin-top: 30px;
         cursor: pointer;
-        width: 230px;
+        width: 250px;
         height: 20px;
         border: 2px solid rgb(191, 218, 243);
         border-radius: 10px;
@@ -201,6 +201,9 @@ footer {
         z-index: 1;
         margin-top: -90%;
         border-radius: 10px;
+        justify-content: center;
+        align-items: center;
+        text-align: center;
     }
 
     /* Links dentro do menu suspenso */
@@ -244,23 +247,28 @@ footer {
     }
 
     #video {
+        margin-top: -200px ;
         width: 100%;
         height: 100%;
-        border-radius: 5px;
         justify-content: center;
         align-items: center;
         display: flex;
     }
 
     form {
-        width: 75%;
+        width: 85%;
         height: 40%;
         margin-left: 40px;
+        margin-bottom: 100px;
+        
     }
 
     #botao {
         width: 50%;
         height: 30%;
+        justify-content: center;
+        align-items: center;
+        text-align: center;
 
     }
 }
