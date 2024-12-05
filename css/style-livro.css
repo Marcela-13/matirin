@@ -2,70 +2,84 @@
   margin: 0;
   padding: 0;
   box-sizing: border-box;
-  font-family: monospace;
-  
-
+  font-family: "Montserrat", sans-serif;
 }
 
 body {
   background: aliceblue;
-  /*background: rgb(220, 255, 233);
-  background: linear-gradient(0deg, rgba(220, 255, 233, 1) 24%, rgba(206, 247, 255, 1) 66%);*/
 }
 
-/* ele centraliza a parte azul*/
 .flex-content {
+  position: relative;
+  top: -30px;
   display: flex;
-  /*background-image: url('../img/livros/mato.gif');
-  background-repeat: no-repeat;*/
   justify-content: center;
   align-items: center;
   width: 100%;
   height: 50vh;
-
-}
- 
-h2{
-
-  background-color: #63d4c5;
-
+  overflow: hidden; /* Para evitar que o pseudo-elemento ultrapasse os limites */
 }
 
-/*ele marca a area do texto*/
+.flex-content::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-image: url('../img/livros/fundo-livro.jpg');
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+  filter: blur(5px); /* Aplica o filtro à imagem */
+  z-index: -1; /* Garante que o fundo fique atrás do conteúdo */
+}
+
 .texto-informaçao {
+  position: relative; /* Mantém o texto acima do fundo */
   display: flex;
   flex-direction: column;
+  text-align: center;
   justify-content: center;
   border-radius: 10px;
-  background-color: rgb(87, 204, 240);
-  width: 40%;
+  font-size: 20px;
+  background-color: #2499c7;
+  width: 60%;
   transition: 0.5s;
-  overflow: hidden;
-  border-style: solid;
-  border-color: #0ed5f8;
-  height: 85%;
+  height: 60%;
   padding: 4%;
-  
-  
-
+  color: white;
+  z-index: 1; /* Prioriza o texto acima do pseudo-elemento */
 }
+.titulo{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  color: white;
+}
+.titulo h2{
+  background-color: #2499c7;
+  width: 40%;
+  border-radius: 10px;
+  text-align: center;
+  font-size: 30px;
+  padding: 5px;
+}
+
+.sinopse{
+  font-size: 15px;
+}
+
+
 
 /*mantem as letras dentro o middle*/
 .grid-item {
-  border-radius: 8px;
-  overflow: hidden;
   text-align: center;
   padding: 10px;
   height: 10vh;
+  border-radius: 10px;
 }
 
-/*imagens e deixa elas co a mesma proporção*/
-.grid-item img {
-  background-color: #000000;
-  width: 20%;
-  height: 20%;
-  border-radius: 50%;
-}
 
 /*texto*/
 .grid-item p {
@@ -76,13 +90,14 @@ h2{
 /*localização de onde esta os livros*/
 .grid-livraria {
   display: grid;
-  grid-template-columns: repeat(4, 1fr);
+  grid-template-columns: repeat(4, 25%);
   /* 4 colunas com largura igual */
   grid-template-rows: auto;
   /* Altura automática para as linhas */
   gap: 50px;
   /* Espaçamento entre os itens do grid */
-  padding: 50px;
+  padding: 70px;
+  margin-bottom: 40px;
 }
 
 .grid-livraria .grid-item {
@@ -102,7 +117,6 @@ h2{
   display: block;
   transition: .5s ease;
   backface-visibility: hidden;
-
 }
 
 .grid-livraria .grid-item:hover {
@@ -112,12 +126,16 @@ h2{
 
 /*texto que aparece na imagem*/
 .container {
+  border-radius: 10px;
   position: relative;
-  width: 50%;
-
+  width: 40%;
+  background-color: #f0f8ff;
+  box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2);
 }
 
 .container img {
+  border-radius: 10px;
+  width: 100%;
   height: 300px;
 }
 
@@ -134,6 +152,7 @@ h2{
   padding: 7%;
   border: 1px solid black;
   height: 300px;
+  border-radius: 10px;
 }
 
 .middle p {
@@ -153,35 +172,108 @@ h2{
 .container:hover .middle p {
   display: block;
 }
- 
+
+.carousel-container {
+  position: relative;
+  width: 30%;
+  height: 400px;
+  margin: 30px auto;
+  overflow: hidden;
+  border-radius: 20px;
+  background-color: #f0f8ff;
+  box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2);
+}
+
+.livros{
+  display: flex;
+}
+.carousel {
+  display: flex;
+  animation: slide 10s infinite;
+}
+
+.carousel-item {
+  flex: 0 0 100%;
+  text-align: center;
+  padding: 20px;
+}
+
+.carousel-item img {
+  width: 200px;
+  height: 300px;
+  margin: 0 auto;
+  display: block;
+  border-radius: 15px;
+  transition: transform 0.3s;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);
+}
+
+.carousel-item:hover img {
+  transform: scale(1.1);
+}
+
+.carousel-item p {
+  font-size: 16px;
+  color: #333;
+  margin-top: 30px;
+}
+
+@keyframes slide {
+  0%, 20% {
+      transform: translateX(0%);
+  }
+  25%, 45% {
+      transform: translateX(-100%);
+  }
+  50%, 70% {
+      transform: translateX(-200%);
+  }
+  75%, 95% {
+      transform: translateX(-300%);
+  }
+}
+
 
 /*para celular*/
 
 @media (max-width: 480px) {
   .texto-informaçao {
-    height: 70%;
+    height: 75%;
     width: 90%;
     transition: 0.5s;
     overflow: hidden;
+
     border-style: solid;
-    border-color: #020202;
-    font-size: 104%;
-    
-
-
-
+    border-color: #2499c7;
+    font-size: 20px;
+    padding: 7%;
   }
+  .texto1 {
+    margin-top: 11px;
+    font-size: 17px;
+  }
+  .texto2 {
+    font-size: 17px;
+  }
+
+  
   .grid-livraria {
     grid-template-columns: 1fr ;
+    width: 100%;
+    gap: 70px;
+    justify-content: center;
+    align-items: center;
+    margin-left: 10%;
   }
   
   .grid-livraria .grid-item {
     transform: scale(1.1);
     transition: 0.2s;
+    width: 100%;
   }
-
+ 
   .container .middle {
-    width: 194%;
+    width: 200%;
   }
 
   .container .middle p {
@@ -192,5 +284,19 @@ h2{
     font-size: 72%;
   }
 
+  .titulo h2{
+    width: 90%;
+    font-size: 25px;
+  padding: 20px;
 
+  }
+  .boneca{
+    display: none;
+  }
+  .carousel-container {
+    width: 80%;
+  }
+  .sinopse{
+    font-size: 18px;
+  }
 }

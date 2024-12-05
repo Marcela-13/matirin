@@ -194,6 +194,9 @@ div .direito{
     /* Aumenta o ícone ao passar o mouse */
 }
 
+.userway_buttons_wrapper {
+    margin-top: 100px;
+    }
 
 /* CSS responsivo para telas menores */
 @media (max-width: 480px) {
