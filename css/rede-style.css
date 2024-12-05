@@ -2,60 +2,87 @@
     margin: 0;
     padding: 0;
     box-sizing: border-box;
+    font-family: "Montserrat", sans-serif;
 }
 
 /*Corpo da página*/
 body {
     width: 100%;
     background: aliceblue;
-    /*background: rgb(206, 247, 255);
-    background: linear-gradient(0deg, rgba(206, 247, 255, 1) 0%, rgba(220, 255, 233, 1) 100%);*/
     background-repeat: no-repeat;
     background-size: cover;
 }
 
+/*gif*/
 .gif {
-    height: 470px;
-    width: 1895px;
-    line-height: 200px;
+    filter: brightness(70%);
+    height: 570px;
+    width: 100%;
     text-align: center;
-    margin-top:-29px;
+    margin-top: -29px;
 }
 
+/*Fórum*/
+.Fórum {
+    background-color: #2499c7;
+    width: 50%;
+    border-radius: 10px;
+    text-align: center;
+    font-size: 30px;
+    position: relative;
+    left: 23%;
+    margin: 1%;
+
+}
+
+.Fórum h2 {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: #ffffff;
+
+
+}
 
 .main {
+    width: 100%;
     display: flex;
-    justify-content: space-around;
+    justify-content: space-evenly;
     margin-top: 1%;
-    margin-bottom: 12%;
 }
 
 /*Área de criar Fórum*/
 .content {
     width: 30%;
+}
+
+/*Fórum formulário*/
+h1 {
+    text-align: center;
+    margin-bottom: 10px;
 
 }
 
 .form1 {
     background-color: #ffffff;
-    width: 67%;
+    width: 70%;
     height: 40%;
     padding: 8%;
     display: flex;
     flex-direction: column;
     border-radius: 8px;
     box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
-    margin: 6%;
+    margin-top: 9%;
 
 }
 
-/*input do form1*/
+/*input do form*/
 #phone {
     margin: 1%;
     width: 100%;
 }
 
-/*textearea do form1*/
+/*textarea do form*/
 #w3review {
     width: 98%;
 }
@@ -65,33 +92,19 @@ h1 {
     margin-bottom: 10px;
 
 }
-
+/*títulos do form*/
 .título {
     position: relative;
     left: 8%;
+
 }
 
-/*Botões do form1*/
-
-.button1 {
-    background: #00a3ee;
-    padding: 1%;
-    height: 82%;
-    width: 160px;
-    margin: 2%;
-    border-radius: 8px;
-    position: relative;
-    left: -14%;
-    cursor: pointer;
-    border: none
-}
-
-
-.button2 {
+/*Botão do form*/
+.button {
     background: #13e200;
     padding: 1px;
     height: 78%;
-    width: 55%;
+    width: 40%;
     margin: 5%;
     border-radius: 8px;
     margin: 2%;
@@ -110,62 +123,39 @@ h1 {
 
 }
 
-
-/*Ícones dos botões do form1*/
-.material-symbols-outlined {
-    position: relative;
-    position: relative;
-    left: 56%;
-}
-
-.material-symbols-outlined {
-    position: relative;
-    left: 3%;
-    color: #ffffff;
-}
-
 /*Área de comentários*/
 .feed {
-    width: 52%;
+    width: 50%;
 
 }
 
+/*Comentário*/
+.comentários {
+    margin-top: 2%;
+}
 
-
-
-/*Comentários*/
 .comment {
     background-color: white;
     border-radius: 8px;
     box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
     padding: 15px;
     margin: 20px;
-
-    height: 175px;
+    height: 180px;
     width: 100%;
-
-
 }
 
-strong {
-    font-family: monospace;
-
-}
-
+/*nome dos usuários*/
 .name {
-    font-family: 'time';
+    margin-left: 10px;
 }
 
+/*textos dos comentários*/
 p {
-    font-family: monospace;
+    font-size: 14px;
 
 }
 
-.título {
-    font-family: monospace;
-
-}
-
+/*corpo do comentário*/
 .comment-body {
     font-size: 1em;
     line-height: 1.5;
@@ -173,6 +163,7 @@ p {
 
 }
 
+/*cabeçalho do comentário*/
 .comment-header {
     display: flex;
     justify-content: space-between;
@@ -186,11 +177,7 @@ p {
     align-items: center;
 }
 
-.name {
-    margin-left: 10px;
-}
-
-/*Data*/
+/*Data do comentáro*/
 .comment-date {
     font-size: 0.9em;
     color: #666;
@@ -198,7 +185,6 @@ p {
     justify-content: end;
     align-items: center;
 }
-
 
 /*ícone dos comentários*/
 .material-icons {
@@ -208,7 +194,7 @@ p {
     padding: 4px;
 }
 
-/*sugestão form2*/
+/*caixa de resposta*/
 .form2 {
     background-color: white;
     border-radius: 8px;
@@ -230,57 +216,70 @@ p {
     width: 100%;
 }
 
-/*botão responder*/
+/*botão da caixa de resposta*/
 .suggestions {
     height: 60%;
     margin: 6px;
 }
 
-
 /*Responsividade do site*/
 @media(max-width: 480px) {
+
+    /*corpo da página*/
+    .content {
+        width: 100%;
+        display: flex;
+        justify-content: center;
+    }
+
+    /*feed de comentários*/
+    .feed {
+        width: 80%;
+        display: flex;
+        flex-direction: column;
+        justify-content: baseline;
+        align-items: center;
+    }
 
     .main {
         flex-direction: column;
         width: 100%;
         justify-content: center;
         align-items: center;
-
     }
 
-    .content {
-        width: 100%;
-        display: flex;
-        justify-content: center;
-
-    }
-
+    /*gif*/
     .gif {
-        height: 150%;
         width: 100%;
-        line-height: 200px;
+        height: 50%;
         text-align: center;
+        margin-top: 0px;
     }
 
+    /*área de forum*/
+    .Fórum {
+        position: relative;
+        left: 12%;
+        width: 70%;
+    }
+
+    .Fórum h2 {
+        font-size: 30px;
+    }
+
+    /*form1*/
     .form1 {
-        width: 100%;
-
+        width: 80%;
     }
 
-    h2 {
-        position: relative;
-        left: 5%;
+    /*label do form1*/
+    .título {
+        font-size: 14px;
     }
 
-    h3 {
-        position: relative;
-        left: 5%;
-    }
-
-
+    /*input do form1*/
     #phone {
-
-
+        font-size: 12px;
         height: 6%;
         width: 79%;
         position: relative;
@@ -288,40 +287,7 @@ p {
         right: 4.0%;
     }
 
-    .feed {
-        position: relative;
-        left: -12%;
-    }
-
-    .comment {
-
-        padding: 15px;
-        margin: 20px;
-        position: relative;
-        left: -21%;
-        justify-content: center;
-        width: 170%;
-        height: 261px;
-        flex-direction: column;
-
-    }
-
-
-
-
-    .material-icons {
-        color: #666;
-        position: relative;
-        left: 75%;
-        padding: 4px;
-    }
-
-
-    p {
-        padding: 18px;
-    }
-
-
+    /*textarea do form1*/
     #w3review1 {
         height: 50%;
         width: 79%;
@@ -330,18 +296,9 @@ p {
         left: 6%;
     }
 
-
-    .div-btn {
-
-        position: relative;
-        left: -1%;
-
-    }
-
-    /*botões do form1*/
-    .button1 {
+       /*botão do form1*/
+       .button {
         margin: 1%;
-
         border-radius: 8px;
         position: relative;
         left: -2%;
@@ -350,33 +307,59 @@ p {
         border: none
     }
 
-    .button2 {
-        position: relative;
-        left: 2%;
-
-        width: 37%;
-        border-radius: 8px;
-        margin: 1%;
-        cursor: pointer;
-        border: none
-    }
-
     .div-btn {
         width: 90%;
         margin: 3%;
         display: flex;
-
     }
 
+    /*comentários*/
+    .comentários {
+        margin-top: 13%;
+    }
 
-    .fa.fa-mail-reply {
-
-        width: 1000px;
+    .comment {
+        padding: 15px;
+        margin: 20px;
         position: relative;
-        left: 3%;
+        justify-content: center;
+        width: 100%;
+        height: 261px;
+        flex-direction: column;
     }
 
-    /*form2*/
+    /*nome do usuário*/
+    strong {
+        font-size: 10px;
+    }
+
+    /*texto dos comentários*/
+    p {
+        font-size: 11px;
+        padding: 18px;
+    }
+    
+    /*data dos comentários*/
+    .comment-date {
+        font-size: 10px;
+    }
+
+    /*ícones dos comentários*/
+
+    .material-icons {
+        color: #666;
+        position: relative;
+        left: 75%;
+        padding: 4px;
+    }
+
+    .div-btn {
+
+        position: relative;
+        left: -1%;
+    }
+
+    /*caixa de resposta*/
     .form2 {
 
         border-radius: 8px;
@@ -386,10 +369,13 @@ p {
         justify-content: space-around;
         margin-top: 5%;
         height: 100%;
-        width: 170%;
-        position: relative;
-        left: -12%;
+        width: 100%;
         flex-direction: column;
+    }
+    
+    /*botão responder da caixa de resposta*/
+    .button {
+        width: 50% !important;
     }
 
     .btn {
