@@ -20,7 +20,7 @@ body {
     display: flex;
     justify-content: center;
     align-items: center;
-    margin-top: 0px;
+    margin-top: 1px;
 }
 
 .video {
@@ -28,7 +28,7 @@ body {
     background-repeat: no-repeat;
     background-size: contain;
     width: 100%;
-    filter: brightness(70%);
+    filter: brightness(75%);
     z-index: -100;
 }
 
@@ -47,13 +47,29 @@ body {
 }
 
 /*imagens centrais*/
+
+.vjmais{
+    display: none;
+    background-color: #b1f0ea;
+    width: 180px;
+    border-radius: 5px;
+    justify-content: center;
+    text-decoration: none;
+    padding: 5px;
+    color:black;
+    font-family: "Mulish", sans-serif;
+}
+.vjmais:visited{
+    color: black ;
+    text-decoration: none;
+}
+
 .imgtxt1 {
     margin-top: 10%;
     display: flex;
-    justify-content: space-around;
+    justify-content: space-evenly;
     align-items: center;
 }
-
 .imagem1 {
     border-radius: 70px;
     height: 350px;
@@ -61,18 +77,29 @@ body {
     margin-right: 100px;
 }
 
+#txt1{ /*primeira imagem estilizada separadamente*/
+    margin-top: 18%;
+}
+
+.txtmedia{
+    display: none;
+    text-align: center;
+    max-width: 1000px;
+    font-size: 22px;
+    font-family: "Montserrat", sans-serif;
+}
+
 .texto1 p {
-    text-align: left;
-    margin-left: 15%;
+    text-align: center;
     max-width: 1000px;
     font-size: 22px;
     font-family: "Montserrat", sans-serif;
 }
 
 .imgtxt2 {
-    margin-top: 5%;
+    margin-top: 10%;
     display: flex;
-    justify-content: space-around;
+    justify-content: space-evenly;
     align-items: center;
 }
 
@@ -84,23 +111,28 @@ body {
 }
 
 .texto2 p {
-    text-align: right;
-    margin-right: 15%;
+    text-align: center;
     max-width: 1000px;
     font-size: 22px;
     font-family: "Montserrat", sans-serif;
 }
 
+.texto1, .texto2{
+    width: 50%;
+    padding: 5%;
+}
+
 
 /*Carrocel de imagens*/
 h2 {
-    margin-top: 10%;
+    margin-top: 5%;
     text-align: center;
     font-family: "Mulish", sans-serif;
+    font-size: 30px;
 }
 
 div.scroll-container {
-    margin-top: 10px;
+    margin-top: 5px;
     background-color: #47a598;
     overflow: hidden;
     white-space: nowrap;
@@ -114,8 +146,8 @@ div.scroll-item {
     align-items: center;
     background: aliceblue;
     margin-right: 10px;
-    padding: 20px;
-    border-radius: 5px;
+    padding: 10px;
+    border-radius: 10px;
     color: rgb(0, 0, 0);
     width: 490px;
     box-shadow: 0 4px 6px rgba(0, 0, 0, 0.2);
@@ -129,16 +161,16 @@ div.scroll-item:hover {
 
 div.scroll-item img {
     width: 170px;
-    height: 130px;
+    height: 160px;
     margin-right: 10px;
-    border-radius: 5px;
+    border-radius: 30px;
     object-fit: cover;
 }
 
 div.scroll-item p {
     font-family: "Montserrat", sans-serif;
     margin: 0;
-    font-size: 14px;
+    font-size: 17px;
     padding: 3px;
 }
 
@@ -154,6 +186,7 @@ div.scroll-item a {
 div.scroll-item a:hover {
     text-decoration: underline;
 }
+
 
 
 
@@ -181,11 +214,15 @@ div.scroll-item a:hover {
 
     .imgtxt1 {
         /*imagem e texto 1*/
-        margin-top: 10%;
-        margin-top: 80px;
         flex-direction: column-reverse;
         justify-content: center;
         align-items: center;
+    }
+    .vjmais{
+        display: flex;
+    }
+    #txt1{ /*primeira imagem estilizada separadamente*/
+        margin-top: 9%;
     }
     .imgtxt2 {
         /*imagem e texto 2*/
@@ -197,10 +234,11 @@ div.scroll-item a:hover {
 
     .imagem1, .imagem2{
         /*imagem 1*/
-        margin-top: 5%;
-        height: 230px;
-        margin-bottom: 9px;
-        padding: 20px;
+        margin-top: 15%;
+        height: 280px;
+        width: 280px;
+        margin-bottom: 5px;
+        padding: 5px;
         margin-right: 0;
         margin-left: 0;
     }
@@ -209,9 +247,10 @@ div.scroll-item a:hover {
         display: flex;
         justify-content: center;
         align-items: center;
+        font-size: 17px;
     }
 
-    .texto1 p, .texto2 p{
+    .texto1 p, .texto2 p, .texto1 .txtmedia{
         /*texto 1, 2, 3, 4*/
         font-size: 100%;
         text-align: center;
@@ -220,26 +259,40 @@ div.scroll-item a:hover {
         margin-right: 0;
     }
 
+    .txtmedia{
+        display: block;
+    }
+    .teste{
+        display: none;
+    }
+
     /*carroceu de imagens*/
 
     h2 {
         margin-top: 100px;
-        font-size: 20px;
+        font-size: 23px;
     }
 
     div.scroll-container {
-        padding: 3px;
+        padding: 4px;
         margin-top: 10px;
     }
 
     div.scroll-item {
-        padding: 10px;
-        width: 100%;
+        padding: 15px;
+        width: 150%;
         height: 120px;
     }
 
     div.scroll-item img {
         height: 110px;
+        width: 110px;
     }
-
+    div.scroll-item p {
+        font-size: 17px;
+    }
+    div.scroll-item a{
+        margin-top: 1px;
+        font-size: 15;
+    }
 }
